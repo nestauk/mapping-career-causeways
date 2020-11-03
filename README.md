@@ -8,6 +8,8 @@
 
 *Please find the associated project report, and explore a data visualisation of job transition recommendations and a map of occupations [here](https://www.nesta.org.uk/project/mapping-career-causeways/).*
 
+*The project is carried out within Nesta's [Open Jobs](https://www.nesta.org.uk/project/open-jobs/) programme, and it is supported by the J.P.Morgan as part of the [New Skills At Work initiative](https://www.jpmorganchase.com/impact/our-approach/jobs-and-skills).*
+
 ## Introduction
 
 The research outputs will be published in two steps. First, we are releasing [Supplementary online data](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data) together with the report on November 23rd, 2020. This mainly contains additional tables supporting the results published in the report. 
