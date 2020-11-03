@@ -1,0 +1,45 @@
+name: mapping_career_causeways
+channels:
+  - plotly
+  - pyviz
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - pip=20.2.4
+  - python=3.6.5
+  - numpy=1.18.1
+  - scipy=1.4.1
+  - pandas=1.0.3
+  - matplotlib=3.2.1
+  - jupyter=1.0.0
+  - ipython=7.14.0
+  - seaborn=0.10.1
+  - numba=0.49.0
+  - plotly=4.8.1
+  - treelib=1.6.1
+  - scikit-learn=0.22.1
+  - xlrd=1.2.0
+  - umap-learn=0.4.4
+  - boto3=1.5.11
+  - pip:
+    # - leidenalg==0.8.0
+    - requests==2.23.0
+    - tqdm
+    - pyyaml
+    - tables
+    - black
+    - blackcellmagic
+    - pymysql
+    - sqlalchemy
+    - click
+    - Sphinx
+    - sphinxcontrib.napoleon
+    - coverage
+    - awscli
+    - flake8
+  - python-dotenv>=0.5.1
+  - jupyter_contrib_nbextensions
+  - jupyter_nbextensions_configurator
+  - jq
+  - pytest
