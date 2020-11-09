@@ -18,10 +18,11 @@ Project codebase will be published in early 2021, together with a complete list 
 
 In the meantime, we will be conducting research to further validate the recommendations from the career transitions algorithm.
 
-### Feedback
+## Feedback
 
-- If you would like to raise a technical question, please create a new github issue.
-- If you would like to contact us regarding the Mapping Career Causeways project, please write to `{insert email here}`.
+Anyone is welcome to use and build upon the published data and code. If you would like to leave feedback, you can either create a new github issue (for raising technical questions) or write to us on `open.jobs@nesta.org.uk` for more general enquiries. To refer to this work, please cite the Mapping Career Causeways report:
+
+*Kanders K., Djumalieva, J., Sleeman, C. and Orlik, J. (2020). Mapping Career Causeways: Supporting Workers at Risk. London: Nesta*
 
 ## Contents
 
