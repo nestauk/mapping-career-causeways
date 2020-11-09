@@ -1,0 +1,15 @@
+﻿skills-based sector,business & administration workers,sales & services workers,ict workers,arts & media workers,social workers,engineers & researchers,"technicians, construction, transport & security workers",education workers,healthcare workers,logistics workers,"textile, clothing, leather & footwear manufacturing workers",manufacturing workers,animal care & husbandry workers,food & tobacco production workers
+business & administration workers,0.6870,0.0442,0.0706,0.0455,0.0165,0.0323,0.0693,0.0145,0.0079,0.0079,0.0000,0.0007,0.0000,0.0033
+sales & services workers,0.2510,0.6470,0.0112,0.0297,0.0019,0.0056,0.0316,0.0019,0.0149,0.0019,0.0000,0.0019,0.0019,0.0000
+ict workers,0.0952,0.0045,0.8030,0.0204,0.0023,0.0136,0.0317,0.0023,0.0023,0.0000,0.0000,0.0227,0.0000,0.0023
+arts & media workers,0.1980,0.0094,0.0283,0.7260,0.0000,0.0189,0.0094,0.0000,0.0000,0.0000,0.0000,0.0094,0.0000,0.0000
+social workers,0.4810,0.0290,0.0083,0.0415,0.1490,0.0042,0.0207,0.1490,0.1160,0.0000,0.0000,0.0000,0.0000,0.0000
+engineers & researchers,0.0531,0.0163,0.0612,0.0041,0.0000,0.6940,0.1310,0.0122,0.0000,0.0000,0.0041,0.0204,0.0000,0.0041
+"technicians, construction, transport & security workers",0.0625,0.0156,0.0052,0.0052,0.0000,0.2810,0.5420,0.0052,0.0000,0.0000,0.0052,0.0313,0.0000,0.0469
+education workers,0.2860,0.0159,0.0000,0.0159,0.0079,0.0000,0.0079,0.6590,0.0079,0.0000,0.0000,0.0000,0.0000,0.0000
+healthcare workers,0.0000,0.0000,0.0217,0.0217,0.0000,0.0217,0.0000,0.0000,0.9350,0.0000,0.0000,0.0000,0.0000,0.0000
+logistics workers,0.5630,0.0938,0.0000,0.0625,0.0000,0.0000,0.2500,0.0000,0.0000,0.0313,0.0000,0.0000,0.0000,0.0000
+"textile, clothing, leather & footwear manufacturing workers",0.1670,0.0000,0.0000,0.0833,0.0000,0.1670,0.0833,0.0000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000
+manufacturing workers,0.0000,0.0000,0.0000,0.0000,0.0000,0.3330,0.0000,0.0000,0.0000,0.0000,0.0000,0.6670,0.0000,0.0000
+animal care & husbandry workers,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.1670,0.0000,0.0000,0.0000,0.0000,0.0000,0.8330,0.0000
+food & tobacco production workers,0.0000,0.0092,0.0000,0.0000,0.0000,0.0734,0.1830,0.0000,0.0000,0.0000,0.0000,0.0734,0.0000,0.6610

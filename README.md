@@ -12,7 +12,7 @@
 
 ## Introduction
 
-The research outputs will be published in two steps. First, we are releasing [Supplementary online data](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data) together with the report on November 23rd, 2020. This mainly contains additional tables supporting the results published in the report. 
+The research outputs will be published in two steps. First, we are releasing [Supplementary online data](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data) together with the report on November 23rd, 2020. This mainly contains additional tables supporting the results published in the report.
 
 Project codebase will be published in early 2021, together with a complete list of the recommended career transitions for all considered ESCO occupations. This will allow anyone to replicate and build upon the project outputs.
 
@@ -25,9 +25,9 @@ In the meantime, we will be conducting research to further validate the recommen
 `STATUS: Not yet released; to be published on November 23rd, 2020`
 
 - [Crosswalk between O\*NET and ESCO occupations](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/ONET_ESCO_crosswalk/)
-- [Automation risk estimates of ESCO occupations](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/Automation_risk/)
-- [Demographic analysis of at-risk workers](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/Demographic_analysis/)
-- [Results on transition options for at-risk workers](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/Transitions/)
+- [Automation risk estimates](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/Automation_risk/)
+- [Demographic analysis](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/Demographic_analysis/)
+- [Results on job transitions and skills analysis](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/Transitions/)
 
 ### Codebase and job transitions
 
@@ -39,7 +39,7 @@ In the meantime, we will be conducting research to further validate the recommen
 
 ## Installation
 
-It is possible to browse and download the [Supplementary online data](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data) without installing anything on your local machine. However, if you'd like to run any analysis code, you should follow the steps below. *Note that the analysis code will be added to this repo in early 2021; presently, you only need to do this if you'd like to run the Jupyter notebook used in developing the O\*NET-ESCO crosswalk.*
+It is possible to browse and download the [Supplementary online data](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data) without installing anything on your local machine. However, if you'd like to run any of the analysis code, you should follow the steps below. *Note that the complete analysis code will be published in early 2021.*
 
 ### Clone and set up the repo
 
@@ -55,9 +55,9 @@ It should be possible to set up the environment using the specified configuratio
 ```shell
 $ conda env create -f conda_environment.yaml
 ```
-
-You should also install the repository package:
+You should then activate the newly created conda environment and install the repository package:
 
 ```shell
+$ conda activate mapping_career_causeways
 $ pip install -e .
 ```

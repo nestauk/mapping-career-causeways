@@ -1,0 +1,101 @@
+skill_id,esco_skill,avg_new_safe_desirable,med_new_safe_desirable,significant_effect,esco_skill_category,esco_skill_subcategory
+1776,manage budgets,4.034483,3.0,True,management skills,allocating and controlling resources
+2778,manage staff,3.793103,3.0,True,management skills,supervising people
+3248,maintain relationship with suppliers,3.643678,3.0,True,"communication, collaboration and creativity",liaising and networking
+12672,liaise with managers,3.413793,3.0,True,"communication, collaboration and creativity",liaising and networking
+11596,build business relationships,3.298851,2.0,True,"communication, collaboration and creativity",liaising and networking
+10065,develop professional network,3.275862,2.0,True,"communication, collaboration and creativity",liaising and networking
+12932,follow company standards,3.057471,2.0,True,assisting and caring,protecting and enforcing
+12240,assess financial viability,2.931034,2.0,True,information skills,analysing and evaluating information and data
+9007,adhere to organisational guidelines,2.91954,2.0,True,assisting and caring,protecting and enforcing
+3475,use different communication channels,2.885057,3.0,True,"communication, collaboration and creativity",liaising and networking
+2144,liaise with local authorities,2.770115,2.0,True,"communication, collaboration and creativity",liaising and networking
+1809,maintain relationship with customers,2.724138,2.0,True,"communication, collaboration and creativity",liaising and networking
+11337,execute feasibility study,2.666667,2.0,True,information skills,analysing and evaluating information and data
+1571,perform risk analysis,2.482759,2.0,True,information skills,analysing and evaluating information and data
+3651,manage health and safety standards,2.436782,2.0,True,assisting and caring,protecting and enforcing
+5558,identify customer's needs,2.413793,2.0,True,"communication, collaboration and creativity",obtaining information verbally
+10823,perform project management,2.367816,2.0,True,management skills,"organising, planning and scheduling work and activities"
+7794,manage contracts,2.344828,2.0,True,"communication, collaboration and creativity",negotiating
+160,create solutions to problems,2.321839,2.0,True,"communication, collaboration and creativity",solving problems
+4223,perform scientific research,2.298851,1.0,True,information skills,"conducting studies, investigations and examinations"
+12699,analyse production processes for improvement,2.287356,2.0,True,information skills,analysing and evaluating information and data
+424,ensure compliance with environmental legislation,2.195402,2.0,True,assisting and caring,protecting and enforcing
+11156,apply organisational techniques,2.172414,2.0,True,management skills,"organising, planning and scheduling work and activities"
+11611,apply health and safety standards,2.034483,2.0,True,assisting and caring,protecting and enforcing
+13387,perform market research,1.827586,1.0,True,information skills,"conducting studies, investigations and examinations"
+9306,delegate activities,1.816092,1.0,True,management skills,supervising people
+3893,ensure public safety and security,1.770115,1.0,True,assisting and caring,protecting and enforcing
+7753,write work-related reports,1.655172,1.0,True,"communication, collaboration and creativity",writing and composing
+7992,supervise staff,1.609195,1.0,True,management skills,supervising people
+3595,keep task records,1.597701,1.0,True,information skills,documenting and recording information
+4337,use personal protection equipment,1.586207,1.0,True,assisting and caring,protecting and enforcing
+1123,work ergonomically,1.517241,1.0,True,assisting and caring,protecting and enforcing
+3840,provide cost benefit analysis reports,1.494253,1.0,True,information skills,documenting and recording information
+5184,wear appropriate protective gear,1.494253,1.0,True,assisting and caring,protecting and enforcing
+12026,train employees,1.482759,1.0,True,"communication, collaboration and creativity",teaching and training
+2187,handle customer complaints,1.37931,1.0,True,"communication, collaboration and creativity",negotiating
+10988,present reports,1.321839,1.0,True,"communication, collaboration and creativity",presenting information
+87,manage supplies,1.321839,1.0,True,management skills,allocating and controlling resources
+6288,maintain customer service,1.310345,1.0,True,attitudes,manage quality
+1377,inspect quality of products,1.298851,1.0,True,information skills,"monitoring, inspecting and testing"
+10264,apply technical communication skills,1.264368,1.0,True,"communication, collaboration and creativity",presenting information
+3722,perform test run,1.252874,1.0,True,information skills,"monitoring, inspecting and testing"
+8560,listen actively,1.218391,1.0,True,"communication, collaboration and creativity",obtaining information verbally
+6037,project management,1.195402,1.0,True,"business, administration and law",business and administration
+710,communicate with customers,1.149425,1.0,True,assisting and caring,providing information and support to the public and clients
+524,business management principles,1.126437,0.0,True,"business, administration and law",business and administration
+215,provide technical documentation,1.126437,1.0,True,information skills,documenting and recording information
+11012,have computer literacy,1.091954,1.0,True,working with computers,accessing and analysing digital data
+5574,read standard blueprints,1.091954,0.0,True,information skills,"conducting studies, investigations and examinations"
+3654,monitor stock level,1.068966,1.0,True,information skills,"monitoring, inspecting and testing"
+5640,ensure equipment availability,1.045977,1.0,True,management skills,allocating and controlling resources
+10810,keep records of work progress,1.034483,1.0,True,information skills,documenting and recording information
+1737,order supplies,0.977011,0.0,True,"communication, collaboration and creativity","promoting, selling and purchasing"
+2716,record test data,0.954023,1.0,True,information skills,documenting and recording information
+8393,keep personal administration,0.942529,1.0,True,information skills,documenting and recording information
+9791,address problems critically,0.91954,0.0,True,"communication, collaboration and creativity",solving problems
+2349,perform data analysis,0.873563,1.0,True,working with computers,accessing and analysing digital data
+3879,recruit employees,0.873563,1.0,True,management skills,recruiting and hiring
+12924,perform resource planning,0.83908,1.0,True,information skills,calculating and estimating
+13004,company policies,0.827586,0.0,True,"business, administration and law",business and administration
+6665,cost management,0.816092,0.0,True,"business, administration and law",business and administration
+7508,quality standards,0.793103,0.0,True,"business, administration and law",business and administration
+837,use a computer,0.793103,0.0,True,working with computers,accessing and analysing digital data
+12451,scientific research methodology,0.781609,0.0,True,education,education
+2756,troubleshoot,0.770115,0.0,True,"communication, collaboration and creativity",solving problems
+3535,adjust engineering designs,0.758621,0.0,True,"communication, collaboration and creativity",designing systems and products
+2676,execute analytical mathematical calculations,0.735632,0.0,True,information skills,calculating and estimating
+6292,pollution prevention,0.655172,1.0,True,"engineering, manufacturing and construction",engineering and engineering trades
+3571,mathematics,0.482759,0.0,True,"natural sciences, mathematics and statistics",mathematics and statistics
+6752,statistics,0.436782,0.0,True,"natural sciences, mathematics and statistics",mathematics and statistics
+5942,environmental legislation,0.425287,0.0,True,"business, administration and law",law
+1705,engineering principles,0.390805,0.0,True,"engineering, manufacturing and construction",engineering and engineering trades
+6117,engineering processes,0.333333,0.0,True,"engineering, manufacturing and construction",engineering and engineering trades
+4921,contract law,0.333333,0.0,True,"business, administration and law",law
+8344,ICT software specifications,0.298851,0.0,True,information and communication technologies (icts),information and communication technologies (icts)
+8783,teamwork principles,0.264368,0.0,True,generic programmes and qualifications,personal skills and development
+2476,speak different languages,0.252874,0.0,True,"communication, collaboration and creativity",using more than one language
+4966,oversee quality control,0.252874,0.0,True,attitudes,manage quality
+7761,meet deadlines,0.241379,0.0,True,attitudes,meet commitments
+4781,technical drawings,0.229885,0.0,True,"engineering, manufacturing and construction",architecture and construction
+9466,use CAD software,0.183908,0.0,True,working with computers,"using digital tools for collaboration, content creation and problem solving"
+3997,collect samples for analysis,0.172414,0.0,True,handling and moving,transforming and blending materials
+7981,electronics,0.149425,0.0,True,"engineering, manufacturing and construction",engineering and engineering trades
+2979,manufacturing processes,0.149425,0.0,True,"engineering, manufacturing and construction",manufacturing and processing
+4255,maintain equipment,0.137931,0.0,True,working with machinery and specialised equipment,working with machinery and specialised equipment
+5594,physics,0.126437,0.0,False,"natural sciences, mathematics and statistics",physical sciences
+10851,chemistry,0.126437,0.0,False,"natural sciences, mathematics and statistics",physical sciences
+7882,biology,0.103448,0.0,True,"natural sciences, mathematics and statistics",biological and related sciences
+10570,electricity,0.103448,0.0,True,"engineering, manufacturing and construction",engineering and engineering trades
+12571,mechanics,0.091954,0.0,True,"engineering, manufacturing and construction",engineering and engineering trades
+8306,mechanical engineering,0.08046,0.0,False,"engineering, manufacturing and construction",engineering and engineering trades
+6526,monitor automated machines,0.068966,0.0,False,working with machinery and specialised equipment,working with machinery and specialised equipment
+8630,CAD software,0.068966,0.0,False,information and communication technologies (icts),information and communication technologies (icts)
+8775,multimedia systems,0.068966,0.0,False,arts and humanities,arts
+8425,human anatomy,0.068966,0.0,False,health and welfare,health
+1534,provide first aid,0.057471,0.0,False,assisting and caring,providing health care or medical treatments
+4601,pollution legislation,0.045977,0.0,False,"business, administration and law",law
+11452,set up the controller of a machine,0.034483,0.0,False,working with computers,using digital tools to control machinery
+4028,design principles,0.034483,0.0,False,arts and humanities,arts
+3319,electrical engineering,0.011494,0.0,False,"engineering, manufacturing and construction",engineering and engineering trades

@@ -1,5 +1,9 @@
 Codebase/
-mapping-career-causeways/
+Supplementary_online_data/ONET_ESCO_crosswalk/outputs/
+
+.DS_Store
+~$*.xls*
+~$*.xlsx*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

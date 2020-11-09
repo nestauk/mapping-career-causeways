@@ -1,0 +1,422 @@
+isco_code,isco_unit_group,risk,prevalence,risk_category
+1111,Legislators,3.49985,0.356627,Other
+1112,Senior government officials,3.49985,0.356627,Other
+1114,Senior officials of special-interest organizations,3.523438,0.387337,Other
+1120,Managing directors and chief executives,3.486389,0.295306,Other
+1211,Finance managers,3.549063,0.293139,High risk
+1212,Human resource managers,3.431679,0.468362,Other
+1213,Policy and planning managers,3.53399,0.318524,High risk
+1219,Business services and administration managers not elsewhere classified,3.421273,0.455848,Other
+1221,Sales and marketing managers,3.539748,0.220113,High risk
+1222,Advertising and public relations managers,3.523438,0.387337,Other
+1223,Research and development managers,3.498344,0.204803,Other
+1311,Agricultural and forestry production managers,3.464418,0.549357,Other
+1312,Aquaculture and fisheries production managers,3.581647,0.59745,Other
+1321,Manufacturing managers,3.495001,0.211903,Other
+1322,Mining managers,3.436342,0.525342,Other
+1323,Construction managers,3.441873,0.548395,Other
+1324,"Supply, distribution and related managers",3.5635,0.492732,Other
+1330,Information and communications technology service managers,3.507389,0.39987,Other
+1341,Child care services managers,3.608391,0.474956,Other
+1342,Health services managers,3.519079,0.312219,Other
+1343,Aged care services managers,3.519079,0.312219,Other
+1344,Social welfare managers,3.525073,0.441979,Other
+1345,Education managers,3.560588,0.347886,High risk
+1346,Financial and insurance services branch managers,3.549063,0.293139,High risk
+1349,Professional services managers not elsewhere classified,3.460713,0.578094,Other
+1411,Hotel managers,3.379042,0.507439,Other
+1412,Restaurant managers,3.476675,0.573015,Other
+1420,Retail and wholesale trade managers,3.48269,0.468872,Other
+1439,Services managers not elsewhere classified,3.517319,0.583163,Other
+2111,Physicists and astronomers,3.383198,0.714832,Other
+2112,Meteorologists,3.510808,0.454932,Other
+2113,Chemists,3.377877,0.615105,Other
+2114,Geologists and geophysicists,3.484206,0.627951,Other
+2120,"Mathematicians, actuaries and statisticians",3.528793,0.508337,Other
+2131,"Biologists, botanists, zoologists and related professionals",3.402721,0.563838,Other
+2132,"Farming, forestry and fisheries advisers",3.436435,0.650738,Other
+2133,Environmental protection professionals,3.455075,0.575093,Other
+2141,Industrial and production engineers,3.511346,0.467145,Other
+2142,Civil engineers,3.409974,0.476066,Other
+2143,Environmental engineers,3.346905,0.638144,Other
+2144,Mechanical engineers,3.551055,0.526628,Other
+2145,Chemical engineers,3.301207,0.662367,Other
+2146,"Mining engineers, metallurgists and related professionals",3.429821,0.567131,Other
+2149,Engineering professionals not elsewhere classified,3.450864,0.565275,Other
+2151,Electrical engineers,3.477107,0.522234,Other
+2152,Electronics engineers,3.615323,0.526216,Other
+2153,Telecommunications engineers,3.615323,0.526216,Other
+2161,Building architects,3.424611,0.752925,Other
+2162,Landscape architects,3.352259,0.737935,Other
+2163,Product and garment designers,3.396512,0.683197,Other
+2164,Town and traffic planners,3.498848,0.616611,Other
+2165,Cartographers and surveyors,3.482018,0.526685,Other
+2166,Graphic and multimedia designers,3.660776,0.520904,Other
+2211,Generalist medical practitioners ,3.353117,0.305952,Other
+2212,Specialist medical practitioners ,3.409189,0.473423,Other
+2221,Nursing professionals,3.471244,0.527214,Other
+2222,Midwifery professionals,3.426712,0.501977,Other
+2230,Traditional and complementary medicine professionals,3.39533,0.608449,Other
+2250,Veterinarians,3.511883,0.35285,Other
+2261,Dentists,3.407217,0.693455,Other
+2262,Pharmacists,3.499691,0.519514,Other
+2263,Environmental and occupational health and hygiene professionals,3.304811,0.65779,Other
+2264,Physiotherapists ,3.412667,0.340337,Other
+2265,Dieticians and nutritionists,3.410821,0.552171,Other
+2266,Audiologists and speech therapists,3.417962,0.41359,Other
+2267,Optometrists and ophthalmic opticians,3.622872,0.377422,High risk
+2269,Health professionals not elsewhere classified,3.382683,0.518779,Other
+2310,University and higher education teachers,3.389042,0.414189,Other
+2320,Vocational education teachers,3.567191,0.494617,Other
+2330,Secondary education teachers,3.502267,0.457116,Other
+2341,Primary school teachers,3.487909,0.512088,Other
+2342,Early childhood educators,3.457809,0.55802,Other
+2351,Education methods specialists,3.372089,0.601735,Other
+2352,Special needs teachers,3.497312,0.460397,Other
+2353,Other language teachers,3.455152,0.579415,Other
+2354,Other music teachers,3.458119,0.573822,Other
+2355,Other arts teachers,3.427412,0.473977,Other
+2356,Information technology trainers,3.508699,0.454391,Other
+2359,Teaching professionals not elsewhere classified,3.509541,0.44739,Other
+2411,Accountants,3.582878,0.299813,High risk
+2412,Financial and investment advisers,3.446154,0.421524,Other
+2413,Financial analysts,3.564955,0.338238,High risk
+2421,Management and organization analysts,3.301831,0.540437,Other
+2422,Policy administration professionals,3.482022,0.433525,Other
+2423,Personnel and careers professionals,3.580575,0.334461,High risk
+2424,Training and staff development professionals,3.501416,0.456461,Other
+2431,Advertising and marketing professionals,3.585001,0.572446,Other
+2432,Public relations professionals,3.444229,0.602828,Other
+2433,Technical and medical sales professionals (excluding ICT),3.582398,0.191738,High risk
+2434,Information and communications technology sales professionals,3.51846,0.330577,Other
+2511,Systems analysts,3.467608,0.50451,Other
+2512,Software developers,3.448905,0.378378,Other
+2513,Web and multimedia developers,3.542605,0.471278,Other
+2514,Applications programmers,3.447711,0.37268,Other
+2519,Software and applications developers and analysts not elsewhere classified,3.541381,0.348995,High risk
+2521,Database designers and administrators,3.602085,0.539552,Other
+2522,Systems administrators,3.593187,0.249685,High risk
+2523,Computer network professionals,3.505705,0.565901,Other
+2529,Database and network professionals not elsewhere classified,3.516076,0.450977,Other
+2611,Lawyers,3.471882,0.255443,Other
+2612,Judges,3.407473,0.211879,Other
+2619,Legal professionals not elsewhere classified,3.501063,0.359307,Other
+2621,Archivists and curators,3.361429,0.62091,Other
+2622,Librarians and related information professionals,3.438854,0.639163,Other
+2631,Economists,3.463072,0.36252,Other
+2632,"Sociologists, anthropologists and related professionals",3.398152,0.54712,Other
+2633,"Philosophers, historians and political scientists",3.387866,0.536887,Other
+2634,Psychologists,3.496709,0.473903,Other
+2635,Social work and counselling professionals,3.455101,0.399776,Other
+2636,Religious professionals,3.55359,0.299297,High risk
+2641,Authors and related writers,3.482277,0.458353,Other
+2642,Journalists,3.570009,0.65774,Other
+2643,"Translators, interpreters and other linguists",3.514462,0.667431,Other
+2651,Visual artists,3.531733,0.762478,Other
+2652,"Musicians, singers and composers",3.446365,0.434651,Other
+2653,Dancers and choreographers,3.238946,0.905169,Low risk
+2654,"Film, stage and related directors and producers",3.519751,0.551086,Other
+2655,Actors,3.317435,0.778128,Low risk
+2656,"Announcers on radio, television and other media",3.255573,0.693423,Other
+2659,Creative and performing artists not elsewhere classified,3.506631,0.631433,Other
+3111,Chemical and physical science technicians,3.527366,0.519747,Other
+3112,Civil engineering technicians,3.392271,0.664429,Other
+3113,Electrical engineering technicians,3.447983,0.719851,Other
+3114,Electronics engineering technicians,3.460182,0.481707,Other
+3115,Mechanical engineering technicians,3.584262,0.585572,Other
+3116,Chemical engineering technicians,3.301207,0.662367,Other
+3117,Mining and metallurgical technicians,3.526319,0.607728,Other
+3118,Draughtspersons,3.647737,0.51358,Other
+3119,Physical and engineering science technicians not elsewhere classified,3.457125,0.596556,Other
+3121,Mining supervisors,3.366982,0.727164,Other
+3122,Manufacturing supervisors,3.403775,0.552157,Other
+3123,Construction supervisors,3.366982,0.727164,Other
+3131,Power production plant operators,3.447744,0.823247,Other
+3132,Incinerator and water treatment plant operators,3.599885,0.761044,Other
+3133,Chemical processing plant controllers,3.544994,0.744933,Other
+3134,Petroleum and natural gas refining plant operators,3.414967,0.712023,Other
+3135,Metal production process controllers,3.549294,0.540367,Other
+3139,Process control technicians not elsewhere classified,3.458782,0.721376,Other
+3141,Life science technicians (excluding medical),3.518483,0.697139,Other
+3142,Agricultural technicians,3.443298,0.655393,Other
+3143,Forestry technicians,3.39387,0.685668,Other
+3151,Ships' engineers,3.384316,0.749774,Other
+3152,Ships' deck officers and pilots,3.396439,0.817119,Low risk
+3153,Aircraft pilots and related associate professionals,3.405279,0.746646,Other
+3154,Air traffic controllers,3.546835,0.712572,Other
+3155,Air traffic safety electronics technicians,3.460182,0.481707,Other
+3211,Medical imaging and therapeutic equipment technicians,3.388566,0.818221,Low risk
+3212,Medical and pathology laboratory technicians ,3.476153,0.647834,Other
+3213,Pharmaceutical technicians and assistants,3.448571,0.564154,Other
+3214,Medical and dental prosthetic technicians,3.485914,0.611176,Other
+3222,Midwifery associate professionals,3.399832,0.613657,Other
+3230,Traditional and complementary medicine associate professionals,3.39533,0.608449,Other
+3240,Veterinary technicians and assistants,3.531427,0.687466,Other
+3251,Dental assistants and therapists,3.344218,0.660286,Other
+3252,Medical records and health information technicians,3.407212,0.414813,Other
+3253,Community health workers,3.64746,0.331028,High risk
+3254,Dispensing opticians,3.396874,0.73422,Other
+3255,Physiotherapy technicians and assistants,3.179959,0.774897,Low risk
+3256,Medical assistants,3.476584,0.550857,Other
+3257,Environmental and occupational health inspectors and associates,3.355467,0.732361,Other
+3258,Ambulance workers,3.42567,0.764779,Other
+3259,Health associate professionals not elsewhere classified,3.427728,0.532185,Other
+3311,Securities and finance dealers and brokers,3.544749,0.155821,High risk
+3312,Credit and loans officers,3.543963,0.312689,High risk
+3313,Accounting associate professionals,3.645355,0.527464,Other
+3314,"Statistical, mathematical and related associate professionals",3.532674,0.456256,High risk
+3315,Valuers and loss assessors,3.531142,0.462318,Other
+3321,Insurance representatives,3.614593,0.250742,High risk
+3322,Commercial sales representatives,3.575272,0.215573,High risk
+3323,Buyers,3.513544,0.351028,Other
+3324,Trade brokers,3.581307,0.261042,High risk
+3331,Clearing and forwarding agents,3.571262,0.457528,High risk
+3332,Conference and event planners,3.415082,0.40587,Other
+3333,Employment agents and contractors,3.703095,0.259536,High risk
+3334,Real estate agents and property managers,3.4429,0.48928,Other
+3339,Business services agents not elsewhere classified,3.506334,0.298381,Other
+3341,Office supervisors,3.556881,0.651028,Other
+3342,Legal secretaries,3.664614,0.50841,Other
+3343,Administrative and executive secretaries,3.67335,0.307604,High risk
+3344,Medical secretaries,3.572144,0.383728,High risk
+3351,Customs and border inspectors,3.453929,0.364438,Other
+3352,Government tax and excise officials,3.54241,0.280322,High risk
+3353,Government social benefits officials,3.518618,0.596604,Other
+3354,Government licensing officials,3.511107,0.310211,Other
+3355,Police inspectors and detectives,3.446103,0.425629,Other
+3359,Regulatory government associate professionals not elsewhere classified,3.466799,0.655196,Other
+3411,Police inspectors and detectives,3.464969,0.361524,Other
+3412,Social work associate professionals,3.539648,0.336794,High risk
+3413,Religious associate professionals,3.619784,0.239532,High risk
+3421,Athletes and sports players,3.212524,0.865791,Low risk
+3422,"Sports coaches, instructors and officials",3.321374,0.492026,Other
+3423,Fitness and recreation instructors and program leaders,3.494415,0.590123,Other
+3431,Photographers,3.592736,0.743814,Other
+3432,Interior designers and decorators,3.436643,0.758583,Other
+3433,"Gallery, museum and library technicians",3.439102,0.748874,Other
+3434,Chefs,3.348257,0.602211,Other
+3435,Other artistic and cultural associate professionals,3.439438,0.689113,Other
+3511,Information and communications technology operations technicians,3.486774,0.413744,Other
+3512,Information and communications technology user support technicians,3.414206,0.344425,Other
+3513,Computer network and systems technicians,3.578487,0.502076,Other
+3514,Web technicians,3.607753,0.342641,High risk
+3521,Broadcasting and audio-visual technicians,3.475705,0.749225,Other
+3522,Telecommunications engineering technicians,3.531091,0.468806,Other
+4110,General office clerks,3.616639,0.350172,High risk
+4120,Secretaries (general),3.659388,0.414108,High risk
+4131,Typists and word processing operators,3.602544,0.426114,High risk
+4132,Data entry clerks,3.68183,0.354701,High risk
+4211,Bank tellers and related clerks,3.685616,0.466444,High risk
+4212,"Bookmakers, croupiers and related gaming workers",3.543196,0.35896,High risk
+4213,Pawnbrokers and money-lenders,3.409419,0.496551,Other
+4214,Debt-collectors and related workers,3.515799,0.434233,Other
+4221,Travel consultants and clerks,3.64249,0.23826,High risk
+4222,Contact centre information clerks,3.596983,0.569664,Other
+4223,Telephone switchboard operators,3.706002,0.468579,Other
+4224,Hotel receptionists,3.577978,0.408823,High risk
+4225,Enquiry clerks,3.596983,0.569664,Other
+4226,Receptionists (general),3.592693,0.398605,High risk
+4227,Survey and market research interviewers,3.338915,0.595484,Other
+4229,Client information workers not elsewhere classified,3.901837,0.261623,High risk
+4311,Accounting and bookkeeping clerks,3.682356,0.324299,High risk
+4312,"Statistical, finance and insurance clerks",3.656782,0.324045,High risk
+4313,Payroll clerks,3.577367,0.467928,Other
+4321,Stock clerks,3.568012,0.580174,Other
+4322,Production clerks,3.573117,0.467572,Other
+4323,Transport clerks,3.624294,0.517109,Other
+4411,Library clerks,3.64761,0.235998,High risk
+4412,Mail carriers and sorting clerks,3.547943,0.553762,Other
+4413,"Coding, proof-reading and related clerks",3.51898,0.552511,Other
+4415,Filing and copying clerks,3.729087,0.350007,High risk
+4416,Personnel clerks,3.502974,0.610281,Other
+4419,Clerical support workers not elsewhere classified,3.540884,0.519505,Other
+5111,Travel attendants and travel stewards,3.544405,0.345951,High risk
+5112,Transport conductors,3.366054,0.586097,Other
+5113,Travel guides,3.618612,0.517658,Other
+5120,Cooks,3.355197,0.667462,Other
+5131,Waiters,3.447749,0.71809,Other
+5132,Bartenders,3.471595,0.549918,Other
+5141,Hairdressers,3.332348,0.534204,Other
+5142,Beauticians and related workers,3.321536,0.729397,Other
+5151,"Cleaning and housekeeping supervisors in offices, hotels and other establishments",3.51692,0.644341,Other
+5152,Domestic housekeepers,3.476302,0.683757,Other
+5153,Building caretakers,3.51692,0.644341,Other
+5162,Companions and valets,3.483242,0.811249,Other
+5163,Undertakers and embalmers,3.711967,0.582081,Other
+5164,Pet groomers and animal care workers,3.463544,0.714738,Other
+5165,Driving instructors,3.458119,0.573822,Other
+5169,Personal services workers not elsewhere classified,3.47795,0.631324,Other
+5211,Stall and market salespersons,3.69481,0.086966,High risk
+5212,Street food salespersons,3.69481,0.086966,High risk
+5221,Shop keepers,3.472929,0.233985,Other
+5222,Shop supervisors,3.409419,0.496551,Other
+5223,Shop sales assistants,3.581485,0.248673,High risk
+5230,Cashiers and ticket clerks,3.628953,0.175005,High risk
+5241,Fashion and other models,3.477448,0.078265,Other
+5242,Sales demonstrators,3.616624,0.215627,High risk
+5243,Door to door salespersons,3.69481,0.086966,High risk
+5244,Contact centre salespersons,3.413607,0.564936,Other
+5245,Service station attendants,3.390518,0.59157,Other
+5246,Food service counter attendants,3.48397,0.463258,Other
+5249,Sales workers not elsewhere classified,3.591546,0.251089,High risk
+5311,Child care workers,3.480824,0.560763,Other
+5312,Teachers' aides,3.44829,0.59846,Other
+5321,Health care assistants,3.422359,0.746722,Other
+5322,Home-based personal care workers,3.329477,0.931872,Low risk
+5329,Personal care workers in health services not elsewhere classified,3.562751,0.719163,Other
+5411,Fire-fighters,3.24861,0.920848,Low risk
+5412,Police officers,3.407277,0.488035,Other
+5413,Prison guards,3.466329,0.598213,Other
+5414,Security guards,3.565287,0.413372,High risk
+5419,Protective services workers not elsewhere classified,3.408714,0.606612,Other
+6111,Field crop and vegetable growers,3.478039,0.81074,Other
+6112,Tree and shrub crop growers,3.45667,0.835533,Other
+6113,"Gardeners, horticultural and nursery growers",3.413016,0.77752,Other
+6114,Mixed crop growers,3.478039,0.81074,Other
+6121,Livestock and dairy producers,3.433303,0.859271,Other
+6122,Poultry producers,3.423423,0.818131,Other
+6123,Apiarists and sericulturists,3.423423,0.818131,Other
+6129,Animal producers not elsewhere classified,3.423423,0.818131,Other
+6130,Mixed crop and animal producers,3.503802,0.883103,Other
+6210,Forestry and related workers,3.470846,0.735268,Other
+6221,Aquaculture workers,3.372239,0.92538,Low risk
+6222,Inland and coastal waters fishery workers,3.439786,0.96319,Other
+6223,Deep-sea fishery workers,3.439786,0.96319,Other
+6224,Hunters and trappers,3.402926,0.874872,Low risk
+7111,House builders,3.441873,0.548395,Other
+7112,Bricklayers and related workers,3.197009,0.914566,Low risk
+7113,"Stonemasons, stone cutters, splitters and carvers",3.177117,0.889284,Low risk
+7114,"Concrete placers, concrete finishers and related workers",3.308638,0.787854,Low risk
+7115,Carpenters and joiners,3.38804,0.707423,Other
+7119,Building frame and related trades workers not elsewhere classified,3.399458,0.957879,Low risk
+7121,Roofers,3.399315,0.961418,Low risk
+7122,Floor layers and tile setters,3.337842,0.818607,Low risk
+7123,Plasterers,3.238131,0.882098,Low risk
+7124,Insulation workers,3.502504,0.893447,Other
+7125,Glaziers,3.367498,0.914401,Low risk
+7126,Plumbers and pipe fitters,3.392858,0.922769,Low risk
+7127,Air conditioning and refrigeration mechanics,3.517841,0.841499,Other
+7131,Painters and related workers,3.299592,0.832403,Low risk
+7132,Spray painters and varnishers,3.405618,0.918012,Low risk
+7133,Building structure cleaners,3.526074,0.87645,Other
+7211,Metal moulders and coremakers,3.462933,0.876579,Other
+7212,Welders and flamecutters,3.463946,0.703955,Other
+7213,Sheet-metal workers,3.511019,0.945218,Other
+7214,Structural-metal preparers and erectors,3.435738,0.891843,Other
+7215,Riggers and cable splicers,3.35553,0.931791,Low risk
+7221,"Blacksmiths, hammersmiths and forging press workers",3.499066,0.853033,Other
+7222,Toolmakers and related workers,3.570292,0.700765,Other
+7223,Metal working machine tool setters and operators,3.485374,0.716546,Other
+7224,"Metal polishers, wheel grinders and tool sharpeners",3.554771,0.501596,Other
+7231,Motor vehicle mechanics and repairers,3.365504,0.888383,Low risk
+7232,Aircraft engine mechanics and repairers,3.374791,0.802041,Low risk
+7233,Agricultural and industrial machinery mechanics and repairers,3.372989,0.761797,Other
+7234,Bicycle and related repairers,3.454175,0.859481,Other
+7311,Precision-instrument makers and repairers,3.454006,0.838736,Other
+7312,Musical instrument makers and tuners,3.334332,0.943576,Low risk
+7313,Jewellery and precious-metal workers,3.637522,0.66491,Other
+7314,Potters and related workers,3.502808,0.882267,Other
+7315,"Glass makers, cutters, grinders and finishers",3.518488,0.836687,Other
+7316,"Sign writers, decorative painters, engravers and etchers",3.453818,0.803196,Other
+7317,"Handicraft workers in wood, basketry and related materials",3.415749,0.819303,Other
+7318,"Handicraft workers in textile, leather and related materials",3.535512,0.703981,Other
+7319,Handicraft workers not elsewhere classified,3.451458,0.871911,Other
+7321,Pre-press technicians,3.617623,0.624252,Other
+7322,Printers ,3.530355,0.625357,Other
+7323,Print finishing and binding workers,3.450825,0.827045,Other
+7411,Building and related electricians,3.471609,1.0,Other
+7412,Electrical mechanics and fitters,3.376885,0.915167,Low risk
+7413,Electrical line installers and repairers ,3.45837,0.858732,Other
+7421,Electronics mechanics and servicers,3.442791,0.76,Other
+7422,Information and communications technology installers and servicers,3.428231,0.783185,Other
+7511,"Butchers, fishmongers and related food preparers",3.382033,0.885119,Low risk
+7512,"Bakers, pastry-cooks and confectionery makers",3.499386,0.736023,Other
+7513,Dairy-products makers,3.479992,0.768748,Other
+7514,"Fruit, vegetable and related preservers",3.443469,0.708851,Other
+7515,Food and beverage tasters and graders,3.466935,0.609367,Other
+7516,Tobacco preparers and tobacco products makers,3.396748,0.718835,Other
+7521,Wood treaters,3.460153,0.739456,Other
+7522,Cabinet-makers and related workers,3.427798,0.815701,Other
+7523,Woodworking-machine tool setters and operators,3.432102,0.77039,Other
+7531,"Tailors, dressmakers, furriers and hatters",3.466763,0.71408,Other
+7532,Garment and related pattern-makers and cutters,3.671794,0.560979,Other
+7533,"Sewing, embroidery and related workers",3.54796,0.783243,Other
+7534,Upholsterers and related workers,3.386437,0.751438,Other
+7535,"Pelt dressers, tanners and fellmongers",3.40361,0.483694,Other
+7536,Shoemakers and related workers,3.487109,0.640178,Other
+7541,Underwater divers,3.354359,1.0,Low risk
+7542,Shotfirers and blasters,3.393566,0.95728,Low risk
+7543,Product graders and testers (excluding foods and beverages),3.543171,0.674571,Other
+7544,Fumigators and other pest and weed controllers,3.424209,0.920107,Other
+8111,Miners and quarriers,3.479106,0.894569,Other
+8112,Mineral and stone processing plant operators,3.431305,0.775869,Other
+8113,Well drillers and borers and related workers,3.406418,0.813116,Low risk
+8114,"Cement, stone and other mineral products machine operators",3.46185,0.849591,Other
+8121,Metal processing plant operators,3.415277,0.720125,Other
+8122,"Metal finishing, plating and coating machine operators",3.47715,0.738508,Other
+8131,Chemical products plant and machine operators,3.446742,0.740837,Other
+8132,Photographic products machine operators,3.593835,0.363483,High risk
+8141,Rubber products machine operators,3.450303,0.809369,Other
+8142,Plastic products machine operators,3.518163,0.828544,Other
+8143,Paper products machine operators,3.452206,0.773837,Other
+8151,"Fibre preparing, spinning and winding machine operators",3.573213,0.78911,Other
+8152,Weaving and knitting machine operators,3.538187,0.698649,Other
+8153,Sewing machine operators,3.576306,0.766162,Other
+8154,"Bleaching, dyeing and fabric cleaning machine operators",3.448005,0.732374,Other
+8155,Fur and leather preparing machine operators,3.47471,0.837314,Other
+8156,Shoemaking and related machine operators,3.492844,0.80442,Other
+8157,Laundry machine operators,3.417519,0.686988,Other
+8159,"Textile, fur and leather products machine operators not elsewhere classified",3.542699,0.696191,Other
+8160,Food and related products machine operators,3.448824,0.775357,Other
+8171,Pulp and papermaking plant operators,3.484744,0.760221,Other
+8172,Wood processing plant operators,3.479933,0.751704,Other
+8181,Glass and ceramics plant operators,3.45409,0.798073,Other
+8182,Steam engine and boiler operators,3.481668,0.726087,Other
+8183,"Packing, bottling and labelling machine operators",3.435916,0.475199,Other
+8189,Stationary plant and machine operators not elsewhere classified,3.454701,0.712337,Other
+8211,Mechanical machinery assemblers,3.521043,0.700455,Other
+8212,Electrical and electronic equipment assemblers,3.468535,0.821163,Other
+8219,Assemblers not elsewhere classified,3.437649,0.797924,Other
+8311,Locomotive engine drivers,3.495426,0.730654,Other
+8312,"Railway brake, signal and switch operators",3.351666,0.798083,Low risk
+8321,Motorcycle drivers,3.712734,0.700413,Other
+8322,"Car, taxi and van drivers",3.427412,0.647419,Other
+8331,Bus and tram drivers,3.397844,0.604725,Other
+8332,Heavy truck and lorry drivers,3.404376,0.774545,Low risk
+8341,Mobile farm and forestry plant operators,3.437945,0.883314,Other
+8342,Earthmoving and related plant operators,3.38249,0.937963,Low risk
+8343,"Crane, hoist and related plant operators",3.328925,0.818091,Low risk
+8344,Lifting truck operators,3.313887,0.894015,Low risk
+8350,Ships' deck crews and related workers,3.456713,0.851665,Other
+9111,Domestic cleaners and helpers,3.374625,0.958691,Low risk
+9112,"Cleaners and helpers in offices, hotels and other establishments",3.365907,0.901897,Low risk
+9121,Hand launderers and pressers,3.301814,0.807421,Low risk
+9122,Vehicle cleaners,3.390557,0.880061,Low risk
+9123,Window cleaners,3.376025,0.921454,Low risk
+9129,Other cleaning workers,3.353905,0.852189,Low risk
+9211,Crop farm labourers,3.385866,0.841665,Low risk
+9212,Livestock farm labourers,3.402325,1.0,Low risk
+9213,Mixed crop and livestock farm labourers,3.385866,0.841665,Low risk
+9214,Garden and horticultural labourers,3.412075,0.856485,Other
+9215,Forestry labourers,3.470846,0.735268,Other
+9216,Fishery and aquaculture labourers,3.411691,0.990798,Low risk
+9311,Mining and quarrying labourers,3.479438,0.930254,Other
+9312,Civil engineering labourers,3.468337,0.892255,Other
+9313,Building construction labourers,3.469622,0.860954,Other
+9321,Hand packers,3.390885,0.951012,Low risk
+9329,Manufacturing labourers not elsewhere classified,3.456205,0.812867,Other
+9331,Hand and pedal vehicle drivers,3.712734,0.700413,Other
+9332,Drivers of animal-drawn vehicles and machinery,3.397844,0.604725,Other
+9333,Freight handlers,3.39404,0.759925,Other
+9334,Shelf fillers,3.541826,0.553387,Other
+9411,Fast food preparers,3.406308,0.369107,Other
+9412,Kitchen helpers,3.452619,0.749499,Other
+9510,Street and related service workers,3.532399,0.127752,High risk
+9520,Street vendors (excluding food),3.69481,0.086966,High risk
+9611,Garbage and recycling collectors,3.472109,0.708934,Other
+9612,Refuse sorters,3.358258,0.68605,Other
+9613,Sweepers and related labourers,3.504463,0.820991,Other
+9621,"Messengers, package deliverers and luggage porters",3.694226,0.567576,Other
+9622,Odd job persons,3.468337,0.892255,Other
+9623,Meter readers and vending-machine collectors,3.443752,0.638503,Other
+9629,Elementary workers not elsewhere classified,3.525978,0.473627,Other

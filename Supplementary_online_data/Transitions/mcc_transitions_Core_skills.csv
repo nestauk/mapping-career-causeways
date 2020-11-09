@@ -1,0 +1,101 @@
+skill_id,esco_skill,avg_new_safe_desirable,med_new_safe_desirable,significant_effect,coreness,esco_skill_category,esco_skill_subcategory,concept_uri
+2778,manage staff,3.18894,2.0,True,0.931311,management skills,supervising people,http://data.europa.eu/esco/skill/339ac029-066a-4985-9f9d-b3d7c8fea0bb
+1776,manage budgets,2.981567,2.0,True,0.896653,management skills,allocating and controlling resources,http://data.europa.eu/esco/skill/21c5790c-0930-4d74-b3b0-84caf5af12ea
+3248,maintain relationship with suppliers,2.824885,2.0,True,0.316837,"communication, collaboration and creativity",liaising and networking,http://data.europa.eu/esco/skill/3cd35f5d-ce6d-4f14-9a09-53d7a28d834c
+9007,adhere to organisational guidelines,2.788018,2.0,True,0.542487,assisting and caring,protecting and enforcing,http://data.europa.eu/esco/skill/aa238394-8126-4ada-be2f-9dfe065cf314
+12932,follow company standards,2.626728,2.0,True,0.30028,assisting and caring,protecting and enforcing,http://data.europa.eu/esco/skill/f5f5b244-6cea-4fbc-8a50-8f712791bc09
+10065,develop professional network,2.539171,1.0,True,0.465248,"communication, collaboration and creativity",liaising and networking,http://data.europa.eu/esco/skill/bf5d77ad-e18c-48d8-83f0-bc79c011c74a
+11596,build business relationships,2.460829,1.0,True,0.51156,"communication, collaboration and creativity",liaising and networking,http://data.europa.eu/esco/skill/dc72ad0a-c5dc-4abd-bc0d-ca43e82162e1
+12672,liaise with managers,2.43318,1.0,True,0.636548,"communication, collaboration and creativity",liaising and networking,http://data.europa.eu/esco/skill/f14ff4b7-be1e-4b55-b39b-520005f8a97e
+1809,maintain relationship with customers,2.317972,1.0,True,0.413638,"communication, collaboration and creativity",liaising and networking,http://data.europa.eu/esco/skill/2239694b-771a-4586-8b54-2794e361a9ae
+3475,use different communication channels,2.308756,2.0,True,1.0,"communication, collaboration and creativity",liaising and networking,http://data.europa.eu/esco/skill/415abd43-e8e5-4643-b5da-5f11307af57a
+2144,liaise with local authorities,2.290323,1.0,True,0.332921,"communication, collaboration and creativity",liaising and networking,http://data.europa.eu/esco/skill/2839f191-cd94-49a9-ac16-46018066b8b2
+3651,manage health and safety standards,2.152074,1.0,True,0.360049,assisting and caring,protecting and enforcing,http://data.europa.eu/esco/skill/44e2c4c4-9fd2-42d4-a133-d81360ded4bc
+12240,assess financial viability,2.147465,1.0,True,0.346372,information skills,analysing and evaluating information and data,http://data.europa.eu/esco/skill/e95058a6-e139-42e7-a470-72038a606649
+11337,execute feasibility study,2.124424,2.0,True,0.279897,information skills,analysing and evaluating information and data,http://data.europa.eu/esco/skill/d74df140-eb69-43e2-bac9-1cafc824d702
+424,ensure compliance with environmental legislation,2.092166,1.0,True,0.384569,assisting and caring,protecting and enforcing,http://data.europa.eu/esco/skill/089ee650-297e-4716-87d1-440743b70a0d
+4223,perform scientific research,2.023041,1.0,True,0.362302,information skills,"conducting studies, investigations and examinations",http://data.europa.eu/esco/skill/4fabca9a-7435-4f33-b1da-3cdb00340fdc
+10823,perform project management,2.013825,1.0,True,0.576629,management skills,"organising, planning and scheduling work and activities",http://data.europa.eu/esco/skill/cd5efa8c-e44d-4cbc-91c6-796018dbed68
+1571,perform risk analysis,2.004608,1.0,True,0.44615,information skills,analysing and evaluating information and data,http://data.europa.eu/esco/skill/1dd23dba-dd00-45ab-abf4-642902538317
+11156,apply organisational techniques,1.976959,1.0,True,0.336055,management skills,"organising, planning and scheduling work and activities",http://data.europa.eu/esco/skill/d3eccb86-f02d-4950-bfbd-20b9510774a1
+11611,apply health and safety standards,1.97235,1.0,True,0.467784,assisting and caring,protecting and enforcing,http://data.europa.eu/esco/skill/dcc96a49-0bac-4a9c-8f8e-a32b4e47e6eb
+5558,identify customer's needs,1.97235,2.0,True,0.701307,"communication, collaboration and creativity",obtaining information verbally,http://data.europa.eu/esco/skill/68698869-c13c-4563-adc7-118b7644f45d
+160,create solutions to problems,1.963134,1.0,True,0.751922,"communication, collaboration and creativity",solving problems,http://data.europa.eu/esco/skill/03b9b491-fc9b-4868-914a-bf7cd47b5041
+7794,manage contracts,1.824885,1.0,True,0.463311,"communication, collaboration and creativity",negotiating,http://data.europa.eu/esco/skill/92721092-fe7c-4689-96bd-4f02385bc0e7
+3893,ensure public safety and security,1.774194,1.0,True,0.279087,assisting and caring,protecting and enforcing,http://data.europa.eu/esco/skill/499c05a2-6f36-4407-83c1-dc3448d35818
+12699,analyse production processes for improvement,1.663594,1.0,True,0.312227,information skills,analysing and evaluating information and data,http://data.europa.eu/esco/skill/f1b5800e-b763-4740-9586-3fef30568e81
+13387,perform market research,1.654378,1.0,True,0.424604,information skills,"conducting studies, investigations and examinations",http://data.europa.eu/esco/skill/fe39d4db-4cb5-4299-bb9f-896c8fd6ab13
+4337,use personal protection equipment,1.626728,1.0,True,0.33612,assisting and caring,protecting and enforcing,http://data.europa.eu/esco/skill/51754b8a-3e2c-4cc1-86e6-cf510d9c6fe4
+1123,work ergonomically,1.62212,1.0,True,0.382439,assisting and caring,protecting and enforcing,http://data.europa.eu/esco/skill/156f8c5b-894a-4ccc-a70e-37a2726f3f00
+5184,wear appropriate protective gear,1.589862,1.0,True,0.484189,assisting and caring,protecting and enforcing,http://data.europa.eu/esco/skill/6122d586-5978-431f-8e7a-96e61fc1f3fc
+9306,delegate activities,1.516129,1.0,True,0.303799,management skills,supervising people,http://data.europa.eu/esco/skill/b00e948c-19be-4951-8cff-60f88f1046e9
+3595,keep task records,1.479263,1.0,True,0.280513,information skills,documenting and recording information,http://data.europa.eu/esco/skill/43b13058-68d0-40c6-8031-caf5a7b7d20c
+7992,supervise staff,1.387097,1.0,True,0.427989,management skills,supervising people,http://data.europa.eu/esco/skill/9601b2a8-68e4-4906-9306-a23679b8f0b0
+12026,train employees,1.382488,1.0,True,0.939861,"communication, collaboration and creativity",teaching and training,http://data.europa.eu/esco/skill/e54ff029-1ce9-447d-a5b2-eb7283a23e6e
+3535,adjust engineering designs,1.35023,0.0,True,0.283649,"communication, collaboration and creativity",designing systems and products,http://data.europa.eu/esco/skill/42b23922-1c40-4dbe-9e0c-7a568dfdf06b
+3722,perform test run,1.331797,0.0,True,0.345849,information skills,"monitoring, inspecting and testing",http://data.europa.eu/esco/skill/465ff64a-1271-4064-8ed1-e969cb68d8b4
+6288,maintain customer service,1.267281,1.0,True,0.325212,attitudes,manage quality,http://data.europa.eu/esco/skill/75dfe1ee-5935-42ce-b820-697f827825c3
+7753,write work-related reports,1.239631,1.0,True,0.74819,"communication, collaboration and creativity",writing and composing,http://data.europa.eu/esco/skill/918f5211-b99f-4b29-9a34-6e475583ef55
+3840,provide cost benefit analysis reports,1.202765,1.0,True,0.348729,information skills,documenting and recording information,http://data.europa.eu/esco/skill/48b68726-0fd6-4e03-a5eb-82236516ee7a
+1377,inspect quality of products,1.152074,0.0,True,0.389059,information skills,"monitoring, inspecting and testing",http://data.europa.eu/esco/skill/1a3660c2-011c-4e96-9b1d-529afc305428
+710,communicate with customers,1.124424,1.0,True,0.854498,assisting and caring,providing information and support to the public and clients,http://data.europa.eu/esco/skill/0da516ee-e70e-4384-be13-f5ff80be8127
+8560,listen actively,1.115207,1.0,True,0.314217,"communication, collaboration and creativity",obtaining information verbally,http://data.europa.eu/esco/skill/a17286c5-238d-4f0b-bc24-29e9121345de
+2187,handle customer complaints,1.110599,1.0,True,0.326677,"communication, collaboration and creativity",negotiating,http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587
+11012,have computer literacy,1.082949,1.0,True,0.498184,working with computers,accessing and analysing digital data,http://data.europa.eu/esco/skill/d15ce60f-ddab-41ce-ba56-398451b77b60
+5574,read standard blueprints,1.078341,0.0,True,0.36563,information skills,"conducting studies, investigations and examinations",http://data.europa.eu/esco/skill/68b6ef08-d823-489d-a95c-752ae6f6e6a7
+2756,troubleshoot,1.0553,0.0,True,0.546028,"communication, collaboration and creativity",solving problems,http://data.europa.eu/esco/skill/334e3e49-fb02-4051-809a-f06adfdc1c40
+3654,monitor stock level,1.013825,0.0,True,0.471062,information skills,"monitoring, inspecting and testing",http://data.europa.eu/esco/skill/44f6a65f-6be7-4818-9a66-73908797283f
+10988,present reports,1.004608,1.0,True,0.448041,"communication, collaboration and creativity",presenting information,http://data.europa.eu/esco/skill/d0f2f8a7-d935-4a6d-8e54-dcc3e5e2cbeb
+6037,project management,0.981567,0.0,True,0.454517,"business, administration and law",business and administration,http://data.europa.eu/esco/skill/7111b95d-0ce3-441a-9d92-4c75d05c4388
+215,provide technical documentation,0.97235,0.0,True,0.299206,information skills,documenting and recording information,http://data.europa.eu/esco/skill/04dfd9fb-e0cf-40f6-96c6-9d2280c4347e
+10264,apply technical communication skills,0.949309,0.0,True,0.438557,"communication, collaboration and creativity",presenting information,http://data.europa.eu/esco/skill/c32ad607-0c4d-4e34-b73f-668298f7bf13
+87,manage supplies,0.898618,0.0,True,0.331409,management skills,allocating and controlling resources,http://data.europa.eu/esco/skill/020b3c27-bae1-4b85-9d6f-eccee0f5ed99
+9791,address problems critically,0.884793,0.0,True,0.344067,"communication, collaboration and creativity",solving problems,http://data.europa.eu/esco/skill/b9f16465-56a9-426b-a047-0f9f1f95ec92
+2716,record test data,0.880184,0.0,True,0.360929,information skills,documenting and recording information,http://data.europa.eu/esco/skill/328733a7-6d84-420d-a65c-2a8014fadc60
+10810,keep records of work progress,0.875576,0.0,True,0.43254,information skills,documenting and recording information,http://data.europa.eu/esco/skill/ccfbdaad-b91d-4bfe-bd0e-d30b33587f19
+1737,order supplies,0.852535,0.0,True,0.36846,"communication, collaboration and creativity","promoting, selling and purchasing",http://data.europa.eu/esco/skill/210827e3-3129-45a2-8683-70399f3f561f
+837,use a computer,0.847926,0.0,True,0.439629,working with computers,accessing and analysing digital data,http://data.europa.eu/esco/skill/1007aa13-9f18-4bcf-96f3-e108c40baf69
+5640,ensure equipment availability,0.83871,0.0,True,0.463178,management skills,allocating and controlling resources,http://data.europa.eu/esco/skill/69f23426-9279-4fe6-a283-24c2aa4c855d
+12924,perform resource planning,0.815668,1.0,True,0.273426,information skills,calculating and estimating,http://data.europa.eu/esco/skill/f5dd06b8-5d17-4932-9d03-957d0c4f5051
+13004,company policies,0.81106,0.0,True,0.352099,"business, administration and law",business and administration,http://data.europa.eu/esco/skill/f75b740c-b36c-495e-bc67-efe347bbc6b5
+524,business management principles,0.788018,0.0,True,0.366111,"business, administration and law",business and administration,http://data.europa.eu/esco/skill/0a48d064-dd04-47fb-a00d-85e9b4874033
+2349,perform data analysis,0.78341,0.0,True,0.280954,working with computers,accessing and analysing digital data,http://data.europa.eu/esco/skill/2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f
+8393,keep personal administration,0.764977,0.0,True,0.277491,information skills,documenting and recording information,http://data.europa.eu/esco/skill/9df34bc3-25d4-4452-a896-4d19b94ef896
+1705,engineering principles,0.741935,0.0,True,0.360319,"engineering, manufacturing and construction",engineering and engineering trades,http://data.europa.eu/esco/skill/209a5498-3449-4689-8ed9-bd08cab4fd78
+6117,engineering processes,0.718894,0.0,True,0.347187,"engineering, manufacturing and construction",engineering and engineering trades,http://data.europa.eu/esco/skill/72a74f69-5cf1-43c5-99b9-62a444578919
+7508,quality standards,0.695853,0.0,True,0.713978,"business, administration and law",business and administration,http://data.europa.eu/esco/skill/8d4271ca-c9fd-40b3-875f-15f78332a49e
+3879,recruit employees,0.672811,0.0,True,0.531508,management skills,recruiting and hiring,http://data.europa.eu/esco/skill/496932f1-0b6b-4f73-9432-d95c7ddcd43b
+6665,cost management,0.668203,0.0,True,0.342019,"business, administration and law",business and administration,http://data.europa.eu/esco/skill/7d35602d-bc94-4975-aa7c-f4e8e05ce8e0
+6292,pollution prevention,0.603687,0.0,True,0.318744,"engineering, manufacturing and construction",engineering and engineering trades,http://data.europa.eu/esco/skill/75f312e1-622b-4751-8d93-815b32feaf8d
+2676,execute analytical mathematical calculations,0.603687,0.0,True,0.363114,information skills,calculating and estimating,http://data.europa.eu/esco/skill/31c69100-b612-4a61-8db5-fd314318854c
+12451,scientific research methodology,0.543779,0.0,True,0.454567,education,education,http://data.europa.eu/esco/skill/ed3f3dba-3a35-4ed5-b113-67f4d10ef4c8
+4781,technical drawings,0.539171,0.0,True,0.315419,"engineering, manufacturing and construction",architecture and construction,http://data.europa.eu/esco/skill/59ea80e1-463a-4dba-82c6-d0b6d577d532
+4255,maintain equipment,0.423963,0.0,True,0.318865,working with machinery and specialised equipment,working with machinery and specialised equipment,http://data.europa.eu/esco/skill/5033c2fb-ec55-4b8e-b0a4-9379593f1e1c
+5942,environmental legislation,0.40553,0.0,True,0.355032,"business, administration and law",law,http://data.europa.eu/esco/skill/6f5850ea-5785-4e2c-b062-743066fd5bdb
+8344,ICT software specifications,0.400922,0.0,True,0.348334,information and communication technologies (icts),information and communication technologies (icts),http://data.europa.eu/esco/skill/9ce670ec-318c-4a91-9179-03437db728dc
+3571,mathematics,0.391705,0.0,True,0.427507,"natural sciences, mathematics and statistics",mathematics and statistics,http://data.europa.eu/esco/skill/4339176e-3acd-4f7f-a5d9-445bee3d23f2
+2979,manufacturing processes,0.322581,0.0,True,0.31038,"engineering, manufacturing and construction",manufacturing and processing,http://data.europa.eu/esco/skill/3786b61f-f22e-48d1-af8d-ad4c354534db
+6526,monitor automated machines,0.294931,0.0,True,0.308748,working with machinery and specialised equipment,working with machinery and specialised equipment,http://data.europa.eu/esco/skill/7aa52bdc-9c56-4341-be65-e8e30f64403f
+6752,statistics,0.281106,0.0,True,0.332231,"natural sciences, mathematics and statistics",mathematics and statistics,http://data.europa.eu/esco/skill/7ee4c2ea-b349-4bd2-81a3-ec31475d4833
+4921,contract law,0.267281,0.0,True,0.276277,"business, administration and law",law,http://data.europa.eu/esco/skill/5c606d18-6404-4047-b235-350f18e11827
+9466,use CAD software,0.24424,0.0,True,0.340559,working with computers,"using digital tools for collaboration, content creation and problem solving",http://data.europa.eu/esco/skill/b34e2ba1-9080-48c9-9b42-ee9192a4d3f1
+7761,meet deadlines,0.24424,0.0,True,0.414215,attitudes,meet commitments,http://data.europa.eu/esco/skill/91abe492-18be-4cce-93c7-0dca07072363
+7981,electronics,0.235023,0.0,True,0.342432,"engineering, manufacturing and construction",engineering and engineering trades,http://data.europa.eu/esco/skill/95c35c3a-035f-47c2-90cf-7e934d20fc08
+2476,speak different languages,0.230415,0.0,True,0.430619,"communication, collaboration and creativity",using more than one language,http://data.europa.eu/esco/skill/2de4572a-4724-4f76-afc2-72a568a264ac
+10570,electricity,0.221198,0.0,True,0.382295,"engineering, manufacturing and construction",engineering and engineering trades,http://data.europa.eu/esco/skill/c8ac1986-38fa-43b2-89dc-50a4beeb420e
+8783,teamwork principles,0.211982,0.0,True,0.310773,generic programmes and qualifications,personal skills and development,http://data.europa.eu/esco/skill/a5b0cd5c-e13a-4ab3-8d93-4d242adcfb01
+11452,set up the controller of a machine,0.207373,0.0,False,0.301333,working with computers,using digital tools to control machinery,http://data.europa.eu/esco/skill/d9818afc-1dec-4944-8c9c-e3ae8fad176d
+3997,collect samples for analysis,0.193548,0.0,True,0.288414,handling and moving,transforming and blending materials,http://data.europa.eu/esco/skill/4bbb309f-9162-49b9-93da-fb2c371e5c5f
+4966,oversee quality control,0.179724,0.0,True,0.378047,attitudes,manage quality,http://data.europa.eu/esco/skill/5d34adde-0b78-42b4-9d3d-69e9388d8398
+10851,chemistry,0.170507,0.0,False,0.429977,"natural sciences, mathematics and statistics",physical sciences,http://data.europa.eu/esco/skill/cde9911c-f92e-4de1-811f-336e177ac4ce
+12571,mechanics,0.170507,0.0,True,0.547214,"engineering, manufacturing and construction",engineering and engineering trades,http://data.europa.eu/esco/skill/efa141df-f382-418f-9121-bd88fd735669
+8425,human anatomy,0.133641,0.0,True,0.352788,health and welfare,health,http://data.europa.eu/esco/skill/9ec4252d-cbe8-4134-88fa-549dee1883f3
+8775,multimedia systems,0.129032,0.0,False,0.322521,arts and humanities,arts,http://data.europa.eu/esco/skill/a59708e3-e654-4e37-8b8a-741c3b756eee
+7882,biology,0.124424,0.0,False,0.308789,"natural sciences, mathematics and statistics",biological and related sciences,http://data.europa.eu/esco/skill/9433da85-70fa-4a25-8f96-71fa59dd1989
+5594,physics,0.105991,0.0,False,0.358679,"natural sciences, mathematics and statistics",physical sciences,http://data.europa.eu/esco/skill/692ace70-7f97-4214-92bd-88f7637d8a44
+8630,CAD software,0.101382,0.0,False,0.286752,information and communication technologies (icts),information and communication technologies (icts),http://data.europa.eu/esco/skill/a2b5dcf3-5b6a-453d-876c-cff540c0faf1
+8306,mechanical engineering,0.087558,0.0,False,0.279339,"engineering, manufacturing and construction",engineering and engineering trades,http://data.europa.eu/esco/skill/9c071f1d-eac3-449d-b004-c14775b5a3b9
+1534,provide first aid,0.087558,0.0,False,0.312252,assisting and caring,providing health care or medical treatments,http://data.europa.eu/esco/skill/1d21f6ad-340f-45da-a0a3-4e83867f47a6
+3319,electrical engineering,0.064516,0.0,False,0.372906,"engineering, manufacturing and construction",engineering and engineering trades,http://data.europa.eu/esco/skill/3e40c7d0-0e36-4b33-bc33-0aa87eda0561
+4601,pollution legislation,0.050691,0.0,False,0.285017,"business, administration and law",law,http://data.europa.eu/esco/skill/5641a2af-9eb2-4209-9fc6-856f78f2d2f2
+4028,design principles,0.036866,0.0,False,0.313481,arts and humanities,arts,http://data.europa.eu/esco/skill/4c58528e-bdaa-43ad-8f5a-8ad0b8cd4bbb

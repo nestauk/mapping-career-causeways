@@ -1,0 +1,1681 @@
+﻿id,esco_title,Recommended option
+7,primary school teaching assistant,"('25-9041.00', 'teacher assistants', 0.8063072204589844, 'na')"
+29,legal guardian,
+30,weaver,
+35,legal administrative assistant,"('43-6012.00', 'legal secretaries', 0.8533796727657318, ['legal administrative assistant', 'litigation secretary', 'legal assistant', 'certified legal secretary specialist', 'legal secretary', 'legal administrative assistant', 'legal administrative secretary'])"
+41,rooms division manager,"('11-9081.00', 'lodging managers', 0.7887888073921204, ['front desk manager', 'front office manager'])"
+71,promotions demonstrator,"('41-9011.00', 'demonstrators and product promoters', 0.7740528553724288, 'na')"
+84,spinning textile technician,"('51-6064.00', 'textile winding, twisting, and drawing out machine setters, operators, and tenders', 0.8144603550434113, 'na')"
+105,flexographic press operator,"('51-5112.00', 'printing press operators', 0.8155508548021316, ['flexographic press operator', 'flexographic printing press operator'])"
+108,street artist,
+110,professional athlete,"('27-2021.00', 'athletes and sports competitors', 0.6583306044340134, ['professional athlete', 'hockey player', 'skater', 'snowboarder', 'race car driver', 'basketball player', 'professional soccer player', 'tennis player', 'volleyball player', 'skier', 'professional volleyball player', 'roller skater', 'boxer', 'football player', 'cyclist', 'wrestler'])"
+111,specialised veterinarian,"('29-1131.00', 'veterinarians', 0.8411724030971528, ['veterinary pathologist', 'veterinary dentist', 'veterinary microbiologist', 'veterinary parasitologist'])"
+115,search engine optimisation expert,"('15-1134.00', 'web developers', 0.7453370153903961, 'na')"
+131,textile pattern making machine operator,
+142,paramedic in emergency responses,"('29-2041.00', 'emergency medical technicians and paramedics', 0.87670938372612, ['paramedic'])"
+145,corporate trainer,"('13-1151.00', 'training and development specialists', 0.8109574347734452, ['corporate trainer'])"
+158,vessel operations coordinator,
+171,laundry worker,"('51-6011.00', 'laundry and dry-cleaning workers', 0.8253117501735687, ['laundry worker', 'dry cleaner'])"
+177,field survey manager,
+186,call centre agent,"('41-9041.00', 'telemarketers', 0.8155084669589996, ['inbound telemarketer', 'outbound telemarketer', 'telemarketer', 'telephone solicitor', 'call center representative'])"
+188,secretary of state,
+232,ICT help desk manager,"('15-1151.00', 'computer user support specialists', 0.8323457002639771, ['technical support manager'])"
+242,online community manager,
+244,waste management supervisor,
+256,medical records clerk,"('29-2071.00', 'medical records and health information technicians', 0.8888597667217255, ['medical records clerk'])"
+259,braiding machine operator,
+261,data warehouse designer,"('15-1141.00', 'database administrators', 0.8679882168769836, ['data warehouse architect'])"
+263,linen room attendant,"('51-6021.00', 'pressers, textile, garment, and related materials', 0.5984269917011261, 'na')"
+285,cigar brander,"('51-9111.00', 'packaging and filling machine operators and tenders', 0.6789438545703889, ['cigar brander'])"
+289,building caretaker,"('37-2011.00', 'janitors and cleaners, except maids and housekeeping cleaners', 0.816052058339119, ['caretaker'])"
+296,machinery assembly coordinator,
+325,baker,"('51-3011.00', 'bakers', 0.8388378351926804, ['baker'])"
+331,event manager,"('13-1121.00', 'meeting, convention, and event planners', 0.840539813041687, ['event manager', 'event organizer'])"
+335,footwear production machine operator,"('51-6042.00', 'shoe machine operators and tenders', 0.7522943452000618, 'na')"
+337,finishing textile technician,
+350,meteorologist,"('19-2021.00', 'atmospheric and space scientists', 0.8703017383813858, ['meteorologist', 'atmospheric scientist', 'marine meteorologist'])"
+359,sports equipment repair technician,
+376,special educational needs assistant,"('25-9041.00', 'teacher assistants', 0.8129067569971085, ['special education assistant'])"
+395,harvest diver,
+398,automated cutting machine operator,
+403,vehicle glazier,
+417,textile dyeing technician,"('51-6061.00', 'textile bleaching and dyeing machine operators and tenders', 0.8036391735076904, 'na')"
+422,typist,"('43-9022.00', 'word processors and typists', 0.8428935050964355, ['typist', 'transcription typist', 'clerk typist', 'word processor'])"
+445,election observer,
+452,leather goods manual operator,"('51-6041.00', 'shoe and leather workers and repairers', 0.7624391794204712, 'na')"
+457,printed circuit board test technician,
+464,ship planner,
+466,actor/actress,"('27-2011.00', 'actors', 0.7792674481868744, ['comedian', 'performer', 'actor', 'actress'])"
+472,pasta maker,
+483,rail logistics coordinator,
+494,braiding textile technician,
+496,automotive test driver,"('51-9061.00', 'inspectors, testers, sorters, samplers, and weighers', 0.7195964381098747, ['test driver', 'car tester'])"
+513,shotfirer,"('47-5031.00', 'explosives workers, ordnance handling experts, and blasters', 0.8353590279817582, ['shot firer', 'blaster'])"
+521,textile machine operator,"('51-6063.00', 'textile knitting and weaving machine setters, operators, and tenders', 0.7564227640628814, 'na')"
+524,health and safety inspector,
+531,heat sealing machine operator,
+541,leather measuring operator,
+542,boiler operator,"('51-8021.00', 'stationary engineers and boiler operators', 0.8475530833005905, ['boiler operator', 'boiler technician', 'power plant operator'])"
+563,sales account manager,
+566,wearing apparel presser,"('51-6021.00', 'pressers, textile, garment, and related materials', 0.8027802646160125, ['garment presser', 'ironer'])"
+569,book restorer,"('51-5113.00', 'print binding and finishing workers', 0.7553711384534836, ['book repairer'])"
+573,bartender,"('35-3011.00', 'bartenders', 0.862163245677948, ['bartender', 'barman'])"
+594,call centre analyst,
+601,legal consultant,
+604,medium,"('27-2099.00', 'entertainers and performers, sports and related workers, all other', 0.6046629592776299, ['medium', 'spiritualist'])"
+613,picture archiving and communication systems administrator,
+616,printing textile technician,
+620,monk/nun,"('21-2099.00', 'religious workers, all other', 0.6766282230615616, ['monk', 'nun'])"
+644,knitter,
+655,chocolatier,
+672,gaming inspector,
+702,trade regional manager,
+706,automated optical inspection operator,
+723,wood sander,"('51-7042.00', 'woodworking machine setters, operators, and tenders, except sawing', 0.7458863288164139, ['sanding machine tender'])"
+734,telecommunications manager,"('11-3021.00', 'computer and information systems managers', 0.739751324057579, 'na')"
+738,database integrator,"('15-1141.00', 'database administrators', 0.8553862482309342, 'na')"
+745,leather production machine operator,
+750,leather goods machine operator,
+752,political campaign officer,"('27-3031.00', 'public relations specialists', 0.796906128525734, ['political advisor', 'political aide'])"
+756,ICT technician,"('15-1151.00', 'computer user support specialists', 0.8283974707126618, 'na')"
+774,mediator,"('23-1022.00', 'arbitrators, mediators, and conciliators', 0.8257722854614258, ['mediator', 'family mediator', 'conciliator', 'mediation commissioner', 'labor mediator', 'arbitrator'])"
+775,government minister,
+776,production supervisor,"('51-1011.00', 'first-line supervisors of production and operating workers', 0.8548568457365036, ['production supervisor', 'production team leader', 'manufacturing supervisor'])"
+797,chimney sweep supervisor,
+806,battery test technician,"('51-9061.00', 'inspectors, testers, sorters, samplers, and weighers', 0.7378193750977516, ['battery inspector', 'battery tester'])"
+810,land planner,"('19-3051.00', 'urban and regional planners', 0.8054669797420502, ['city planning engineer', 'urban planner', 'planner', 'city planner'])"
+825,ICT application configurator,
+849,photojournalist,"('27-4021.00', 'photographers', 0.7724817544221878, ['photojournalist', 'photo journalist', 'newspaper photographer'])"
+867,bindery operator,"('51-5113.00', 'print binding and finishing workers', 0.8608711898326873, ['bindery operator', 'binder', 'bindery worker', 'bindery technician', 'bookbinding machine operator', 'perfect binder operator', 'binder operator'])"
+870,freight transport dispatcher,"('43-5032.00', 'dispatchers, except police, fire, and ambulance', 0.8323434740304947, ['freight dispatcher'])"
+878,healthcare institution manager,"('11-9111.00', 'medical and health services managers', 0.8371754109859467, 'na')"
+881,tax compliance officer,"('13-2081.00', 'tax examiners and collectors, and revenue agents', 0.8641531944274903, ['tax compliance officer', 'tax compliance agent'])"
+910,winding machine operator,"('51-6064.00', 'textile winding, twisting, and drawing out machine setters, operators, and tenders', 0.8232094436883927, ['winding machine operator', 'winder operator', 'machine bobbin winder', 'winder tender', 'bobbin winder'])"
+917,official veterinarian,"('29-1131.00', 'veterinarians', 0.798634284734726, ['public health veterinarian', 'veterinary inspector'])"
+920,early years teaching assistant,"('25-9041.00', 'teacher assistants', 0.8053620636463165, 'na')"
+941,recycling worker,
+943,community artist,
+952,paper embosing press operator,
+954,social work assistant,"('21-1093.00', 'social and human service assistants', 0.8602792799472809, 'na')"
+957,industrial robot controller,
+961,street sweeper,
+962,freight inspector,
+980,landscape architect,"('17-1012.00', 'landscape architects', 0.8229003190994262, ['landscape architect', 'landscape engineer'])"
+983,child care coordinator,"('11-9031.00', 'education administrators, preschool and childcare center/program', 0.7714137613773346, 'na')"
+984,metal furnace operator,"('51-4051.00', 'metal-refining furnace operators and tenders', 0.8219079673290253, ['metal furnace operator', 'blast furnace operator', 'smelter', 'smelter operator'])"
+995,canvas goods assembler,
+998,pre-stitching machine operator,
+1001,accommodation manager,"('11-9081.00', 'lodging managers', 0.8138784408569335, ['resort manager', 'resident manager', 'hotel general manager', 'hotel director', 'hotel manager'])"
+1018,gas transmission system operator,
+1019,dressmaker,"('51-6052.00', 'tailors, dressmakers, and custom sewers', 0.7748551070690155, ['dressmaker', 'tailor', 'seamstress', 'custom dressmaker', 'couture dressmaker'])"
+1028,pipeline route manager,
+1043,civil registrar,
+1055,call centre quality auditor,
+1064,aviation data communications manager,
+1073,spinning machine operator,
+1077,house builder,
+1080,cylinder filler,"('51-9111.00', 'packaging and filling machine operators and tenders', 0.740994694828987, ['cylinder filler'])"
+1087,construction commercial diver,"('49-9092.00', 'commercial divers', 0.839205378293991, ['underwater welder', 'commercial diver'])"
+1094,secretary,"('43-6014.00', 'secretaries and administrative assistants, except legal, medical, and executive', 0.8548768728971481, ['secretary', 'school secretary', 'private secretary', 'administrative assistant'])"
+1101,textile printer,"('51-5112.00', 'printing press operators', 0.7890723705291748, ['silk screen printer', 'textile screen printer'])"
+1104,member of parliament,"('11-1031.00', 'legislators', 0.747042378783226, ['assembly member'])"
+1130,debarker operator,"('51-7041.00', 'sawing machine setters, operators, and tenders, wood', 0.7263139367103577, ['debarker operator'])"
+1134,secondary school teacher,"('25-2031.00', 'secondary school teachers, except special and career/technical education', 0.8237581610679626, ['history teacher', 'art teacher', 'geography teacher', 'science teacher', 'home economics teacher', 'language teacher'])"
+1143,plate glass installer,"('47-2121.00', 'glaziers', 0.8646465778350829, ['plate glass installer', 'glazier', 'glass installer'])"
+1145,ICT documentation manager,
+1149,leaflet distributor,
+1168,digital printer,"('51-5112.00', 'printing press operators', 0.7896523714065552, ['digital press operator', 'digital print operator', 'digital printer operator'])"
+1173,product quality inspector,"('51-9061.00', 'inspectors, testers, sorters, samplers, and weighers', 0.7811149269342422, ['quality inspector', 'quality assurance inspector', 'quality control inspector'])"
+1175,taxi controller,
+1182,food production planner,
+1196,data entry clerk,"('43-9021.00', 'data entry keyers', 0.827118182182312, ['data entry clerk', 'data entry operator'])"
+1207,ICT network technician,"('15-1152.00', 'computer network support specialists', 0.8809145152568818, ['network technician', 'network engineer'])"
+1209,emergency ambulance driver,
+1213,synthetic materials engineer,"('17-2041.00', 'chemical engineers', 0.825618451833725, ['plastics engineer'])"
+1215,bus route supervisor,
+1227,pastoral worker,"('21-2099.00', 'religious workers, all other', 0.67517991065979, ['pastoral worker', 'parish worker'])"
+1229,photographer,"('27-4021.00', 'photographers', 0.8545392453670502, ['photographer', 'school photographer', 'sports photographer', 'industrial photographer', 'wildlife photographer', 'underwater photographer', 'food photographer', 'portrait photographer', 'advertising photographer', 'fashion photographer', 'aerial photographer', 'scientific photographer', 'wedding photographer', 'medical photographer', 'commercial photographer'])"
+1233,ombudsman,"('23-1022.00', 'arbitrators, mediators, and conciliators', 0.7941196709871292, ['ombudsman'])"
+1278,call centre supervisor,"('43-1011.00', 'first-line supervisors of office and administrative support workers', 0.8605426549911499, ['customer service supervisor'])"
+1281,astrologer,"('27-2099.00', 'entertainers and performers, sports and related workers, all other', 0.6207095295190811, ['astrologer'])"
+1289,forestry inspector,
+1296,mayor,
+1297,event scaffolder,
+1306,knitting machine operator,"('51-6063.00', 'textile knitting and weaving machine setters, operators, and tenders', 0.8296622842550277, ['knitting machine operator', 'knitter operator', 'warp knitting machine operator'])"
+1310,optician,"('29-2081.00', 'opticians, dispensing', 0.8133465319871903, ['optician', 'dispensing optician'])"
+1318,numerical tool and process control programmer,
+1319,office manager,"('43-1011.00', 'first-line supervisors of office and administrative support workers', 0.8557289391756058, ['office manager', 'office coordinator', 'administrative supervisor', 'office supervisor'])"
+1321,night auditor,
+1322,aircraft dispatcher,"('43-5032.00', 'dispatchers, except police, fire, and ambulance', 0.7207224249839783, ['aircraft dispatcher'])"
+1332,nonwoven staple machine operator,
+1347,wood fuel pelletiser,
+1349,agricultural inspector,"('45-2011.00', 'agricultural inspectors', 0.8322033375501632, ['agriculture inspector'])"
+1350,photographic developer,"('51-9151.00', 'photographic process workers and processing machine operators', 0.818376076221466, ['photograph developer', 'photo retoucher', 'photograph printer'])"
+1359,city councillor,"('11-1031.00', 'legislators', 0.7223753809928894, 'na')"
+1371,leather goods artisanal worker,"('51-6041.00', 'shoe and leather workers and repairers', 0.8011273264884948, ['leather craftsman'])"
+1383,steam plant operator,"('51-8021.00', 'stationary engineers and boiler operators', 0.8765025943517686, ['steam plant operator'])"
+1388,senator,"('11-1031.00', 'legislators', 0.7432977020740509, ['senator'])"
+1398,dangerous goods safety adviser,
+1399,product assembly inspector,"('51-9061.00', 'inspectors, testers, sorters, samplers, and weighers', 0.8118700921535492, ['assembly inspector'])"
+1416,court jury coordinator,
+1426,orthoptist,
+1438,regulatory affairs manager,
+1439,wooden furniture machine operator,
+1443,reprographics technician,
+1448,market research interviewer,"('43-4111.00', 'interviewers, except eligibility and loan', 0.7856566488742828, ['market research interviewer', 'research interviewer', 'survey interviewer'])"
+1463,secondary school teaching assistant,"('25-9041.00', 'teacher assistants', 0.8047512650489808, 'na')"
+1476,chief technology officer,
+1478,pharmacy technician,"('29-2052.00', 'pharmacy technicians', 0.8764393597841262, ['pharmacy technologist'])"
+1479,legislative drafter,
+1486,pharmacist,"('29-1051.00', 'pharmacists', 0.9016137301921844, ['pharmacist'])"
+1493,vehicle cleaner,"('53-7061.00', 'cleaners of vehicles and equipment', 0.816626900434494, ['truck cleaner', 'car cleaner'])"
+1499,sewing machine operator,"('51-6031.00', 'sewing machine operators', 0.8352735996246338, ['sewing machine operator', 'computer stitcher', 'hook and eye machine operator', 'fastener sewing machine operator'])"
+1512,department store manager,"('11-1021.00', 'general and operations managers', 0.7110525161027907, ['department store manager'])"
+1513,wood boring machine operator,"('51-7042.00', 'woodworking machine setters, operators, and tenders, except sawing', 0.7847584575414657, ['wood boring machine operator', 'wood borer', 'wood drilling machine operator'])"
+1525,book-sewing machine operator,"('51-5113.00', 'print binding and finishing workers', 0.7955014377832412, ['stitching machine operator'])"
+1528,gravure press operator,"('51-5112.00', 'printing press operators', 0.773253059387207, ['gravure press operator', 'engraving press operator', 'rotogravure press operator'])"
+1569,non-destructive testing specialist,
+1573,chief information officer,
+1574,election agent,
+1588,aquatic animal health professional,
+1590,event assistant,"('13-1121.00', 'meeting, convention, and event planners', 0.8791506320238114, ['special event assistant', 'event coordinator'])"
+1607,sawmill operator,"('51-7041.00', 'sawing machine setters, operators, and tenders, wood', 0.7697500944137573, ['sawmill worker'])"
+1609,automated assembly line operator,
+1613,electrical engineer,"('17-2071.00', 'electrical engineers', 0.8783281326293946, ['electrical engineer', 'electrical design engineer'])"
+1621,clothing finisher,
+1627,human rights officer,
+1629,textile dyer,"('51-6061.00', 'textile bleaching and dyeing machine operators and tenders', 0.8289612710475922, ['cloth dyer', 'beam dyer'])"
+1640,water traffic coordinator,
+1657,dietitian,"('29-1031.00', 'dietitians and nutritionists', 0.885588201880455, ['dietitian', 'dietician'])"
+1668,ICT project manager,
+1671,carpet handicraft worker,
+1683,architect,"('17-1011.00', 'architects, except landscape and naval', 0.8115579813718796, ['architect', 'architectural designer'])"
+1684,database administrator,"('15-1141.00', 'database administrators', 0.9166270196437836, ['database manager', 'database administrators', 'data administrator'])"
+1685,tent installer,
+1689,tourist animator,
+1700,social care worker,
+1702,database designer,"('15-1141.00', 'database administrators', 0.8929370790719986, ['database designer', 'data architect'])"
+1721,intercultural communication consultant,
+1738,waiting list coordinator,
+1739,window cleaner,"('37-2011.00', 'janitors and cleaners, except maids and housekeeping cleaners', 0.8193543493747711, ['window cleaner'])"
+1740,mattress maker,
+1741,crisis helpline operator,
+1747,canning and bottling line operator,"('51-9111.00', 'packaging and filling machine operators and tenders', 0.7547347128391265, ['canner'])"
+1748,weaving machine operator,"('51-6063.00', 'textile knitting and weaving machine setters, operators, and tenders', 0.8422091126441956, ['weaving loom operator', 'weaver apprentice'])"
+1753,transport planner,
+1767,dairy processing technician,
+1772,upholsterer,"('51-6093.00', 'upholsterers', 0.8350849866867065, ['upholsterer'])"
+1774,midwife,"('29-1161.00', 'nurse midwives', 0.8590905874967576, 'na')"
+1790,user interface designer,"('15-1134.00', 'web developers', 0.8621663480997085, ['user interface designer'])"
+1793,data centre operator,
+1798,lawyer,"('23-1011.00', 'lawyers', 0.8533552199602126, ['lawyer', 'attorney', 'intellectual property lawyer', 'barrister'])"
+1801,chipper operator,
+1806,tailor,"('51-6052.00', 'tailors, dressmakers, and custom sewers', 0.7855772733688354, ['tailor', 'custom dressmaker', 'custom tailor', 'couture alterations dressmaker', 'dressmaker', 'seamstress', 'alterations expert', 'alterations sewer', 'suit maker'])"
+1813,activism officer,
+1814,medical records manager,"('29-2071.00', 'medical records and health information technicians', 0.8881263047456742, ['medical records supervisor'])"
+1830,asbestos abatement worker,
+1856,fashion model,"('41-9012.00', 'models', 0.812200066447258, ['fashion model', 'runway model'])"
+1873,contact centre supervisor,"('43-1011.00', 'first-line supervisors of office and administrative support workers', 0.8684189528226852, ['customer service supervisor'])"
+1880,public affairs consultant,"('27-3031.00', 'public relations specialists', 0.7998753249645233, ['public affairs specialist', 'public relations consultant', 'lobbyist'])"
+1881,ICT system administrator,"('15-1142.00', 'network and computer systems administrators', 0.8923004120588303, ['server administrator', 'network administrator'])"
+1884,ICT trainer,"('13-1151.00', 'training and development specialists', 0.8102659761905671, 'na')"
+1885,shop manager,"('11-1021.00', 'general and operations managers', 0.732777452468872, ['store manager'])"
+1886,digital games developer,
+1907,corporate training manager,"('13-1151.00', 'training and development specialists', 0.7601880967617036, 'na')"
+1916,survey enumerator,"('43-4111.00', 'interviewers, except eligibility and loan', 0.8189588934183121, ['commercial census taker', 'enumerator', 'census clerk', 'census taker'])"
+1917,fortune teller,"('27-2099.00', 'entertainers and performers, sports and related workers, all other', 0.5755937144160271, ['fortune teller', 'numerologist', 'mind reader'])"
+1921,chemical processing plant controller,"('51-8091.00', 'chemical plant and system operators', 0.8174124658107758, ['chemical operator', 'chemical plant operator'])"
+1930,chimney sweep,"('37-2019.00', 'building cleaning workers, all other', 0.7315971732139587, ['chimney sweep', 'chimney sweeper'])"
+1942,ICT security technician,
+1951,rigging supervisor,"('49-9096.00', 'riggers', 0.8217098474502563, ['rigging supervisor'])"
+1965,building exterior cleaner,"('37-2019.00', 'building cleaning workers, all other', 0.6668134450912475, 'na')"
+1969,performance artist,"('27-2099.00', 'entertainers and performers, sports and related workers, all other', 0.7154640257358551, ['impersonator', 'performer'])"
+1977,web content manager,
+1980,wood pallet maker,
+1983,ICT product manager,
+1984,retail department manager,"('11-1021.00', 'general and operations managers', 0.6943827688694, 'na')"
+1999,screen printer,"('51-5112.00', 'printing press operators', 0.813026848435402, ['screen printer', 'screen printing machine operator'])"
+2019,ICT help desk agent,"('15-1151.00', 'computer user support specialists', 0.8626953959465027, 'na')"
+2033,woodturner,"('51-7042.00', 'woodworking machine setters, operators, and tenders, except sawing', 0.8050727039575576, ['wood turning lathe operator', 'wood lathe operator', 'wood turner'])"
+2049,hot foil operator,
+2054,payroll clerk,"('43-3051.00', 'payroll and timekeeping clerks', 0.8863913446664811, ['payroll clerk', 'payroll administrator', 'payroll officer', 'payroll technician', 'personnel and payroll technician'])"
+2059,door to door seller,"('41-9091.00', 'door-to-door sales workers, news and street vendors, and related workers', 0.8007543206214904, ['door to door salesman'])"
+2065,data entry supervisor,"('43-1011.00', 'first-line supervisors of office and administrative support workers', 0.8510422378778457, ['data entry supervisor', 'data processing supervisor', 'data control clerk supervisor'])"
+2078,hawker,"('41-9091.00', 'door-to-door sales workers, news and street vendors, and related workers', 0.8006290167570114, ['hawker', 'peddler', 'street vendor'])"
+2079,rigger,"('49-9096.00', 'riggers', 0.8175762504339218, ['rigger', 'crane rigger'])"
+2085,product quality controller,"('51-9061.00', 'inspectors, testers, sorters, samplers, and weighers', 0.8047192066907882, ['assembly inspector', 'quality control inspector', 'production inspector', 'assembly line inspector'])"
+2089,packaging and filling machine operator,"('51-9111.00', 'packaging and filling machine operators and tenders', 0.8610678315162659, 'na')"
+2092,database developer,"('15-1141.00', 'database administrators', 0.9100907623767853, ['database developer', 'database programmer'])"
+2093,industrial assembly supervisor,"('51-1011.00', 'first-line supervisors of production and operating workers', 0.8526142239570618, ['quality supervisor', 'assembly line supervisor'])"
+2107,control panel tester,"('51-9061.00', 'inspectors, testers, sorters, samplers, and weighers', 0.7734739124774933, ['control panel tester'])"
+2122,costume maker,"('51-6052.00', 'tailors, dressmakers, and custom sewers', 0.6712293952703475, 'na')"
+2123,carpet weaver,
+2135,roofer,"('47-2181.00', 'roofers', 0.8527315616607666, ['roofer'])"
+2136,motion picture film developer,"('51-9151.00', 'photographic process workers and processing machine operators', 0.7304846554994583, ['film developer', 'film laboratory technician'])"
+2168,supermarket manager,"('11-1021.00', 'general and operations managers', 0.6332297861576079, 'na')"
+2192,road transport maintenance scheduler,
+2195,veneer grader,"('51-9061.00', 'inspectors, testers, sorters, samplers, and weighers', 0.7644117027521133, ['veneer grader', 'plywood stock grader'])"
+2209,grants administrator,
+2211,industrial mobile devices software developer,"('15-1131.00', 'computer programmers', 0.7223469197750092, 'na')"
+2225,driving instructor,"('25-3021.00', 'self-enrichment education teachers', 0.6807854905724525, ['driving instructor'])"
+2228,rescue diver,"('49-9092.00', 'commercial divers', 0.7910262048244476, 'na')"
+2236,wig and hairpiece maker,
+2238,ICT application developer,"('15-1131.00', 'computer programmers', 0.8675602078437805, ['software programmer'])"
+2240,crosscut saw operator,"('51-7041.00', 'sawing machine setters, operators, and tenders, wood', 0.7932343244552612, 'na')"
+2249,shop supervisor,"('41-1011.00', 'first-line supervisors of retail sales workers', 0.8437901437282562, 'na')"
+2253,animal chiropractor,"('29-1131.00', 'veterinarians', 0.8440289407968521, ['animal chiropractor'])"
+2264,leather goods packing operator,
+2267,retail entrepreneur,
+2271,accounting assistant,"('43-3031.00', 'bookkeeping, accounting, and auditing clerks', 0.8499293595552444, ['accounting assistant', 'accountant assistant'])"
+2274,optometrist,"('29-1041.00', 'optometrists', 0.8843889951705932, ['optometrist'])"
+2280,public relations officer,"('27-3031.00', 'public relations specialists', 0.8437599837779999, ['public relations officer', 'public relations coordinator', 'press secretary', 'public information officer'])"
+2288,engineered wood board machine operator,
+2289,decontamination worker,
+2290,print folding operator,"('51-5113.00', 'print binding and finishing workers', 0.8100918352603912, 'na')"
+2292,social services manager,"('11-9151.00', 'social and community service managers', 0.8473963350057603, ['social services manager'])"
+2293,pharmacy assistant,"('29-2052.00', 'pharmacy technicians', 0.8126212775707244, 'na')"
+2299,nursery school head teacher,"('11-9031.00', 'education administrators, preschool and childcare center/program', 0.7698393583297729, 'na')"
+2304,fundraising manager,
+2310,ship pilot dispatcher,"('43-5032.00', 'dispatchers, except police, fire, and ambulance', 0.7390549033880234, ['ship pilot dispatcher'])"
+2313,bookkeeper,"('43-3031.00', 'bookkeeping, accounting, and auditing clerks', 0.8597543805837631, ['bookkeeper', 'bookkeeping clerk', 'accounting bookkeeper', 'accounting clerk', 'account information clerk', 'accounting technician'])"
+2314,gas scheduling representative,
+2319,fisheries observer,
+2322,web developer,"('15-1134.00', 'web developers', 0.9169822245836257, ['web developer', 'web developers', 'web engineer', 'web programmer', 'web specialist'])"
+2351,coroner,
+2357,tax inspector,"('13-2081.00', 'tax examiners and collectors, and revenue agents', 0.8454883933067322, 'na')"
+2360,community health worker,"('21-1094.00', 'community health workers', 0.8885095089673996, 'na')"
+2367,market vendor,"('41-9091.00', 'door-to-door sales workers, news and street vendors, and related workers', 0.7174588054418565, 'na')"
+2383,aircraft interior technician,
+2405,consumer rights advisor,
+2409,domestic cleaner,"('37-2012.00', 'maids and housekeeping cleaners', 0.8157264739274979, ['domestic helper', 'household worker', 'housekeeping cleaner', 'domestic maid', 'house cleaner', 'housekeeper', 'cleaning maid', 'chambermaid'])"
+2415,product grader,"('51-9061.00', 'inspectors, testers, sorters, samplers, and weighers', 0.7991484105587006, ['grader', 'quality inspector'])"
+2436,nailing machine operator,"('51-7042.00', 'woodworking machine setters, operators, and tenders, except sawing', 0.7729321241378784, ['nailing machine operator'])"
+2443,mattress making machine operator,
+2448,art model,"('41-9012.00', 'models', 0.7860595166683196, ['art model', ""artist's model""])"
+2454,pulp control operator,
+2466,hide grader,
+2468,notary,
+2514,restaurant manager,"('11-9051.00', 'food service managers', 0.8220643907785415, ['restaurant manager', 'catering manager'])"
+2515,provincial governor,"('11-1031.00', 'legislators', 0.6683770179748535, 'na')"
+2533,baggage flow supervisor,
+2538,cotton gin operator,
+2542,human resources assistant,"('43-4161.00', 'human resources assistants, except payroll and timekeeping', 0.8622124910354615, ['human resources administrative assistant'])"
+2547,business coach,"('13-1151.00', 'training and development specialists', 0.750417309999466, 'na')"
+2554,footwear finishing and packing operator,
+2555,weights and measures inspector,
+2588,call centre manager,"('43-1011.00', 'first-line supervisors of office and administrative support workers', 0.7858885556459427, 'na')"
+2607,laundry workers supervisor,"('51-6011.00', 'laundry and dry-cleaning workers', 0.7555621922016144, 'na')"
+2608,confectioner,"('51-3011.00', 'bakers', 0.8120323300361634, 'na')"
+2625,urban planner,"('19-3051.00', 'urban and regional planners', 0.8230293154716491, ['urban planner', 'regional planner', 'city planner'])"
+2626,candle maker,
+2640,chief data officer,"('11-3021.00', 'computer and information systems managers', 0.7652684688568115, 'na')"
+2674,hotel butler,"('37-1011.00', 'first-line supervisors of housekeeping and janitorial workers', 0.8238355159759522, ['household manager'])"
+2697,ICT vendor relationship manager,
+2704,tram controller,
+2716,offset printer,"('51-5112.00', 'printing press operators', 0.8158979654312134, ['offset printer', 'offset pressman', 'offset press operator'])"
+2726,general veterinarian,"('29-1131.00', 'veterinarians', 0.8087387382984161, ['veterinary surgeon'])"
+2732,fishing net maker,
+2734,chemical engineer,"('17-2041.00', 'chemical engineers', 0.8473062306642533, ['chemical engineer', 'refinery process engineer'])"
+2759,clinical informatics manager,"('11-9111.00', 'medical and health services managers', 0.8308406412601471, 'na')"
+2770,ICT operations manager,"('11-3021.00', 'computer and information systems managers', 0.8456880271434783, ['data processing manager'])"
+2782,music teacher,"('25-3021.00', 'self-enrichment education teachers', 0.7079652577638627, ['music teacher', 'singing teacher', 'music instructor'])"
+2799,aircraft cargo operations coordinator,
+2809,nonwoven  textile technician,
+2822,move coordinator,
+2825,hand packer,
+2830,rail traffic controller,
+2832,political party agent,
+2840,textile finishing machine operator,"('51-6061.00', 'textile bleaching and dyeing machine operators and tenders', 0.7977805376052857, 'na')"
+2843,receptionist,"('43-4171.00', 'receptionists and information clerks', 0.7978815495967865, ['receptionist', 'medical receptionist', 'front desk receptionist'])"
+2864,shoemaker,"('51-6041.00', 'shoe and leather workers and repairers', 0.787499451637268, ['shoemaker', 'cobbler', 'shoe repairer', 'custom shoemaker'])"
+2865,proofreader,"('43-9081.00', 'proofreaders and copy markers', 0.8595412701368332, ['proofreader'])"
+2876,port coordinator,
+2878,metrologist,
+2879,child day care centre manager,"('11-9031.00', 'education administrators, preschool and childcare center/program', 0.8078460335731507, 'na')"
+2883,housekeeping supervisor,"('37-1011.00', 'first-line supervisors of housekeeping and janitorial workers', 0.8422824800014496, ['housekeeping supervisor', 'executive housekeeper', 'housekeeping manager', 'housekeeping coordinator', 'head housekeeper'])"
+2884,construction manager,"('11-9021.00', 'construction managers', 0.8480831146240234, ['construction manager', 'construction project manager'])"
+2897,forestry technician,"('19-4093.00', 'forest and conservation technicians', 0.8440167248249053, ['forestry technician'])"
+2901,life coach,
+2910,milliner,"('51-6052.00', 'tailors, dressmakers, and custom sewers', 0.7673510044813155, 'na')"
+2918,psychic,"('27-2099.00', 'entertainers and performers, sports and related workers, all other', 0.5902971148490905, ['palmist', 'clairvoyant', 'mental telepathist', 'psychic reader'])"
+2933,pastry maker,"('51-3011.00', 'bakers', 0.8611043602228166, 'na')"
+2938,sorter labourer,
+8,physiotherapist,"('29-1123.00', 'physical therapists', 0.806860512495041, ['physiotherapist'])"
+15,food safety specialist,
+43,telecommunications engineer,"('17-2072.00', 'electronics engineers, except computer', 0.8363932430744171, ['telecommunications engineer', 'communications engineer'])"
+55,primary school teacher,"('25-2021.00', 'elementary school teachers, except special education', 0.8228059321641922, 'na')"
+59,administrative assistant,"('43-6011.00', 'executive secretaries and executive administrative assistants', 0.8703320562839508, ['administrative assistant', 'administrative office assistant', 'office administrator', 'executive administrative assistant'])"
+61,medical administrative assistant,"('43-6013.00', 'medical secretaries', 0.8726765871047973, ['medical administrative assistant'])"
+66,auction house manager,
+67,software analyst,"('15-1132.00', 'software developers, applications', 0.8994493037462234, ['software analyst', 'programmer analyst'])"
+77,bricklayer,"('47-2021.00', 'brickmasons and blockmasons', 0.8313429206609726, ['bricklayer', 'brick layer'])"
+101,dancer,"('27-2031.00', 'dancers', 0.8226673603057861, ['dancer', 'dance artist', 'ballet dancer', 'soloist dancer', 'modern dancer', 'belly dancer'])"
+103,judge,"('23-1023.00', 'judges, magistrate judges, and magistrates', 0.8314059972763062, ['judge', 'circuit judge'])"
+119,motor vehicles parts advisor,"('41-2022.00', 'parts salespersons', 0.754120922088623, 'na')"
+121,art restorer,
+130,stringed musical instrument maker,"('49-9063.00', 'musical instrument repairers and tuners', 0.7539494156837463, ['luthier'])"
+133,hydraulic forging press worker,
+134,tissue paper perforating and rewinding operator,"('51-9196.00', 'paper goods machine setters, operators, and tenders', 0.7573759317398072, 'na')"
+136,aircraft engine specialist,"('49-3011.00', 'aircraft mechanics and service technicians', 0.8797443836927414, ['aircraft engine specialist', 'aircraft engine technician', 'helicopter mechanic', 'aircraft engine mechanic'])"
+139,shop assistant,"('41-2031.00', 'retail salespersons', 0.7231396049261093, 'na')"
+148,telephone switchboard operator,"('43-2011.00', 'switchboard operators, including answering service', 0.849849957227707, ['telephone switchboard operator', 'switchboard receptionist', 'telephone answering service operator', 'telephone operator', 'switchboard operator'])"
+149,doctors' surgery assistant,"('31-9092.00', 'medical assistants', 0.856013771891594, [""doctor's assistant"", 'clinical assistant', 'autopsy assistant', 'orthopedic assistant'])"
+168,chemist,"('19-2031.00', 'chemists', 0.8639990031719208, ['chemist', 'inorganic chemist', 'forensic chemist', 'research chemist', 'industrial chemist', 'chemical analyst'])"
+172,biotechnical technician,"('19-4021.00', 'biological technicians', 0.8433051437139512, 'na')"
+175,construction general supervisor,"('47-1011.00', 'first-line supervisors of construction trades and extraction workers', 0.8433361411094665, ['construction supervisor'])"
+176,chief marketing officer,"('11-2021.00', 'marketing managers', 0.8595286905765533, ['head of marketing'])"
+190,missionary,"('21-2011.00', 'clergy', 0.7725677967071534, 'na')"
+201,chef,"('35-1011.00', 'chefs and head cooks', 0.8025277793407439, ['chef', 'chef de cuisine'])"
+218,"gambling, betting, and lottery games designer",
+246,customer service representative,
+260,construction painter,"('47-2141.00', 'painters, construction and maintenance', 0.8342984199523925, ['decorator', 'painter and decorator', 'industrial painter'])"
+283,land-based machinery supervisor,
+291,ammunition assembler,
+297,choreographer,"('27-2032.00', 'choreographers', 0.8470264315605164, ['choreographer'])"
+302,fisheries deckhand,
+318,mechatronics assembler,
+338,land-based machinery operator,"('45-2091.00', 'agricultural equipment operators', 0.8419265240430831, ['farm equipment operator', 'agricultural equipment operator', 'tractor driver'])"
+339,illustrator,"('27-1014.00', 'multimedia artists and animators', 0.7391725093126297, ['illustrator', 'storyboard artist'])"
+341,fire service vehicle operator,
+372,aircraft fuel system operator,
+380,sewerage cleaner,"('47-4071.00', 'septic tank servicers and sewer pipe cleaners', 0.8438361436128616, 'na')"
+396,on foot aquatic resources collector,"('45-3011.00', 'fishers and related fishing workers', 0.7544915676116943, 'na')"
+404,bed and breakfast operator,
+414,financial planner,"('13-2052.00', 'personal financial advisors', 0.8914316356182097, ['financial planner', 'financial adviser', 'personal banker', 'personal financial planner'])"
+418,metal furniture machine operator,
+447,refuse vehicle driver,
+448,medical device assembler,
+487,paper cutter operator,"('51-9196.00', 'paper goods machine setters, operators, and tenders', 0.8363363623619079, ['paper cutter operator'])"
+491,alternative animal therapist,"('31-9096.00', 'veterinary assistants and laboratory animal caretakers', 0.7945395499467849, 'na')"
+503,executive assistant,"('43-6011.00', 'executive secretaries and executive administrative assistants', 0.8557249784469605, ['executive assistant', 'executive secretary', 'executive administrative assistant', 'personal assistant'])"
+528,cashier,"('41-2011.00', 'cashiers', 0.8037694990634918, ['cashier', 'checkout operator'])"
+530,meter reader,"('43-5041.00', 'meter readers, utilities', 0.7890636533498764, ['meter reader', 'gas meter reader', 'water meter reader'])"
+534,clothing technologist,
+540,carriage driver,
+546,insurance collector,"('43-3011.00', 'bill and account collectors', 0.823052042722702, ['insurance collector'])"
+547,commercial director,"('11-2021.00', 'marketing managers', 0.8432365238666535, ['commercial director', 'business development director', 'marketing director'])"
+557,boatswain,
+558,aquaculture cage mooring worker,
+579,bank teller,"('43-3071.00', 'tellers', 0.8168204128742218, ['bank teller', 'teller', 'teller coordinator'])"
+581,maternity support worker,
+584,oilseed presser,
+617,prison officer,"('33-3012.00', 'correctional officers and jailers', 0.8409009635448457, ['prison officer', 'jailer', 'prison guard', 'turnkey', 'detention officer'])"
+618,bicycle mechanic,"('49-3091.00', 'bicycle repairers', 0.8557129442691803, ['bicycle mechanic', 'bicycle technician', 'bike mechanic', 'bike technician', 'bicycle repairman'])"
+626,fisheries refrigeration engineer,
+660,stop-motion animator,"('27-1014.00', 'multimedia artists and animators', 0.6886251986026763, 'na')"
+664,paper pulp moulding operator,
+667,artistic painter,"('27-1013.00', 'fine artists, including painters, sculptors, and illustrators', 0.7475805103778839, ['visual artist'])"
+670,information manager,
+673,library assistant,both options highly suitable
+681,car leasing agent,
+686,investment adviser,"('13-2052.00', 'personal financial advisors', 0.8697802901268005, ['investment advisor', 'investment consultant'])"
+688,rental service representative,"('41-2021.00', 'counter and rental clerks', 0.8295323491096497, 'na')"
+689,economic policy officer,
+701,ordinary seaman,"('53-5011.00', 'sailors and marine oilers', 0.73370853215456, ['ordinary seaman'])"
+703,glass engraver,"('51-9194.00', 'etchers and engravers', 0.7828863739967346, ['glass engraver', 'glass decorator', 'glass etcher'])"
+727,musical instrument technician,"('49-9063.00', 'musical instrument repairers and tuners', 0.8295748442411424, ['violin repairer', 'piano tuner', 'organ tuner'])"
+728,air traffic controller,"('53-2021.00', 'air traffic controllers', 0.8987899601459503, 'na')"
+732,hotel porter,"('39-6011.00', 'baggage porters and bellhops', 0.8041855365037918, ['bellhop', 'porter', 'bellman'])"
+733,vehicle rental agent,
+742,coffee taster,"('45-2041.00', 'graders and sorters, agricultural products', 0.6266988933086395, ['coffee taster'])"
+758,stone planer,"('51-9021.00', 'crushing, grinding, and polishing machine setters, operators, and tenders', 0.7510620176792144, ['stone planer'])"
+762,lottery cashier,"('41-2011.00', 'cashiers', 0.7401021718978882, ['clerk'])"
+779,bleacher operator,
+781,decorative painter,"('51-9123.00', 'painting, coating, and decorating workers', 0.7800808995962143, ['ceramic painter'])"
+783,fuel station specialised seller,
+791,employment agent,"('13-1071.00', 'human resources specialists', 0.8795486450195312, ['job placement officer'])"
+793,scopist,"('43-6011.00', 'executive secretaries and executive administrative assistants', 0.6611252218484879, 'na')"
+796,drawing artist,"('27-1013.00', 'fine artists, including painters, sculptors, and illustrators', 0.7547362506389618, ['artist', 'cartoon artist', 'illustrator'])"
+802,dairy products maker,
+807,doorman/doorwoman,"('39-6011.00', 'baggage porters and bellhops', 0.7446092620491982, ['doorman'])"
+813,wood drying kiln operator,"('51-9051.00', 'furnace, kiln, oven, drier, and kettle operators and tenders', 0.7805376887321472, ['dry kiln operator'])"
+817,cargo vehicle driver,"('53-3032.00', 'heavy and tractor-trailer truck drivers', 0.7713876545429229, ['delivery driver', 'van driver', 'truck driver'])"
+820,ICT capacity planner,"('15-1143.00', 'computer network architects', 0.7874389350414276, 'na')"
+831,herbal therapist,
+839,swimming facility attendant,
+856,animator,"('27-1014.00', 'multimedia artists and animators', 0.7871570855379104, ['animator', 'cartoon animator', 'computer animator', 'animation artist'])"
+860,electrician,"('47-2111.00', 'electricians', 0.8109426558017732, ['electrician', 'electrical maintenance worker', 'maintenance electrician', 'electrical installer'])"
+894,paper machine operator,"('51-9196.00', 'paper goods machine setters, operators, and tenders', 0.8099219053983688, ['paper machine operator', 'paper maker', 'paper making machine operator'])"
+939,public funding advisor,
+956,scientific laboratory technician,"('19-4021.00', 'biological technicians', 0.8532076269388198, ['laboratory assistant'])"
+964,business valuer,
+966,debt collector,"('43-3011.00', 'bill and account collectors', 0.8097911298274993, ['debt collector', 'bill collector', 'collection agent', 'payment collector'])"
+977,logistics analyst,"('17-2112.00', 'industrial engineers', 0.8456757068634033, ['supply chain analyst'])"
+1002,industrial engineer,"('17-2112.00', 'industrial engineers', 0.8683095455169678, ['industrial engineer', 'industrial engineers'])"
+1010,specialised seller,
+1012,prepress technician,"('51-5111.00', 'prepress technicians and workers', 0.8238813191652298, ['prepress technician', 'prepress specialist'])"
+1024,early years teacher,"('25-2011.00', 'preschool teachers, except special education', 0.8105506598949432, ['kindergarten teacher', 'preschool teacher', 'nursery teacher'])"
+1030,sailor,"('53-5011.00', 'sailors and marine oilers', 0.845935621857643, ['sailor', 'mariner'])"
+1047,concrete pump operator,
+1048,astronomer,"('19-2011.00', 'astronomers', 0.8076941072940826, ['astronomer', 'astrophysicist', 'astronomers'])"
+1066,firework assembler,"('51-2099.00', 'assemblers and fabricators, all other', 0.6396175473928452, ['fireworks maker', 'fireworks assembler'])"
+1071,plastic products assembler,
+1083,educational researcher,"('25-9031.00', 'instructional coordinators', 0.8666897207498551, 'na')"
+1105,animal physiotherapist,
+1108,mine supervisor,"('47-1011.00', 'first-line supervisors of construction trades and extraction workers', 0.8129340708255768, ['mine supervisor', 'mine foreman'])"
+1120,medical transcriptionist,"('31-9094.00', 'medical transcriptionists', 0.8905154496431351, ['medical transcriptionist', 'medical transcriber'])"
+1128,toymaker,"('27-1012.00', 'craft artists', 0.7723844975233078, ['toy maker'])"
+1161,librarian,"('25-4021.00', 'librarians', 0.8458709090948106, ['librarian', 'special collections librarian', 'electronic resources librarian', 'library associate', 'library supervisor', 'school librarian', 'library technical assistant', 'music librarian', 'catalogue librarian'])"
+1163,stone driller,
+1164,ticket issuing clerk,
+1166,maintenance and repair engineer,"('17-2112.00', 'industrial engineers', 0.8350061118602752, ['production engineer', 'plant engineer', 'engineering manager', 'manufacturing engineer'])"
+1192,pawnbroker,"('41-9099.00', 'sales and related workers, all other', 0.6325105652213097, ['pawnbroker', 'pawn broker'])"
+1218,venture capitalist,
+1220,envelope maker,"('51-9196.00', 'paper goods machine setters, operators, and tenders', 0.8011034101247787, ['envelope maker', 'envelope machine operator'])"
+1221,livestock worker,"('45-2093.00', 'farmworkers, farm, ranch, and aquacultural animals', 0.7720609247684479, ['animal husbandry worker'])"
+1224,equine worker,
+1236,chiropractic assistant,
+1237,mineral processing operator,
+1245,jewellery assembler,
+1261,exhibition curator,"('25-4012.00', 'curators', 0.8430066853761673, ['exhibits manager', 'museum curator', 'exhibits curator'])"
+1263,forestry equipment operator,"('45-4022.00', 'logging equipment operators', 0.8240608751773835, ['logger', 'logging equipment operator'])"
+1264,graphic designer,"('27-1024.00', 'graphic designers', 0.7991698503494262, ['graphic designer', 'graphic artist'])"
+1268,oil mill operator,
+1276,post office counter clerk,"('43-5051.00', 'postal service clerks', 0.8415866047143936, 'na')"
+1290,office clerk,"('43-9061.00', 'office clerks, general', 0.8018795073032379, ['office clerk', 'clerical assistant'])"
+1294,tourism product manager,
+1295,ship duty engineer,
+1301,religion scientific researcher,
+1302,domestic housekeeper,"('37-1011.00', 'first-line supervisors of housekeeping and janitorial workers', 0.7977017521858215, ['housekeeper'])"
+1316,juvenile correctional officer,"('33-3012.00', 'correctional officers and jailers', 0.8237951844930649, ['juvenile corrections officer', 'detention officer', 'juvenile detention officer'])"
+1336,fruit and vegetable preserver,
+1353,paper stationery machine operator,"('51-9196.00', 'paper goods machine setters, operators, and tenders', 0.8384392708539963, 'na')"
+1366,personal trust officer,
+1367,froth flotation deinking operator,
+1368,emergency response coordinator,
+1374,instrument technician,
+1379,paper bag machine operator,"('51-9196.00', 'paper goods machine setters, operators, and tenders', 0.8642324179410934, ['paper bag machine operator'])"
+1380,sales processor,
+1390,rubber goods assembler,
+1395,lacquer spray gun operator,"('51-9121.00', 'coating, painting, and spraying machine setters, operators, and tenders', 0.752601346373558, ['paint booth operator', 'mastic sprayer', 'machine sprayer', 'automatic paint sprayer operator'])"
+1402,conservator,both options are suitable
+1417,motorcycle assembler,
+1420,Montessori school teacher,"('25-2011.00', 'preschool teachers, except special education', 0.8514516919851303, 'na')"
+1432,forest worker,"('45-4011.00', 'forest and conservation workers', 0.8563858568668365, ['forest worker'])"
+1445,desktop publisher,"('27-1024.00', 'graphic designers', 0.7160431772470474, ['desktop publisher'])"
+1452,health and safety officer,"('29-9011.00', 'occupational health and safety specialists', 0.8422850728034973, ['public health inspector'])"
+1484,video artist,"('27-1013.00', 'fine artists, including painters, sculptors, and illustrators', 0.6816910207271576, 'na')"
+1500,aircraft gas turbine engine overhaul technician,
+1517,wood products assembler,
+1523,physicist,"('19-2012.00', 'physicists', 0.829504856467247, ['physicist', 'medical physicist', 'nuclear physicist', 'physicists'])"
+1531,speech and language therapist,"('29-1127.00', 'speech-language pathologists', 0.857871237397194, ['speech pathologist', 'speech therapist'])"
+1533,printmaker,"('27-1013.00', 'fine artists, including painters, sculptors, and illustrators', 0.7271821856498718, ['printmaker'])"
+1555,milk reception operator,
+1561,hospitality establishment receptionist,"('43-4081.00', 'hotel, motel, and resort desk clerks', 0.8523561060428619, ['hotel receptionist'])"
+1578,tool grinder,"('51-4194.00', 'tool grinders, filers, and sharpeners', 0.8770118206739426, ['tool grinder', 'grinder', 'tool sharpener'])"
+1580,engine minder,
+1581,rolling stock assembler,
+1603,textile technologist,
+1605,sensory scientist,
+1608,user interface developer,"('15-1132.00', 'software developers, applications', 0.8502502501010895, 'na')"
+1610,mineralogist,"('19-2042.00', 'geoscientists, except hydrologists and geographers', 0.8523025780916214, ['mineralogist'])"
+1632,wash deinking operator,
+1636,vessel engine assembler,"('51-2031.00', 'engine and other machine assemblers', 0.791662871837616, 'na')"
+1659,food and beverage packaging technologist,
+1665,metal engraver,"('51-9194.00', 'etchers and engravers', 0.808258318901062, ['metal engraver'])"
+1678,Freinet school teacher,"('25-2011.00', 'preschool teachers, except special education', 0.8040855914354323, 'na')"
+1686,medical practice manager,
+1690,management assistant,"('43-6011.00', 'executive secretaries and executive administrative assistants', 0.8627675741910935, ['management assistant', 'project assistant', 'office administrator', 'office assistant'])"
+1705,packaging production manager,
+1712,exhibition registrar,"('25-4012.00', 'curators', 0.841166940331459, ['museum registrar'])"
+1714,laminating machine operator,
+1725,aircraft maintenance technician,"('49-3011.00', 'aircraft mechanics and service technicians', 0.8777725130319595, ['aircraft technician'])"
+1729,leather goods industrial engineer,"('17-2112.00', 'industrial engineers', 0.8143385022878646, ['manufacturing engineer', 'industrial engineer'])"
+1749,drop forging hammer worker,"('51-4022.00', 'forging machine setters, operators, and tenders, metal and plastic', 0.7991933017969132, ['drop forge operator', 'die forger', 'forging press operator', 'drop forge hand', 'drop forger', 'forging roll operator'])"
+1759,wicker furniture maker,
+1763,sculptor,"('27-1013.00', 'fine artists, including painters, sculptors, and illustrators', 0.7268780767917633, ['sculptor', 'ice sculptor'])"
+1765,animation layout artist,"('27-1014.00', 'multimedia artists and animators', 0.7601276397705078, 'na')"
+1766,live animal transporter,
+1784,railway passenger service agent,
+1785,conceptual artist,"('27-1013.00', 'fine artists, including painters, sculptors, and illustrators', 0.8125391602516174, ['concept artist'])"
+1786,quick service restaurant crew member,"('35-2011.00', 'cooks, fast food', 0.746531531214714, 'na')"
+1787,collection manager,"('25-4012.00', 'curators', 0.8250056564807892, ['curator', 'collections manager'])"
+1808,leather production planner,
+1831,economist,"('19-3011.00', 'economists', 0.8975637555122375, ['economist', 'econometrician', 'social economist', 'economists'])"
+1838,veterinary technician,"('29-2056.00', 'veterinary technologists and technicians', 0.8099606812000274, ['veterinary assistant'])"
+1841,special educational needs coordinator,
+1850,vending machine operator,"('49-9091.00', 'coin, vending, and amusement machine servicers and repairers', 0.7426306277513505, ['vending machine servicer'])"
+1851,file clerk,"('43-4071.00', 'file clerks', 0.7925155311822891, ['file clerk', 'records clerk', 'record filing clerk', 'file keeper', 'documentation specialist'])"
+1860,education inspector,
+1862,sales assistant,"('41-2031.00', 'retail salespersons', 0.7749090015888214, ['sales assistant'])"
+1867,brush maker,
+1872,chief conductor,
+1875,ship assistant engineer,"('53-5031.00', 'ship engineers', 0.8331624180078507, 'na')"
+1887,artisan papermaker,"('27-1012.00', 'craft artists', 0.6386903613805771, 'na')"
+1895,pizzaiolo,"('35-2011.00', 'cooks, fast food', 0.7857801377773285, ['pizza chef', 'pizza cook', 'pizza maker'])"
+1909,catcher,"('45-2093.00', 'farmworkers, farm, ranch, and aquacultural animals', 0.7234225377440453, ['chicken catcher'])"
+1911,sign maker,
+1912,restaurant host/restaurant hostess,"('35-3031.00', 'waiters and waitresses', 0.7748963594436646, 'na')"
+1926,master coffee roaster,
+1927,paperhanger,"('47-2142.00', 'paperhangers', 0.8212231874465943, ['paperhanger', 'paper hanger', 'wallpaper hanger'])"
+1934,advanced physiotherapist,"('29-1123.00', 'physical therapists', 0.7437906414270401, 'na')"
+1941,aircraft de-icer installer,
+1944,journalist,"('27-3022.00', 'reporters and correspondents', 0.8171406596899032, ['journalist', 'reporter', 'news writer', 'sports journalist', 'correspondent'])"
+1952,chaplain,"('21-2011.00', 'clergy', 0.840115201473236, ['chaplain', 'imam', 'hospital chaplain', 'rabbi'])"
+1954,moving truck driver,"('53-3032.00', 'heavy and tractor-trailer truck drivers', 0.7663185477256775, ['moving van driver'])"
+1966,museum scientist,"('25-4012.00', 'curators', 0.8326280444860459, 'na')"
+1976,environmental expert,"('17-2081.00', 'environmental engineers', 0.8021263808012009, ['environmental consultant'])"
+1981,transport equipment painter,"('51-9122.00', 'painters, transportation equipment', 0.8388422429561615, ['vehicle painter', 'car painter', 'automotive painter'])"
+1995,geophysicist,"('19-2042.00', 'geoscientists, except hydrologists and geographers', 0.8592635810375213, ['geophysicist', 'project geophysicist'])"
+2007,water-based aquaculture worker,
+2031,farm milk controller,
+2034,environmental engineer,"('17-2081.00', 'environmental engineers', 0.8260842978954315, ['environmental engineer', 'environmental analyst', 'sanitary engineer'])"
+2051,aircraft assembler,"('51-2011.00', 'aircraft structure, surfaces, rigging, and systems assemblers', 0.7901622623205184, 'na')"
+2058,storyboard artist,"('27-1013.00', 'fine artists, including painters, sculptors, and illustrators', 0.6408542394638062, 'na')"
+2064,metal products assembler,
+2076,aviation inspector,
+2082,basketmaker,"('27-1012.00', 'craft artists', 0.6772188782691955, 'na')"
+2083,risk manager,
+2087,wood treater,
+2098,special effects artist,"('27-1014.00', 'multimedia artists and animators', 0.8563315689563751, ['special effects artist', 'visual effects artist', 'special effects technician', 'special effects specialist'])"
+2105,aircraft maintenance coordinator,
+2109,insulation worker,both options are suitable
+2112,glass artist,"('27-1012.00', 'craft artists', 0.7610907971858978, ['glass artist'])"
+2129,food grader,
+2142,membranophone musical instruments maker,
+2150,process engineer,"('17-2112.00', 'industrial engineers', 0.8739493727684021, ['process engineer'])"
+2189,investment fund manager,"('13-2052.00', 'personal financial advisors', 0.863488033413887, ['investments manager'])"
+2194,mediation and education manager,
+2196,woodcarver,"('27-1012.00', 'craft artists', 0.7565327942371369, ['artisan'])"
+2203,3D modeller,"('27-1014.00', 'multimedia artists and animators', 0.7916223913431167, 'na')"
+2207,pulp technician,
+2221,mechanical forging press worker,"('51-4022.00', 'forging machine setters, operators, and tenders, metal and plastic', 0.8103935986757278, ['forgesmith', 'die forger', 'forge press operator', 'spring forger', 'drop forge operator'])"
+2222,cosmologist,"('19-2011.00', 'astronomers', 0.7465902626514435, 'na')"
+2226,mineral crushing operator,"('51-9021.00', 'crushing, grinding, and polishing machine setters, operators, and tenders', 0.7491212755441666, 'na')"
+2227,editorial assistant,
+2237,matrose,"('53-5011.00', 'sailors and marine oilers', 0.7851075246930123, ['able seaman'])"
+2247,dental chairside assistant,"('31-9091.00', 'dental assistants', 0.8781613796949386, 'na')"
+2251,industrial machinery assembler,"('51-2031.00', 'engine and other machine assemblers', 0.8426506757736206, ['machine assembler', 'manufacturing assembler'])"
+2262,groom,"('45-2093.00', 'farmworkers, farm, ranch, and aquacultural animals', 0.7134357303380966, ['groom'])"
+2266,radiation protection officer,
+2281,mask maker,"('27-1012.00', 'craft artists', 0.6951528429985047, 'na')"
+2305,arts education officer,
+2307,digester operator,
+2331,audiologist,"('29-1181.00', 'audiologists', 0.8967193335294723, ['audiologist'])"
+2333,banking products manager,
+2342,dangerous goods driver,"('53-3032.00', 'heavy and tractor-trailer truck drivers', 0.723620668053627, ['explosives truck driver'])"
+2344,geologist,"('19-2042.00', 'geoscientists, except hydrologists and geographers', 0.8624934345483779, ['geologist', 'petroleum geologist', 'volcanologist'])"
+2346,keyboard musical instrument maker,
+2353,absorbent pad machine operator,
+2373,electricity distribution worker,"('49-9051.00', 'electrical power-line installers and repairers', 0.813854756951332, ['linesman', 'lineworker', 'lineman'])"
+2391,video designer,"('27-1024.00', 'graphic designers', 0.7702595531940459, ['visual designer'])"
+2408,art director,"('27-1024.00', 'graphic designers', 0.8312328517436981, ['art director', 'creative director', 'designer'])"
+2420,marine chief engineer,"('53-5031.00', 'ship engineers', 0.8546681076288224, ['chief engineer'])"
+2441,ICT network engineer,"('15-1143.00', 'computer network architects', 0.9253425538539886, ['network developer'])"
+2450,metal polisher,"('51-9022.00', 'grinding and polishing workers, hand', 0.758762639760971, ['hand buffer', 'buffer', 'hand finisher'])"
+2452,software architect,both options are suitable
+2459,dental hygienist,"('29-2021.00', 'dental hygienists', 0.8618131637573243, ['dental hygienist'])"
+2465,club host/club hostess,"('35-9031.00', 'hosts and hostesses, restaurant, lounge, and coffee shop', 0.785880720615387, 'na')"
+2474,corporate banking manager,
+2486,healthcare assistant,"('31-1014.00', 'nursing assistants', 0.8599619567394257, ['health care assistant'])"
+2509,digital media designer,"('27-1014.00', 'multimedia artists and animators', 0.8053394943475723, ['digital media designer', 'multimedia developer'])"
+2511,digital artist,"('27-1014.00', 'multimedia artists and animators', 0.7963140219449997, ['digital artist', 'computer artist'])"
+2513,waiter/waitress,"('35-3031.00', 'waiters and waitresses', 0.8140581309795379, ['waitress', 'waiter'])"
+2517,digital games designer,"('27-1014.00', 'multimedia artists and animators', 0.7367285996675492, 'na')"
+2530,civil engineer,"('17-2051.00', 'civil engineers', 0.8823680311441422, ['civil engineer', 'civil engineers'])"
+2532,furniture assembler,
+2539,curriculum administrator,"('25-9031.00', 'instructional coordinators', 0.899418157339096, ['curriculum manager', 'curriculum director', 'curriculum specialist', 'education consultant', 'curriculum coordinator', 'curriculum developer'])"
+2564,escort,
+2573,foundry operative,both options are suitable
+2577,malt master,
+2582,webmaster,"('15-1142.00', 'network and computer systems administrators', 0.8205134123563766, 'na')"
+2592,decksman,"('53-5011.00', 'sailors and marine oilers', 0.7887770771980286, ['crew member'])"
+2596,rental manager,"('41-2021.00', 'counter and rental clerks', 0.7660365402698517, 'na')"
+2600,programme funding manager,
+2619,ICT network architect,"('15-1143.00', 'computer network architects', 0.8884322643280029, ['network designer'])"
+2644,bicycle assembler,"('51-2099.00', 'assemblers and fabricators, all other', 0.6221959114074708, ['bicycle assembler'])"
+2649,archivist,"('25-4011.00', 'archivists', 0.841076973080635, ['archivist', 'digital archivist', 'archives specialist', 'processing archivist', 'reference archivist'])"
+2665,flight operations officer,
+2666,refuse collector,"('53-7081.00', 'refuse and recyclable material collectors', 0.8248131185770035, ['refuse collector', 'waste collector'])"
+2668,underwater construction supervisor,
+2680,leather sorter,
+2682,zoo registrar,"('25-4011.00', 'archivists', 0.6701082557439805, 'na')"
+2708,street food vendor,"('41-9091.00', 'door-to-door sales workers, news and street vendors, and related workers', 0.6530454874038697, 'na')"
+2714,train conductor,"('53-6061.00', 'transportation attendants, except flight attendants', 0.7613595411181451, ['train attendant'])"
+2723,corrugator operator,"('51-9196.00', 'paper goods machine setters, operators, and tenders', 0.8183479756116867, ['corrugator operator'])"
+2733,ceramicist,"('27-1012.00', 'craft artists', 0.815453264117241, ['ceramics artist'])"
+2739,cartoonist,"('27-1013.00', 'fine artists, including painters, sculptors, and illustrators', 0.6411140322685241, ['cartoonist', 'political cartoonist', 'comic artist'])"
+2743,minister of religion,"('21-2011.00', 'clergy', 0.8585558354854583, ['deacon', 'priest', 'pastor'])"
+2753,elderly home manager,"('11-9111.00', 'medical and health services managers', 0.7340424180030822, ['nursing home manager'])"
+2754,forklift operator,"('53-7051.00', 'industrial truck and tractor operators', 0.7593294441699981, ['forklift operator', 'forklift truck operator', 'forklift driver'])"
+2764,mining assistant,"('47-5081.00', 'helpers--extraction workers', 0.7904874205589294, 'na')"
+2786,software developer,both options are suitable
+2800,stonemason,"('47-2022.00', 'stonemasons', 0.7653059691190719, ['memorial mason', 'stone setter', 'stone mason', 'mason', 'banker mason'])"
+2820,idiophone musical instruments maker,"('49-9063.00', 'musical instrument repairers and tuners', 0.7426154553890227, ['bow rehairer'])"
+2829,justice of the peace,"('23-1023.00', 'judges, magistrate judges, and magistrates', 0.7504249840974807, ['justice of the peace', 'magistrate', 'justice'])"
+2849,drapery and carpet cleaner,
+2850,dating service consultant,
+2862,personal shopper,"('41-2031.00', 'retail salespersons', 0.7308519870042801, 'na')"
+2869,wind musical instrument maker,
+2891,surface treatment operator,
+2896,aquaculture harvesting worker,
+2902,paperboard products assembler,
+2906,blacksmith,
+2941,motor vehicle assembler,"('51-2031.00', 'engine and other machine assemblers', 0.7465256989002228, 'na')"
+3,air traffic safety technician,
+38,coating machine operator,"('51-4193.00', 'plating and coating machine setters, operators, and tenders, metal and plastic', 0.8301194846630096, ['coating machine operator', 'coater operator', 'coater', 'coating and baking operator', 'coater associate'])"
+88,enameller,"('51-9121.00', 'coating, painting, and spraying machine setters, operators, and tenders', 0.7864711552858352, ['enamel machine operator', 'enamel dipper', 'dipper'])"
+96,clothing product grader,
+106,integration engineer,"('15-1121.00', 'computer systems analysts', 0.8814822196960449, 'na')"
+122,presenter,"('27-3011.00', 'radio and television announcers', 0.8147571951150894, ['program host', 'host', 'announcer', 'broadcaster'])"
+143,door installer,"('47-2031.01', 'construction carpenters', 0.7481885582208634, ['door installer', 'door hanger'])"
+174,audio describer,
+206,embedded system designer,"('15-1121.00', 'computer systems analysts', 0.8382387697696686, 'na')"
+215,renewable energy consultant,
+216,sports instructor,"('27-2022.00', 'coaches and scouts', 0.7774779096245765, ['tennis instructor', 'swimming instructor', 'swimming teacher', 'swim instructor'])"
+290,wearing apparel patternmaker,"('51-6092.00', 'fabric and apparel patternmakers', 0.8619539618492126, ['pattern grader', 'apparel patternmaker'])"
+307,digital prototyper,
+315,translator,"('27-3091.00', 'interpreters and translators', 0.7862817108631134, ['translator', 'technical translator'])"
+316,container equipment assembler,
+320,credit adviser,"('13-2071.00', 'credit counselors', 0.8892156392335893, ['credit counselors', 'certified credit counselor', 'credit counselor'])"
+321,toilet attendant,"('37-2011.00', 'janitors and cleaners, except maids and housekeeping cleaners', 0.769188967347145, 'na')"
+323,horticulture worker,
+329,hotel concierge,
+349,tumbling machine operator,"('51-9192.00', 'cleaning, washing, and metal pickling equipment operators and tenders', 0.8117653876543045, ['tumbling machine operator', 'tub washer', 'washer engineer', 'precipitate washer', 'washing machine operator', 'production washer', 'machine washer', 'deflash and wash operator'])"
+373,dance teacher,"('25-3021.00', 'self-enrichment education teachers', 0.6626171633601189, ['dance teacher', 'dancing teacher', 'dance instructor'])"
+383,agricultural technician,"('19-4011.01', 'agricultural technicians', 0.8190527617931367, ['agricultural technician', 'biotechnician'])"
+413,pest management worker,"('37-2021.00', 'pest control workers', 0.8084628641605377, ['fumigator', 'exterminator', 'pest control service technician', 'pest control technician'])"
+421,green ICT consultant,
+432,furniture cleaner,"('37-2011.00', 'janitors and cleaners, except maids and housekeeping cleaners', 0.7948196053504945, 'na')"
+434,interpreter,"('27-3091.00', 'interpreters and translators', 0.7783839732408523, ['interpreter', 'medical interpreter', 'conference interpreter', 'court interpreter'])"
+446,staircase installer,"('47-2031.01', 'construction carpenters', 0.7546418905258179, ['stair builder'])"
+458,cadastral technician,
+460,data scientist,"('15-1111.00', 'computer and information research scientists', 0.863794904947281, ['data scientist'])"
+480,middle office analyst,"('13-2051.00', 'financial analysts', 0.7362764954566955, 'na')"
+482,electronics engineering technician,"('17-3023.01', 'electronics engineering technicians', 0.8859969258308411, ['electronics engineering technician'])"
+492,made-up textile articles manufacturer,
+495,travel consultant,"('41-3041.00', 'travel agents', 0.898462215065956, ['travel consultant'])"
+498,leather goods CAD patternmaker,
+502,purchaser,"('13-1022.00', 'wholesale and retail buyers, except farm products', 0.8418660759925842, ['purchaser', 'buyer', 'procurement manager'])"
+506,carpenter,"('47-2031.00', 'carpenters', 0.8283197462558746, 'na')"
+533,enterprise architect,"('15-1121.00', 'computer systems analysts', 0.841829240322113, ['enterprise architect'])"
+550,coppersmith,"('47-2211.00', 'sheet metal workers', 0.8060770928859711, ['coppersmith'])"
+585,building cleaner,"('37-2011.00', 'janitors and cleaners, except maids and housekeeping cleaners', 0.84464191198349, ['janitor', 'maintenance worker', 'custodian', 'office cleaner'])"
+596,financial manager,"('11-3031.02', 'financial managers, branch or department', 0.8535265147686004, ['financial administrator'])"
+615,credit manager,"('13-2072.00', 'loan officers', 0.8297885239124299, 'na')"
+635,set builder,"('27-1027.00', 'set and exhibit designers', 0.7889879584312439, 'na')"
+640,window installer,"('47-2031.01', 'construction carpenters', 0.7491078853607177, ['window installer'])"
+642,ICT intelligent systems designer,
+653,visual merchandiser,"('27-1026.00', 'merchandise displayers and window trimmers', 0.8437040418386459, ['visual merchandising manager', 'display designer', 'window dresser'])"
+684,sport official,"('27-2023.00', 'umpires, referees, and other sports officials', 0.7705634295940399, ['referee', 'judge', 'umpire'])"
+691,forwarding manager,
+709,bicycle courier,"('43-5021.00', 'couriers and messengers', 0.7480632096529007, ['bicycle messenger'])"
+715,fisheries adviser,
+724,abrasive blasting operator,
+757,sports coach,"('27-2022.00', 'coaches and scouts', 0.7781110316514968, 'na')"
+782,ceiling installer,"('47-2081.00', 'drywall and ceiling tile installers', 0.8047637939453125, ['ceiling installer'])"
+835,photography teacher,"('25-3021.00', 'self-enrichment education teachers', 0.6999841123819351, ['photography instructor'])"
+837,civil engineering worker,
+868,lexicographer,
+875,surface grinding machine operator,
+892,ICT business analysis manager,"('15-1121.00', 'computer systems analysts', 0.8265434205532074, 'na')"
+895,cylindrical grinder operator,
+921,electronics engineer,"('17-2072.00', 'electronics engineers, except computer', 0.872810998558998, 'na')"
+932,big data archive librarian,
+951,filing machine operator,
+972,leather goods patternmaker,
+973,sewing machinist,
+1008,business manager,"('11-1021.00', 'general and operations managers', 0.742998081445694, ['business manager', 'business coordinator', 'operations manager'])"
+1034,international forwarding operations coordinator,"('43-5011.01', 'freight forwarders', 0.8466975033283233, 'na')"
+1038,sheet metal worker,"('47-2211.00', 'sheet metal workers', 0.8659161835908891, ['sheet metal worker', 'sheet metal fabricator'])"
+1061,artistic coach,
+1062,steward/stewardess,"('53-2031.00', 'flight attendants', 0.775168889760971, ['flight attendant'])"
+1088,lifeguard instructor,
+1102,tour organiser,
+1129,bank account manager,
+1132,boilermaker,"('47-2011.00', 'boilermakers', 0.9055467784404756, ['boilermaker', 'boilermaker fitter', 'boiler fitter'])"
+1153,art handler,"('25-4013.00', 'museum technicians and conservators', 0.8133805155754089, ['art preparator', 'artifacts conservator', 'museum technician', 'art conservator', 'fine arts packer'])"
+1250,textile product developer,
+1262,structural ironworker,"('47-2221.00', 'structural iron and steel workers', 0.8727342516183854, ['structural ironworker', 'structural steel erector'])"
+1266,aircraft groomer,"('37-2012.00', 'maids and housekeeping cleaners', 0.7155539825558663, ['cabin cleaner'])"
+1288,chief executive officer,"('11-1011.00', 'chief executives', 0.8243530750274658, ['president', 'chairman'])"
+1304,textile colourist,
+1325,ICT research consultant,
+1348,ground steward/ground stewardess,
+1370,visual arts teacher,
+1376,room attendant,"('37-2012.00', 'maids and housekeeping cleaners', 0.8613023102283478, ['room attendant', 'housekeeper', 'chambermaid'])"
+1378,embroiderer,
+1393,interior designer,"('27-1025.00', 'interior designers', 0.893109929561615, ['interior designer'])"
+1405,graphologist,
+1411,clothing CAD patternmaker,"('51-6092.00', 'fabric and apparel patternmakers', 0.858084213733673, ['computer patternmaker'])"
+1465,travel agent,"('41-3041.00', 'travel agents', 0.8743805646896362, ['travel agent'])"
+1483,insurance risk consultant,"('13-2053.00', 'insurance underwriters', 0.8518166780471802, ['insurance analyst'])"
+1492,glove maker,
+1556,aircraft maintenance engineer,
+1559,vocational teacher,"('25-1194.00', 'vocational education teachers, postsecondary', 0.8285490334033967, ['vocational instructor'])"
+1585,news anchor,"('27-3011.00', 'radio and television announcers', 0.7828582018613814, ['news anchor', 'newscaster', 'news broadcaster', 'anchor'])"
+1599,sales engineer,
+1602,funeral services director,"('39-4031.00', 'morticians, undertakers, and funeral directors', 0.8680400997400284, ['mortician', 'funeral director'])"
+1606,deburring machine operator,
+1618,set designer,"('27-1027.00', 'set and exhibit designers', 0.8287056028842925, ['set designer', 'scenic designer'])"
+1634,miniature set designer,"('27-1027.00', 'set and exhibit designers', 0.7934251129627228, ['miniature set designer'])"
+1642,doll maker,
+1661,shipwright,
+1699,financial analyst,"('13-2051.00', 'financial analysts', 0.8719830185174942, ['financial analyst', 'banking analyst', 'treasury analyst'])"
+1706,loan officer,"('13-2072.00', 'loan officers', 0.8972857803106309, ['loan officer', 'commercial lender'])"
+1707,horticulture production team leader,"('37-1012.00', 'first-line supervisors of landscaping, lawn service, and groundskeeping workers', 0.782332891225815, 'na')"
+1733,clothing cutter,
+1752,animal facility manager,
+1779,cabin crew manager,
+1820,interior landscaper,
+1824,after-sales service technician,
+1840,sign language interpreter,"('27-3091.00', 'interpreters and translators', 0.811278834939003, ['sign language interpreter'])"
+1843,aircraft pilot,"('53-2011.00', 'airline pilots, copilots, and flight engineers', 0.8829112231731415, ['aircraft pilot'])"
+1857,geographic information systems specialist,
+1858,tourist information officer,
+1859,set buyer,
+1908,insurance broker,"('41-3021.00', 'insurance sales agents', 0.8052612990140915, ['insurance broker', 'insurance sales agent', 'insurance agent'])"
+1935,aquaculture recirculation manager,
+1938,customs and excise officer,
+1947,groundsman/groundswoman,
+1955,terrazzo setter,"('47-2053.00', 'terrazzo workers and finishers', 0.8414476424455644, ['terrazzo worker', 'terrazzo layer'])"
+1972,ICT system analyst,"('15-1121.00', 'computer systems analysts', 0.89746572971344, ['systems analyst'])"
+1982,taxidermist,
+1988,ICT system developer,"('15-1121.00', 'computer systems analysts', 0.8973341226577759, ['systems developer', 'systems programmer'])"
+1994,concrete finisher,"('47-2051.00', 'cement masons and concrete finishers', 0.8439787715673447, ['concrete finisher', 'cement finisher', 'cement mason'])"
+2005,linguist,"('19-3099.00', 'social scientists and related workers, all other', 0.6044200792908669, ['linguist', 'philologist', 'computational linguist'])"
+2014,cemetery attendant,
+2026,mortgage loan underwriter,
+2027,medical sales representative,"('41-4011.00', 'sales representatives, wholesale and manufacturing, technical and scientific products', 0.7195451140403747, ['medical sales representative'])"
+2028,industrial designer,"('27-1021.00', 'commercial and industrial designers', 0.8257919639348983, ['industrial designer', 'product designer', 'packaging designer', 'toy designer'])"
+2052,cartographer,"('17-1021.00', 'cartographers and photogrammetrists', 0.8495837032794952, ['cartographer', 'cartographic drafter', 'map maker'])"
+2099,ICT consultant,"('15-1121.00', 'computer systems analysts', 0.8348012804985045, 'na')"
+2115,rustproofer,
+2124,credit risk analyst,"('13-2071.00', 'credit counselors', 0.7898449301719666, 'na')"
+2148,tour operator representative,
+2151,motorcycle delivery person,
+2161,circus arts teacher,
+2173,customer contact centre information clerk,"('43-4051.00', 'customer service representatives', 0.8483960390090942, ['customer relations representative', 'customer service clerk'])"
+2208,electroplating machine operator,"('51-4193.00', 'plating and coating machine setters, operators, and tenders, metal and plastic', 0.8207298040390014, ['lock plater', 'electric plater', 'silver plater', 'gold plater', 'copper plater', 'zinc plater', 'metal plater', 'hot dip plater', 'chrome plater', 'bronze plater', 'nickel plater', 'electro plater', 'electroplater'])"
+2220,kitchen unit installer,
+2245,ICT system integration consultant,
+2248,ticket sales agent,"('43-4181.00', 'reservation and transportation ticket agents and travel clerks', 0.8689245402812957, ['ticket agent'])"
+2296,student financial support coordinator,"('13-2071.01', 'loan counselors', 0.8228958040475846, ['financial aid coordinator'])"
+2297,agricultural scientist,"('19-1013.00', 'soil and plant scientists', 0.8257665932178497, 'na')"
+2318,timber trader,
+2323,agronomist,"('19-1013.00', 'soil and plant scientists', 0.854989355802536, ['agronomist'])"
+2347,chief operating officer,"('11-1011.00', 'chief executives', 0.8171796321868896, ['chief administrative officer'])"
+2388,technical sales representative,
+2407,train cleaner,"('37-2011.00', 'janitors and cleaners, except maids and housekeeping cleaners', 0.7568585515022277, 'na')"
+2413,drama teacher,"('25-3021.00', 'self-enrichment education teachers', 0.7000141978263855, ['drama teacher'])"
+2414,costume buyer,
+2423,communication manager,"('11-2031.00', 'public relations and fundraising managers', 0.8144309252500535, ['communication manager', 'communications manager'])"
+2425,IT auditor,"('15-1121.00', 'computer systems analysts', 0.8495525568723679, 'na')"
+2430,dip tank operator,"('51-4193.00', 'plating and coating machine setters, operators, and tenders, metal and plastic', 0.7778497487306595, ['hot dip plater', 'plating tank operator', 'coating machine operator', 'hot dip galvanizer'])"
+2482,horticulture production manager,
+2491,data analyst,"('15-1111.00', 'computer and information research scientists', 0.7750649869441986, 'na')"
+2504,astronaut,"('53-2011.00', 'airline pilots, copilots, and flight engineers', 0.766152161359787, ['astronaut'])"
+2526,funeral attendant,"('39-4021.00', 'funeral attendants', 0.8908549606800079, ['funeral attendant', 'funeral home assistant', 'pallbearer'])"
+2535,telecommunications engineering technician,
+2540,land surveyor,"('17-1022.00', 'surveyors', 0.8806394994258882, ['land surveyor', 'surveyor', 'surveyors'])"
+2576,embalmer,"('39-4011.00', 'embalmers', 0.7466312319040298, ['embalmer'])"
+2632,ICT system architect,"('15-1121.00', 'computer systems analysts', 0.8553664743900299, ['information systems architect', 'systems architect'])"
+2635,livestock advisor,
+2646,computer scientist,"('15-1111.00', 'computer and information research scientists', 0.8939036309719086, ['computer scientist', 'computer scientist'])"
+2687,landscape gardener,
+2699,insurance underwriter,"('13-2053.00', 'insurance underwriters', 0.8266661435365676, ['insurance underwriter', 'personal lines underwriter', 'commercial underwriter', 'life underwriter', 'commercial lines underwriter'])"
+2712,anodising machine operator,"('51-4193.00', 'plating and coating machine setters, operators, and tenders, metal and plastic', 0.8237496674060821, ['anode machine operator'])"
+2718,dismantling worker,
+2779,merchandiser,"('27-1026.00', 'merchandise displayers and window trimmers', 0.7603952109813691, ['merchandiser'])"
+2806,plasterer,"('47-2161.00', 'plasterers and stucco masons', 0.8210998773574829, ['plasterer'])"
+2827,human resources manager,"('11-3121.00', 'human resources managers', 0.8207832515239715, ['personnel director', 'staffing manager', 'benefits manager', 'personnel manager', 'employee benefits manager', 'industrial relations manager', 'recruitment manager'])"
+2873,tree surgeon,"('37-3013.00', 'tree trimmers and pruners', 0.8260923534631729, ['tree surgeon', 'pruner', 'arborist'])"
+2874,forestry adviser,"('19-1032.00', 'foresters', 0.90484040081501, ['forestry consultant', 'silviculturist'])"
+2885,user experience analyst,
+2914,solar energy sales consultant,"('41-4011.07', 'solar sales representatives and assessors', 0.8665043830871582, ['solar sales consultant', 'solar sales representative'])"
+2927,ICT business analyst,"('15-1121.00', 'computer systems analysts', 0.8356927782297136, 'na')"
+4,hospitality revenue manager,
+17,bus driver,"('53-3021.00', 'bus drivers, transit and intercity', 0.8343098104000092, ['bus driver', 'transit bus driver', 'bus operator'])"
+31,tile fitter,"('47-2044.00', 'tile and marble setters', 0.8394164860248566, ['tile setter', 'tile installer', 'tilesetter'])"
+36,petroleum pump system operator,"('51-8093.00', 'petroleum pump system operators, refinery operators, and gaugers', 0.8061331272125244, 'na')"
+46,sprinkler fitter,"('47-2152.01', 'pipe fitters and steamfitters', 0.7997982919216156, ['sprinkler fitter', 'sprinkler installer'])"
+52,quarry engineer,"('17-2151.00', 'mining and geological engineers, including mining safety engineers', 0.8537405729293823, ['mine engineer', 'mining engineer'])"
+56,tram driver,"('53-3021.00', 'bus drivers, transit and intercity', 0.745484010875225, ['tram driver'])"
+78,meat cutter,"('51-3021.00', 'butchers and meat cutters', 0.8266282677650452, ['meat cutter'])"
+85,resilient floor layer,"('47-2042.00', 'floor layers, except carpet, wood, and hard tiles', 0.8401689648628234, ['linoleum installer', 'linoleum layer', 'laminate floor installer'])"
+89,recruitment consultant,"('13-1071.00', 'human resources specialists', 0.8476853162050246, ['recruitment consultant', 'job placement officer'])"
+95,public employment service manager,"('13-1071.00', 'human resources specialists', 0.8217790722846985, 'na')"
+97,public administration manager,
+116,water network operative,
+120,hairdresser,"('39-5012.00', 'hairdressers, hairstylists, and cosmetologists', 0.859890592098236, ['hairdresser', 'hair cutter', 'cosmetologist', 'wig stylist'])"
+159,historian,"('19-3093.00', 'historians', 0.794211232662201, ['historian', 'historians'])"
+163,air traffic manager,
+192,real estate manager,"('11-9141.00', 'property, real estate, and community association managers', 0.8378484666347503, ['real estate manager', 'building rental manager', 'property administrator'])"
+197,water conservation technician,
+237,rail switchperson,"('53-4021.00', 'railroad brake, signal, and switch operators', 0.8087063997983932, ['railway switchman'])"
+243,home care aide,"('31-1011.00', 'home health aides', 0.8414989888668061, ['home care aide'])"
+269,ICT presales engineer,
+286,solderer,"('51-4121.07', 'solderers and brazers', 0.7971138656139374, ['solderer'])"
+387,diplomat,
+397,business intelligence manager,"('13-1111.00', 'management analysts', 0.8227751046419143, 'na')"
+399,labour relations officer,"('13-1075.00', 'labor relations specialists', 0.9119643926620483, ['union representative'])"
+405,oil refinery control room operator,"('51-8093.00', 'petroleum pump system operators, refinery operators, and gaugers', 0.8190435886383056, ['process operator'])"
+408,train preparer,
+412,promotion assistant,
+415,public speaking coach,
+437,educational counsellor,"('21-1012.00', 'educational, guidance, school, and vocational counselors', 0.8294892728328704, ['student advisor', 'student services coordinator'])"
+517,police commissioner,"('11-1011.00', 'chief executives', 0.7414568126201629, ['police commissioner'])"
+552,frame maker,"('51-7011.00', 'cabinetmakers and bench carpenters', 0.7598901152610779, ['framer', 'frame builder'])"
+555,academic support officer,
+600,security guard,"('33-9032.00', 'security guards', 0.8224537223577499, ['security guard', 'plant security guard'])"
+627,child care worker,"('39-9011.00', 'childcare workers', 0.8611020743846893, ['child care worker', 'day care assistant', 'preschool teacher', 'child care assistant', 'day care worker'])"
+636,slaughterer,"('51-3023.00', 'slaughterers and meat packers', 0.7676557630300522, 'na')"
+639,movie distributor,
+665,fruit and vegetable picker,"('45-2092.02', 'farmworkers and laborers, crop', 0.7881983637809753, ['fruit picker', 'berry picker', 'crop picker'])"
+675,butcher,"('51-3021.00', 'butchers and meat cutters', 0.8812324911355972, ['butcher'])"
+737,learning mentor,
+749,bathroom fitter,
+769,drilling engineer,"('17-2171.00', 'petroleum engineers', 0.8202907621860503, ['drilling engineer'])"
+777,explosives engineer,"('17-2151.00', 'mining and geological engineers, including mining safety engineers', 0.7485522210597991, 'na')"
+780,network marketer,"('13-1161.00', 'market research analysts and marketing specialists', 0.8345228850841522, 'na')"
+827,credit union manager,"('11-3031.02', 'financial managers, branch or department', 0.8601306498050689, ['credit union manager'])"
+829,drain technician,"('47-2152.02', 'plumbers', 0.8351329535245895, ['drain technician'])"
+840,marketeer,"('13-1161.00', 'market research analysts and marketing specialists', 0.8592548549175263, ['marketing specialist', 'marketing analyst'])"
+841,advertising media buyer,
+843,gas processing plant control room operator,"('51-8092.00', 'gas plant operators', 0.8199438363313676, ['process plant operator', 'gas processing plant operator'])"
+846,liquid fuel engineer,"('17-2171.00', 'petroleum engineers', 0.7650329291820526, ['natural gas engineer'])"
+850,edge bander operator,"('51-9191.00', 'adhesive bonding machine operators and tenders', 0.776717871427536, 'na')"
+873,quick service restaurant team leader,
+888,membership manager,
+946,hardwood floor layer,"('47-2043.00', 'floor sanders and finishers', 0.8354768574237823, ['hardwood floor installer'])"
+953,political scientist,"('19-3094.00', 'political scientists', 0.8632790356874465, ['political research scientist', 'political analyst', 'political researcher'])"
+955,aquaculture harvesting manager,"('11-9013.03', 'aquacultural managers', 0.8022244542837143, 'na')"
+959,cooper,
+979,audiology technician,"('29-2092.00', 'hearing aid specialists', 0.8900840133428574, ['audiology technician', 'hearing instrument specialist', 'audiology assistant'])"
+996,irrigation technician,"('47-2152.01', 'pipe fitters and steamfitters', 0.7888328939676285, ['irrigation technician'])"
+1011,advertising assistant,
+1052,ICT business development manager,
+1063,antique furniture reproducer,"('51-7021.00', 'furniture finishers', 0.7363205522298814, 'na')"
+1067,insurance agency manager,"('11-3031.02', 'financial managers, branch or department', 0.7879174768924713, 'na')"
+1068,aquaculture production manager,"('11-9013.03', 'aquacultural managers', 0.8450233340263367, 'na')"
+1074,tutor,"('25-3099.02', 'tutors', 0.8258754521608352, ['tutor', 'private tutor', 'tutors'])"
+1076,sign language teacher,"('25-3021.00', 'self-enrichment education teachers', 0.693151493370533, ['sign language teacher'])"
+1082,shunter,
+1085,furniture restorer,"('51-7021.00', 'furniture finishers', 0.787771025300026, ['furniture restorer', 'furniture repairer', 'furniture refinisher'])"
+1109,sales support assistant,"('43-3031.00', 'bookkeeping, accounting, and auditing clerks', 0.8203135430812836, 'na')"
+1111,secretary general,"('11-1011.00', 'chief executives', 0.7465236902236938, 'na')"
+1116,career guidance advisor,"('21-1012.00', 'educational, guidance, school, and vocational counselors', 0.8286821603775025, ['career coach', 'educational advisor'])"
+1146,mine development engineer,"('17-2151.00', 'mining and geological engineers, including mining safety engineers', 0.8565657168626786, ['mine development engineer'])"
+1151,business analyst,"('13-1111.00', 'management analysts', 0.8382108181715011, ['business analyst', 'management consultant', 'business development analyst'])"
+1170,jeweller,"('51-9071.01', 'jewelers', 0.8095997184514999, ['ring maker', 'jeweler', 'earrings fabricator'])"
+1189,mineral processing engineer,"('17-2151.00', 'mining and geological engineers, including mining safety engineers', 0.8224440664052963, ['mineral engineer'])"
+1212,prison instructor,
+1239,market research analyst,"('13-1161.00', 'market research analysts and marketing specialists', 0.893027013540268, ['market research analyst', 'marketing research coordinator', 'marketing research analyst', 'market analyst', 'marketing researcher', 'market researcher', 'market research manager', 'market research specialist'])"
+1272,business consultant,"('13-1111.00', 'management analysts', 0.8339593261480331, ['business consultant', 'business process consultant'])"
+1280,further education teacher,"('25-3099.00', 'teachers and instructors, all other', 0.5995033740997315, 'na')"
+1287,fish trimmer,"('51-3022.00', 'meat, poultry, and fish cutters and trimmers', 0.732804149389267, ['fish processor'])"
+1298,occupational analyst,"('13-1141.00', 'compensation, benefits, and job analysis specialists', 0.8240768522024154, ['occupational analyst', 'job analyst'])"
+1303,brazier,"('51-4121.06', 'welders, cutters, and welder fitters', 0.8240658640861511, ['combination welder'])"
+1314,admissions coordinator,
+1317,technical sales representative in electronic and telecommunications equipment,"('41-9031.00', 'sales engineers', 0.7229362070560456, 'na')"
+1329,sewerage network operative,
+1331,recreation model maker,"('51-7031.00', 'model makers, wood', 0.7508641958236695, 'na')"
+1361,power production plant operator,"('51-8013.00', 'power plant operators', 0.8361771911382675, ['power plant operator', 'power station operator'])"
+1363,client relations manager,
+1364,heating engineer,"('47-2152.01', 'pipe fitters and steamfitters', 0.8081658244132996, 'na')"
+1386,precious stone cutter,"('51-9071.06', 'gem and diamond workers', 0.8314531505107879, ['diamond cutter', 'lapidarist', 'gem cutter', 'lapidary'])"
+1392,sewer construction worker,
+1401,bank manager,"('11-3031.02', 'financial managers, branch or department', 0.8528206020593643, ['bank manager', 'financial institution branch manager'])"
+1404,petroleum engineer,"('17-2171.00', 'petroleum engineers', 0.7990344166755676, ['petroleum engineer', 'petroleum engineers', 'reservoir engineer'])"
+1409,pipeline maintenance worker,
+1422,dental technician,"('51-9081.00', 'dental laboratory technicians', 0.827568632364273, ['dental technologist', 'orthodontic technician'])"
+1451,pipeline¬†superintendent,
+1457,school bus attendant,"('39-9011.00', 'childcare workers', 0.7295049965381621, ['school bus attendant', 'school bus aide'])"
+1464,"heating, ventilation, air conditioning (and refrigeration) service engineer","('49-9021.01', 'heating and air conditioning mechanics and installers', 0.8473399817943573, 'na')"
+1473,welder,"('51-4121.06', 'welders, cutters, and welder fitters', 0.8494581401348114, ['welder', 'oxyacetylene welder', 'maintenance welder', 'boiler welder', 'arc welder', 'welder', 'steel welder', 'gas welder', 'production welder', 'underwater welder'])"
+1475,refinery shift manager,"('51-8093.00', 'petroleum pump system operators, refinery operators, and gaugers', 0.754844531416893, 'na')"
+1481,mine planning engineer,"('17-2151.00', 'mining and geological engineers, including mining safety engineers', 0.8698688983917237, 'na')"
+1515,meat preparations operator,"('51-3021.00', 'butchers and meat cutters', 0.8781334459781647, 'na')"
+1538,assayer,
+1563,logistics and distribution manager,"('11-3071.03', 'logistics managers', 0.9041911542415619, ['logistics director', 'logistics coordinator', 'supply chain logistics manager', 'logistics manager', 'logistics operations manager'])"
+1649,septic tank servicer,
+1650,ICT account manager,
+1709,real estate agent,"('41-9022.00', 'real estate sales agents', 0.8632244527339935, ['real estate agent', 'real estate rental agent', 'realtor', 'real estate salesperson', 'real estate broker', 'apartment rental agent', 'real estate sales agents', 'real estate sales agent'])"
+1717,move manager,
+1734,prosthetist-orthotist,"('29-2091.00', 'orthotists and prosthetists', 0.8540481865406035, ['orthotist'])"
+1755,insurance claims manager,"('11-3031.02', 'financial managers, branch or department', 0.7659991234540939, 'na')"
+1771,slitter operator,
+1792,language school teacher,"('25-3011.00', 'adult basic and secondary education and literacy teachers and instructors', 0.8399348616600036, 'na')"
+1807,gas service technician,"('47-2152.01', 'pipe fitters and steamfitters', 0.821316933631897, 'na')"
+1869,customer experience manager,
+1882,central bank governor,"('11-1011.00', 'chief executives', 0.7088368922471999, 'na')"
+1931,train dispatcher,"('53-4031.00', 'railroad conductors and yardmasters', 0.7971427619457244, ['train dispatcher'])"
+1960,aquaculture husbandry manager,"('11-9013.03', 'aquacultural managers', 0.8061250030994416, 'na')"
+1968,e-learning architect,
+1993,consul,
+2004,instructional designer,
+2030,academic advisor,"('21-1012.00', 'educational, guidance, school, and vocational counselors', 0.7894727170467376, ['academic advisor'])"
+2097,advertising copywriter,"('27-3043.04', 'copy writers', 0.8248391091823577, ['advertising copywriter', 'copywriter', 'copy writer', 'advertising writer'])"
+2120,railway station manager,
+2131,guide,"('39-7011.00', 'tour guides and escorts', 0.8137562483549118, ['guide', 'museum guide', 'tour guide', 'tour escort', 'tourist guide'])"
+2134,airline food service worker,"('35-9011.00', 'dining room and cafeteria attendants and bartender helpers', 0.790414297580719, 'na')"
+2167,business developer,
+2186,property acquisitions manager,"('11-9141.00', 'property, real estate, and community association managers', 0.8005377411842346, ['land acquisition specialist', 'land acquisition manager'])"
+2206,billing clerk,"('43-3021.02', 'billing, cost, and rate clerks', 0.8285637855529786, ['billing clerk', 'invoice clerk', 'posting clerk'])"
+2233,metallurgist,"('17-2131.00', 'materials engineers', 0.8511775344610214, ['metallurgist', 'metallurgist', 'physical metallurgist'])"
+2269,philosopher,
+2278,fish preparation operator,"('51-3022.00', 'meat, poultry, and fish cutters and trimmers', 0.7108355641365052, 'na')"
+2302,complementary therapist,"('29-1199.04', 'naturopathic physicians', 0.7808707594871522, 'na')"
+2369,foreign language correspondence clerk,
+2382,level crossing signalperson,
+2426,welding coordinator,"('51-4121.06', 'welders, cutters, and welder fitters', 0.8041470110416412, ['welding technician'])"
+2438,pension scheme manager,
+2440,real estate leasing manager,"('11-9141.00', 'property, real estate, and community association managers', 0.8210720539093017, ['lease operator', 'leasing manager'])"
+2455,brokerage firm director,"('11-3031.02', 'financial managers, branch or department', 0.765950185060501, 'na')"
+2472,gas processing plant operator,"('51-8092.00', 'gas plant operators', 0.9000163495540618, ['gas processing plant operator', 'gas distribution plant operator'])"
+2475,creative director,
+2490,human resources officer,"('13-1071.00', 'human resources specialists', 0.8696619778871536, ['personnel recruiter', 'personnel officer', 'personnel representative', 'personnel supervisor', 'personnel worker'])"
+2508,companion,"('39-9021.00', 'personal care aides', 0.8338288813829422, ['companion', 'caregiver'])"
+2522,mine health and safety engineer,"('17-2151.00', 'mining and geological engineers, including mining safety engineers', 0.8519223749637603, ['mine safety engineer'])"
+2590,housing manager,"('11-9141.00', 'property, real estate, and community association managers', 0.8562138825654984, ['housing manager'])"
+2599,brand manager,"('13-1161.00', 'market research analysts and marketing specialists', 0.8352746874094009, 'na')"
+2610,advertising specialist,
+2624,cabinet maker,"('51-7011.00', 'cabinetmakers and bench carpenters', 0.8448568642139436, ['chair maker', 'cabinetmaker'])"
+2628,pricing specialist,"('13-1161.00', 'market research analysts and marketing specialists', 0.8135189414024353, 'na')"
+2634,kitchen assistant,"('35-2021.00', 'food preparation workers', 0.7806972801685332, ['kitchen assistant', 'kitchen worker', 'catering assistant'])"
+2654,employment and vocational integration consultant,"('21-1012.00', 'educational, guidance, school, and vocational counselors', 0.7766687631607055, ['outplacement consultant', 'career coach', 'vocational adviser', 'job coach'])"
+2655,carpet fitter,"('47-2041.00', 'carpet installers', 0.890147402882576, ['carpet layer'])"
+2670,product and services manager,
+2671,vineyard worker,"('45-2092.02', 'farmworkers and laborers, crop', 0.7554026007652284, ['grape picker'])"
+2737,e-learning developer,
+2744,plumber,"('47-2152.02', 'plumbers', 0.8062987506389618, ['plumber', 'commercial plumber'])"
+2757,irrigation system installer,"('47-2151.00', 'pipelayers', 0.7591566681861878, ['irrigation system installer'])"
+2766,forester,
+2783,fire commissioner,"('11-9161.00', 'emergency management directors', 0.7364066332578658, 'na')"
+2842,kitchen porter,"('35-9021.00', 'dishwashers', 0.8393425285816192, ['kitchen steward', 'dish washer'])"
+2892,furniture finisher,"('51-7021.00', 'furniture finishers', 0.7734106749296188, ['furniture finisher', 'furniture polisher', 'furniture finishing technician', 'furniture sander', 'wooden furniture polisher'])"
+2899,airport director,"('11-3071.01', 'transportation managers', 0.7364358156919479, ['airport manager', 'station manager'])"
+1,metal drawing machine operator,"('51-4021.00', 'extruding and drawing machine setters, operators, and tenders, metal and plastic', 0.8113398820161819, ['wire drawer', 'draw machine operator'])"
+5,medical laboratory assistant,"('29-2012.00', 'medical and clinical laboratory technicians', 0.8659538149833679, ['medical laboratory assistant', 'clinical research assistant', 'medical lab assistant'])"
+79,criminologist,"('19-3041.00', 'sociologists', 0.7632337301969528, ['criminologist'])"
+138,animal care attendant,"('39-2021.00', 'nonfarm animal caretakers', 0.8127889186143875, ['wildlife rehabilitator', 'animal keeper'])"
+151,horse riding instructor,"('25-3021.00', 'self-enrichment education teachers', 0.63873979896307, ['therapeutic riding instructor', 'horseback riding instructor', 'riding instructor'])"
+152,delivery driver,"('53-3033.00', 'light truck or delivery services drivers', 0.7038994312286376, ['delivery driver', 'delivery driver', 'delivery person'])"
+183,tower crane operator,"('53-7021.00', 'crane and tower operators', 0.8183765411376953, ['tower crane operator'])"
+224,sociologist,"('19-3041.00', 'sociologists', 0.8193085819482804, ['sociologist', 'rural sociologist', 'sociologists', 'urban sociologist'])"
+226,clock and watchmaker,"('49-9064.00', 'watch repairers', 0.8672463715076446, ['clockmaker', 'watchmaker', 'clock maker'])"
+250,commercial sales representative,"('41-4011.00', 'sales representatives, wholesale and manufacturing, technical and scientific products', 0.7413479775190353, ['sales representative'])"
+265,optical instrument assembler,
+287,dental instrument assembler,
+322,watch and clock repairer,"('49-9064.00', 'watch repairers', 0.8592261999845505, ['watch and clock repairer'])"
+344,snow-clearing worker,
+366,production plant crane operator,"('53-7021.00', 'crane and tower operators', 0.8160200327634812, ['gantry crane operator', 'bridge crane operator', 'overhead crane operator', 'cantilever crane operator', 'pit crane operator', 'mill crane operator', 'scrap crane operator', 'bottom crane operator', 'steel crane operator', 'ingot stripper'])"
+374,animal handler,"('39-2011.00', 'animal trainers', 0.8076708078384399, ['animal handler'])"
+377,locker room attendant,"('39-3093.00', 'locker room, coatroom, and dressing room attendants', 0.8116678535938262, ['locker room attendant'])"
+378,mobile crane operator,"('53-7021.00', 'crane and tower operators', 0.7795248061418533, ['mobile crane operator'])"
+389,maritime pilot,"('53-5021.03', 'pilots, ship', 0.8100491315126419, ['maritime pilot', 'ship pilot', 'marine pilot'])"
+393,archaeologist,"('19-3091.02', 'archeologists', 0.8193041920661926, ['archaeologist'])"
+425,activity leader,
+443,factory hand,"('51-9198.00', 'helpers--production workers', 0.7758160620927811, ['factory hand'])"
+456,casting machine operator,"('51-4052.00', 'pourers and casters, metal', 0.8097143828868867, ['casting machine operator', 'caster'])"
+463,cloak room attendant,"('39-3093.00', 'locker room, coatroom, and dressing room attendants', 0.7992210179567336, ['cloak room attendant', 'checkroom attendant'])"
+516,optical instrument repairer,"('49-9069.00', 'precision instrument and equipment repairers, all other', 0.6801080048084259, ['optical instrument repairer', 'telescope repairer'])"
+522,dog breeder,
+535,vessel steering instructor,"('25-3021.00', 'self-enrichment education teachers', 0.6443818897008896, 'na')"
+556,animal welfare inspector,
+560,biomedical scientist,"('29-2012.00', 'medical and clinical laboratory technicians', 0.8475191086530685, ['clinical laboratory scientist'])"
+598,wave soldering machine operator,
+693,attraction operator,"('39-3091.00', 'amusement and recreation attendants', 0.7202228903770447, ['ride operator'])"
+744,airport baggage handler,
+753,electrical equipment assembler,"('51-2022.00', 'electrical and electronic equipment assemblers', 0.8269865661859512, ['electrical assembler'])"
+790,grader operator,"('47-2073.00', 'operating engineers and other construction equipment operators', 0.8222488552331924, ['grader operator'])"
+801,road roller operator,"('47-2071.00', 'paving, surfacing, and tamping equipment operators', 0.7948369294404983, ['road roller operator', 'roller operator'])"
+808,behavioural scientist,"('19-3041.00', 'sociologists', 0.8101634740829468, ['behavioral scientist'])"
+845,dredge operator,"('53-7031.00', 'dredge operators', 0.8494966834783555, ['dredge operator'])"
+905,book editor,"('27-3041.00', 'editors', 0.8053973406553268, ['book editor'])"
+971,mail clerk,"('43-5053.00', 'postal service mail sorters, processors, and processing machine operators', 0.8884789168834686, ['mail sorter'])"
+988,surface-mount technology machine operator,
+1037,dramaturge,"('27-3043.05', 'poets, lyricists and creative writers', 0.7626541048288344, ['playwright'])"
+1046,police officer,"('33-3051.01', 'police patrol officers', 0.8531603127717972, ['police officer', 'policewoman', 'law enforcement officer', 'constable', 'policeman', 'highway patrol officer', 'patrol officer', 'state trooper'])"
+1049,clinical perfusion scientist,
+1053,metal annealer,"('51-4191.00', 'heat treating equipment setters, operators, and tenders, metal and plastic', 0.8038531929254531, ['metal annealer'])"
+1140,road construction worker,"('47-2071.00', 'paving, surfacing, and tamping equipment operators', 0.783769366145134, 'na')"
+1159,financial trader,"('41-3031.03', 'securities and commodities traders', 0.8542209029197694, ['equity trader', 'securities trader'])"
+1179,zoo section leader,
+1202,helmsman,"('53-5021.02', 'mates- ship, boat, and barge', 0.7289024323225022, 'na')"
+1214,electronic equipment assembler,"('51-2022.00', 'electrical and electronic equipment assemblers', 0.846747750043869, ['electronics assembler'])"
+1308,metal rolling mill operator,
+1330,taxi driver,"('53-3041.00', 'taxi drivers and chauffeurs', 0.7627573072910309, ['taxi driver', 'cab driver', 'chauffeur'])"
+1341,cattle pedicure,
+1389,research and development manager,"('11-9121.00', 'natural sciences managers', 0.8012337386608124, ['research and development director'])"
+1415,wire weaving machine operator,
+1496,animal shelter worker,"('39-2021.00', 'nonfarm animal caretakers', 0.8229483932256698, ['animal shelter worker'])"
+1518,postman/postwoman,"('43-5052.00', 'postal service mail carriers', 0.7758592456579209, ['mail carrier', 'mailman', 'postman', 'postal carrier'])"
+1519,hydropower technician,
+1524,usher,"('39-3031.00', 'ushers, lobby attendants, and ticket takers', 0.8259455025196075, ['usher', 'ticket taker'])"
+1539,materials handler,
+1593,pet sitter,"('39-2021.00', 'nonfarm animal caretakers', 0.8045189708471298, ['pet sitter', 'animal sitter', 'dog walker', 'dog sitter', 'cat sitter'])"
+1615,mountain guide,
+1628,parking valet,
+1698,armoured car driver,"('53-3041.00', 'taxi drivers and chauffeurs', 0.6700485527515411, 'na')"
+1718,automated cable vehicle controller,
+1732,rail intermodal equipment operator,
+1804,patient transport services driver,"('53-3011.00', 'ambulance drivers and attendants, except emergency medical technicians', 0.8039782494306564, 'na')"
+1815,thanatology researcher,
+1849,electrical engineering technician,"('17-3023.03', 'electrical engineering technicians', 0.8840996384620667, ['electrical engineering technician', 'electrical equipment technician', 'electrical technician'])"
+1889,product manager,
+1901,extrusion machine operator,"('51-4021.00', 'extruding and drawing machine setters, operators, and tenders, metal and plastic', 0.8337202966213226, ['plastic extrusion operator', 'extrusion operator', 'extruder operator', 'extrusion press operator'])"
+1904,garden labourer,"('37-3011.00', 'landscaping and groundskeeping workers', 0.7683487296104431, ['gardener'])"
+1948,game keeper,
+1953,wood caulker,"('51-9199.00', 'production workers, all other', 0.5428339187055826, ['wood caulker'])"
+1959,specialist dentist,"('29-1021.00', 'dentists, general', 0.8423535257577897, 'na')"
+2046,anthropologist,"('19-3091.01', 'anthropologists', 0.8059688121080398, ['anthropologist', 'ethnologist', 'forensic anthropologist', 'anthropologists'])"
+2066,hearse driver,"('53-3041.00', 'taxi drivers and chauffeurs', 0.769756656885147, ['hearse driver', 'chauffeur', 'driver', 'funeral car driver'])"
+2081,writer,"('27-3043.05', 'poets, lyricists and creative writers', 0.8045010805130005, ['novelist', 'creative writer', 'author', 'poet'])"
+2137,pile driving hammer operator,"('47-2072.00', 'pile-driver operators', 0.8597685486078263, 'na')"
+2144,stevedore,"('53-7062.00', 'laborers and freight, stock, and material movers, hand', 0.7544948250055313, ['stevedore', 'longshoreman', 'dock worker'])"
+2145,surface mine plant operator,
+2205,geographer,"('19-3092.00', 'geographers', 0.8472999721765518, ['geographer', 'economic geographer', 'physical geographer', 'biogeographer', 'geographers'])"
+2217,kennel supervisor,"('39-2021.00', 'nonfarm animal caretakers', 0.7711281061172485, ['kennel supervisor', 'kennel manager', 'kennel operator'])"
+2224,surgical instrument maker,"('49-9062.00', 'medical equipment repairers', 0.8173234820365906, 'na')"
+2258,warehouse worker,"('53-7062.00', 'laborers and freight, stock, and material movers, hand', 0.7430472642183303, ['warehouse worker'])"
+2276,financial broker,"('41-3031.03', 'securities and commodities traders', 0.8734421670436858, ['broker'])"
+2300,advertising installer,
+2303,spring maker,
+2359,fitness instructor,"('39-9031.00', 'fitness trainers and aerobics instructors', 0.8540330320596694, ['fitness instructor', 'group fitness instructor', 'water aerobics instructor', 'aerobics instructor', 'fitness specialist'])"
+2368,mover,"('53-7062.00', 'laborers and freight, stock, and material movers, hand', 0.7431364119052887, ['mover', 'furniture mover'])"
+2381,crop production worker,"('45-2092.02', 'farmworkers and laborers, crop', 0.7981965750455857, ['farm worker', 'farm hand'])"
+2399,bulldozer operator,"('47-2073.00', 'operating engineers and other construction equipment operators', 0.8149146497249603, ['bulldozer operator'])"
+2403,scraper operator,"('47-2073.00', 'operating engineers and other construction equipment operators', 0.8215147525072097, ['scraper operator'])"
+2481,shelf filler,"('43-5081.01', 'stock clerks, sales floor', 0.7834353893995285, 'na')"
+2583,container crane operator,
+2593,stevedore superintendent,"('53-1021.00', 'first-line supervisors of helpers, laborers, and material movers, hand', 0.7635616660118103, ['stevedoring superintendent', 'stevedoring supervisor'])"
+2601,precision instrument assembler,
+2627,headteacher,"('11-9032.00', 'education administrators, elementary and secondary school', 0.8058285772800445, ['headmaster'])"
+2629,laundromat attendant,
+2638,asset manager,
+2645,amusement and recreation attendant,"('39-3091.00', 'amusement and recreation attendants', 0.8506563901901245, ['activities attendant', 'recreation attendant', 'ride attendant'])"
+2652,deck officer,"('53-5021.02', 'mates- ship, boat, and barge', 0.7933423668146133, ['first mate'])"
+2661,distribution centre dispatcher,
+2664,dental practitioner,"('29-1021.00', 'dentists, general', 0.8978071570396423, ['associate dentist', 'dentist'])"
+2684,private chauffeur,"('53-3041.00', 'taxi drivers and chauffeurs', 0.6729327976703645, 'na')"
+2747,accountant,"('13-2011.01', 'accountants', 0.8927776038646698, ['accountant', 'cost accountant', 'bookkeeper', 'accounting supervisor', 'accounting officer', 'financial reporting accountant', 'financial accountant', 'accounting technician'])"
+2752,skipper,"('53-5021.01', 'ship and boat captains', 0.7666434794664383, ['boat captain', 'ship captain', 'shipmaster'])"
+2755,excavator operator,"('53-7032.00', 'excavating and loading machine and dragline operators', 0.8506758362054825, ['excavator operator', 'excavator'])"
+2785,ship captain,"('53-5021.01', 'ship and boat captains', 0.7848662912845612, ['ship captain', 'sea captain', 'shipmaster'])"
+2796,literary scholar,
+2807,handyman,
+10,hydrogenation machine operator,
+11,pasta operator,"('51-3092.00', 'food batchmakers', 0.7295347809791565, 'na')"
+34,bee breeder,"('45-2021.00', 'animal breeders', 0.675658541917801, ['bee breeder'])"
+39,aquaculture hatchery manager,"('45-1011.06', 'first-line supervisors of aquacultural workers', 0.8204350382089616, 'na')"
+60,coffee grinder,
+91,lighting designer,
+112,automated fly bar operator,
+141,animal therapist,
+166,water-based aquaculture technician,
+187,fur animals breeder,"('45-2021.00', 'animal breeders', 0.6332037210464477, 'na')"
+200,candy machine operator,"('51-3092.00', 'food batchmakers', 0.7885848820209502, 'na')"
+205,teacher of talented and gifted students,
+229,blending plant operator,"('51-3092.00', 'food batchmakers', 0.7599989771842957, ['blending plant operator'])"
+236,gunsmith,
+247,music director,"('27-2041.01', 'music directors', 0.8308945178985595, ['music director', 'orchestra director', 'band master', 'conductor', 'band director', 'orchestra conductor'])"
+255,hand brick moulder,"('51-9195.07', 'molding and casting workers', 0.7904054641723632, ['tile molder'])"
+257,horse breeder,"('45-2021.00', 'animal breeders', 0.6980629980564118, ['horse breeder'])"
+267,actuarial assistant,"('43-9111.00', 'statistical assistants', 0.833803015947342, ['actuarial assistant'])"
+279,sauce production operator,
+324,stage manager,
+336,crop production manager,"('45-1011.07', 'first-line supervisors of agricultural crop and horticultural workers', 0.8199669599533081, 'na')"
+342,stand-in,
+370,brew house operator,
+388,vineyard machinery operator,"('45-2091.00', 'agricultural equipment operators', 0.7710426241159439, 'na')"
+441,deep-sea fishery worker,"('45-3011.00', 'fishers and related fishing workers', 0.7285172462463378, 'na')"
+470,bookmaker,"('39-3012.00', 'gaming and sports book writers and runners', 0.7940533310174942, ['bookmaker', 'betting clerk'])"
+479,fisheries boatman,"('45-3011.00', 'fishers and related fishing workers', 0.7216131702065468, 'na')"
+493,centrifuge operator,
+504,shepherd,
+507,chilling operator,"('51-9193.00', 'cooling and freezing equipment operators and tenders', 0.7905372083187103, 'na')"
+508,dresser,"('39-3092.00', 'costume attendants', 0.8644779384136201, ['dresser', 'wardrobe mistress'])"
+509,pipeline pump operator,
+510,casting mould maker,"('51-4062.00', 'patternmakers, metal and plastic', 0.8390902578830719, ['foundry patternmaker', 'metal patternmaker', 'metal pattern maker'])"
+574,bingo caller,"('39-3019.00', 'gaming service workers, all other', 0.6822225779294967, ['bingo caller', 'bingo attendant'])"
+607,aquaculture cage technician,
+610,sugar refinery operator,
+632,cocoa press operator,
+662,coffee roaster,"('51-3091.00', 'food and tobacco roasting, baking, and drying machine operators and tenders', 0.7331650763750076, ['coffee roaster'])"
+669,starch converting operator,
+718,kettle tender,"('51-3093.00', 'food cooking machine operators and tenders', 0.6804555475711822, ['kettle tender'])"
+730,cellar operator,
+778,body artist,"('27-1019.00', 'artists and related workers, all other', 0.6247013852000236, ['tattoo artist'])"
+784,derrickhand,"('47-5011.00', 'derrick operators, oil and gas', 0.8340417206287385, 'na')"
+834,well-digger,two options are suitable
+1016,cacao beans cleaner,
+1039,equine yard manager,
+1078,pyrotechnician,"('27-2099.00', 'entertainers and performers, sports and related workers, all other', 0.5999950751662255, ['pyrotechnician'])"
+1096,fruit production team leader,"('45-1011.07', 'first-line supervisors of agricultural crop and horticultural workers', 0.7185898900032044, 'na')"
+1119,tool pusher,"('47-5013.00', 'service unit operators, oil, gas, and mining', 0.779907163977623, ['tool pusher'])"
+1123,baking operator,"('51-3091.00', 'food and tobacco roasting, baking, and drying machine operators and tenders', 0.7677558273077012, ['bakery worker'])"
+1180,drill operator,"('47-5012.00', 'rotary drill operators, oil and gas', 0.8390637755393981, ['drill operator', 'oil rig driller'])"
+1190,clarifier,
+1206,blender operator,"('51-3092.00', 'food batchmakers', 0.7602124810218811, ['blender operator'])"
+1241,cacao bean roaster,"('51-3091.00', 'food and tobacco roasting, baking, and drying machine operators and tenders', 0.7566226303577424, ['cocoa roaster', 'bean roaster'])"
+1247,honey extractor,
+1312,carbonation operator,
+1338,odds compiler,"('39-3012.00', 'gaming and sports book writers and runners', 0.7009954050183296, 'na')"
+1343,blanching operator,
+1345,fish canning operator,
+1351,assistant video and motion picture director,
+1360,fruit-press operator,
+1375,malt kiln operator,
+1400,aromatherapist,
+1414,audio-visual technician,three option are suitable
+1456,extract mixer tester,
+1468,tunnel boring machine operator,"('47-5021.00', 'earth drillers, except oil and gas', 0.8127152472734451, 'na')"
+1469,prop maker,
+1494,distillery miller,
+1498,head of workshop,
+1509,beverage filtration technician,
+1510,composer,"('27-2041.04', 'music composers and arrangers', 0.8011003971099854, ['composer', 'music composer', 'jingle writer', 'songwriter', 'music producer'])"
+1521,broadcasting programme director,
+1534,aquaculture rearing technician,
+1535,dryer attendant,
+1536,poultry sexer,
+1558,train driver,"('53-4011.00', 'locomotive engineers', 0.8148137003183366, ['locomotive engineer', 'train operator'])"
+1584,fish production operator,
+1595,prepared meat operator,
+1597,stunt performer,"('27-2099.00', 'entertainers and performers, sports and related workers, all other', 0.6507566809654236, ['stunt performer', 'stunt woman', 'stunt man'])"
+1611,roustabout,"('47-5071.00', 'roustabouts, oil and gas', 0.8128812849521637, ['roustabout'])"
+1622,dairy products manufacturing worker,
+1633,firefighter,"('33-2011.01', 'municipal firefighters', 0.8452993839979172, ['firefighter', 'fireman'])"
+1647,location manager,
+1666,vineyard manager,"('45-1011.07', 'first-line supervisors of agricultural crop and horticultural workers', 0.6716115742921829, 'na')"
+1701,roughneck,"('47-5071.00', 'roustabouts, oil and gas', 0.7529753357172012, ['roughneck'])"
+1724,cook,three options are suitable
+1726,starch extraction operator,
+1757,massage therapist,"('31-9011.00', 'massage therapists', 0.8276135683059692, ['massage therapist', 'masseur', 'deep tissue massage therapist', 'masseuse', 'medical massage therapist'])"
+1761,prompter,"('27-2099.00', 'entertainers and performers, sports and related workers, all other', 0.6163239702582359, ['prompter'])"
+1781,casino cashier,"('43-3041.00', 'gaming cage workers', 0.8266291260719298, ['casino cashier', 'casino cage cashier', 'gaming cashier', 'cage cashier'])"
+1799,distillery worker,
+1803,special educational needs teacher,three options are suitable
+1805,production potter,"('51-9195.05', 'potters, manufacturing', 0.8063942998647691, ['production potter', 'pot maker', 'potter'])"
+1836,script supervisor,
+1853,lighting technician,
+1854,fat-purification worker,
+1855,dairy processing operator,
+1900,pyrotechnic designer,
+1973,hop farmer,
+1991,aquaculture hatchery worker,
+2012,locksmith,"('49-9094.00', 'locksmiths and safe repairers', 0.8497125744819641, ['locksmith', 'key maker'])"
+2029,germination operator,"('51-3092.00', 'food batchmakers', 0.7654676258563996, ['brewer', 'brewery technician'])"
+2075,shiatsu practitioner,"('31-9011.00', 'massage therapists', 0.7488876581192018, 'na')"
+2104,sheep breeder,"('45-2021.00', 'animal breeders', 0.6347458332777024, 'na')"
+2138,cattle breeder,"('45-2021.00', 'animal breeders', 0.6831045925617217, 'na')"
+2158,milk heat treatment process operator,
+2178,arboriculturist,
+2185,animal feed operator,
+2193,wine fermenter,
+2231,fisheries master,"('45-3011.00', 'fishers and related fishing workers', 0.7789425790309906, ['fishing vessel captain'])"
+2244,prop master/prop mistress,
+2260,yeast distiller,"('51-3093.00', 'food cooking machine operators and tenders', 0.7274616718292236, ['yeast distiller'])"
+2268,flying director,
+2285,aquaculture husbandry worker,
+2336,vineyard cellar master,
+2376,hunter,"('45-3021.00', 'hunters and trappers', 0.8312943279743195, ['hunter', 'game trapper', 'deer hunter', 'fur trapper', 'trapper', 'animal trapper'])"
+2395,vermouth manufacturer,
+2439,sophrologist,
+2458,lottery operator,
+2460,precision mechanic,
+2467,poultry breeder,"('45-2021.00', 'animal breeders', 0.718862509727478, ['poultry breeder'])"
+2470,r√©p√©titeur,"('27-2042.02', 'musicians, instrumental', 0.7462627321481705, ['piano accompanist', 'accompanist'])"
+2477,statistical assistant,"('43-9111.00', 'statistical assistants', 0.8689907193183899, ['statistical assistant'])"
+2488,oil rig motorhand,"('47-5012.00', 'rotary drill operators, oil and gas', 0.7940555512905121, 'na')"
+2493,chocolate moulding operator,
+2497,aquaculture mooring manager,"('45-1011.06', 'first-line supervisors of aquacultural workers', 0.8223303616046905, 'na')"
+2519,fight director,
+2536,aquaculture harvesting technician,
+2565,miller,
+2603,fruit and vegetable canner,
+2616,aquaculture husbandry technician,
+2618,cocoa mill operator,
+2620,liquor grinding mill operator,
+2621,assistant stage director,
+2648,cider fermentation operator,
+2651,food production operator,"('51-3093.00', 'food cooking machine operators and tenders', 0.7902912378311158, ['food production worker'])"
+2662,extra,
+2701,aquaculture hatchery technician,
+2706,tote operator,"('39-3012.00', 'gaming and sports book writers and runners', 0.6676556229591369, 'na')"
+2715,pig breeder,"('45-2021.00', 'animal breeders', 0.5860819965600967, 'na')"
+2719,aquaculture recirculation technician,
+2721,casino gaming manager,"('39-1011.00', 'gaming supervisors', 0.7985029488801956, 'na')"
+2738,tool and die maker,"('51-4111.00', 'tool and die makers', 0.8631333649158478, ['tool and die maker', 'die maker', 'jig maker'])"
+2741,cigarette making machine operator,"('51-9041.00', 'extruding, forming, pressing, and compacting machine setters, operators, and tenders', 0.6994990170001983, ['cigarette making machine operator', 'cigarette maker', 'cigarette machine operator'])"
+2745,refining machine operator,
+2769,theatre technician,"('27-3099.00', 'media and communication workers, all other', 0.6731374889612198, ['stage technician'])"
+2811,liquor blender,
+2817,flour purifier operator,
+2826,agronomic crop production team leader,"('45-1011.07', 'first-line supervisors of agricultural crop and horticultural workers', 0.7734603464603425, 'na')"
+2831,musician,"('27-2042.02', 'musicians, instrumental', 0.7988297015428544, ['musician', 'organist', 'flutist', 'violinist', 'trumpet player', 'saxophone player', 'clarinetist', 'cellist', 'percussionist', 'trombonist', 'jazz musician', 'oboist', 'guitarist', 'orchestra musician', 'horn player', 'drummer', 'harpist', 'violist', 'pianist'])"
+2834,bulk filler,
+2854,physiotherapy assistant,"('31-2021.00', 'physical therapist assistants', 0.8341755479574203, ['physiotherapy assistant'])"
+2889,gaming dealer,"('39-3011.00', 'gaming dealers', 0.8723392337560654, ['gaming dealer', 'game operator', 'casino dealer', 'dealer', 'croupier'])"
+2928,broadcast technician,"('27-4012.00', 'broadcast technicians', 0.8408442705869674, ['broadcast technician', 'broadcast technicians'])"
+21,nonwoven filament machine operator,
+25,insurance claims handler,"('13-1031.01', 'claims examiners, property and casualty insurance', 0.8571920752525329, ['claims consultant', 'claims representative', 'claims examiner', 'claims adjuster', 'claims analyst'])"
+27,nitroglycerin separator operator,"('51-9011.00', 'chemical equipment operators and tenders', 0.8010567843914033, ['nitroglycerin separator operator'])"
+70,telecommunications technician,"('49-2022.00', 'telecommunications equipment installers and repairers, except line installers', 0.8216276466846466, ['telecommunications technician'])"
+87,curing room worker,
+90,actuarial consultant,"('15-2011.00', 'actuaries', 0.8726330518722534, ['actuarial consultant', 'actuaries', 'actuarial analyst', 'health actuary', 'actuarial mathematician', 'consulting actuary', 'insurance actuary', 'actuary'])"
+165,lime kiln operator,"('51-9012.00', 'separating, filtering, clarifying, precipitating, and still machine setters, operators, and tenders', 0.7671469658613205, ['lime kiln operator'])"
+173,granulator machine operator,
+194,court clerk,"('23-1012.00', 'judicial law clerks', 0.9024419993162155, ['judicial assistant', 'judicial clerk', 'judicial law clerk'])"
+294,"gambling, betting, and lottery game developer",
+303,specialist nurse,several options are suitable
+304,construction scaffolder,
+308,masseur/masseuse,
+309,dry house attendant,
+317,social service consultant,
+333,transport health and safety inspector,
+346,mixed farmer,
+356,marine electronics technician,"('49-2093.00', 'electrical and electronics installers and repairers, transportation equipment', 0.7712497532367706, ['marine electronics technician'])"
+410,gauger,
+424,foreclosure specialist,
+519,commodity broker,"('41-3031.03', 'securities and commodities traders', 0.8686836242675781, ['commodity trader'])"
+548,spa attendant,"('39-5094.00', 'skincare specialists', 0.7513327240943908, ['spa technician'])"
+568,communication infrastructure maintainer,"('49-9052.00', 'telecommunications line installers and repairers', 0.8326785087585449, ['cable technician'])"
+595,nitrator operator,"('51-9011.00', 'chemical equipment operators and tenders', 0.7751286506652831, 'na')"
+597,distillation operator,"('51-9012.00', 'separating, filtering, clarifying, precipitating, and still machine setters, operators, and tenders', 0.8041745066642761, ['distillation operator'])"
+654,radio technician,"('49-2021.00', 'radio, cellular, and tower equipment installers and repairers', 0.8622186422348023, ['radio technician'])"
+658,advanced nurse practitioner,several options are suitable
+683,police detective,"('33-3021.01', 'police detectives', 0.8170627951622009, ['police detective'])"
+697,soap maker,
+698,community development officer,
+705,plodder operator,
+710,wholesale merchant,
+736,criminal investigator,"('33-3021.03', 'criminal investigators and special agents', 0.7890850841999053, ['criminal investigator'])"
+770,humanitarian advisor,
+822,farm manager,"('45-1011.08', 'first-line supervisors of animal husbandry and animal care workers', 0.814620903134346, ['farm manager'])"
+854,pedicurist,"('39-5092.00', 'manicurists and pedicurists', 0.8257224857807159, ['pedicurist'])"
+859,ATM repair technician,"('49-2011.00', 'computer, automated teller, and office machine repairers', 0.7838371187448502, 'na')"
+861,"gambling, betting, and lottery quality assurance engineer",
+863,make-up artist,"('39-5091.00', 'makeup artists, theatrical and performance', 0.788949066400528, 'na')"
+897,non-vessel operating common carrier,"('43-5011.01', 'freight forwarders', 0.7180356830358505, ['freight forwarder'])"
+913,intelligence officer,
+991,psychologist,several options are suitable
+1098,chemical mixer,
+1125,make-up and hair designer,"('39-5091.00', 'makeup artists, theatrical and performance', 0.7947765052318574, 'na')"
+1127,court bailiff,"('33-3011.00', 'bailiffs', 0.7746390998363495, ['court bailiff', 'bailiff', 'court security officer'])"
+1142,leaf sorter,"('45-2041.00', 'graders and sorters, agricultural products', 0.6982052981853485, ['leaf sorter'])"
+1162,healthcare consultant,
+1199,manufacturing manager,"('11-3051.00', 'industrial production managers', 0.8913427114486694, ['manufacturing manager', 'manufacturing director'])"
+1200,government planning inspector,
+1204,glass-blower,"('51-9195.04', 'glass blowers, molders, benders, and finishers', 0.7260161399841308, ['glass blower', 'glassblower'])"
+1223,employment programme coordinator,
+1243,occupational health and safety inspector,"('29-9012.00', 'occupational health and safety technicians', 0.8199849814176559, 'na')"
+1362,hair removal technician,"('39-5094.00', 'skincare specialists', 0.811052492260933, 'na')"
+1365,mathematician,"('15-2021.00', 'mathematicians', 0.8385348796844483, ['mathematicians'])"
+1408,railway electronic technician,"('49-2093.00', 'electrical and electronics installers and repairers, transportation equipment', 0.8010369002819061, ['locomotive electrician'])"
+1413,weight loss consultant,
+1428,private detective,"('33-9021.00', 'private detectives and investigators', 0.8002236455678939, ['private detective', 'private investigator', 'private eye'])"
+1444,international relations officer,
+1446,capsule filling machine operator,
+1477,sports programme coordinator,
+1491,mine control room operator,
+1502,food safety inspector,
+1506,polygraph examiner,
+1679,political affairs officer,
+1695,nurse responsible for general care,"('29-1141.00', 'registered nurses', 0.8650061190128326, ['ward nurse'])"
+1715,coking furnace operator,
+1735,legal assistant,"('23-2011.00', 'paralegals and legal assistants', 0.8470069706439971, ['legal assistant', 'law clerk', 'corporate legal assistant', 'judicial assistant', 'legal aide', 'corporate law assistant', 'paralegal', 'paralegal specialist'])"
+1778,manufactured wooden building assembler,"('49-9095.00', 'manufactured building and mobile home installers', 0.7269824713468552, 'na')"
+1890,leaf tier,
+1899,environmental health inspector,
+1919,aesthetician,"('39-5094.00', 'skincare specialists', 0.8375587075948716, ['aesthetician', 'facialist', 'esthetician', 'skin care technician', 'skin care specialist'])"
+1928,insurance fraud investigator,"('13-1031.01', 'claims examiners, property and casualty insurance', 0.8362716257572174, 'na')"
+1939,industrial waste inspector,
+1990,court administrative officer,
+1996,conveyance clerk,
+2039,steeplejack,
+2041,statistician,"('15-2041.00', 'statisticians', 0.8704592645168303, ['statistician', 'statisticians', 'senior statistician'])"
+2069,property appraiser,"('13-2021.02', 'appraisers, real estate', 0.8587620258331299, ['property appraiser', 'real estate appraiser'])"
+2117,mobile devices technician,
+2130,court enforcement officer,"('33-3011.00', 'bailiffs', 0.7362373232841491, ['court bailiff', 'bailiff'])"
+2132,office equipment repair technician,"('49-2011.00', 'computer, automated teller, and office machine repairers', 0.8142723947763444, 'na')"
+2171,computer hardware repair technician,"('49-2011.00', 'computer, automated teller, and office machine repairers', 0.8161184698343277, ['computer technician', 'computer repairer'])"
+2204,case administrator,
+2216,real estate surveyor,two options are suitable
+2232,manicurist,"('39-5092.00', 'manicurists and pedicurists', 0.8703028470277786, ['manicurist', 'nail technician'])"
+2254,tanning consultant,
+2270,nitroglycerin neutraliser,"('51-9011.00', 'chemical equipment operators and tenders', 0.7523990452289582, ['neutralizer'])"
+2287,security alarm technician,
+2324,trade development officer,
+2362,soap tower operator,
+2372,food regulatory advisor,
+2384,pill maker operator,
+2394,glass beveller,"('51-9031.00', 'cutters and trimmers, hand', 0.7456957131624221, ['glass cutter', 'glass finisher'])"
+2400,policy officer,
+2427,police inspector,"('33-1012.00', 'first-line supervisors of police and detectives', 0.8280554443597794, ['police superintendent'])"
+2451,telecommunications equipment maintainer,"('49-2021.00', 'radio, cellular, and tower equipment installers and repairers', 0.8748104721307755, 'na')"
+2479,fermenter operator,"('51-9011.00', 'chemical equipment operators and tenders', 0.7837291687726975, ['fermenter operator'])"
+2492,beauty salon attendant,
+2510,perfume production machine operator,
+2512,personal stylist,
+2529,inventory coordinator,"('43-5081.03', 'stock clerks- stockroom, warehouse, or storage yard', 0.8662301450967789, ['inventory coordinator', 'inventory associate', 'warehouse coordinator', 'inventory taker', 'warehouse specialist', 'inventory controller'])"
+2544,parliamentary assistant,
+2553,avionics technician,"('49-2091.00', 'avionics technicians', 0.9059713840484618, ['avionics technician', 'aircraft instrument mechanic'])"
+2560,wax bleacher,"('51-9012.00', 'separating, filtering, clarifying, precipitating, and still machine setters, operators, and tenders', 0.7505947053432465, ['wax bleacher', 'wax pumper'])"
+2589,demolition worker,
+2660,commodity trader,"('41-3031.03', 'securities and commodities traders', 0.8474372208118438, ['commodity trader', 'commodities trader'])"
+2698,loss adjuster,several options are suitable
+2700,personal property appraiser,"('13-2021.01', 'assessors', 0.7815021753311158, ['personal property appraiser', 'personal property assessor'])"
+2740,vehicle electronics installer,"('49-2096.00', 'electronic equipment installers and repairers, motor vehicles', 0.7980626195669174, 'na')"
+2853,gemmologist,
+2858,consumer electronics repair technician,
+2935,cosmetics production machine operator,
+2937,demographer,"('15-2041.00', 'statisticians', 0.776107132434845, 'na')"
+2940,civil service administrative officer,
+64,slate mixer,"('51-9023.00', 'mixing and blending machine setters, operators, and tenders', 0.7462228745222091, ['slate mixer'])"
+167,meteorology technician,"('19-4099.00', 'life, physical, and social science technicians, all other', 0.47359091341495513, 'na')"
+223,environmental scientist,"('19-2041.00', 'environmental scientists and specialists, including health', 0.8433639287948609, ['environmental scientist'])"
+293,radiation protection technician,
+326,water treatment systems operator,"('51-8031.00', 'water and wastewater treatment plant and system operators', 0.8281790763139725, ['water treatment operator', 'water system operator'])"
+334,liquid waste treatment plant operator,"('51-8031.00', 'water and wastewater treatment plant and system operators', 0.7818074017763138, ['liquid waste treatment plant operator', 'liquid waste treatment plant operator'])"
+490,water quality analyst,
+538,social security inspector,
+576,asphalt plant operator,"('51-8099.00', 'plant and system operators, all other', 0.610247939825058, ['asphalt plant operator'])"
+625,food analyst,
+637,pipeline environmental project manager,
+661,driller,"('47-5021.00', 'earth drillers, except oil and gas', 0.8660864144563674, ['driller'])"
+754,incinerator operator,
+789,underground heavy equipment operator,
+819,dewatering technician,
+876,surface miner,"('47-5042.00', 'mine cutting and channeling machine operators', 0.8362718641757965, ['surface miner'])"
+899,leather laboratory technician,
+916,underground miner,"('47-5042.00', 'mine cutting and channeling machine operators', 0.8323691070079804, ['underground miner', 'coal cutter'])"
+925,social security officer,
+987,producer,"('27-2012.01', 'producers', 0.807532200217247, ['producer', 'executive producer', 'music producer', 'film producer', 'video producer'])"
+1033,post-production supervisor,"('27-2012.05', 'technical directors/managers', 0.724489524960518, 'na')"
+1045,mechanical engineer,"('17-2141.00', 'mechanical engineers', 0.8896426916122437, ['mechanical engineer'])"
+1069,environmental programme coordinator,"('19-2041.00', 'environmental scientists and specialists, including health', 0.8431337177753448, ['environmental consultant'])"
+1234,hydrographic surveying technician,
+1267,airport environment officer,
+1273,soil scientist,"('19-1031.01', 'soil and water conservationists', 0.8086320579051971, ['soil scientist'])"
+1434,nuclear technician,
+1527,water plant technician,"('51-8031.00', 'water and wastewater treatment plant and system operators', 0.8654677838087083, ['water plant operator', 'water treatment technician', 'water treatment plant operator'])"
+1544,nature conservation officer,several options are suitable
+1592,soil surveying technician,
+1614,concrete products machine operator,
+1620,chemistry technician,"('19-4031.00', 'chemical technicians', 0.8374311923980713, 'na')"
+1651,ecologist,"('19-2041.00', 'environmental scientists and specialists, including health', 0.8367591142654418, ['environmental scientist'])"
+1696,precast moulder,
+1720,electrolytic cell maker,
+1829,block machine operator,
+1893,stone splitter,"('51-9032.00', 'cutting and slicing machine setters, operators, and tenders', 0.7887616366147995, ['stone splitter', 'stone sawyer'])"
+2003,physics technician,"('19-4099.00', 'life, physical, and social science technicians, all other', 0.6098689675331115, 'na')"
+2038,video and motion picture editor,"('27-4032.00', 'film and video editors', 0.7999487102031708, ['film editor', 'video editor', 'editor'])"
+2096,remote sensing technician,"('19-4099.03', 'remote sensing technicians', 0.8144281595945357, ['remote sensing technician', 'remote sensing technologist'])"
+2272,aquaculture environmental analyst,"('19-2041.00', 'environmental scientists and specialists, including health', 0.8355511546134948, ['marine scientist'])"
+2329,stone polisher,"('51-9021.00', 'crushing, grinding, and polishing machine setters, operators, and tenders', 0.77079998254776, ['hand grinder', 'marble polisher', 'granite polisher'])"
+2432,radio producer,"('27-2012.01', 'producers', 0.810561352968216, ['radio producer', 'producer'])"
+2494,wastewater treatment operator,"('51-8031.00', 'water and wastewater treatment plant and system operators', 0.8444877028465271, ['wastewater treatment operator'])"
+2552,wastewater treatment technician,
+2609,countryside officer,two options are suitable
+2650,conservation scientist,general code is suitable
+2678,metrology technician,
+2693,environmental technician,
+2720,material testing technician,
+2880,natural resources consultant,"('19-2041.03', 'industrial ecologists', 0.8341386526823044, 'na')"
+2890,geology technician,"('19-4041.01', 'geophysical data technicians', 0.80995754301548, ['geology technician', 'geological technician', 'geoscience technician', 'geologist'])"
+2893,building construction worker,"('47-2061.00', 'construction laborers', 0.7966210812330246, ['construction worker'])"
+2915,solid waste operator,
+16,land-based machinery technician,"('49-3041.00', 'farm equipment mechanics and service technicians', 0.8315426260232925, 'na')"
+144,fluid power technician,
+235,crossing guard,"('33-9091.00', 'crossing guards', 0.8020806550979614, ['crossing guard', 'school crossing guard'])"
+435,greaser,"('49-9043.00', 'maintenance workers, machinery', 0.8166401773691178, ['greaser', 'machine oiler', 'oiler', 'machine greaser'])"
+436,rotating equipment mechanic,
+474,industrial machinery mechanic,"('49-9041.00', 'industrial machinery mechanics', 0.8091588109731674, ['industrial machinery mechanic'])"
+512,textile machinery technician,"('49-9041.00', 'industrial machinery mechanics', 0.8178845256567001, ['textile machine maintenance mechanic'])"
+582,life guard,"('33-9092.00', 'lifeguards, ski patrol, and other recreational protective service workers', 0.7459644794464112, ['life guard', 'pool attendant', 'lifeguard', 'beach lifeguard'])"
+914,street warden,
+918,3D printing technician,
+999,pneumatic systems technician,
+1070,forge equipment technician,
+1097,moulding machine technician,
+1283,fisheries assistant engineer,
+1526,aircraft marshaller,
+1591,clothing CAD technician,"('17-3019.00', 'drafters, all other', 0.49153908044099814, 'na')"
+1630,marine mechanic,"('49-9041.00', 'industrial machinery mechanics', 0.7742509216070176, ['marine mechanic', 'marine mechanic'])"
+1730,printed circuit board designer,"('17-3012.01', 'electronic drafters', 0.8553456991910935, 'na')"
+1769,mining equipment mechanic,"('49-3042.00', 'mobile heavy equipment mechanics, except engines', 0.8561922073364259, 'na')"
+1945,drafter,"('17-3013.00', 'mechanical drafters', 0.8315124720335006, ['drafter'])"
+2077,construction equipment technician,"('49-3042.00', 'mobile heavy equipment mechanics, except engines', 0.8506035506725311, ['heavy equipment mechanic'])"
+2086,rubber products machine operator,
+2183,civil enforcement officer,"('33-3041.00', 'parking enforcement workers', 0.8230377286672592, 'na')"
+2235,coastguard watch officer,
+2449,crane technician,
+2717,emergency response worker,
+209,mine manager,
+382,auditing clerk,
+401,sport administrator,
+451,library manager,
+539,commercial art gallery manager,"('11-9199.00', 'managers, all other', 0.5785368502140045, 'na')"
+575,aviation communications and frequency coordination manager,
+765,court administrator,
+804,auger press operator,"('51-9041.00', 'extruding, forming, pressing, and compacting machine setters, operators, and tenders', 0.8263746112585069, ['manual control auger press operator'])"
+811,glass polisher,"('51-9021.00', 'crushing, grinding, and polishing machine setters, operators, and tenders', 0.7332407772541046, ['plate glass polisher', 'glass grinder'])"
+814,laundry and dry cleaning manager,
+816,airside safety manager,
+872,drawing kiln operator,"('51-9041.00', 'extruding, forming, pressing, and compacting machine setters, operators, and tenders', 0.7619272977113724, ['drawing kiln operator'])"
+891,environmental protection manager,
+1110,kiln firer,"('51-9051.00', 'furnace, kiln, oven, drier, and kettle operators and tenders', 0.775392460823059, ['kiln firer', 'glost kiln operator', 'tunnel kiln firer', 'kiln fireman'])"
+1112,garage manager,
+1133,phlebotomist,"('31-9097.00', 'phlebotomists', 0.858742606639862, ['phlebotomist', 'venipuncturist', 'phlebotomy technician', 'clinical phlebotomist'])"
+1139,pottery and porcelain caster,"('51-9195.05', 'potters, manufacturing', 0.7419171869754791, 'na')"
+1205,rescue centre manager,
+1208,policy manager,
+1251,clay kiln burner,"('51-9051.00', 'furnace, kiln, oven, drier, and kettle operators and tenders', 0.780016615986824, ['kiln burner', 'dry kiln operator'])"
+1279,camping ground manager,
+1307,correctional services manager,
+1339,sterile services technician,"('31-9093.00', 'medical equipment preparers', 0.7866359710693359, 'na')"
+1470,director of compliance and information security in gambling,two options are suitable
+1501,interpretation agency manager,"('11-9199.00', 'managers, all other', 0.6201006263494492, 'na')"
+1577,translation agency manager,"('11-9199.00', 'managers, all other', 0.6201006263494492, 'na')"
+1598,tax clerk,
+1687,aviation surveillance and code coordination manager,
+1746,travel agency manager,
+1834,glass annealer,"('51-9051.00', 'furnace, kiln, oven, drier, and kettle operators and tenders', 0.7486773282289505, ['lehr tender', 'lehr operator'])"
+1842,insurance clerk,general code is suitable
+1894,energy manager,
+1897,chief fire officer,
+1933,hospital porter,"('31-1015.00', 'orderlies', 0.7860594272613526, 'na')"
+2013,publications coordinator,
+2036,fibre machine tender,"('51-6091.00', 'extruding and forming machine setters, operators, and tenders, synthetic and glass fibers', 0.8550642967224121, ['fiber machine tender'])"
+2095,quarry manager,
+2110,back office specialist,
+2159,brick and tile caster,"('51-9041.00', 'extruding, forming, pressing, and compacting machine setters, operators, and tenders', 0.8026913702487946, ['brick and tile making machine operator'])"
+2175,foreign exchange cashier,
+2230,service manager,"('11-9199.00', 'managers, all other', 0.6927261084318161, ['service director'])"
+2340,property assistant,
+2386,programme manager,
+2416,museum director,
+2446,airspace manager,
+2505,dry press operator,"('51-9041.00', 'extruding, forming, pressing, and compacting machine setters, operators, and tenders', 0.743701821565628, ['dry press operator', 'presser'])"
+2568,front of house manager,
+2569,artistic director,
+2630,glass forming machine operator,
+2642,book publisher,
+2804,forest ranger,"('45-4011.00', 'forest and conservation workers', 0.7876437246799469, 'na')"
+2810,medical laboratory manager,
+2812,tourist information centre manager,
+2815,contact centre manager,
+2886,archive manager,
+2909,investment clerk,"('43-4011.00', 'brokerage clerks', 0.8253737926483153, 'na')"
+193,civil engineering technician,"('17-3022.00', 'civil engineering technicians', 0.9060652792453765, ['civil engineering technician'])"
+430,energy conservation officer,
+695,licensing officer,"('13-1041.02', 'licensing examiners and inspectors', 0.8087113618850709, ['licensing officer'])"
+764,construction safety manager,
+785,corrosion technician,
+889,social worker,"('21-1021.00', 'child, family, and school social workers', 0.8184579908847809, ['social worker', 'community worker'])"
+970,railway infrastructure inspector,
+1036,social counsellor,two options are suitable
+1136,customs officer,
+1156,cultural facilities manager,
+1183,surveying technician,"('17-3031.01', 'surveying technicians', 0.7834711492061615, ['surveying technician', 'engineering technician', 'surveyor', 'land survey technician', 'survey party chief', 'survey technician'])"
+1186,immigration officer,"('13-1041.07', 'regulatory affairs specialists', 0.6340139001607895, 'na')"
+1300,construction safety inspector,"('47-4011.00', 'construction and building inspectors', 0.8181031167507172, ['safety inspector'])"
+1427,recreational facilities manager,"('11-9199.00', 'managers, all other', 0.640385490655899, ['recreation establishment manager'])"
+1565,sport facility manager,
+1744,hand luggage inspector,
+2020,passport officer,
+2412,energy analyst,
+2598,energy consultant,
+2631,immigration adviser,
+2877,social pedagogue,"('21-1021.00', 'child, family, and school social workers', 0.7919758290052414, 'na')"
+40,gear machinist,"('51-4041.00', 'machinists', 0.8980977028608322, ['gear machinist', 'auto machinist'])"
+178,boring machine operator,"('51-4032.00', 'drilling and boring machine tool setters, operators, and tenders, metal and plastic', 0.8375352561473847, ['boring machine operator', 'production boring machine operator', 'bore mill operator', 'vertical boring mill operator', 'boring mill operator'])"
+184,refurbishing technician,"('49-3021.00', 'automotive body and related repairers', 0.8341396868228912, ['truck body repairer'])"
+198,briquetting machine operator,
+262,restoration technician,
+271,plasma cutting machine operator,
+298,spark erosion machine operator,
+423,moulding machine operator,
+450,diesel engine mechanic,"('49-3031.00', 'bus and truck mechanics and diesel engine specialists', 0.8616495847702026, ['diesel engine mechanic', 'diesel mechanic'])"
+469,vehicle maintenance supervisor,"('49-1011.00', 'first-line supervisors of mechanics, installers, and repairers', 0.8053003430366517, 'na')"
+577,screw machine operator,"('51-4034.00', 'lathe and turning machine tool setters, operators, and tenders, metal and plastic', 0.8480209499597549, ['screw machine operator'])"
+719,vehicle maintenance attendant,
+886,vehicle technician,"('49-3023.01', 'automotive master mechanics', 0.8228128731250763, ['auto mechanic', 'automotive technician', 'car mechanic', 'automotive mechanic', 'vehicle mechanic'])"
+1093,coachbuilder,
+1107,computer numerical control machine operator,
+1118,oxy fuel burning machine operator,
+1158,stamping press operator,"('51-4031.00', 'cutting, punching, and press machine setters, operators, and tenders, metal and plastic', 0.8021340578794479, ['stamping press operator', 'punch machine hand', 'stamp press operator', 'punch press setter'])"
+1235,metal nibbling operator,
+1381,laser marking machine operator,
+1440,thread rolling machine operator,
+1646,fitter and turner,
+1694,upsetting machine operator,"('51-4022.00', 'forging machine setters, operators, and tenders, metal and plastic', 0.7815238207578659, ['upsetting machine operator', 'upset operator', 'upsetter'])"
+1812,router operator,"('51-4035.00', 'milling and planing machine setters, operators, and tenders, metal and plastic', 0.8196481227874756, ['router operator'])"
+1823,tyre fitter,
+1956,heat treatment furnace operator,
+1957,metal planer operator,"('51-4035.00', 'milling and planing machine setters, operators, and tenders, metal and plastic', 0.8467897713184357, ['metal milling machine operator'])"
+1971,straightening machine operator,"('51-4031.00', 'cutting, punching, and press machine setters, operators, and tenders, metal and plastic', 0.794418066740036, ['straightening machine operator', 'straightener', 'straightening press operator'])"
+2008,drill press operator,"('51-4032.00', 'drilling and boring machine tool setters, operators, and tenders, metal and plastic', 0.8522076487541199, ['drill press operator', 'tapper operator', 'automatic driller and reamer', 'metal drill press operator', 'drill press operator for metal', 'automatic drilling machine operator', 'drill press tender', 'drill presser', 'drill operator'])"
+2071,chain making machine operator,
+2184,automotive brake technician,"('49-3023.02', 'automotive specialty technicians', 0.6906903773546219, 'na')"
+2282,roadside vehicle technician,
+2328,ornamental metal worker,"('51-4081.00', 'multiple machine tool setters, operators, and tenders, metal and plastic', 0.7791544556617738, ['ornamental metal worker'])"
+2401,scrap metal operative,
+2527,swaging machine operator,"('51-4022.00', 'forging machine setters, operators, and tenders, metal and plastic', 0.7999680578708648, ['swaging machine operator'])"
+2711,special-interest groups' official,
+2730,drilling machine operator,"('51-4032.00', 'drilling and boring machine tool setters, operators, and tenders, metal and plastic', 0.8397514313459395, ['drill punch operator', 'gang drill operator', 'foot drill operator', 'driller and reamer', 'drill setup operator', 'driller and broacher'])"
+93,automotive battery technician,
+132,ICT test analyst,"('15-1199.01', 'software quality assurance engineers and testers', 0.8218247354030609, 'na')"
+202,pharmacologist,"('19-1042.00', 'medical scientists, except epidemiologists', 0.8311370611190796, ['pharmacologist'])"
+203,ICT disaster recovery analyst,
+207,software tester,"('15-1199.01', 'software quality assurance engineers and testers', 0.8542995631694794, ['software tester', 'software testing specialist'])"
+221,kinesiologist,"('29-1199.00', 'health diagnosing and treating practitioners, all other', 0.6290435284376145, ['kinesiologist'])"
+462,fiberglass laminator,"('51-2091.00', 'fiberglass laminators and fabricators', 0.8066108882427215, ['fiberglass laminator'])"
+622,occupational therapist,"('29-1122.00', 'occupational therapists', 0.8675051391124726, 'na')"
+646,chemical engineering technician,
+871,chiropractor,"('29-1011.00', 'chiropractors', 0.7950327217578887, ['chiropractor'])"
+879,insulating tube winder,
+884,plastic heat treatment equipment operator,"('51-4191.00', 'heat treating equipment setters, operators, and tenders, metal and plastic', 0.8171705216169357, ['heat treat operator', 'heat treating operator', 'heat treat technician'])"
+945,podiatry assistant,"('29-1081.00', 'podiatrists', 0.7613238155841828, 'na')"
+960,injection moulding operator,"('51-4072.00', 'molding, coremaking, and casting machine setters, operators, and tenders, metal and plastic', 0.811762312054634, ['injection molding machine operator'])"
+1115,electrical mechanic,"('49-2092.00', 'electric motor, power tool, and related repairers', 0.8504000961780549, ['electrical mechanic', 'maintenance electrician', 'electrician'])"
+1169,ride technician,
+1230,automotive electrician,"('49-2096.00', 'electronic equipment installers and repairers, motor vehicles', 0.8197742134332657, ['automotive electrician', 'automotive electrician', 'auto electrician'])"
+1256,bioinformatics scientist,"('19-1029.01', 'bioinformatics scientists', 0.8699243366718292, ['bioinformatics scientist', 'bioinformatics analyst', 'research scientist', 'bioinformatician', 'senior bioinformatics scientist'])"
+1259,food biotechnologist,"('19-1012.00', 'food scientists and technologists', 0.7869054794311523, 'na')"
+1313,vacuum forming machine operator,
+1344,data quality specialist,
+1412,radiographer,
+1419,ICT auditor manager,
+1430,fibreglass machine operator,"('51-2091.00', 'fiberglass laminators and fabricators', 0.8031332433223725, ['fiberglass machine operator'])"
+1507,animal behaviourist,"('19-1023.00', 'zoologists and wildlife biologists', 0.785240125656128, 'na')"
+1568,occupational therapy assistant,"('29-1122.00', 'occupational therapists', 0.8341939330101014, 'na')"
+1594,plastic furniture machine operator,
+1637,filament winding operator,"('51-2091.00', 'fiberglass laminators and fabricators', 0.7845785200595856, ['fiberglass container winding operator'])"
+1670,power tool repair technician,"('49-2092.00', 'electric motor, power tool, and related repairers', 0.7946261346340179, ['power tool repair technician', 'tool repair technician'])"
+1672,blow moulding machine operator,"('51-4072.00', 'molding, coremaking, and casting machine setters, operators, and tenders, metal and plastic', 0.7675309151411056, 'na')"
+1673,plastic rolling machine operator,
+1691,ground lighting officer,
+1756,marine electrician,
+1783,cake press operator,
+1817,wind turbine technician,
+1925,ICT quality assurance manager,"('15-1199.01', 'software quality assurance engineers and testers', 0.8041685819625854, 'na')"
+2057,record press operator,
+2146,immunologist,
+2252,specialist chiropractor,"('29-1011.00', 'chiropractors', 0.7747647225856781, 'na')"
+2284,mining electrician,
+2295,pultrusion machine operator,
+2445,podiatrist,"('29-1081.00', 'podiatrists', 0.7795066833496094, ['podiatrist', 'chiropodist', 'podiatric physician'])"
+2691,animal osteopath,
+2707,animal feed nutritionist,
+2735,compression moulding machine operator,"('51-4072.00', 'molding, coremaking, and casting machine setters, operators, and tenders, metal and plastic', 0.8123342782258987, ['compression molding machine operator', 'compression molding machine setter', 'molding machine setter'])"
+2756,biologist,several options are suitable
+2813,household appliances repair technician,"('49-9031.00', 'home appliance repairers', 0.8193463921546935, ['appliance service technician'])"
+2860,lift engineer,"('47-4021.00', 'elevator installers and repairers', 0.7964135408401489, ['elevator builder', 'escalator installer', 'elevator service mechanic', 'elevator constructor', 'elevator erector'])"
+2867,recreational therapist,"('29-1125.00', 'recreational therapists', 0.8399836301803589, ['recreational therapist', 'recreation therapist'])"
+2916,rolling stock electrician,
+62,ICT security administrator,"('15-1122.00', 'information security analysts', 0.9119793057441711, ['network security administrator'])"
+153,digital forensics expert,
+160,ICT security consultant,"('15-1122.00', 'information security analysts', 0.8491040647029876, 'na')"
+481,chief ICT security officer,"('15-1122.00', 'information security analysts', 0.8336153209209443, 'na')"
+1424,ethical hacker,"('15-1122.00', 'information security analysts', 0.8227696627378465, 'na')"
+1435,ICT security manager,"('15-1122.00', 'information security analysts', 0.8638525366783142, ['information security manager'])"
+1551,knowledge engineer,
+2000,ICT resilience manager,
+212,quality services manager,
+239,corporate social responsibility manager,
+726,business service manager,"('11-3011.00', 'administrative services managers', 0.8036323547363281, 'na')"
+1248,manufacturing facility manager,
+1663,defence administration officer,
+1764,department manager,"('11-3011.00', 'administrative services managers', 0.8532266169786453, ['business unit manager'])"
+2259,project manager,"('11-9199.00', 'managers, all other', 0.7153009921312332, ['project manager', 'project leader', 'project director'])"
+83,metallurgical technician,
+1357,general practitioner,"('29-1062.00', 'family and general practitioners', 0.7112393081188202, 'na')"
+1871,mine surveying technician,
+2705,geotechnician,"('19-4041.01', 'geophysical data technicians', 0.8120878785848618, ['geotechnician', 'geologist'])"
+2848,mine safety officer,
+2881,desalination technician,
+278,anaesthetic technician,"('29-2055.00', 'surgical technologists', 0.8837966382503508, ['surgical technician'])"
+1255,dietetic technician,"('29-2051.00', 'dietetic technicians', 0.8950151830911636, ['dietetic assistant', 'clinical dietetic technician'])"
+1480,respiratory therapy technician,"('29-2054.00', 'respiratory therapy technicians', 0.8683033406734466, ['oxygen therapy technician', 'respiratory technician'])"
+1861,specialised doctor,several options are suitable
+1975,osteopath,
+2464,assistant clinical psychologist,
+33,tour operators manager,
+363,publishing rights manager,
+394,relocation officer,
+411,promoter,"('13-1011.00', 'agents and business managers of artists, performers, and athletes', 0.8127280056476593, ['promoter', 'event promoter'])"
+647,venue programmer,
+711,tourism contract negotiator,
+853,hospitality entertainment manager,"('13-1011.00', 'agents and business managers of artists, performers, and athletes', 0.7955881178379058, ['entertainment manager'])"
+1089,intellectual property consultant,
+2114,mechanical engineering technician,"('17-3027.00', 'mechanical engineering technicians', 0.8925159990787506, 'na')"
+2370,talent agent,"('13-1011.00', 'agents and business managers of artists, performers, and athletes', 0.8744754076004029, ['talent agent', 'theatrical agent', 'music agent', 'literary agent'])"
+2778,auctioneer,
+2816,advertising sales agent,"('41-3011.00', 'advertising sales agents', 0.845547491312027, 'na')"
+24,dismantling engineer,
+157,quantity surveyor,
+880,materials engineer,"('17-2131.00', 'materials engineers', 0.8835261642932891, ['materials engineer'])"
+927,aviation ground systems engineer,
+1015,robotics engineer,"('17-2199.08', 'robotics engineers', 0.8586281657218933, ['robotics engineer'])"
+1340,"textile, leather and footwear researcher",
+1421,commissioning engineer,
+1905,health and safety engineer,"('17-2111.01', 'industrial safety and health engineers', 0.8889734447002411, ['safety engineer'])"
+2023,optical engineer,"('17-2199.07', 'photonics engineers', 0.8615444064140321, ['optical engineer', 'optics engineer'])"
+2080,acoustical engineer,
+2108,energy engineer,"('17-2199.03', 'energy engineers', 0.867069685459137, ['energy engineer', 'energy efficiency engineer'])"
+2378,test engineer,
+2614,patent engineer,
+2868,bioengineer,"('17-2199.01', 'biochemical engineers', 0.8312493026256561, ['bioengineer'])"
+2923,application engineer,
+113,commissioning technician,
+227,footwear product developer,
+454,photonics engineering technician,"('17-3029.08', 'photonics technicians', 0.861501294374466, ['photonics engineering technician', 'photonics technician', 'photonics engineering technologist', 'laser technician'])"
+612,utilities inspector,
+786,product development engineering technician,"('17-3029.06', 'manufacturing engineering technologists', 0.8607175767421722, 'na')"
+997,process engineering technician,"('17-3026.00', 'industrial engineering technicians', 0.8781235873699188, ['process engineer'])"
+1044,automation engineering technician,
+1079,footwear production technician,
+1396,textile process controller,
+1562,airport maintenance technician,
+1669,pipeline compliance coordinator,
+1835,quality engineering technician,
+1967,leather goods manufacturing technician,
+2072,food technician,
+2229,industrial engineering technician,"('17-3026.00', 'industrial engineering technicians', 0.8778156518936158, ['industrial engineering technician'])"
+2377,aviation safety officer,
+2506,leather goods product developer,
+704,social work practice educator,"('25-1113.00', 'social work teachers, postsecondary', 0.8206967204809189, 'na')"
+1253,higher education lecturer,"('25-1081.00', 'education teachers, postsecondary', 0.8432608246803284, ['professor'])"

@@ -1,0 +1,21 @@
+﻿sml_question,task_bottleneck,is_bottleneck,percentage_of_all_bottleneck_tasks
+qD,does not involve working with data,51,0.5
+q4,feedback is not immediate,200,1.9
+q21,actions need not be completed in specific order,216,2.1
+q20,each task completion is different and cannot be measured,217,2.1
+q2,information is not recorded or recordable by computer,242,2.3
+q11,is not describable with rules,255,2.4
+q1,information is not machine-readable,291,2.8
+q8,"is not about matching information to concepts, labels etc.",323,3.1
+q10,is not highly routine and not repeated frequently,343,3.3
+q12,involves the need to explain decisions,612,5.9
+q14,requires long-term planning,766,7.3
+q13,"is not focused on ranking, sorting, grouping or predicting",864,8.3
+q7,"requires complex, abstract reasoning",916,8.8
+q3,requires a wide range of complex actions and outputs,930,8.9
+q19,cannot be completed in a second or less,943,9
+q9,requires complex conversations,1050,10.1
+q6,requires human connection,1112,10.7
+q5,is not error tolerant,1334,12.8
+q22,requires physical labour and movement,5859,56.2
+q23,requires high dexterity,6457,61.9
