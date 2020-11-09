@@ -4,9 +4,9 @@ To combine the rich insights from [O\*NET](https://www.onetonline.org/) and [ESC
 
 To derive the crosswalk, we leveraged several strategies. First, we used an existing crosswalk between O\*NET and ISCO (i.e. broader occupational groups than ESCO) to identify the most likely matches. Second, we applied techniques from Natural Language Processing – a subfield of machine learning – to identify for each ESCO occupation corresponding O\*NET occupations with the highest semantic similarity of occupational group descriptors and known job titles. Finally, we manually assigned occupational codes in instances where the two automated approaches didn’t agree.
 
-For further details on the methodology, consult the Appendix of the [Mapping Career Causeways](https://www.nesta.org.uk/project/mapping-career-causeways/) project report, as well as the `ONET_to_ESCO_crosswalk.ipynb` notebook. The development of this crosswalk was led by Jyldyz Djumalieva, with special thanks to Stef Garasto and Karlis Kanders.
+For further details on the methodology, consult the Appendix of the [Mapping Career Causeways](https://www.nesta.org.uk/project/mapping-career-causeways/) project report, as well as the `ONET_to_ESCO_crosswalk.ipynb` notebook. The development of this crosswalk was led by Jyldyz Djumalieva, with additional thanks to Stef Garasto and Karlis Kanders.
 
-Anyone is welcome to use and build upon the crosswalk; to refer to this crosswalk in your work, you can cite the Mapping Career Causeways report.
+Anyone is welcome to use and build upon the crosswalk; to refer to this crosswalk in your work, you can cite the Mapping Career Causeways report. If you would like to leave feedback, you can either create a new github issue or write to us on `{insert email here}`.
 
 ## Crosswalk files
 

@@ -18,6 +18,11 @@ Project codebase will be published in early 2021, together with a complete list 
 
 In the meantime, we will be conducting research to further validate the recommendations from the career transitions algorithm.
 
+### Feedback
+
+- If you would like to raise a technical question, please create a new github issue.
+- If you would like to contact us regarding the Mapping Career Causeways project, please write to `{insert email here}`.
+
 ## Contents
 
 ### Supplementary online data
