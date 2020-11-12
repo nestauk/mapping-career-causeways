@@ -26,7 +26,7 @@ Anyone is welcome to use and build upon the published data and code. If you woul
 
 ### Supplementary online data
 
-`STATUS: Published on November 23rd, 2020`
+`STATUS: To be published on November 23rd, 2020`
 
 - [Crosswalk between O\*NET and ESCO occupations](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/ONET_ESCO_crosswalk/)
 - [Automation risk estimates](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/Automation_risk/)
