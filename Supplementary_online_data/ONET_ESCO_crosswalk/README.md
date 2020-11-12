@@ -6,7 +6,7 @@ To derive the crosswalk, we leveraged several strategies. First, we used an exis
 
 For further details on the methodology, consult the Appendix of the [Mapping Career Causeways](https://www.nesta.org.uk/project/mapping-career-causeways/) project report, as well as the `ONET_to_ESCO_crosswalk.ipynb` notebook. The development of this crosswalk was led by Jyldyz Djumalieva, with additional thanks to Stef Garasto, Karlis Kanders and Cath Sleeman.
 
-*Anyone is welcome to use and build upon the crosswalk. If you would like to leave feedback, you can either create a new github issue (for technical questions) or write to us on `open.jobs@nesta.org.uk`. To refer to this crosswalk in your work, please cite the Mapping Career Causeways report:*
+*Anyone is welcome to use and build upon the crosswalk. If you would like to leave feedback, you can either create a new github issue (for technical questions) or [write to us](mailto:open.jobs@nesta.org.uk). To refer to this crosswalk in your work, please cite the Mapping Career Causeways report:*
 
 *Kanders K., Djumalieva, J., Sleeman, C. and Orlik, J. (2020). Mapping Career Causeways: Supporting Workers at Risk. London: Nesta*
 

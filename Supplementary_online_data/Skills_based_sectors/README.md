@@ -29,7 +29,7 @@ Skills-based sectors and sub-sectors for 2942 ESCO occupations (including narrow
 **`mcc_skills_based_sectors_Risk.csv`**  
 **`mcc_skills_based_sub_sectors_Risk.csv`**
 
-Number of occupations in each [automation risk](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/Automation_risk/) category, for each skills-based sector and sub-sector.
+Number of occupations in each [automation risk](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/automation_risk/) category, for each skills-based sector and sub-sector.
 
 | Column name   | Description   |
 |:---------------|:---------------|

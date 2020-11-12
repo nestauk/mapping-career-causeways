@@ -19,7 +19,7 @@ Contains tables with national employment figures (in thousands) in the UK, Italy
 {country_code}_combined_breakdown_k_{variable_name}.csv
 ```
 
-Each table features a column `RISK_CAT` that indicates the automation risk category: 0=high risk, 1=low risk, and 2=other. Workers were grouped in these risk categories based on our estimates of automation risk of the workers' ISCO three-digit occupational codes (see [Automation risk](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/Automation_risk/) folder for the risk category of each ISCO code).
+Each table features a column `RISK_CAT` that indicates the automation risk category: 0=high risk, 1=low risk, and 2=other. Workers were grouped in these risk categories based on our estimates of automation risk of the workers' ISCO three-digit occupational codes (see [Automation risk](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/automation_risk/) folder for the risk category of each ISCO code).
 
  The variables that we examined are listed in the table below:
 
@@ -32,7 +32,7 @@ Each table features a column `RISK_CAT` that indicates the automation risk categ
 | nace1d | NACE industry codes; see the list of industries [here](https://en.wikipedia.org/wiki/Statistical_Classification_of_Economic_Activities_in_the_European_Community). |
 | sex | 1=male, 2=female. |  
 
-Note that all cells that show data from 20 or less workers have been masked out, in accordance with the EU LFS publishing guidelines. For more information about the different variables, see also the [EU LFS User Guide](https://ec.europa.eu/eurostat/documents/1978984/6037342/EULFS-Database-UserGuide.pdf).
+Note that all cells that show data from 20 or less workers have been masked out with an 'x', in accordance with the EU LFS publishing guidelines. For more information about the different variables, see also the [EU LFS User Guide](https://ec.europa.eu/eurostat/documents/1978984/6037342/EULFS-Database-UserGuide.pdf).
 
 &nbsp;  
 **`all_prop_demo_breakdown/`**
@@ -52,7 +52,7 @@ Tables with employment (in thousands) in the three risk categories for different
 | region | Region code of workers' household. |   
 | NUTS  | NUTS code of the region (for maps, see [Eurostat github](https://github.com/eurostat/Nuts2json)). |   
 | region_name | Name of the region. |
-| risk_category | [Automation risk](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/Automation_risk/) category. |
+| risk_category | [Automation risk](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/automation_risk/) category. |
 | 2014 - 2018 | Employment (in thousands) in the particular region and automation risk category, in the years 2014-2018. |
 | average | Average employment in the particular region and automation risk category in years 2014-2018. |
 | percentage | Percentage of the average total employment in years 2014-2018 in a particular automation risk category.  |
@@ -94,7 +94,7 @@ Contains tables with national employment figures (in thousands) for each three-d
 |isco_code   | Three-digit ISCO-08 code of the minor group. Find more information about ISCO on [ilo.org](https://www.ilo.org/public/english/bureau/stat/isco/isco08/). |
 | 2014 - 2018 | Employment (in thousands). |
 |isco_minor_group | Title of the occupational group. |
-| RISK_CAT| [Automation risk](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/Automation_risk/) category of the ISCO minor group (0=high risk, 1=low risk, and 2=other). |
+| RISK_CAT| [Automation risk](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/automation_risk/) category of the ISCO minor group (0=high risk, 1=low risk, and 2=other). |
 
 &nbsp;  
 **`regional_count_isco/`**

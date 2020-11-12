@@ -1,6 +1,6 @@
 # Automation risk estimates
 
-Estimates of automation risk for European occupations specified in the European Skills, Competences, Qualifications and Occupations framework ([ESCO](https://ec.europa.eu/esco/)). We translated the results by [Brynjolfsson, Mitchell and Rock (2018)](https://www.aeaweb.org/articles?id=10.1257/pandp.20181019), which were originally obtained for the US [O\*NET](https://www.onetonline.org/) occupations, to ESCO by developing a [crosswalk](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/ONET_ESCO_crosswalk/) between both frameworks. Please find below the descriptions of the provided tables.
+Estimates of automation risk for European occupations specified in the European Skills, Competences, Qualifications and Occupations framework ([ESCO](https://ec.europa.eu/esco/)). We translated the results by [Brynjolfsson, Mitchell and Rock (2018)](https://www.aeaweb.org/articles?id=10.1257/pandp.20181019), which were originally obtained for the US [O\*NET](https://www.onetonline.org/) occupations, to ESCO by developing a [crosswalk](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/ONET_ESCO_crosswalk/) between both frameworks. Please find below the descriptions of the provided tables.
 
 ## Contents
 
@@ -28,7 +28,7 @@ occupations (level 6 to level 8) may inherit the automation risk of their corres
 |risk_category | Category of automation risk, which is determined by both the overall automation risk and the prevalence of bottleneck tasks. Occupations in the fourth quartile of risk and first quartile of prevalence are 'High risk'; conversely, occupations in the first quartile of risk and last quartile of prevalence are 'Low risk'. |
 |risk_nonphysical | Overall automation risk of non-physical tasks (tasks that don't require dexterity or physical labour). |
 |prevalence_nonphysical | Prevalence of bottleneck tasks when requirements of dexterity and physical labour are no longer bottlenecks to automation. |
-|onet_code | O\*NET code of the ESCO occupation, inferred by using a [crosswalk](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/ONET_ESCO_crosswalk/) developed by the authors.  |
+|onet_code | O\*NET code of the ESCO occupation, inferred by using a [crosswalk](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/ONET_ESCO_crosswalk/) developed by the authors.  |
 |onet_occupation | Title of the O*NET occupation. |
 |concept_uri | Universal identifier of the ESCO occupation used by the ESCO API. Find more information in the [ESCO documentation](https://ec.europa.eu/esco/api/doc/esco_api_doc.html#rest-calls-get-conceptschemes-by-uris). |  
 | skills_based_sector_code | Code indicating skills-based sectors - groups of related occupations sharing similar worker requirements and work characteristics. These groups were determined by applying graph-based clustering (an unsupervised machine learning method; see the Mapping Career Causeways report for more details). | Analysis |
