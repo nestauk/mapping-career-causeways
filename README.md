@@ -27,7 +27,7 @@ Data on at-risk workers in the UK, Italy and France.
 - [**Results on job transitions and skills analysis**](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/transitions/): The number of safe and desirable transitions for 1627 ESCO occupations, and the effectiveness of core skills in uncovering new transitions.
 - [**Skills-based sectors**](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/skills_based_sectors): Breakdown of data-driven groups of related ESCO occupations that share similar job requirements and work characteristics
 
-### Codebase and job transitions
+### Codebase and full job transitions data
 
 `STATUS: Not yet released; to be published in early 2021`
 
