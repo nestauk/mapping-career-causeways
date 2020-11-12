@@ -1,0 +1,55 @@
+skills_based_sector_code,skills_based_sector,sub_sector_code,sub_sector
+1,"technicians, construction, transport & security workers",1.1,engineering technicians
+1,"technicians, construction, transport & security workers",1.2,construction workers & supervisors
+1,"technicians, construction, transport & security workers",1.3,"industrial technicians, mechanics & repairers"
+1,"technicians, construction, transport & security workers",1.4,transport & security workers
+1,"technicians, construction, transport & security workers",1.5,environmental & agriculture workers
+1,"technicians, construction, transport & security workers",1.6,mining engineers & technicians
+2,business & administration workers,2.1,"process managers, supervisors & coordinators"
+2,business & administration workers,2.2,accounting & financial services workers
+2,business & administration workers,2.3,"assistants, clerks & legal workers"
+2,business & administration workers,2.4,business managers
+2,business & administration workers,2.5,public officials
+3,sales & services workers,3.1,"food, cleaning & services workers"
+3,sales & services workers,3.2,customer representatives
+3,sales & services workers,3.3,shop & services managers
+3,sales & services workers,3.4,retail & sales workers
+3,sales & services workers,3.5,wholesale merchants
+4,manufacturing workers,4.1,metal workers & machine operators
+4,manufacturing workers,4.2,chemical manufacturing workers
+4,manufacturing workers,4.3,craftspersons & carpenters
+4,manufacturing workers,4.4,paper & wood manufacturing workers
+5,engineers & researchers,5.1,researchers & science technicians
+5,engineers & researchers,5.2,various engineers & architects
+5,engineers & researchers,5.3,"mechanical engineers, designers & drafters"
+6,arts & media workers,6.1,art & media technicians
+6,arts & media workers,6.2,"journalists, publishers & composers"
+6,arts & media workers,6.3,creative managers & graphic designers
+6,arts & media workers,6.4,perfomers
+6,arts & media workers,6.5,fine artists
+7,education workers,7.1,instructors & vocational teachers
+7,education workers,7.2,teachers & childcare workers
+7,education workers,7.3,lecturers
+7,education workers,7.4,education administrators
+8,"textile, clothing, leather & footwear manufacturing workers",8.1,shoe & leather manufacturing workers
+8,"textile, clothing, leather & footwear manufacturing workers",8.2,textile workers
+8,"textile, clothing, leather & footwear manufacturing workers",8.3,clothing manufacturing workers
+9,food & tobacco production workers,9.1,food & tobacco production workers
+9,food & tobacco production workers,9.2,food & tobacco production operators
+9,food & tobacco production workers,9.3,food & tobacco production specialists
+10,logistics workers,10.1,logistics & distribution managers
+10,logistics workers,10.2,import export specialists
+10,logistics workers,10.3,import export managers
+11,healthcare workers,11.1,doctors & specialist therapists
+11,healthcare workers,11.2,healthcare technicians & scientists
+11,healthcare workers,11.3,naturopathic & physical therapists
+11,healthcare workers,11.4,healthcare administrators & assistants
+12,ict workers,12.1,"ict system engineers, adminstrators & managers"
+12,ict workers,12.2,developers & testers
+12,ict workers,12.3,data workers
+13,animal care & husbandry workers,13.1,animal care workers & trainers  
+13,animal care & husbandry workers,13.2,animal husbandry workers
+13,animal care & husbandry workers,13.3,aquaculture workers
+14,social workers,14.1,social workers
+14,social workers,14.2,care workers & counsellors
+14,social workers,14.3,miscellaneous counsellors

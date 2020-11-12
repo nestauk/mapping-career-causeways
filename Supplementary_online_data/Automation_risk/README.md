@@ -31,6 +31,10 @@ occupations (level 6 to level 8) may inherit the automation risk of their corres
 |onet_code | O\*NET code of the ESCO occupation, inferred by using a [crosswalk](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/ONET_ESCO_crosswalk/) developed by the authors.  |
 |onet_occupation | Title of the O*NET occupation. |
 |concept_uri | Universal identifier of the ESCO occupation used by the ESCO API. Find more information in the [ESCO documentation](https://ec.europa.eu/esco/api/doc/esco_api_doc.html#rest-calls-get-conceptschemes-by-uris). |  
+| skills_based_sector_code | Code indicating skills-based sectors - groups of related occupations sharing similar worker requirements and work characteristics. These groups were determined by applying graph-based clustering (an unsupervised machine learning method; see the Mapping Career Causeways report for more details). | Analysis |
+| skills_based_sector | Label of the skills-based sector. | Analysis |
+| sub_sector_code | Code indicating skills-based sub-sectors, which are nested within the skills-based sectors. | Analysis |
+| sub_sector | Label of the skills-based sub-sector. | Analysis |
 
 <a name="isco"></a>
 ## Automation risk estimates for ISCO occupational groups
