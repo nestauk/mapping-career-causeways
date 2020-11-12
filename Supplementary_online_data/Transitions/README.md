@@ -4,6 +4,13 @@ For each ESCO occupation, we identified alternative occupations that are similar
 
 Note that the complete list of all transitions, as well as the calculated occupation similarities, and the career transition recommendation algorithm will be provided in early 2021.
 
+## Contents
+
+- [Number of transition options for ESCO occupations](#esco)
+- [Transition matrices](#matrices)
+- [Core skills](#skills)
+
+<a name="esco"></a>
 ## Number of transition options for ESCO occupations
 
 **`mcc_transitions_Occupation_data.csv`**
@@ -36,6 +43,7 @@ Estimates of the number of safe and desirable transition options for the 1627 ES
 | n_safe_desirable_strict_and_highly_viable | Number of highly viable, desirable job transitions to occupations that are not in the 'High risk' category, and that satisfy the stricter condition of simultaneously reducing worker's overall automation risk AND increasing the prevalence of bottleneck tasks. | Analysis|
 | concept_uri | Universal identifier of the ESCO occupation used by the ESCO API. Find more information in the [ESCO documentation](https://ec.europa.eu/esco/api/doc/esco_api_doc.html#rest-calls-get-conceptschemes-by-uris). | ESCO |  
 
+<a name="matrices"></a>
 ## Transition matrices
 
 **`mmcc_transitions_Matrix_sectors.csv`**  
@@ -43,6 +51,7 @@ Estimates of the number of safe and desirable transition options for the 1627 ES
 
 Transition matrices between skills-based sectors and sub-sectors. Each row of the matrix shows the proportion of safe and desirable transitions that go from high-risk occupations in one sector to lower-risk occupations in other sectors. The transitions satisfy the stricter condition for safe transitions by simultaneously reducing worker's overall automation risk and increasing the prevalence of bottleneck tasks.
 
+<a name="skills"></a>
 ## Core skills
 
 Effect of different types of upskilling on workers’ range of transitions. Using methods from network science, we identified 100 core ESCO skills which reflect the central competencies for a wide range of jobs. To further evaluate the impact of adopting a new core skill, these were added, one at a time, to the skills set of each high-risk occupation and the similarities to other occupations were recalculated. We then evaluated the number of new safe and desirable transitions that emerged as the result of learning each skill.

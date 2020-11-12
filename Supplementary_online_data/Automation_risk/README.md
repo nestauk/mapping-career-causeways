@@ -2,6 +2,13 @@
 
 Estimates of automation risk for European occupations specified in the European Skills, Competences, Qualifications and Occupations framework ([ESCO](https://ec.europa.eu/esco/)). We translated the results by [Brynjolfsson, Mitchell and Rock (2018)](https://www.aeaweb.org/articles?id=10.1257/pandp.20181019), which were originally obtained for the US [O\*NET](https://www.onetonline.org/) occupations, to ESCO by developing a [crosswalk](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/ONET_ESCO_crosswalk/) between both frameworks. Please find below the descriptions of the provided tables.
 
+## Contents
+
+- [Automation risk estimates for ESCO occupations](#esco)
+- [Automation risk estimates for ISCO occupational groups](#isco)
+- [Impact of tasks and activities on automation risk](#tasks)
+
+<a name="esco"></a>
 ## Automation risk estimates for ESCO occupations
 
 **`mcc_risk_All_occupations.csv`**
@@ -25,6 +32,7 @@ occupations (level 6 to level 8) may inherit the automation risk of their corres
 |onet_occupation | Title of the O*NET occupation. |
 |concept_uri | Universal identifier of the ESCO occupation used by the ESCO API. Find more information in the [ESCO documentation](https://ec.europa.eu/esco/api/doc/esco_api_doc.html#rest-calls-get-conceptschemes-by-uris). |  
 
+<a name="isco"></a>
 ## Automation risk estimates for ISCO occupational groups
 
 **`mcc_risk_ISCO_3digit.csv`**
@@ -52,7 +60,7 @@ Estimates of automation risk for four-digit ISCO unit groups. These estimates we
 |prevalence| Prevalence of bottleneck tasks, on a scale from 0 to 1 (0=occupations have no bottleneck tasks, and 1=all of the occupations' tasks are bottlenecks).
 |risk_category | Category of automation risk, which is determined by both the overall automation risk and the prevalence of bottleneck tasks. Occupational groups in the fourth quartile of risk and first quartile of prevalence are 'High risk'; conversely, occupational groups in the first quartile of risk and last quartile of prevalence are 'Low risk'. |
 
-
+<a name="tasks"></a>
 ## Impact of tasks and activities on automation risk
 
 The tables below can be used to identify the tasks and activities that are most likely

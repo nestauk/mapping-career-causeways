@@ -2,6 +2,8 @@
 
 To identify the characteristics of at-risk workers, we focused on three European countries: the United Kingdom (UK), France and Italy. We built up a picture of workers (including their gender mix, income and education levels) and their working patterns (i.e. full time or part time) using microdata from the [EU Labour Force Survey](https://ec.europa.eu/eurostat/web/microdata/european-union-labour-force-survey).
 
+## Contents
+
 - [National demographic data](#nat_demo)
 - [Regional demographic data](#reg_demo)
 - [Employment by ISCO occupational groups](#isco)
@@ -65,7 +67,7 @@ Detailed demographic profiles of select regions: Île de France (France), Lazio 
 {region_code}_{variable_name}_k.csv
 ```
 
-We examined the same variables as for the national data. Regions corresponding to the different codes are provided in the table below:
+We examined the same variables as for the national data; the examined regions and their codes are listed below:
 
 | region_code   | Region name (Country)   |  
 |:---------------|:---------------|
@@ -97,7 +99,7 @@ Contains tables with national employment figures (in thousands) for each three-d
 &nbsp;  
 **`regional_count_isco/`**
 
-Contains tables with regional employment figures (in thousands) for the regions listed above, for each three-digit ISCO minor occupational group.
+Contains tables with regional employment figures (in thousands) for the regions listed above, for each three-digit ISCO minor occupational group. For the titles and risk categories of ISCO minor groups, see the tables in `national_count_isco/`.
 
 | Column name   | Description   |  
 |:---------------|:---------------|
