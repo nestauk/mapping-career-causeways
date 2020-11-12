@@ -32,6 +32,7 @@ Anyone is welcome to use and build upon the published data and code. If you woul
 - [Automation risk estimates](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/Automation_risk/)
 - [Demographic analysis](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/Demographic_analysis/)
 - [Results on job transitions and skills analysis](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/Transitions/)
+- [Skills-based sectors](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/Skills_based_sectors)
 
 ### Codebase and job transitions
 
