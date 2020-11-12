@@ -64,6 +64,4 @@ $ pip install -e .
 
 Anyone is welcome to use and build upon the published data and code. If you would like to leave feedback, you can either create a new github issue (for raising technical questions) or [write to us](mailto:open.jobs@nesta.org.uk) for more general enquiries. To refer to this work, please cite the Mapping Career Causeways report:
 
-```
-Kanders K., Djumalieva, J., Sleeman, C. and Orlik, J. (2020). Mapping Career Causeways: Supporting Workers at Risk. London: Nesta
-```
+*Kanders K., Djumalieva, J., Sleeman, C. and Orlik, J. (2020). Mapping Career Causeways: Supporting Workers at Risk. London: Nesta*
