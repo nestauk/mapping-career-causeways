@@ -37,7 +37,7 @@ In the meantime, we will be conducting research to further validate the recommen
 
 ## Installation
 
-It is possible to browse and download the [Supplementary online data](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data) without installing anything on your local machine. However, if you'd like to run any of the analysis code, you should follow the steps below. *Note that the complete analysis code will be published in early 2021.*
+It is possible to browse and download the [supplementary online data](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data) without installing anything on your local machine. However, if you'd like to run any of the analysis code, you should follow the steps below. *Note that the complete analysis code will be published in early 2021.*
 
 ### Clone and set up the repo
 
