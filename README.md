@@ -1,7 +1,5 @@
 # Mapping Career Causeways
 
-`UNDER CONSTRUCTION - COME BACK ON NOVEMBER 23RD, 2020`
-
 *Public repository for hosting the research outputs of the [Mapping Career Causeways](https://www.nesta.org.uk/project/mapping-career-causeways/) project.*
 
 *Nesta is mapping viable pathways to fulfilling new occupations for people whose jobs are likely to change or be lost as a result of automation. We are calling these ‘career causeways’.*
@@ -28,7 +26,7 @@ Anyone is welcome to use and build upon the published data and code. If you woul
 
 ### Supplementary online data
 
-`STATUS: Not yet released; to be published on November 23rd, 2020`
+`STATUS: Published on November 23rd, 2020`
 
 - [Crosswalk between O\*NET and ESCO occupations](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/ONET_ESCO_crosswalk/)
 - [Automation risk estimates](https://github.com/nestauk/mapping-career-causeways/tree/main/Supplementary_online_data/Automation_risk/)
