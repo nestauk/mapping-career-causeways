@@ -1,6 +1,6 @@
 # Crosswalk between O\*NET and ESCO occupations
 
-To combine the rich insights from [O\*NET](https://www.onetonline.org/) and [ESCO](https://ec.europa.eu/esco), we developed, to the best of our knowledge, the first direct crosswalk between these frameworks. The crosswalk establishes a mapping between O\*NET occupational codes and those in ESCO. While many of the mappings are one to one, there are instances where a single O*NET occupation is matched to more than one ESCO occupation.
+To combine the rich insights from [O\*NET](https://www.onetonline.org/) and [ESCO](https://ec.europa.eu/esco), we developed, to the best of our knowledge, the first open, direct crosswalk between these frameworks. The crosswalk establishes a mapping between O\*NET occupational codes and those in ESCO. While many of the mappings are one to one, there are instances where a single O*NET occupation is matched to more than one ESCO occupation.
 
 To derive the crosswalk, we leveraged several strategies. First, we used an existing crosswalk between O\*NET and ISCO (i.e. broader occupational groups than ESCO) to identify the most likely matches. Second, we applied techniques from Natural Language Processing – a subfield of machine learning – to identify for each ESCO occupation corresponding O\*NET occupations with the highest semantic similarity of occupational group descriptors and known job titles. Finally, we manually assigned occupational codes in instances where the two automated approaches didn’t agree.
 
