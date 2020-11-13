@@ -19,7 +19,7 @@ Contains tables with national employment figures (in thousands) in the UK, Italy
 {country_code}_combined_breakdown_k_{variable_name}.csv
 ```
 
-Each table features a column `RISK_CAT` that indicates the automation risk category: 0=high risk, 1=low risk, and 2=other. Workers were grouped in these risk categories based on our estimates of automation risk of the workers' ISCO three-digit occupational codes (see [Automation risk](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/automation_risk/) folder for the risk category of each ISCO code).
+Each table features a column `RISK_CAT` that indicates the automation risk category: 0=high risk, 1=low risk, and 2=other. Workers were grouped in these risk categories based on our estimates of automation risk of the workers' ISCO three-digit occupational codes. Specifically, occupational groups in the fourth quartile of overall automation risk and first quartile of prevalence of bottleneck tasks are 'High risk'; conversely, occupational groups in the first quartile of risk and last quartile of prevalence are 'Low risk'. Other occupations are labelled as 'Other' (see [Automation risk](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/automation_risk/) folder for the risk category of each ISCO code, and see the project [report](https://www.nesta.org.uk/report/mapping-career-causeways-supporting-workers-risk/) for more information about the methodology).
 
  The variables that we examined are listed in the table below:
 
