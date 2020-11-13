@@ -18,6 +18,8 @@ prevalence of bottleneck tasks for 1627 ESCO occupations that were analysed in t
 top level of the ESCO hierarchy of occupations (the next intermediate level after ISCO four-digit unit groups). Other, lower level
 occupations (level 6 to level 8) may inherit the automation risk of their corresponding broader occupations.
 
+**Warning:** Note that there are cases where our crosswalk has mapped several individual (related) ESCO occupations to one O\*NET occupation, and hence they share the same estimates of overall automation risk and prevalence of bottleneck tasks. In these cases, the automation estimates should be interpreted with caution, as the more nuanced differences between the individual ESCO occupations could not be taken into account (this warning is especially pertinent for several creative ESCO occupations that have been mapped to 'multimedia artists and animators' in O\*NET). Note, however, that the number of safe and desirable transitions may vary substantially among the different ESCO occupations mapped to the same O\*NET occupation, which highlights the value of using the more granular ESCO framework as the foundation for the career transitions algorithm.
+
 | Column name   | Description   |  
 |:---------------|:---------------|
 |id   | Unique integer identifier of the ESCO occupation; used only internally, within the scope of this project. |   
