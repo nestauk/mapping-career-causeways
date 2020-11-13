@@ -25,7 +25,7 @@ occupations (level 6 to level 8) may inherit the automation risk of their corres
 |isco_code   | Four-digit ISCO-08 code, indicating the broader ISCO unit group to which the occupation belongs; the code is provided by the ESCO API. Find more information about ISCO on [ilo.org](https://www.ilo.org/public/english/bureau/stat/isco/isco08/).    |
 |risk | Overall automation risk, on a scale of 1 to 5 (1=minimal risk and 5=maximal risk).  Note that the contribution of each task to the occupation-level risk is weighted the task's importance. |
 |prevalence | Prevalence of bottleneck tasks, on a scale from 0 to 1 (0=occupation has no bottleneck tasks, and 1=all of the occupation's tasks are bottlenecks). Task is defined to be an automation bottleneck if at least one of its 'automation dimensions' has a rating smaller than or equal to 2. Note that the contribution of each bottleneck task is weighted by its importance. |
-|risk_category | Category of automation risk, which is determined by both the overall automation risk and the prevalence of bottleneck tasks. Occupations in the fourth quartile of risk and first quartile of prevalence are 'High risk'; conversely, occupations in the first quartile of risk and last quartile of prevalence are 'Low risk'. |
+|risk_category | Category of automation risk, which is determined by both the overall automation risk and the prevalence of bottleneck tasks. Occupations in the fourth quartile of risk and first quartile of prevalence are 'High risk'; conversely, occupations in the first quartile of risk and last quartile of prevalence are 'Low risk'. Occupations outside these two bands were labelled as 'Other'. |
 |risk_nonphysical | Overall automation risk of non-physical tasks (tasks that don't require dexterity or physical labour). |
 |prevalence_nonphysical | Prevalence of bottleneck tasks when requirements of dexterity and physical labour are no longer bottlenecks to automation. |
 |onet_code | O\*NET code of the ESCO occupation, inferred by using a [crosswalk](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/ONET_ESCO_crosswalk/) developed by the authors.  |
@@ -49,7 +49,7 @@ Estimates of automation risk for three-digit ISCO minor groups. These estimates 
 |isco_minor_group | Title of the occupational group |
 |risk|Overall automation risk, on a scale of 1 to 5 (1=minimal risk and 5=maximal risk). |
 |prevalence| Prevalence of bottleneck tasks, on a scale from 0 to 1 (0=occupations have no bottleneck tasks, and 1=all of the occupations' tasks are bottlenecks).
-|risk_category | Category of automation risk, which is determined by both the overall automation risk and the prevalence of bottleneck tasks. Occupational groups in the fourth quartile of risk and first quartile of prevalence are 'High risk'; conversely, occupational groups in the first quartile of risk and last quartile of prevalence are 'Low risk'. |
+|risk_category | Category of automation risk, which is determined by both the overall automation risk and the prevalence of bottleneck tasks. Occupational groups in the fourth quartile of risk and first quartile of prevalence are 'High risk'; conversely, occupational groups in the first quartile of risk and last quartile of prevalence are 'Low risk'. Occupational groups outside these two bands were labelled as 'Other'.  |
 
 &nbsp;    
 **`mcc_risk_ISCO_4digit.csv`**
@@ -62,7 +62,7 @@ Estimates of automation risk for four-digit ISCO unit groups. These estimates we
 |isco_unit_group | Title of the occupational group. |
 |risk|Overall automation risk, on a scale of 1 to 5 (1=minimal risk and 5=maximal risk). |
 |prevalence| Prevalence of bottleneck tasks, on a scale from 0 to 1 (0=occupations have no bottleneck tasks, and 1=all of the occupations' tasks are bottlenecks).
-|risk_category | Category of automation risk, which is determined by both the overall automation risk and the prevalence of bottleneck tasks. Occupational groups in the fourth quartile of risk and first quartile of prevalence are 'High risk'; conversely, occupational groups in the first quartile of risk and last quartile of prevalence are 'Low risk'. |
+|risk_category | Category of automation risk, which is determined by both the overall automation risk and the prevalence of bottleneck tasks. Occupational groups in the fourth quartile of risk and first quartile of prevalence are 'High risk'; conversely, occupational groups in the first quartile of risk and last quartile of prevalence are 'Low risk'. Occupational groups outside these two bands were labelled as 'Other'. |
 
 <a name="tasks"></a>
 ## Impact of tasks and activities on automation risk
