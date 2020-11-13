@@ -47,9 +47,9 @@ Extracting the archive in outputs/... Done!
 
 ## Limitations 
 
-Note that some of the mappings are many-to-one (i.e. several ESCO occupations corresponding to one O*NET occupation). While this is inevitable as there are more ESCO occupations than O*NET occupations, it may result in obscuring nuanced differences between the ESCO occupations. Therefore, please exercise caution when using the crosswalk and we welcome suggestions for improvements.
+Note that some of the mappings are many-to-one (i.e. several ESCO occupations corresponding to one O\*NET occupation). While this is to be expected as there are more ESCO occupations than O\*NET occupations, it may result in obscuring nuanced differences between the ESCO occupations. Therefore, please exercise caution when using the crosswalk and we welcome suggestions for improvements.
 
-As a particular example, we found several distinct creative ESCO occupations including digital artists, illustrators and animators mapped to the same O*NET occupation 'multimedia artists and animators'. As the latter has a high occupation-level SML (due to a large fraction of the tasks in these jobs being related to creating computer-generated graphics or animation), this may create somewhat inflated expectations of automation risk for some of the corresponding ESCO occupations.
+As a particular example, we found several distinct creative ESCO occupations including digital artists, illustrators and animators mapped to the same O\*NET occupation 'multimedia artists and animators'. As the latter has a high occupation-level SML (due to a large fraction of the tasks in these jobs being related to creating computer-generated graphics or animation), this may create somewhat inflated expectations of automation risk for some of the corresponding ESCO occupations.
 
 ## Feedback
 
