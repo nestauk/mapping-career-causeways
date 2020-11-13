@@ -6,6 +6,7 @@ Estimates of automation risk for European occupations specified in the European 
 
 - [Automation risk estimates for ESCO occupations](#esco)
 - [Automation risk estimates for ISCO occupational groups](#isco)
+- [Mapped tasks for each ESCO occupation](#esco_tasks)
 - [Impact of tasks and activities on automation risk](#tasks)
 
 <a name="esco"></a>
@@ -31,7 +32,7 @@ occupations (level 6 to level 8) may inherit the automation risk of their corres
 |risk_nonphysical | Overall automation risk of non-physical tasks (tasks that don't require dexterity or physical labour). |
 |prevalence_nonphysical | Prevalence of bottleneck tasks when requirements of dexterity and physical labour are no longer bottlenecks to automation. |
 |onet_code | O\*NET code of the ESCO occupation, inferred by using a [crosswalk](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/ONET_ESCO_crosswalk/) developed by the authors.  |
-|onet_occupation | Title of the O*NET occupation. |
+|onet_occupation | Title of the O\*NET occupation. |
 |concept_uri | Universal identifier of the ESCO occupation used by the ESCO API. Find more information in the [ESCO documentation](https://ec.europa.eu/esco/api/doc/esco_api_doc.html#rest-calls-get-conceptschemes-by-uris). |  
 | skills_based_sector_code | Code indicating skills-based sectors - groups of related occupations sharing similar worker requirements and work characteristics. These groups were determined by applying graph-based clustering (an unsupervised machine learning method; see the Mapping Career Causeways report for more details). | Analysis |
 | skills_based_sector | Label of the skills-based sector. | Analysis |
@@ -66,6 +67,27 @@ Estimates of automation risk for four-digit ISCO unit groups. These estimates we
 |prevalence| Prevalence of bottleneck tasks, on a scale from 0 to 1 (0=occupations have no bottleneck tasks, and 1=all of the occupations' tasks are bottlenecks).
 |risk_category | Category of automation risk, which is determined by both the overall automation risk and the prevalence of bottleneck tasks. Occupational groups in the fourth quartile of risk and first quartile of prevalence are 'High risk'; conversely, occupational groups in the first quartile of risk and last quartile of prevalence are 'Low risk'. Occupational groups outside these two bands were labelled as 'Other'. |
 
+<a name="esco_tasks"></a>
+## Mapped tasks for each ESCO occupation
+
+**`mcc_risk_ESCO_to_tasks.csv`**
+
+ESCO occupations and their corresponding O\*NET tasks. You can use this table to explore how specific tasks are contributing to the occupation's overall automation score.
+
+The tasks have been mapped via our [crosswalk](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/ONET_ESCO_crosswalk/). Each task has a suitability for machine learning (SML) score inferred from the Brynjolfsson et al. ratings. To arrive at the occupation-level automation risk, the task SML scores for each occupation have been weighted by their importance scores and then summed up.
+
+| Column name   | Description   |  
+|:---------------|:---------------|
+|id   | Unique integer identifier of the ESCO occupation; used only internally, within the scope of this project. For the corresponding official ESCO identifier, see the table `mcc_risk_All_occupations.csv`. |   
+|esco_occupation  | Preferred label of the ESCO occupation. |   
+|task_id   | Unique integer identifier of the O\*NET task. |
+|onet_task | Title of the O\*NET task. |
+|weight| Relative importance weight of the task in the particular occupation. These have been inferred from the O\*NET database, and normalised such that all weights for each occupation sum up to 1. |
+|mean_task_SML|  Task-level suitability for machine learning (SML); see the table `mcc_risk_Tasks.csv` for more information. |
+|weighted_task_SML | `mean_task_SML` multiplied by the importance weight `weight`. The occupation-level overall automation risk is obtained by summing these scores up across all occupation's tasks | 
+|onet_occupation | Title of the O\*NET occupation corresponding to the ESCO occupation. |
+|onet_code | Corresponding O\*NET code, inferred by using our [crosswalk](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/ONET_ESCO_crosswalk/).  |
+
 <a name="tasks"></a>
 ## Impact of tasks and activities on automation risk
 
@@ -88,7 +110,7 @@ all occupations where the task is required.
 |detailed_work_activity | Detailed work activity to which the task belongs (find more information on [O\*NET](https://www.onetcenter.org/dictionary/21.0/text/tasks_to_dwas.html)) . |
 |intermediate_work_activity | Intermediate work activity to which the detailed work activity belongs. |
 | element| [Element](https://www.onetonline.org/find/descriptor/browse/Work_Activities/) (a broad group of work activities) to which the intermediate work activity belongs. |
-| mean_risk| Task-level suitability for machine learning (SML) that is calculated by averaging the ratings of columns `q1`-`q14`, `qD` and `q19`-`q23`.|
+| mean_task_SML | Task-level suitability for machine learning (SML) that is calculated by averaging the ratings of columns `q1`-`q14`, `qD` and `q19`-`q23`.|
 |impact | Task impact on occupations' automation risk. Negative impact score values indicate that the task is lowering the automation risk of occupations whereas positive values indicate that the task is putting occupations more at risk. |
 |q\{x\}| Ratings across 23 questions (so-called 'automation dimensions') evaluated in the study by Brynjolfsson et al. (2018). To find more about these questions, consult their [rubric](https://www.openicpsr.org/openicpsr/project/114436/version/V1/view?path=/openicpsr/114436/fcr:versions/V1/HITRubric.docx&type=file) and [supplementary data](https://www.openicpsr.org/openicpsr/project/114436/version/V1/view;jsessionid=163D056C673E82F00822034978FC9074?path=/openicpsr/114436/fcr:versions/V1/What-Can-Machines-Learn_DataAppendixReadme.pdf&type=file). Note that the ratings of `q15`-`q18` (questions related to the use of different types of data) have been aggregated in `qD` (a measure of 'data intensity').|
 
