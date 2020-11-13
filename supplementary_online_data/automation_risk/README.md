@@ -83,10 +83,11 @@ The tasks have been mapped via our [crosswalk](https://github.com/nestauk/mappin
 |task_id   | Unique integer identifier of the O\*NET task. |
 |onet_task | Title of the O\*NET task. |
 |weight| Relative importance weight of the task in the particular occupation. These have been inferred from the O\*NET database, and normalised such that all weights for each occupation sum up to 1. |
-|mean_task_SML|  Task-level suitability for machine learning (SML); see the table `mcc_risk_Tasks.csv` for more information. |
+| mean_task_SML | Task-level suitability for machine learning (SML) that is calculated by averaging the ratings of columns `q1`-`q14`, `qD` and `q19`-`q23`.|
 |weighted_task_SML | `mean_task_SML` multiplied by the importance weight `weight`. The occupation-level overall automation risk is obtained by summing these scores up across all occupation's tasks | 
 |onet_occupation | Title of the O\*NET occupation corresponding to the ESCO occupation. |
 |onet_code | Corresponding O\*NET code, inferred by using our [crosswalk](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/ONET_ESCO_crosswalk/).  |
+|q\{x\}| Ratings across 23 questions (so-called 'automation dimensions') evaluated in the study by Brynjolfsson et al. (2018). To find more about these questions, consult their [rubric](https://www.openicpsr.org/openicpsr/project/114436/version/V1/view?path=/openicpsr/114436/fcr:versions/V1/HITRubric.docx&type=file) and [supplementary data](https://www.openicpsr.org/openicpsr/project/114436/version/V1/view;jsessionid=163D056C673E82F00822034978FC9074?path=/openicpsr/114436/fcr:versions/V1/What-Can-Machines-Learn_DataAppendixReadme.pdf&type=file). Note that the ratings of `q15`-`q18` (questions related to the use of different types of data) have been aggregated in `qD` (a measure of 'data intensity').|
 
 <a name="tasks"></a>
 ## Impact of tasks and activities on automation risk
