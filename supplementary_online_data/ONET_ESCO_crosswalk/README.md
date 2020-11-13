@@ -6,10 +6,6 @@ To derive the crosswalk, we leveraged several strategies. First, we used an exis
 
 For further details on the methodology, consult the Appendix of the [Mapping Career Causeways](https://www.nesta.org.uk/project/mapping-career-causeways/) project report, as well as the `ONET_to_ESCO_crosswalk.ipynb` notebook. The development of this crosswalk was led by Jyldyz Djumalieva, with additional thanks to Stef Garasto, Karlis Kanders and Cath Sleeman.
 
-*Anyone is welcome to use and build upon the crosswalk. If you would like to leave feedback, you can either create a new github issue (for technical questions) or [write to us](mailto:open.jobs@nesta.org.uk). To refer to this crosswalk in your work, please cite the Mapping Career Causeways report:*
-
-*Kanders K., Djumalieva, J., Sleeman, C. and Orlik, J. (2020). Mapping Career Causeways: Supporting Workers at Risk. London: Nesta*
-
 ## Crosswalk files
 
 **`esco_onet_crosswalk_Nov2020.csv`**
@@ -48,3 +44,17 @@ The expected output:
 Downloading outputs.zip (264.7 MB)... Done!
 Extracting the archive in outputs/... Done!
 ```
+
+## Limitations 
+
+Note that some of the mappings are many-to-one (i.e. several ESCO occupations corresponding to one O*NET occupation). While this is inevitable as there are more ESCO occupations than O*NET occupations, it may result in obscuring nuanced differences between the ESCO occupations. Therefore, please exercise caution when using the crosswalk and we welcome suggestions for improvements.
+
+As a particular example, we found several distinct creative ESCO occupations including digital artists, illustrators and animators mapped to the same O*NET occupation 'multimedia artists and animators'. As the latter has a high occupation-level SML (due to a large fraction of the tasks in these jobs being related to creating computer-generated graphics or animation), this may create somewhat inflated expectations of automation risk for some of the corresponding ESCO occupations.
+
+## Feedback
+
+Anyone is welcome to use and build upon the crosswalk, as well as to suggest improvements to it! If you would like to leave feedback, you can either create a new github issue (for technical questions) or [write to us](mailto:open.jobs@nesta.org.uk). 
+
+To refer to this crosswalk in your work, please cite the Mapping Career Causeways report:*
+
+*Kanders K., Djumalieva, J., Sleeman, C. and Orlik, J. (2020). Mapping Career Causeways: Supporting Workers at Risk. London: Nesta*
