@@ -31,7 +31,7 @@ Excel version of the crosswalk specified in `esco_onet_crosswalk_Nov2020.csv`.
 Version of the crosswalk that was used in the analyses of the Mapping Career Causeways project. It is practically identical to the crosswalk described above, with the sole exception being the mapping of the 'member of parliament' ESCO occupation.
 
 **`ONET_to_ESCO_crosswalk.ipynb`**    
-Jupyter notebook for generating pre-validated matches between ESCO and O\*NET occupations. The notebook also contains information about the other files and folders of this directory.
+Jupyter notebook for generating pre-validated matches between ESCO and O\*NET occupations. The notebook also contains information about other files and folders of this directory.
 
 To save some compute time, you can download the intermediate outputs (such as pre-computed Sentence-BERT embeddings of job titles and descriptions) by running `download_outputs.py` script:
 
@@ -49,7 +49,7 @@ Extracting the archive in outputs/... Done!
 
 Note that some of the mappings are many-to-one (i.e. several ESCO occupations corresponding to one O\*NET occupation). While this is to be expected as there are more ESCO occupations than O\*NET occupations, it may result in obscuring nuanced differences between the ESCO occupations. Therefore, please exercise caution when using the crosswalk and we welcome suggestions for improvements.
 
-As a particular example, we found several distinct creative ESCO occupations including digital artists, illustrators and animators mapped to the same O\*NET occupation 'multimedia artists and animators'. As the latter has a high occupation-level SML (due to a large fraction of the tasks in these jobs being related to creating computer-generated graphics or animation), this may create somewhat inflated expectations of automation risk for some of the corresponding ESCO occupations.
+As a particular example, we found several distinct creative ESCO occupations including digital artists, illustrators and animators mapped to the same O\*NET occupation 'multimedia artists and animators' (code 27-1014.00; in the most recent O\*NET update in November 2020 these are now called 'special effects artists and animators'). As the latter has a high occupation-level SML (due to a large fraction of the tasks in these jobs being related to creating computer-generated graphics or animation), this may create somewhat inflated expectations of automation risk for some of the corresponding ESCO occupations.
 
 ## Feedback
 

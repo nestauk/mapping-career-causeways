@@ -6,7 +6,7 @@
 
 Nesta is mapping viable pathways to fulfilling new occupations for people whose jobs are likely to change or be lost as a result of automation. We are calling these ‘career causeways’.
 
-In this repository, you will find the research outputs of the report [Mapping Career Causeways: Supporting Workers at Risk](https://www.nesta.org.uk/report/mapping-career-causeways-supporting-workers-risk/). Note that we will release the outputs gradually, with the first batch in November, followed by a more complete release in early 2021. Please see the contents sections below for more information.
+In this repository, you will find the research outputs of the report [Mapping Career Causeways: Supporting workers at risk](https://www.nesta.org.uk/report/mapping-career-causeways-supporting-workers-risk/). Note that we will release the outputs gradually, with the first batch in November, followed by a more complete release in early 2021. Please see the contents sections below for more information.
 
 *The project is part of Nesta's [Open Jobs](https://www.nesta.org.uk/project/open-jobs/) programme, and supported by the J.P.Morgan as part of the [New Skills At Work initiative](https://www.jpmorganchase.com/impact/our-approach/jobs-and-skills).*
 
