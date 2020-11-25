@@ -45,7 +45,7 @@ Downloading outputs.zip (264.7 MB)... Done!
 Extracting the archive in outputs/... Done!
 ```
 
-## Limitations 
+## Limitations
 
 Note that some of the mappings are many-to-one (i.e. several ESCO occupations corresponding to one O\*NET occupation). While this is to be expected as there are more ESCO occupations than O\*NET occupations, it may result in obscuring nuanced differences between the ESCO occupations. Therefore, please exercise caution when using the crosswalk and we welcome suggestions for improvements.
 
@@ -53,8 +53,8 @@ As a particular example, we found several distinct creative ESCO occupations inc
 
 ## Feedback
 
-Anyone is welcome to use and build upon the crosswalk, as well as to suggest improvements to it! If you would like to leave feedback, you can either create a new github issue (for technical questions) or [write to us](mailto:open.jobs@nesta.org.uk). 
+Anyone is welcome to use and build upon the crosswalk, as well as to suggest improvements to it! If you would like to leave feedback, you can either create a new github issue (for technical questions) or [write to us](mailto:open.jobs@nesta.org.uk).
 
 To refer to this crosswalk in your work, please cite the Mapping Career Causeways report:
 
-*Kanders K., Djumalieva, J., Sleeman, C. and Orlik, J. (2020). Mapping Career Causeways: Supporting Workers at Risk. London: Nesta*
+*Kanders K., Djumalieva, J., Sleeman, C. and Orlik, J. (2020). Mapping Career Causeways: Supporting workers at risk. London: Nesta*

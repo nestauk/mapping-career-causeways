@@ -14,15 +14,15 @@ In this repository, you will find the research outputs of the report [Mapping Ca
 
 ### Supplementary online data of the project report
 
-`STATUS: To be published on November 23rd, 2020`
+`STATUS: Published on November 26th, 2020`
 
 The supplementary data consists of several folders corresponding to the different parts of the Mapping Career Causeways project report:
 
-- [**Crosswalk between O\*NET and ESCO occupations**](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/ONET_ESCO_crosswalk/): 
+- [**Crosswalk between O\*NET and ESCO occupations**](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/ONET_ESCO_crosswalk/):
 A mapping from the US O*NET framework to EU ESCO, together with the code used in developing the crosswalk.
-- [**Automation risk estimates**](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/automation_risk/): 
+- [**Automation risk estimates**](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/automation_risk/):
 Results related to task automation of 1627 ESCO occupations.
-- [**Demographic analysis**](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/demographic_analysis/): 
+- [**Demographic analysis**](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/demographic_analysis/):
 Data on at-risk workers in the UK, Italy and France.
 - [**Results on job transitions and skills analysis**](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/transitions/): The number of safe and desirable transitions for 1627 ESCO occupations, and the effectiveness of core skills in uncovering new transitions.
 - [**Skills-based sectors**](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/skills_based_sectors): Breakdown of data-driven groups of related ESCO occupations that share similar job requirements and work characteristics
@@ -64,4 +64,4 @@ $ pip install -e .
 
 Anyone is welcome to use and build upon the published data and code. If you would like to leave feedback, you can either create a new github issue (for raising technical questions) or [write to us](mailto:open.jobs@nesta.org.uk) for more general enquiries. To refer to this work, please cite the Mapping Career Causeways report:
 
-*Kanders K., Djumalieva, J., Sleeman, C. and Orlik, J. (2020). Mapping Career Causeways: Supporting Workers at Risk. London: Nesta*
+*Kanders K., Djumalieva, J., Sleeman, C. and Orlik, J. (2020). Mapping Career Causeways: Supporting workers at risk. London: Nesta*
