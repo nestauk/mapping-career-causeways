@@ -54,7 +54,7 @@ Data analyses underpinning the project [report](https://www.nesta.org.uk/report/
 We have validated a set of job transitions by assessing people's perceptions of their feasibility. More information about the validation study, and the set of validated transitions is available [here](#).
 
 ### Generating your own career transition recommendations
-For generating your own career transition recommendations, subject to your own transition viability and desirability parameters, you can use the [tutorial notebook](#), as well as the collection of utility functions defined in `../mapping_career_causeways/transitions_utils.py`.
+For generating your own career transition recommendations, inspecting skills gaps, and identifying transferable skills - subject to your own transition viability and desirability parameters - you can use the [tutorial notebook](#), as well as the collection of utility functions defined in `../mapping_career_causeways/transitions_utils.py`.
 
 ## Future steps
 
