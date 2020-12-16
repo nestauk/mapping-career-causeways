@@ -30,13 +30,14 @@ The codebase has the following main directories:
   │   │   ├── interim           <- Intermediate output data that has been transformed
   │   │   ├── processed         <- Final, processed data sets for analysis
   │   │   │   ├── linked_data   <- Various labour market data linked to ESCO occupations
-  │   │   │   ├── sim_matrices  <- Various similarity matrices between all ESCO occupations
+  │   │   │   ├── sim_matrices  <- Various similarity matrices between all ESCO occupations,
+  │   │   │   │                    for analysing career transition viability
   │   │   │   ...    
-  │   ├── notebooks             <- Data analysis   
+  │   ├── notebooks             <- Data analysis and generation of career transition recommendations
   │   └── reports               <- Reports, briefs and figures associated with the project
   ├── supplementary_online_data
-      ├── ONET_ESCO_crosswalk   <- Crosswalk between O*NET and ESCO occupations
-      ...
+  │   ├── ONET_ESCO_crosswalk   <- Crosswalk between O*NET and ESCO occupations
+  │   ...    
   └── mapping_career_causeways  <- Custom packages      
 ```
 
@@ -44,15 +45,26 @@ Note that the code and data for generating the crosswalk between the O*NET and E
 
 In addition, the `mapping_career_causeways` folder contains additional custom packages and utilities that were developed by us for performing NLP-adjusted overlap, consensus clustering and other functions.
 
+## Using the codebase
+
+### Replicating results of the project report
+Data analyses underpinning the project [report](https://www.nesta.org.uk/report/mapping-career-causeways-supporting-workers-risk/) are presently available as a set of Jupyter notebooks in the `notebooks/` folder. These are organised into several sections pertaining to different parts of the project. The notebooks clearly explain each step of the analysis, and produce output files that are stored in the `data/` and used in further downstream analyses.
+
+### Exploring validated career transition recommendations
+We have validated a set of job transitions by assessing people's perceptions of their feasibility. More information about the validation study, and the set of validated transitions is available [here](#).
+
+### Generating your own career transition recommendations
+For generating your own career transition recommendations, subject to your own transition viability and desirability parameters, you can use the [tutorial notebook](#), as well as the collection of utility functions defined in `../mapping_career_causeways/transitions_utils.py`.
+
 ## Future steps
 
-Presently, the codebase allows anyone to replicate the methodology from the Mapping Career Causeways report and generate career transition recommendations. We hope to further develop the codebase to add support for the following functions (subject to our capacity):
-- Complement transition viability assessment with data from a validation study
-- Check for new updates of external datasets and rerun the whole analysis pipeline
+We hope to further develop the codebase to add support for the following functions (subject to our capacity):
+- Further improve transition viability assessment by using data from the validation study
+- Check for new updates of external datasets and easily rerun the whole analysis pipeline
 - Explore the possibility for creating a local API for generating transition recommendations
-- Integrate timely data on local occupational vacancies (using insights from Nesta's [Open Jobs Observatory](https://www.nesta.org.uk/project/open-jobs-observatory/) project)
+- Further enrich the occupational profiles with useful features: for example, timely data on local occupational vacancies or employment growth prospects; check here for the full ["wishlist"](#).
 
-## Feedback & contributions
+## Feedback & Contributions
 
 Anyone is welcome to use and build upon the published data and code. If you would like to leave feedback or report a bug, please create a new issue. If you would like to contribute to this framework (e.g. by working on of the features listed above) you can collaborate by using pull requests:
 1. Create your new branch from dev
