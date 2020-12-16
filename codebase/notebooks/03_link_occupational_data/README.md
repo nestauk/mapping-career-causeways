@@ -1,6 +1,8 @@
 # Linking ESCO occupations to labour market data
 
-Here, we build richer occupational profiles by linking ESCO occupations to data such as estimates of annual earnings, capacity to work remotely etc. The output tables of these notebooks are stored in `data/processed/linked_data` folder.
+Here, we build richer occupational profiles by linking ESCO occupations to data such as estimates of annual earnings, capacity to work remotely etc. The output tables of these notebooks are stored in `codebase/data/processed/linked_data` folder.
+
+For more background on the different data sources and how we used them, see pp. 18-20 and pp. 28-34 of the project [research report](https://www.nesta.org.uk/report/mapping-career-causeways-supporting-workers-risk/).
 
 ## Education and experience requirements
 **`Link_occupations_to_Job_Zones.ipynb`**  
@@ -18,4 +20,4 @@ Links earnings and hours data from ASHE table 14 to ESCO occupations, by using a
 Links Remote Labor Index (developed by [del Rio-Chanona et al. 2020](https://www.oxfordmartin.ox.ac.uk/publications/supply-and-demand-shocks-in-the-covid-19-pandemic-an-industry-and-occupation-perspective/)) to ESCO occupations. The Remote Labor Index indicates what proportion of occupation's work activities can be performed remotely.
 
 **`Estimate_COVID_Exposure.ipynb`**  
-Derives a simple estimate for occupational-level exposure to the impact from COVID-19 based on the workers’ physical proximity to other people (determined from O*NET) and on the extent to which the work has to be performed on-site (measured by the Remote Labor Index).
+Derives a simple estimate for occupational-level exposure to the impact from COVID-19 based on the workers’ physical proximity to other people (determined from O*NET) and on the extent to which the work has to be performed on-site (derived from the Remote Labor Index).
