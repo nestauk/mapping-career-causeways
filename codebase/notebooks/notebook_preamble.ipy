@@ -1,0 +1,27 @@
+#!/bin/ipython
+# Note: ipy file suffix neccessary for running with %run magic
+
+# Import basic dependencies
+import numpy as np
+import scipy as sp
+import pandas as pd
+import pickle
+from time import time
+from tqdm.notebook import tqdm
+
+# Dependencies for plotting graphs
+import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.express as px
+
+plt.rcParams['svg.fonttype'] = 'none'
+plt.rcParams['font.family'] = 'Arial'
+
+## Import local packages
+import mapping_career_causeways
+import mapping_career_causeways.compare_nodes_utils as compare_nodes_utils
+find_closest = compare_nodes_utils.find_closest
+
+## Paths
+useful_paths = mapping_career_causeways.Paths()
+data_folder = useful_paths.data_dir

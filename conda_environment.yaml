@@ -22,8 +22,9 @@ dependencies:
   - xlrd=1.2.0
   - umap-learn=0.4.4
   - boto3=1.5.11
+  - pandas-profiling=1.4.1
   - pip:
-    # - leidenalg==0.8.0
+    - leidenalg==0.8.0
     - sentence-transformers==0.2.4.1
     - requests==2.23.0
     - grip
