@@ -19,8 +19,8 @@ import ast
 class PrepInputs:
     """
     Class that prepares inputs for comparing parent data items ("nodes") based
-    on their children nodes ("items"). For example, to compare technical skills
-    and competencies based on their underlying knowledge items.
+    on their children nodes ("items"). For example, to compare occupations
+    based on their skills.
     An instance of this class is then fed as an input to the CompareNode class
     constructor (see further below).
     """
@@ -33,7 +33,7 @@ class PrepInputs:
             Dataframe that needs to have three columns called 'id', 'sector' and
             'items_list'. Column 'id' specifies the parent node's unique ID number.
             Column 'sector' specifies higher-level categories of the parent nodes
-            (for example, sector to which the technical skills and competency has
+            (for example, sector to which the occupation has
             been assigned to).  Column 'items_list' contains ID numbers of the
             children nodes that form the basis of the comparison.
         embeddings (numpy.ndarray):
@@ -577,77 +577,6 @@ def two_node_comparison(node_to_items,
 
     return item_comparison, final_score
 
-def match_items_to_destination_TSC(job_i, job_j, data, item='knowledge', item_embeddings=None):
-    """
-    A specialised function for assessing the skills gap for a job transition from
-    job_i (the origin) to job_j (the destination). The function performs matching
-    between all knowledge/abilities of job_i (across all TSCs) to the knowledge/abilities
-    of each separate TSC of job_j. This, therefore, allows for knowledge/abilities
-    from different TSCs at the origin to mix, and to obtain matching estimates for
-    all destination's TSCs.
-
-    Note that, in contrast to other functions of this package, this function is
-    more specialised for one particular purpose. It could, however, be generalised
-    if necessary.
-
-    Parameters
-    ----------
-    job_i (int):
-        ID number of the transition's origin job role
-    job_j (int):
-        ID number of the transition's destination job role
-    data (import_data_utils.SSGdata):
-        An instance of SSGdata() class
-    item (string):
-        Either 'knowledge' or 'abilities' depending on the desired comparison
-    item_embeddings (numpy.ndarray):
-        Sentence embeddings of the knowledge/abilities items
-
-    Returns
-    -------
-    destination_tsc_scores (numpy.ndarray):
-        Array of matching scores for each TSC
-    destination_tsc (pandas.DataFrame):
-        ID numbers of the destination TSCs
-    tsc_comparison_dataframes (list of pandas.DataFrame):
-        Dataframes with the matched knowledge/abilities per each destination TSC
-    """
-
-    if item == 'knowledge':
-        items_df = data.knowledge
-    elif item == 'abilities':
-        items_df = data.abilities
-
-    # All origin job role's items
-    origin_items = data.role_to_items.loc[job_i][item+'_id']
-
-    # Destination role's TSC items
-    destination_tsc = data.role_to_tscl.loc[job_j].tscl_list
-    destination_tsc_scores = np.zeros((len(destination_tsc),))
-    tsc_comparison_dataframes = []
-
-    for j, tsc in enumerate(destination_tsc):
-        # Get all tsc items
-        node_to_items = data.tsc_to_items[['tscl_id','sector',item+'_id_nested']].copy()
-        # Select only the destination job role's tsc items (and a dummy row for origin's items)
-        node_to_items = node_to_items.loc[[0, tsc]].reset_index(drop=True)
-        # Prepare for comparison
-        node_to_items.rename(columns={'tscl_id':'id',item+'_id_nested':'items_list'}, inplace=True)
-        node_to_items.id = node_to_items.id.apply(lambda x: int(x[4:]))
-        # Add origin items to match
-        node_to_items.loc[0,'items_list'] = str(origin_items)
-        # Do some juggling to accommodate nested lists
-        node_to_items.items_list = node_to_items.items_list.apply(lambda x: str(x))
-        node_to_items.items_list = node_to_items.items_list.apply(lambda x: ast.literal_eval(x))
-
-        node_to_items.loc[1, 'id'] = 1
-
-        df, score = two_node_comparison(node_to_items, 0, 1, items_df, item_embeddings, metric='cosine', symmetric=False)
-
-        destination_tsc_scores[j] = score
-        tsc_comparison_dataframes.append(df)
-
-    return destination_tsc_scores, destination_tsc, tsc_comparison_dataframes
 
 #############################
 class CompareSectors():

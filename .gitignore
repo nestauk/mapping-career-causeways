@@ -8,6 +8,7 @@ codebase/data/external/
 codebase/data/interim/
 codebase/data/processed/
 codebase/data/temp_files/
+codebase/data/restricted/
 codebase/data/*.zip
 
 mcc_file_inventory.xlsx
