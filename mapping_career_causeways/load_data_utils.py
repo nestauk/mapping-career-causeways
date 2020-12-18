@@ -52,15 +52,14 @@ class Data:
         self._clusters_level_2 = None
 
         # Master tables
+        self.default_master_table = f'{self.dir}ESCO_occupation_profiles.csv'
         self._occ = None
         self._occ_top = None
-        self._occ_top_report = None
+        self._top_occ_ids = None
+        self._occ_report = None
+        self._report_occ_ids = None
 
         # TO DELETE:
-        # self.top_occ = self.occ[self.occ.is_top_level==True].id.to_list()
-        # self.occ_top = self.occ[self.occ.id.isin(self.top_occ)].copy()
-        # self.id_to_top_id = dict(zip(self.top_occ, range(len(self.top_occ))))
-        # outputs_folder = '/'.join(data_folder.split('/')[0:-2])+'/reports/outputs/transitions_outputs/'
         # self.occ_n_transitions = pd.read_csv(outputs_folder + 'occupations_number_of_transitions.csv')
         # self.skills_clust = pd.read_csv(data_folder + 'processed/clusters/ESCO_skills_clusters/skills_coreness_measure.csv')
 
@@ -106,7 +105,7 @@ class Data:
     def occupation_hierarchy(self):
         """ ESCO occupations and their place in the ISCO-ESCO hierarchy """
         if self._occupation_hierarchy is None:
-            self._occupation_hierarchy = self.read_csv(self.dir + 'ESCO_occupational_hierarchy.csv')
+            self._occupation_hierarchy = self.read_csv(self.dir + 'ESCO_occupational_hierarchy/ESCO_occupational_hierarchy.csv')
         return self._occupation_hierarchy
 
     @property
@@ -230,37 +229,77 @@ class Data:
     def occ_clusters(self):
         """ ESCO occupations and their skills-based sectors and sub-sectors """
         if self._occ_clusters is None:
-            self._occ_clusters = self.read_csv(self.dir + 'xxxx')
+            self._occ_clusters = self.read_csv(self.dir + 'clusters/ESCO_occupation_clusters_v1_1_curated.csv')
         return self._occ_clusters
 
     @property
     def clusters_level_1(self):
         """ ... """
         if self._clusters_level_1 is None:
-            self._clusters_level_1 = self.read_csv(self.dir + 'xxxx')
+            self._clusters_level_1 = self.read_csv(self.dir + 'clusters/ESCO_occupation_clusters_v1_1_LEVEL1.csv')
         return self._clusters_level_1
 
     @property
     def clusters_level_2(self):
         """ ... """
         if self._clusters_level_2 is None:
-            self._clusters_level_2 = self.read_csv(self.dir + 'xxxx')
+            self._clusters_level_2 = self.read_csv(self.dir + 'clusters/ESCO_occupation_clusters_v1_1_LEVEL2.csv')
         return self._clusters_level_2
 
-    ### Master tables with occupational profiles ###
+    ### Master tables containing full occupational profiles ###
+
+    def generate_occupation_profiles(self, export=True, save_path = None):
+        """ Joins up relevant datasets to create occupational profiles """
+
+        merge_params = {'on':'id', 'how':'left'}
+        occ = self.occupation_hierarchy[['id', 'concept_type', 'concept_uri', 'preferred_label',
+                                         'isco_level_1', 'isco_level_2','isco_level_3', 'isco_level_4', 'is_top_level']].copy()
+        occ = occ.merge(self.occ_jobzones[['id', 'job_zone','education_level', 'related_work_experience', 'on_the_job_training']], **merge_params)
+        occ = occ.merge(self.occ_earnings_and_hours[['id', 'annual_earnings', 'total_paid_hours']], **merge_params)
+        #self.occ = self.occ.merge(self.occ_employment[['id', 'employment_count', 'employment_rate']], **merge_params)
+        occ = occ.merge(self.occ_clusters[['id', 'level_1','level_2', 'skills_based_sector_code', 'sub_sector_code', 'skills_based_sector', 'sub_sector']], **merge_params)
+        occ = occ.merge(self.occ_remote[['id','remote_labor_index']], **merge_params)
+        occ = occ.merge(self.occ_exposure[['id', 'physical_proximity', 'exposure_score']], **merge_params)
+
+        if export:
+            if save_path is None:
+                save_path = self.default_master_table
+            occ.to_csv(save_path, index=False)
+        return occ
 
     @property
     def occ(self):
         """ All ESCO occupations (n=2942) """
+        if self._occ is None:
+            self._occ = self.read_csv(self.default_master_table)
+        return self._occ
 
     @property
     def occ_top(self):
         """ Master table of all 'top level' ESCO occupations (approx. 1700) """
+        if self._occ_top is None:
+            self._occ_top = self.occ[self.occ.is_top_level==True].copy()
+        return self._occ_top
 
     @property
-    def occ_top_report(self):
+    def occ_report(self):
         """ Master table of the 'top level' ESCO occupations analysed in the report (n=1627) """
+        if self._occ_report is None:
+            df = self.read_csv(self.dir + 'ESCO_automation_risk.csv')
+            self._occ_report = self.occ[self.occ.id.isin(df.id.to_list())].copy()
+        return self._occ_report
 
+    @property
+    def top_occ_ids(self):
+        if self._top_occ_ids is None:
+            self._top_occ_ids = self.occ_top.id.to_list()
+        return self._top_occ_ids
+
+    @property
+    def report_occ_ids(self):
+        if self._report_occ_ids is None:
+            self._report_occ_ids = self.occ_report.id.to_list()
+        return self._report_occ_ids
 
 class Similarities:
     """
@@ -320,5 +359,5 @@ class Similarities:
         Similarities based on ONET's work context features
         """
         if self._W_work_context is None:
-            self._W_work_context = np.load(self.dir + 'processed/sim_matrices/OccupationSimilarity_ONET_Work_Context.npy')
+            self._W_work_context = np.load(self.dir + 'sim_matrices/OccupationSimilarity_ONET_Work_Context.npy')
         return self._W_work_context

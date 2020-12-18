@@ -848,7 +848,7 @@ def collect_subclusters(l, fpath, session_name, n_total=None):
 
     # Take care of nodes that have not been included in the subclusters (assign all to one, 0-th cluster)
     # (e.g., these will be the central nodes in the case of Level-1 TSC clustering)
-    if (len(data) != n_total) & (n_total is not None):
+    if (len(all_data) != n_total) & (n_total is not None):
         all_data.cluster = all_data.cluster + 1
         partition = pd.DataFrame(data={'id':list(range(n_total))})
         partition = partition.merge(all_data, on='id', how='left')
