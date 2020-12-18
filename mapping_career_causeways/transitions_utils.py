@@ -206,6 +206,8 @@ def create_filtering_matrices(
     destination_ids = None):
 
     """
+    !!! CAUTION: NOT YET REVIEWED !!!
+
     Function to find transitions according to the specified filters
 
     Parameters

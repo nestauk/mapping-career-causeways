@@ -16,7 +16,7 @@ if (os.path.exists('raw/') or \
 else:
     # If archive file doesn't exist, download from S3
     if os.path.exists(path_to_zip_file)==False:
-        print(f'Downloading {path_to_zip_file} (approx. 500 MB)...', end=' ')
+        print(f'Downloading {path_to_zip_file} (approx. 600 MB)...', end=' ')
         url = 'https://ojd-mapping-career-causeways.s3.eu-west-2.amazonaws.com/data.zip'
         urllib.request.urlretrieve(url, path_to_zip_file)
         print('Done!')
