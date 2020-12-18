@@ -5,7 +5,6 @@ Created on Wed Dec 16, 2020
 
 @author: karliskanders
 
-Last updated on 01/01/2021
 """
 
 import pandas as pd
@@ -256,6 +255,7 @@ class Data:
                                          'isco_level_1', 'isco_level_2','isco_level_3', 'isco_level_4', 'is_top_level']].copy()
         occ = occ.merge(self.occ_jobzones[['id', 'job_zone','education_level', 'related_work_experience', 'on_the_job_training']], **merge_params)
         occ = occ.merge(self.occ_earnings_and_hours[['id', 'annual_earnings', 'total_paid_hours']], **merge_params)
+        occ = occ.merge(self.occ_risk[['id', 'risk', 'prevalence', 'risk_category', 'onet_code', 'onet_occupation']], **merge_params)
         #self.occ = self.occ.merge(self.occ_employment[['id', 'employment_count', 'employment_rate']], **merge_params)
         occ = occ.merge(self.occ_clusters[['id', 'level_1','level_2', 'skills_based_sector_code', 'sub_sector_code', 'skills_based_sector', 'sub_sector']], **merge_params)
         occ = occ.merge(self.occ_remote[['id','remote_labor_index']], **merge_params)
@@ -328,7 +328,7 @@ class Similarities:
     @property
     def W_essential(self):
         """
-        Occcupation similarities based on the NLP-adjusted overlap of essential skills
+        'Essential skills' similarities: Occcupation similarities based on the NLP-adjusted overlap of essential skills
         """
         if self._W_essential is None:
             self._W_essential = np.load(self.dir + 'sim_matrices/OccupationSimilarity_EssentialSkillsDescription_asymmetric.npy')
@@ -337,7 +337,7 @@ class Similarities:
     @property
     def W_all_to_essential(self):
         """
-        Occupation similarities that include optional skills as well; specifically, the NLP-adjusted
+        'Optional skills' similarities: Occupation similarities that include optional skills as well; specifically, the NLP-adjusted
         overlap of essential and optional skills at the origin occupation vs. essential skills at the destination occupation.
         """
         if self._W_all_to_essential is None:
@@ -347,7 +347,8 @@ class Similarities:
     @property
     def W_activities(self):
         """
-        Occupation similarities based work activities
+        'Work activities' similarities: Occupation similarities based on the categories of ESCO skills categories,
+        that pertain to different types of work activities
         """
         if self._W_activities is None:
             self._W_activities = np.load(self.dir + 'sim_matrices/OccupationSimilarity_ESCO_clusters_Level_2.npy')
@@ -356,7 +357,8 @@ class Similarities:
     @property
     def W_work_context(self):
         """
-        Similarities based on ONET's work context features
+        'Work context' similarities: Similarities based on ONET's work context features capturing structural, interpersonal,
+        and physical work aspects.
         """
         if self._W_work_context is None:
             self._W_work_context = np.load(self.dir + 'sim_matrices/OccupationSimilarity_ONET_Work_Context.npy')
