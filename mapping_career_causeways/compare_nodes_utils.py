@@ -481,7 +481,8 @@ def two_node_comparison(node_to_items,
                         metric='cosine',
                         matching_method='one_to_one',
                         weighting_params=[-43.5, 50],
-                        symmetric=True):
+                        symmetric=True,
+                        rounding=True):
     """
     Method to compare two parent nodes based on their children, and output a
     detailed breakdown of the comparison; useful for exploratory data analysis.
@@ -566,7 +567,13 @@ def two_node_comparison(node_to_items,
     items_j_df['item'] = list(range(len(items_j)))
 
     item_comparison = items_i_df.merge(items_j_df, on='item')
-    item_comparison['similarity'] = np.round(score,3)
+
+    # Rounding, for dispay reasons
+    if rounding:
+        item_comparison['similarity'] = np.round(score,3)
+    else:
+        item_comparison['similarity'] = score
+
     if metric != 'precomputed':
         item_comparison['similarity_raw'] = sim
 
