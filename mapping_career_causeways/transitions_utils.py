@@ -201,6 +201,119 @@ def get_transitions(
 
     return trans_df.reset_index(drop=True)
 
+def get_transition_data(
+    transition_pairs,
+    MIN_VIABLE = MIN_VIABLE_DEF,
+    HIGHLY_VIABLE = HIGHLY_VIABLE_DEF,
+    MAX_JOB_ZONE_DIF = MAX_JOB_ZONE_DIF_DEF,
+    MIN_EARNINGS_RATIO = MIN_EARNINGS_RATIO_DEF):
+
+    columns = {
+        'origin_id': [],
+        'origin_label': [],
+        'destination_id': [],
+        'destination_label': [],
+        'similarity': [],
+        'is_jobzone_ok': [],
+        'is_earnings_ok': [],
+        'is_not_high_risk': [],
+        'is_safer': [],
+        'is_strictly_safe': [],
+        'job_zone_dif': [],
+        'earnings_ratio': [],
+        'risk_dif': [],
+        'prop_dif': [],
+        'W_skills': [],
+        'W_work': [],
+        'W_essential_skills': [],
+        'W_optional_skills': [],
+        'W_activities': [],
+        'W_work_context': []
+    }
+
+    # For each occupation pair in consideration...
+    print('Finding data for all transitions...', end=' ')
+    t_now = time()
+    for j_id, destination_id in transition_pairs:
+
+        viable_ids = [destination_id]
+        N = len(viable_ids)
+
+        ### FILTERS
+        # For viability, obtain: job_zone
+        # For desirability, obtain: annual_earnings
+        # For safety, obtain risk, prevalence & risk_category
+
+        origin_job_zone = data.occ.loc[j_id].job_zone
+        origin_earnings = data.occ.loc[j_id].annual_earnings
+        origin_risk = data.occ.loc[j_id].risk
+        origin_prevalence = data.occ.loc[j_id].prevalence
+        origin_label = data.occ.loc[j_id].risk_category
+
+        job_zone_dif = origin_job_zone - data.occ.loc[viable_ids].job_zone
+        earnings_ratio = data.occ.loc[viable_ids].annual_earnings / origin_earnings
+        risk_dif = origin_risk - data.occ.loc[viable_ids].risk
+        prevalence_dif = data.occ.loc[viable_ids].prevalence - origin_prevalence
+
+        # Job Zone difference not larger than MAX_JOB_ZONE_DIF
+        is_jobzone_ok = np.abs(job_zone_dif) <= MAX_JOB_ZONE_DIF
+        # Earnings at destination larger than MIN_EARNINGS_RATIO
+        is_earnings_ok = earnings_ratio > MIN_EARNINGS_RATIO
+        # Destination is not a high risk occupation
+        is_not_high_risk = (data.occ.loc[viable_ids].risk_category != 'High risk')
+        # Destination has a smaller risk and a larger prevalence of bottleneck tasks
+        is_safer = (risk_dif > 0) & (prevalence_dif > 0)
+        # Combine both safety filters
+        is_strictly_safe = is_safer & is_not_high_risk
+
+        # Summarise similarities
+        W_skills = 0.5*sim.W_essential[j_id, viable_ids] + 0.5*sim.W_all_to_essential[j_id, viable_ids]
+        W_work = 0.5*sim.W_activities[j_id, viable_ids] + 0.5*sim.W_work_context[j_id, viable_ids]
+
+        # Save the row data
+        columns['origin_id'] += [j_id] * N
+        columns['origin_label'] += [data.occ.loc[j_id].preferred_label] * N
+        columns['destination_id'] += viable_ids
+        columns['destination_label'] += data.occ.loc[viable_ids].preferred_label.to_list()
+        columns['similarity'] += list(sim.W_combined[j_id, viable_ids])
+
+        columns['is_jobzone_ok'] += list(is_jobzone_ok)
+        columns['is_earnings_ok'] += list(is_earnings_ok)
+        columns['is_not_high_risk'] += list(is_not_high_risk)
+        columns['is_safer'] += list(is_safer)
+        columns['is_strictly_safe'] += list(is_strictly_safe)
+
+        columns['job_zone_dif'] += list(job_zone_dif)
+        columns['earnings_ratio'] += list(earnings_ratio)
+        columns['risk_dif'] += list(risk_dif)
+        columns['prop_dif'] += list(prevalence_dif)
+
+        columns['W_skills'] += list(W_skills)
+        columns['W_work'] += list(W_work)
+
+        columns['W_essential_skills'] += list(sim.W_essential[j_id, viable_ids])
+        columns['W_optional_skills'] += list(sim.W_all_to_essential[j_id, viable_ids])
+        columns['W_activities'] += list(sim.W_activities[j_id, viable_ids])
+        columns['W_work_context'] += list(sim.W_work_context[j_id, viable_ids])
+
+    print(f'Done!\nThis took {(time()-t_now):.2f} seconds.')
+
+    # Collect everything
+    trans_df = pd.DataFrame(data=columns)
+
+    # Transition viability category
+    trans_df['sim_category'] = ''
+    trans_df.loc[trans_df.similarity <= HIGHLY_VIABLE, 'sim_category'] = 'min_viable'
+    trans_df.loc[trans_df.similarity > HIGHLY_VIABLE, 'sim_category'] = 'highly_viable'
+
+    trans_df['is_viable'] = trans_df['is_jobzone_ok']
+    trans_df['is_desirable'] = trans_df['is_viable'] & trans_df['is_earnings_ok']
+    trans_df['is_safe_desirable'] = trans_df['is_desirable'] & trans_df['is_not_high_risk']
+    trans_df['is_strictly_safe_desirable'] = trans_df['is_desirable'] & trans_df['is_strictly_safe']
+
+    return trans_df.reset_index(drop=True)
+
+
 def create_filtering_matrices(
     origin_ids = None,
     MIN_VIABLE = MIN_VIABLE_DEF,
