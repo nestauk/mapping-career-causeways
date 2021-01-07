@@ -92,6 +92,16 @@ class Data:
         df = df.drop('id', axis=1)
         return df.reset_index(drop=True)
 
+    def occ_title_to_id(self, occ_title):
+        """
+        Finds occupation's ID based on a string input;
+        This could be later enhanced by allowing imprecise inputs
+        """
+        if type(occ_title) == str:
+            return self.occupations[self.occupations.preferred_label==occ_title].iloc[0].id
+        else:
+            return occ_title
+
     ### Occupations and skills
     @property
     def occupations(self):
@@ -198,10 +208,10 @@ class Data:
     def occ_employment(self):
         """
         Estimates of employment for of ESCO occupations in the UK
-        (only for the 'top level' 1627 occupations)
+        (Note: only for the 'top level' 1627 occupations)
         """
         if self._occ_employment is None:
-            self._occ_employment = self.read_csv(self.dir + 'linked_data/xxxx')
+            self._occ_employment = self.read_csv(self.dir + 'linked_data/ESCO_top_occupations_UK_employment.csv')
         return self._occ_employment
 
     @property
@@ -255,8 +265,8 @@ class Data:
                                          'isco_level_1', 'isco_level_2','isco_level_3', 'isco_level_4', 'is_top_level']].copy()
         occ = occ.merge(self.occ_jobzones[['id', 'job_zone','education_level', 'related_work_experience', 'on_the_job_training']], **merge_params)
         occ = occ.merge(self.occ_earnings_and_hours[['id', 'annual_earnings', 'total_paid_hours']], **merge_params)
+        occ = occ.merge(self.occ_employment[['id', 'employment_count', 'employment_share']], **merge_params)
         occ = occ.merge(self.occ_risk[['id', 'risk', 'prevalence', 'risk_category', 'onet_code', 'onet_occupation']], **merge_params)
-        #self.occ = self.occ.merge(self.occ_employment[['id', 'employment_count', 'employment_rate']], **merge_params)
         occ = occ.merge(self.occ_clusters[['id', 'level_1','level_2', 'skills_based_sector_code', 'sub_sector_code', 'skills_based_sector', 'sub_sector']], **merge_params)
         occ = occ.merge(self.occ_remote[['id','remote_labor_index']], **merge_params)
         occ = occ.merge(self.occ_exposure[['id', 'physical_proximity', 'exposure_score']], **merge_params)
@@ -278,7 +288,7 @@ class Data:
     def occ_top(self):
         """ Master table of all 'top level' ESCO occupations (approx. 1700) """
         if self._occ_top is None:
-            self._occ_top = self.occ[self.occ.is_top_level==True].copy()
+            self._occ_top = self.occ[self.occ.is_top_level==True].copy().reset_index(drop=True)
         return self._occ_top
 
     @property
@@ -286,7 +296,7 @@ class Data:
         """ Master table of the 'top level' ESCO occupations analysed in the report (n=1627) """
         if self._occ_report is None:
             df = self.read_csv(self.dir + 'ESCO_automation_risk.csv')
-            self._occ_report = self.occ[self.occ.id.isin(df.id.to_list())].copy()
+            self._occ_report = self.occ[self.occ.id.isin(df.id.to_list())].copy().reset_index(drop=True)
         return self._occ_report
 
     @property
@@ -315,6 +325,12 @@ class Similarities:
         self._W_all_to_essential = None
         self._W_activities = None
         self._W_work_context = None
+
+    def select_subset(self, W, subset_ids):
+        """
+        Select a subset of the full similarity matrix
+        """
+        pass
 
     @property
     def W_combined(self):

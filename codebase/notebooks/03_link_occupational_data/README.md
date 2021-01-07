@@ -10,10 +10,16 @@ Links ESCO occupations to O\*NET's [Job Zones](https://www.onetonline.org/help/o
 
 ## Annual earnings and paid hours
 **`Link_UK_SOC_to_ISCO.ipynb`**  
-Explores two options for crosswalking labour market data associated with UK SOC codes to the ESCO occupations - based on the official crosswalk or on the coding index - and exports preprocessed crosswalk tables.
+Explores two options for crosswalking labour market data associated with UK SOC codes to the ESCO occupations: (1) based on an official crosswalk between ISCO-08 and UK SOC codes, or (2) based on the UK SOC coding index; exports preprocessed crosswalk tables.
 
 **`Link_occupations_to_UK_earnings_hours.ipynb`**  
-Links earnings and hours data from ASHE table 14 to ESCO occupations, by using a UK SOC to ISCO (and hence to ESCO) crosswalk inferred from UK SOC 2010 coding index.
+Links earnings and hours data from ASHE table 14 to ESCO occupations, by using a UK SOC to ISCO (and hence to ESCO) crosswalk inferred from UK SOC coding index.
+
+In addition, calibrates a lower bound of acceptable earnings difference when making a job transition (necessary for determining desirable job transitions).
+
+## Employment
+**`Link_occupations_to_UK_employment.ipynb`**  
+Uses employment estimates for three-digit ISCO occupational groups from the EU LFS to derive rough estimates of workers employed in each 'top level' ESCO occupation. In this particular example, we use estimates for the UK in 2018.
 
 ## Potential impact from COVID-19
 **`Link_occupations_to_Remote_Labor_Index.ipynb`**  

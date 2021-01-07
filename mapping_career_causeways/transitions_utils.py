@@ -13,6 +13,7 @@ import numpy as np
 import pickle
 from time import time
 import yaml
+import os
 
 import  mapping_career_causeways
 import  mapping_career_causeways.compare_nodes_utils as compare_nodes_utils
@@ -22,6 +23,9 @@ find_closest = compare_nodes_utils.find_closest
 useful_paths = mapping_career_causeways.Paths()
 data = load_data.Data()
 sim = load_data.Similarities()
+
+# Import default skills description embeddings
+embeddings = np.load(useful_paths.data_dir + 'interim/embeddings/embeddings_skills_description_SBERT.npy')
 
 ### SET UP DEFAULT TRANSITION FILTERING CRITERIA ###
 
@@ -193,9 +197,122 @@ def get_transitions(
     trans_df['is_viable'] = trans_df['is_jobzone_ok']
     trans_df['is_desirable'] = trans_df['is_viable'] & trans_df['is_earnings_ok']
     trans_df['is_safe_desirable'] = trans_df['is_desirable'] & trans_df['is_not_high_risk']
-    trans_df['is_safer_desirable'] = trans_df['is_desirable'] & trans_df['is_strictly_safe']
+    trans_df['is_strictly_safe_desirable'] = trans_df['is_desirable'] & trans_df['is_strictly_safe']
 
-    return trans_df
+    return trans_df.reset_index(drop=True)
+
+def get_transition_data(
+    transition_pairs,
+    MIN_VIABLE = MIN_VIABLE_DEF,
+    HIGHLY_VIABLE = HIGHLY_VIABLE_DEF,
+    MAX_JOB_ZONE_DIF = MAX_JOB_ZONE_DIF_DEF,
+    MIN_EARNINGS_RATIO = MIN_EARNINGS_RATIO_DEF):
+
+    columns = {
+        'origin_id': [],
+        'origin_label': [],
+        'destination_id': [],
+        'destination_label': [],
+        'similarity': [],
+        'is_jobzone_ok': [],
+        'is_earnings_ok': [],
+        'is_not_high_risk': [],
+        'is_safer': [],
+        'is_strictly_safe': [],
+        'job_zone_dif': [],
+        'earnings_ratio': [],
+        'risk_dif': [],
+        'prop_dif': [],
+        'W_skills': [],
+        'W_work': [],
+        'W_essential_skills': [],
+        'W_optional_skills': [],
+        'W_activities': [],
+        'W_work_context': []
+    }
+
+    # For each occupation pair in consideration...
+    print('Finding data for all transitions...', end=' ')
+    t_now = time()
+    for j_id, destination_id in transition_pairs:
+
+        viable_ids = [destination_id]
+        N = len(viable_ids)
+
+        ### FILTERS
+        # For viability, obtain: job_zone
+        # For desirability, obtain: annual_earnings
+        # For safety, obtain risk, prevalence & risk_category
+
+        origin_job_zone = data.occ.loc[j_id].job_zone
+        origin_earnings = data.occ.loc[j_id].annual_earnings
+        origin_risk = data.occ.loc[j_id].risk
+        origin_prevalence = data.occ.loc[j_id].prevalence
+        origin_label = data.occ.loc[j_id].risk_category
+
+        job_zone_dif = origin_job_zone - data.occ.loc[viable_ids].job_zone
+        earnings_ratio = data.occ.loc[viable_ids].annual_earnings / origin_earnings
+        risk_dif = origin_risk - data.occ.loc[viable_ids].risk
+        prevalence_dif = data.occ.loc[viable_ids].prevalence - origin_prevalence
+
+        # Job Zone difference not larger than MAX_JOB_ZONE_DIF
+        is_jobzone_ok = np.abs(job_zone_dif) <= MAX_JOB_ZONE_DIF
+        # Earnings at destination larger than MIN_EARNINGS_RATIO
+        is_earnings_ok = earnings_ratio > MIN_EARNINGS_RATIO
+        # Destination is not a high risk occupation
+        is_not_high_risk = (data.occ.loc[viable_ids].risk_category != 'High risk')
+        # Destination has a smaller risk and a larger prevalence of bottleneck tasks
+        is_safer = (risk_dif > 0) & (prevalence_dif > 0)
+        # Combine both safety filters
+        is_strictly_safe = is_safer & is_not_high_risk
+
+        # Summarise similarities
+        W_skills = 0.5*sim.W_essential[j_id, viable_ids] + 0.5*sim.W_all_to_essential[j_id, viable_ids]
+        W_work = 0.5*sim.W_activities[j_id, viable_ids] + 0.5*sim.W_work_context[j_id, viable_ids]
+
+        # Save the row data
+        columns['origin_id'] += [j_id] * N
+        columns['origin_label'] += [data.occ.loc[j_id].preferred_label] * N
+        columns['destination_id'] += viable_ids
+        columns['destination_label'] += data.occ.loc[viable_ids].preferred_label.to_list()
+        columns['similarity'] += list(sim.W_combined[j_id, viable_ids])
+
+        columns['is_jobzone_ok'] += list(is_jobzone_ok)
+        columns['is_earnings_ok'] += list(is_earnings_ok)
+        columns['is_not_high_risk'] += list(is_not_high_risk)
+        columns['is_safer'] += list(is_safer)
+        columns['is_strictly_safe'] += list(is_strictly_safe)
+
+        columns['job_zone_dif'] += list(job_zone_dif)
+        columns['earnings_ratio'] += list(earnings_ratio)
+        columns['risk_dif'] += list(risk_dif)
+        columns['prop_dif'] += list(prevalence_dif)
+
+        columns['W_skills'] += list(W_skills)
+        columns['W_work'] += list(W_work)
+
+        columns['W_essential_skills'] += list(sim.W_essential[j_id, viable_ids])
+        columns['W_optional_skills'] += list(sim.W_all_to_essential[j_id, viable_ids])
+        columns['W_activities'] += list(sim.W_activities[j_id, viable_ids])
+        columns['W_work_context'] += list(sim.W_work_context[j_id, viable_ids])
+
+    print(f'Done!\nThis took {(time()-t_now):.2f} seconds.')
+
+    # Collect everything
+    trans_df = pd.DataFrame(data=columns)
+
+    # Transition viability category
+    trans_df['sim_category'] = ''
+    trans_df.loc[trans_df.similarity <= HIGHLY_VIABLE, 'sim_category'] = 'min_viable'
+    trans_df.loc[trans_df.similarity > HIGHLY_VIABLE, 'sim_category'] = 'highly_viable'
+
+    trans_df['is_viable'] = trans_df['is_jobzone_ok']
+    trans_df['is_desirable'] = trans_df['is_viable'] & trans_df['is_earnings_ok']
+    trans_df['is_safe_desirable'] = trans_df['is_desirable'] & trans_df['is_not_high_risk']
+    trans_df['is_strictly_safe_desirable'] = trans_df['is_desirable'] & trans_df['is_strictly_safe']
+
+    return trans_df.reset_index(drop=True)
+
 
 def create_filtering_matrices(
     origin_ids = None,
@@ -203,12 +320,15 @@ def create_filtering_matrices(
     HIGHLY_VIABLE = HIGHLY_VIABLE_DEF,
     MAX_JOB_ZONE_DIF = MAX_JOB_ZONE_DIF_DEF,
     MIN_EARNINGS_RATIO = MIN_EARNINGS_RATIO_DEF,
-    destination_ids = None):
+    destination_ids = None,
+    export_path = None):
 
     """
-    !!! CAUTION: NOT YET REVIEWED !!!
+    Creates boolean matrices for tagging transitions as 'safe', 'desirable', 'viable'
+    'highly viable' and combinations of these.
 
-    Function to find transitions according to the specified filters
+    These boolean matrices are then used for analysing the number of different
+    types of transitions for each occupation.
 
     Parameters
     ----------
@@ -240,7 +360,7 @@ def create_filtering_matrices(
     N = len(origin_ids)
     N2 = len(destination_ids)
 
-    # Matrices to inidicate...
+    # Boolean natrices to indicate...
     # ...compatibility of job zones
     F_jobzone = np.zeros((N,N2)).astype(bool)
     # ...compatability of earnings
@@ -249,26 +369,27 @@ def create_filtering_matrices(
     F_safer = np.zeros((N,N2)).astype(bool)
     # ...that destination is not of high risk
     F_not_high_risk = np.zeros((N,N2)).astype(bool)
-
+    # ...that the transition is not to self
     F_not_self = np.zeros((N,N2)).astype(bool)
 
     print('Creating filtering matrices...', end=' ')
     t_now = time()
+    # Brute force approach (for each transition...)
     for i in range(N):
         row_i = data.occ.iloc[origin_ids[i]]
 
         for j in range(N2):
             row_j = data.occ.iloc[destination_ids[j]]
+
             is_jobzone_ok = np.abs(row_i.job_zone - row_j.job_zone) <= MAX_JOB_ZONE_DIF
-            is_earnings_ok = (row_j.annual_gross_pay / row_i.annual_gross_pay) > MIN_EARNINGS_RATIO
-            is_safer = (row_i.risk > row_j.risk) & (row_i.prop_bottleneck_tasks < row_j.prop_bottleneck_tasks)
-            is_not_high_risk = (row_j.risk_cat_label != 'High risk')
+            is_earnings_ok = (row_j.annual_earnings / row_i.annual_earnings) > MIN_EARNINGS_RATIO
+            is_safer = (row_i.risk > row_j.risk) & (row_i.prevalence < row_j.prevalence)
+            is_not_high_risk = (row_j.risk_category != 'High risk')
 
             F_jobzone[i][j] = is_jobzone_ok
             F_earnings[i][j] = is_earnings_ok
             F_not_high_risk[i][j] = is_not_high_risk
             F_safer[i][j] = is_safer
-
             F_not_self[i][j] = row_i.id != row_j.id
 
     print(f'Done!\nThis took {(time()-t_now):.2f} seconds.')
@@ -278,7 +399,7 @@ def create_filtering_matrices(
     F_highly_viable = F_jobzone & (W_combined_select > HIGHLY_VIABLE)
     F_min_viable = F_jobzone & (W_combined_select > MIN_VIABLE) & (W_combined_select <= HIGHLY_VIABLE)
 
-    # Matrix indicating viable and desirable transitions
+    # Matrix indicating desirable transitions
     F_desirable = F_viable & F_earnings
 
     # Matrix indicating safe transitions
@@ -286,7 +407,7 @@ def create_filtering_matrices(
 
     # Matrices indicating safe and desirable transitions
     F_safe_desirable = F_desirable & F_not_high_risk # 1st definition
-    F_safer_desirable = F_desirable & F_strictly_safe # 2nd (stricter) definition
+    F_strictly_safe_desirable = F_desirable & F_strictly_safe # 2nd (stricter) definition
 
     # Export filtering matrices
     filter_matrices = {
@@ -298,10 +419,10 @@ def create_filtering_matrices(
         'F_earnings': F_earnings,
         'F_not_high_risk': F_not_high_risk,
         'F_safer': F_safer,
-        'F_full_safe': F_full_safe,
+        'F_strictly_safe': F_strictly_safe,
         'F_not_self': F_not_self,
         'F_safe_desirable': F_safe_desirable,
-        'F_safer_desirable': F_safer_desirable,
+        'F_strictly_safe_desirable': F_strictly_safe_desirable,
     }
 
     # Remove transitions to self
@@ -311,22 +432,34 @@ def create_filtering_matrices(
     filter_matrices['origin_ids'] = origin_ids
     filter_matrices['destination_ids'] = destination_ids
 
+    # Export filtering matrices
+    if export_path is not None:
+        if os.path.exists(export_path) == False:
+            pickle.dump(filter_matrices, open(export_path, 'wb'))
+            print(f'Filtering matrices saved at {export_path}')
+        else:
+            print('File already exists! (not saved)')
+
     return filter_matrices
 
 def show_skills_overlap(
     job_i,
     job_j,
-    data, sim,
-    embeddings,
+    data=data, sim=sim,
+    embeddings=embeddings,
     skills_match = 'optional',  # either 'optional' or 'essential'
     matching_method='one_to_one',
-    verbose=True):
+    verbose=True,
+    rounding=True):
 
     """
     NLP-adjusted overlap of skill sets between occupations job_i and job_j
     """
 
-    if verbose: print(f"from {data.occ.loc[job_i].preferred_label} to {data.occ.loc[job_j].preferred_label}")
+    job_i = data.occ_title_to_id(job_i)
+    job_j = data.occ_title_to_id(job_j)
+
+    if verbose: print(f"from {data.occ.loc[job_i].preferred_label} (id {job_i}) to {data.occ.loc[job_j].preferred_label} (id {job_j})")
 
     # Create the input dataframe in the required format
     if skills_match == 'optional':
@@ -348,7 +481,8 @@ def show_skills_overlap(
         embeddings,
         metric='cosine',
         matching_method=matching_method,
-        symmetric=False)
+        symmetric=False,
+        rounding=rounding)
 
     N_matched = len(df)
 
@@ -457,3 +591,215 @@ class CompareFeatures():
         df['deltas'] = delta_vector
         df['deltas_abs'] = np.abs(delta_vector)
         return df.sort_values('deltas_abs', ascending=False)
+
+# REFACTORING IN PROGRESS
+# class SkillsGaps():
+#     """
+#     Class for characterising prevalent skills gaps for a collection of transitions
+#     """
+#
+#     def __init__(self, trans_to_analyse):
+#         """
+#         trans_to_analyse (pandas.DataFrame):
+#             Table with transitions, with columns 'origin_id' and 'destination_id'
+#             indicating the occupations involved in the transition.
+#         """
+#
+#         self.trans_to_analyse = trans_to_analyse
+#
+#     def get_skills_scores(self, verbose=True):
+#         """
+#         Compare skillsets and get matching scores for each comparison
+#         """
+#
+#         ## List of lists (a list for each transition)
+#         # Skills IDs for all transitions
+#         self.destination_skills_id_ALL = []
+#         self.origin_skills_id_ALL = []
+#         # All matching scores
+#         self.destination_skills_id_score_ALL = []
+#         self.origin_skills_id_score_ALL = []
+#         # All semantic similarity values (not used in the final analysis)
+#         self.destination_skills_id_sim_ALL = []
+#         self.origin_skills_id_sim_ALL = []
+#
+#         t = time()
+#         for j, row in tqdm(self.trans_to_analyse.iterrows(), total=len(self.trans_to_analyse)):
+#
+#             # Get job IDs
+#             job_i = row.origin_id
+#             job_j = row.destination_id
+#
+#             # Create the input dataframe in the required format
+#             df = show_skills_overlap(job_i, job_j, verbose=False)
+#
+#             # node_to_items_ = pd.concat([node_to_all_items.loc[[job_i]],
+#             #                             node_to_essential_items.loc[[job_j]]])
+#             #
+#             # # Compare jobs
+#             # df, score = compare_nodes_utils.two_node_comparison(
+#             #     node_to_items_,
+#             #     job_i, job_j,
+#             #     skills[['id','preferred_label']],
+#             #     embeddings,
+#             #     metric='cosine',
+#             #     matching_method='one_to_one',
+#             #     symmetric=False)
+#
+#             ###### DESTINATION SKILLS ######
+#             # Include unmatched skills as well
+#             # destination_skills = pd.DataFrame(data={'destination_id': occ_skills(job_j).id.to_list()})
+#             # destination_skills = destination_skills.merge(df[['id_y', 'similarity', 'similarity_raw']], left_on='destination_id', right_on='id_y', how='left')
+#             # destination_skills.loc[destination_skills.similarity.isnull(), 'similarity'] = 0
+#             # destination_skills.loc[destination_skills.similarity.isnull(), 'similarity_raw'] = 0
+#
+#             # Extract the destination skill IDs, matching scores and similarity values
+#             destination_skills_id = df.destination_skill_id.to_list()
+#             destination_skills_id_score = df.score.to_list()
+#             destination_skills_id_sim = df.sim.to_list()
+#
+#             # Save the skill IDs and similarity values
+#             self.destination_skills_id_ALL.append(df.destination_skill_id.to_list())
+#             self.destination_skills_id_score_ALL.append(df.score.to_list())
+#             self.destination_skills_id_raw_ALL.append(df.sim.to_list())
+#
+#             ###### ORIGIN SKILLS ######
+#             # Exclude unmatched destination skill rows
+#             # origin_skills = pd.DataFrame(data={'origin_id': occ_skills(job_i, ['Essential', 'Optional']).id.to_list()})
+#             # origin_skills = origin_skills.merge(df[['id_x', 'similarity', 'similarity_raw']], left_on='origin_id', right_on='id_x', how='left')
+#             # origin_skills.loc[origin_skills.similarity.isnull(), 'similarity'] = 0
+#             # origin_skills.loc[origin_skills.similarity.isnull(), 'similarity_raw'] = 0
+#             origin_skills = df[df.origin_skill_id.apply(lambda x: type(x)!=str)]
+#
+#             # Extract the oriign skill IDs, matching scores and similarity values
+#             self.origin_skills_id_ALL.append(origin_skills.origin_skill_id.to_list())
+#             self.origin_skills_id_score_ALL.append(origin_skills.score.to_list())
+#             self.origin_skills_id_sim_ALL.append(origin_skills.similarity.to_list())
+#
+#         t_elapsed = time() - t
+#         if verbose: print(f'Time elapsed: {t_elapsed :.2f} sec ({t_elapsed/len(self.trans_to_analyse): .3f} per transition)')
+#
+#
+#     def prevalent_skills_gaps(self, transitions_indices=None, skills_type='destination'):
+#         """
+#         Show most prevalent skills gaps
+#         transition_indices (list of int)
+#             Transitions that we wish to analyse, specified by the row indices of 'trans_to_analyse'
+#         skills_type (str):
+#             Sets up which skills type are we checking ('destination' vs 'origin')
+#         """
+#
+#         if type(transition_indices)==type(None):
+#             transition_indices = range(0, len(self.trans_to_analyse))
+#
+#         # # Lists of "transition skills" to merge into a dataframe
+#         # transitions_indices = trans_to_analyse.reset_index()[trans_to_analyse.reset_index().origin_id==job_i].index
+#
+#         # Number of transitions we have
+#         n_trans = len(transition_indices)
+#
+#         skill_similarities_all = merge_lists(transitions_indices, skills_type=skills_type)
+#
+#         get_stats_most_prevalent(
+#             get_agg_matching_scores_Skills(skill_similarities_all, n_trans),
+#             10)
+#
+#         return
+#
+#     def merge_lists(self, transition_indices, skills_type='destination'):
+#
+#         """
+#         Creates dataframe with all skills occurrences, their matched similarities and scores.
+#         It is possible to analyse a subset of all supplied transitions, by specifying
+#         the row indices of 'trans_to_analyse' table using 'transition_indices'
+#         """
+#
+#         # Merge lists
+#         list_skills = []
+#         list_similarity = []
+#         list_similarity_raw = []
+#
+#         for i in transition_indices:
+#             if skills_type=='destination':
+#                 list_skills += self.destination_skills_id_ALL[i]
+#                 list_score += self.destination_skills_id_score_ALL[i]
+#                 list_similarity += self.destination_skills_id_sim_ALL[i]
+#             elif skills_type=='origin':
+#                 list_skills +=  self.origin_skills_id_ALL[i]
+#                 list_score += self.origin_skills_id_score_ALL[i]
+#                 list_similarity += self.origin_skills_id_raw_sim_ALL[i]
+#
+#         skill_similarities_all = pd.DataFrame(data={
+#             'skills_id': list_skills,
+#             'score': list_score,
+#             'similarity': list_similarity})
+#
+#         # If a skill was not matched, then set it to 0
+#         skill_similarities_all.loc[skill_similarities_all.score.isnull(), 'similarity'] = 0
+#
+#         return skill_similarities_all
+#
+#     def count_and_agg_scores(self, skill_similarities_all, groupby_column):
+#
+#         """ Aggregates scores for each skill or cluster (depending on groupby_column) """
+#
+#         # Counts
+#         x_counts = skill_similarities_all.groupby(groupby_column).count()
+#         # Mean similarity
+#         skill_similarities = skill_similarities_all.groupby(groupby_column).mean()
+#         # Create the dataframe
+#         skill_similarities['counts'] = x_counts['similarity']
+#         skill_similarities['stdev'] = skill_similarities_all.groupby(groupby_column).std()['similarity']
+#         skill_similarities.reset_index(inplace=True)
+#         return skill_similarities
+#
+#     def get_agg_matching_scores_Skills(skill_similarities_all, n_trans=1):
+#
+#         """ Agregates scores for skills """
+#
+#         # Aggregate scores
+#         skill_similarities = count_and_agg_scores(skill_similarities_all, 'skills_id')
+#
+#         # Add information about skills
+#         skill_similarities = skill_similarities.merge(skills[['id', 'preferred_label',
+#                                                               'level_1', 'level_2', 'level_3', 'code']],
+#                                                       left_on='skills_id', right_on='id', how='left')
+#
+#         # Clean up the dataframe
+#         skill_similarities = clean_up_df(skill_similarities, n_trans)
+#         skill_similarities = skill_similarities[['id', 'preferred_label', 'code', 'counts', 'prevalence', 'similarity' , 'stdev']]
+#
+#         return skill_similarities
+#
+#
+#     def get_agg_matching_scores_Clusters(skill_similarities_all, level='level_1', n_trans=1):
+#
+#         """ Agregates scores for ESCO skills clusters """
+#
+#         # Add skills cluster information
+#         skill_similarities_all_clust = skill_similarities_all.merge(skills[['id', 'preferred_label', 'level_1', 'level_2', 'level_3', 'code']], left_on='skills_id', right_on='id')
+#
+#         # Aggregate scores
+#         skill_similarities = count_and_agg_scores(skill_similarities_all_clust, level)
+#
+#         # Add skills cluster title
+#         skill_similarities = skill_similarities.merge(concepts[['code','title']], left_on=level, right_on='code')
+#
+#         # Clean up the dataframe
+#         skill_similarities = clean_up_df(skill_similarities, n_trans)
+#         skill_similarities = skill_similarities[['code', 'title', 'counts', 'prevalence', 'similarity', 'stdev']]
+#
+#         return skill_similarities
+#
+#     def get_stats_most_prevalent(skill_similarities, top_n):
+#
+#         return skill_similarities.sort_values('prevalence', ascending=False).head(top_n).sort_values('similarity', ascending=True)
+#
+#     def clean_up_df(df, n_trans):
+#
+#         """ Clean up the dataframe for presentation """
+#
+#         df['prevalence'] = np.round(df['counts'] / n_trans, 3)
+#         df.similarity = df.similarity.round(3)
+#         df.reset_index(drop=True, inplace=True)
+#         return df
