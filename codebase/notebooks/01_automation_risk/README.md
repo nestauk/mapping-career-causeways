@@ -6,4 +6,4 @@ Calculates the overall automation risk and the prevalence of bottleneck tasks fo
 
 ## Task impact on automation risk
 **`Impact_tasks_on_automation.ipynb`**  
-Calculates the impact of tasks and work activities on the risk of automation. This was used in the Mapping Career Causeways report to finding the types of tasks and work activities that raise or lower automation risk the most.
+Calculates the impact of tasks and work activities on the risk of automation. This was used in the Mapping Career Causeways report to find the types of tasks and work activities that raise or lower automation risk the most.
