@@ -2,7 +2,7 @@
 
 To measure the fit between different occupations, we compared the occupational profiles across four different facets: essential skills, optional skills, work activity types and work context. The outputs of these notebooks are similarity matrices, which are stored in the `codebase/data/processed/sim_matrices` folder.
 
-For more background on the methodology, see pages 85-93 of the project [research report](https://www.nesta.org.uk/report/mapping-career-causeways-supporting-workers-risk/). Note that in the report we mainly focused on a subset of transitions pertaining to the "top level" 1627 ESCO occupations, here we calculate distances between all 2942 ESCO occupations.
+For more background on the methodology, see pages 85-93 of the project [research report](https://www.nesta.org.uk/report/mapping-career-causeways-supporting-workers-risk/). Note that while here we calculate distances between all 2942 ESCO occupations, in the report we mainly focused on a subset of transitions pertaining to the "top level" 1627 ESCO occupations.
 
 **`Compare_occupations_by_ESCO_skills.ipynb`**  
 Use NLP-adjusted overlap to make flexible comparisons of ESCO occupations' skills sets and arrive at the first two occupation similarity measures based on essential skills and optional skills.
