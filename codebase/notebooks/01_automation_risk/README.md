@@ -1,4 +1,4 @@
-# Analyses automation risk
+# Analyses of occupational automation risk
 
 ## Automation risk for ESCO occupations
 **`Automation_risk_for_ESCO_occupations.ipynb`**
