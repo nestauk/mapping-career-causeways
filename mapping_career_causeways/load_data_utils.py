@@ -102,6 +102,15 @@ class Data:
         else:
             return occ_title
 
+    def add_field_to_occupation(self, df, occupation_id_col='id',  field_name=None, new_prefix=None):
+        """ Merges field 'field_name' from data.occ to the dataframe 'df', and optionally adds a prefix """
+        df_new = df.copy().merge(self.occ[['id', field_name]], left_on=occupation_id_col, right_on='id', how='left')
+        if new_prefix is not None:
+            df_new = df_new.rename(columns = {field_name: new_prefix + '_' + field_name})
+        if occupation_id_col != 'id':
+            df_new = df_new.drop('id', axis=1)
+        return df_new
+
     ### Occupations and skills
     @property
     def occupations(self):
@@ -310,6 +319,9 @@ class Data:
         if self._report_occ_ids is None:
             self._report_occ_ids = self.occ_report.id.to_list()
         return self._report_occ_ids
+
+
+
 
 class Similarities:
     """

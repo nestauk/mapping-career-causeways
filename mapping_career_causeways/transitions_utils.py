@@ -593,213 +593,233 @@ class CompareFeatures():
         return df.sort_values('deltas_abs', ascending=False)
 
 # REFACTORING IN PROGRESS
-# class SkillsGaps():
-#     """
-#     Class for characterising prevalent skills gaps for a collection of transitions
-#     """
-#
-#     def __init__(self, trans_to_analyse):
-#         """
-#         trans_to_analyse (pandas.DataFrame):
-#             Table with transitions, with columns 'origin_id' and 'destination_id'
-#             indicating the occupations involved in the transition.
-#         """
-#
-#         self.trans_to_analyse = trans_to_analyse
-#
-#     def get_skills_scores(self, verbose=True):
-#         """
-#         Compare skillsets and get matching scores for each comparison
-#         """
-#
-#         ## List of lists (a list for each transition)
-#         # Skills IDs for all transitions
-#         self.destination_skills_id_ALL = []
-#         self.origin_skills_id_ALL = []
-#         # All matching scores
-#         self.destination_skills_id_score_ALL = []
-#         self.origin_skills_id_score_ALL = []
-#         # All semantic similarity values (not used in the final analysis)
-#         self.destination_skills_id_sim_ALL = []
-#         self.origin_skills_id_sim_ALL = []
-#
-#         t = time()
-#         for j, row in tqdm(self.trans_to_analyse.iterrows(), total=len(self.trans_to_analyse)):
-#
-#             # Get job IDs
-#             job_i = row.origin_id
-#             job_j = row.destination_id
-#
-#             # Create the input dataframe in the required format
-#             df = show_skills_overlap(job_i, job_j, verbose=False)
-#
-#             # node_to_items_ = pd.concat([node_to_all_items.loc[[job_i]],
-#             #                             node_to_essential_items.loc[[job_j]]])
-#             #
-#             # # Compare jobs
-#             # df, score = compare_nodes_utils.two_node_comparison(
-#             #     node_to_items_,
-#             #     job_i, job_j,
-#             #     skills[['id','preferred_label']],
-#             #     embeddings,
-#             #     metric='cosine',
-#             #     matching_method='one_to_one',
-#             #     symmetric=False)
-#
-#             ###### DESTINATION SKILLS ######
-#             # Include unmatched skills as well
-#             # destination_skills = pd.DataFrame(data={'destination_id': occ_skills(job_j).id.to_list()})
-#             # destination_skills = destination_skills.merge(df[['id_y', 'similarity', 'similarity_raw']], left_on='destination_id', right_on='id_y', how='left')
-#             # destination_skills.loc[destination_skills.similarity.isnull(), 'similarity'] = 0
-#             # destination_skills.loc[destination_skills.similarity.isnull(), 'similarity_raw'] = 0
-#
-#             # Extract the destination skill IDs, matching scores and similarity values
-#             destination_skills_id = df.destination_skill_id.to_list()
-#             destination_skills_id_score = df.score.to_list()
-#             destination_skills_id_sim = df.sim.to_list()
-#
-#             # Save the skill IDs and similarity values
-#             self.destination_skills_id_ALL.append(df.destination_skill_id.to_list())
-#             self.destination_skills_id_score_ALL.append(df.score.to_list())
-#             self.destination_skills_id_raw_ALL.append(df.sim.to_list())
-#
-#             ###### ORIGIN SKILLS ######
-#             # Exclude unmatched destination skill rows
-#             # origin_skills = pd.DataFrame(data={'origin_id': occ_skills(job_i, ['Essential', 'Optional']).id.to_list()})
-#             # origin_skills = origin_skills.merge(df[['id_x', 'similarity', 'similarity_raw']], left_on='origin_id', right_on='id_x', how='left')
-#             # origin_skills.loc[origin_skills.similarity.isnull(), 'similarity'] = 0
-#             # origin_skills.loc[origin_skills.similarity.isnull(), 'similarity_raw'] = 0
-#             origin_skills = df[df.origin_skill_id.apply(lambda x: type(x)!=str)]
-#
-#             # Extract the oriign skill IDs, matching scores and similarity values
-#             self.origin_skills_id_ALL.append(origin_skills.origin_skill_id.to_list())
-#             self.origin_skills_id_score_ALL.append(origin_skills.score.to_list())
-#             self.origin_skills_id_sim_ALL.append(origin_skills.similarity.to_list())
-#
-#         t_elapsed = time() - t
-#         if verbose: print(f'Time elapsed: {t_elapsed :.2f} sec ({t_elapsed/len(self.trans_to_analyse): .3f} per transition)')
-#
-#
-#     def prevalent_skills_gaps(self, transitions_indices=None, skills_type='destination'):
-#         """
-#         Show most prevalent skills gaps
-#         transition_indices (list of int)
-#             Transitions that we wish to analyse, specified by the row indices of 'trans_to_analyse'
-#         skills_type (str):
-#             Sets up which skills type are we checking ('destination' vs 'origin')
-#         """
-#
-#         if type(transition_indices)==type(None):
-#             transition_indices = range(0, len(self.trans_to_analyse))
-#
-#         # # Lists of "transition skills" to merge into a dataframe
-#         # transitions_indices = trans_to_analyse.reset_index()[trans_to_analyse.reset_index().origin_id==job_i].index
-#
-#         # Number of transitions we have
-#         n_trans = len(transition_indices)
-#
-#         skill_similarities_all = merge_lists(transitions_indices, skills_type=skills_type)
-#
-#         get_stats_most_prevalent(
-#             get_agg_matching_scores_Skills(skill_similarities_all, n_trans),
-#             10)
-#
-#         return
-#
-#     def merge_lists(self, transition_indices, skills_type='destination'):
-#
-#         """
-#         Creates dataframe with all skills occurrences, their matched similarities and scores.
-#         It is possible to analyse a subset of all supplied transitions, by specifying
-#         the row indices of 'trans_to_analyse' table using 'transition_indices'
-#         """
-#
-#         # Merge lists
-#         list_skills = []
-#         list_similarity = []
-#         list_similarity_raw = []
-#
-#         for i in transition_indices:
-#             if skills_type=='destination':
-#                 list_skills += self.destination_skills_id_ALL[i]
-#                 list_score += self.destination_skills_id_score_ALL[i]
-#                 list_similarity += self.destination_skills_id_sim_ALL[i]
-#             elif skills_type=='origin':
-#                 list_skills +=  self.origin_skills_id_ALL[i]
-#                 list_score += self.origin_skills_id_score_ALL[i]
-#                 list_similarity += self.origin_skills_id_raw_sim_ALL[i]
-#
-#         skill_similarities_all = pd.DataFrame(data={
-#             'skills_id': list_skills,
-#             'score': list_score,
-#             'similarity': list_similarity})
-#
-#         # If a skill was not matched, then set it to 0
-#         skill_similarities_all.loc[skill_similarities_all.score.isnull(), 'similarity'] = 0
-#
-#         return skill_similarities_all
-#
-#     def count_and_agg_scores(self, skill_similarities_all, groupby_column):
-#
-#         """ Aggregates scores for each skill or cluster (depending on groupby_column) """
-#
-#         # Counts
-#         x_counts = skill_similarities_all.groupby(groupby_column).count()
-#         # Mean similarity
-#         skill_similarities = skill_similarities_all.groupby(groupby_column).mean()
-#         # Create the dataframe
-#         skill_similarities['counts'] = x_counts['similarity']
-#         skill_similarities['stdev'] = skill_similarities_all.groupby(groupby_column).std()['similarity']
-#         skill_similarities.reset_index(inplace=True)
-#         return skill_similarities
-#
-#     def get_agg_matching_scores_Skills(skill_similarities_all, n_trans=1):
-#
-#         """ Agregates scores for skills """
-#
-#         # Aggregate scores
-#         skill_similarities = count_and_agg_scores(skill_similarities_all, 'skills_id')
-#
-#         # Add information about skills
-#         skill_similarities = skill_similarities.merge(skills[['id', 'preferred_label',
-#                                                               'level_1', 'level_2', 'level_3', 'code']],
-#                                                       left_on='skills_id', right_on='id', how='left')
-#
-#         # Clean up the dataframe
-#         skill_similarities = clean_up_df(skill_similarities, n_trans)
-#         skill_similarities = skill_similarities[['id', 'preferred_label', 'code', 'counts', 'prevalence', 'similarity' , 'stdev']]
-#
-#         return skill_similarities
-#
-#
-#     def get_agg_matching_scores_Clusters(skill_similarities_all, level='level_1', n_trans=1):
-#
-#         """ Agregates scores for ESCO skills clusters """
-#
-#         # Add skills cluster information
-#         skill_similarities_all_clust = skill_similarities_all.merge(skills[['id', 'preferred_label', 'level_1', 'level_2', 'level_3', 'code']], left_on='skills_id', right_on='id')
-#
-#         # Aggregate scores
-#         skill_similarities = count_and_agg_scores(skill_similarities_all_clust, level)
-#
-#         # Add skills cluster title
-#         skill_similarities = skill_similarities.merge(concepts[['code','title']], left_on=level, right_on='code')
-#
-#         # Clean up the dataframe
-#         skill_similarities = clean_up_df(skill_similarities, n_trans)
-#         skill_similarities = skill_similarities[['code', 'title', 'counts', 'prevalence', 'similarity', 'stdev']]
-#
-#         return skill_similarities
-#
-#     def get_stats_most_prevalent(skill_similarities, top_n):
-#
-#         return skill_similarities.sort_values('prevalence', ascending=False).head(top_n).sort_values('similarity', ascending=True)
-#
-#     def clean_up_df(df, n_trans):
-#
-#         """ Clean up the dataframe for presentation """
-#
-#         df['prevalence'] = np.round(df['counts'] / n_trans, 3)
-#         df.similarity = df.similarity.round(3)
-#         df.reset_index(drop=True, inplace=True)
-#         return df
+class SkillsGaps():
+    """
+    Class for characterising prevalent skills gaps for a collection of transitions
+    """
+
+    def __init__(self, trans_to_analyse, verbose=True):
+        """
+        trans_to_analyse (pandas.DataFrame):
+            Table with transitions, with columns 'origin_id' and 'destination_id'
+            indicating the occupations involved in the transition.
+        """
+        self.trans_to_analyse = trans_to_analyse
+        self.get_skills_scores(verbose=verbose)
+        self.skill_similarities_all = None
+        self._skills_gaps = None
+        self.cluster_gaps = None
+
+    @property
+    def skills_gaps(self):
+        if self._skills_gaps is None:
+            self._skills_gaps = self.get_skills_gaps()
+        return self._skills_gaps
+
+    def get_skills_scores(self, verbose=True):
+        """
+        Compare skillsets and get matching scores for each comparison
+        """
+
+        ## List of lists (a list for each transition)
+        # Skills IDs for all transitions
+        self.destination_skills_id_ALL = []
+        self.origin_skills_id_ALL = []
+        # All matching scores
+        self.destination_skills_id_score_ALL = []
+        self.origin_skills_id_score_ALL = []
+        # All semantic similarity values (not used in the final analysis)
+        self.destination_skills_id_sim_ALL = []
+        self.origin_skills_id_sim_ALL = []
+
+        t = time()
+        for j, row in self.trans_to_analyse.iterrows():
+
+            # Get job IDs
+            job_i = row.origin_id
+            job_j = row.destination_id
+
+            # Create the input dataframe in the required format
+            df = show_skills_overlap(job_i, job_j, verbose=False)
+
+            ###### DESTINATION SKILLS ######
+            # Save the skill IDs and similarity values
+            self.destination_skills_id_ALL.append(df.destination_skill_id.to_list())
+            self.destination_skills_id_score_ALL.append(df.score.to_list())
+            self.destination_skills_id_sim_ALL.append(df.similarity.to_list())
+
+            ###### ORIGIN SKILLS ######
+            # Exclude unmatched destination skill rows
+            origin_skills = df[df.origin_skill_id.apply(lambda x: type(x)!=str)]
+
+            # Extract the oriign skill IDs, matching scores and similarity values
+            self.origin_skills_id_ALL.append(origin_skills.origin_skill_id.to_list())
+            self.origin_skills_id_score_ALL.append(origin_skills.score.to_list())
+            self.origin_skills_id_sim_ALL.append(origin_skills.similarity.to_list())
+
+        t_elapsed = time() - t
+        if verbose: print(f'Time elapsed: {t_elapsed :.2f} sec ({t_elapsed/len(self.trans_to_analyse): .3f} per transition)')
+
+
+    def setup(self, transition_indices=None, skills_type='destination', skill_items=None):
+        """
+        Parameters:
+        ----------
+        transition_indices (list of int)
+            Transitions that we wish to analyse, specified by the row indices of 'trans_to_analyse'
+        skills_type (str):
+            Sets up which skills type are we checking ('destination' vs 'origin')
+        """
+
+        # Store the analysis parameters
+        if type(transition_indices)==type(None):
+            self.transition_indices = range(0, len(self.trans_to_analyse))
+        else:
+            self.transition_indices = transition_indices
+
+        self.skills_type = skills_type
+
+        # Number of transitions we have
+        self.n_trans = len(self.transition_indices)
+        # Get all skills occurrences and matching scores
+        self.skill_similarities_all = self.merge_lists()
+
+        # Select only specific skill items (either 'K' for knowledge, 'S' for skills or 'A' for attitude)
+        if skill_items is None:
+            pass
+        else:
+            df = self.skill_similarities_all.merge(data.skills[['id','skill_category']], left_on='skills_id', right_on='id', how='left')
+            self.skill_similarities_all = self.skill_similarities_all[df.skill_category.isin(skill_items)]
+
+        self._skills_gaps = self.get_skills_gaps()
+
+    def prevalent_skills_gaps(self, top_x=10, percentile=False):
+        """
+        Show most prevalent skills gaps
+        """
+        # Return the top most prevalent skills
+        return self.get_most_prevalent_gaps(self.skills_gaps, top_x=top_x, percentile=percentile)
+
+    def prevalent_cluster_gaps(self, level='level_3', top_x=10, percentile=False):
+
+        self.cluster_gaps = self.get_cluster_gaps(level)
+        prevalent_clusters = self.get_most_prevalent_gaps(self.cluster_gaps, top_x=top_x, percentile=percentile)
+        return self.most_prevalent_cluster_skills(prevalent_clusters)
+
+    def merge_lists(self):
+
+        """
+        Creates dataframe with all skills occurrences, their matched similarities and scores.
+        It is possible to analyse a subset of all supplied transitions, by specifying
+        the row indices of 'trans_to_analyse' table using 'transition_indices'
+        """
+
+        # Merge lists
+        list_skills = []
+        list_score = []
+        list_similarity = []
+
+        for i in self.transition_indices:
+            if self.skills_type=='destination':
+                list_skills += self.destination_skills_id_ALL[i]
+                list_score += self.destination_skills_id_score_ALL[i]
+                list_similarity += self.destination_skills_id_sim_ALL[i]
+            elif self.skills_type=='origin':
+                list_skills +=  self.origin_skills_id_ALL[i]
+                list_score += self.origin_skills_id_score_ALL[i]
+                list_similarity += self.origin_skills_id_sim_ALL[i]
+
+        skill_similarities_all = pd.DataFrame(data={
+            'skills_id': list_skills,
+            'score': list_score,
+            'similarity': list_similarity})
+
+        # If a skill was not matched, then set it to 0
+        skill_similarities_all.loc[skill_similarities_all.score.isnull(), 'score'] = 0
+
+        return skill_similarities_all
+
+    def count_and_agg_scores(self, skill_similarities_all, groupby_column):
+
+        """ Aggregates scores for each skill or cluster (depending on groupby_column) """
+
+        # Counts
+        skill_counts = skill_similarities_all.groupby(groupby_column).count()
+        # Mean similarity
+        skill_similarities = skill_similarities_all.groupby(groupby_column).mean()
+        # Create the dataframe
+        skill_similarities['counts'] = skill_counts['score']
+        skill_similarities['stdev'] = skill_similarities_all.groupby(groupby_column).std()['score']
+        skill_similarities.reset_index(inplace=True)
+
+        return skill_similarities
+
+    def get_skills_gaps(self):
+
+        """ Agregates scores for skills """
+
+        # Aggregate scores
+        skill_similarities = self.count_and_agg_scores(self.skill_similarities_all, 'skills_id')
+        skill_similarities['prevalence'] = skill_similarities['counts'] / self.n_trans
+        # Add information about skills
+        skill_similarities = skill_similarities.merge(
+            data.skills[['id', 'preferred_label', 'level_1', 'level_2', 'level_3']],
+            left_on='skills_id', right_on='id', how='left')
+        # Clean up the dataframe
+        skill_similarities = self.clean_up_df(skill_similarities)
+        skill_similarities = skill_similarities[['id', 'preferred_label', 'level_1', 'level_2', 'level_3', 'counts', 'prevalence', 'score' , 'stdev']]
+
+        return skill_similarities
+
+    def get_cluster_gaps(self, level='level_1'):
+
+        """ Agregates scores for ESCO skills clusters """
+
+        # Save the level of analysis
+        self.level = level
+
+        # Add skills cluster information
+        skill_similarities_all_clust = self.skill_similarities_all.merge(data.skills[[
+            'id', 'preferred_label', 'level_1', 'level_2', 'level_3', 'code']], left_on='skills_id', right_on='id')
+        # Aggregate scores
+        skill_similarities = self.count_and_agg_scores(skill_similarities_all_clust, level)
+        skill_similarities['prevalence'] = skill_similarities['counts'] / self.n_trans
+        # Add skills cluster title
+        skill_similarities = skill_similarities.merge(data.concepts[['code','title']], left_on=level, right_on='code')
+        # Clean up the dataframe
+        skill_similarities = self.clean_up_df(skill_similarities)
+        skill_similarities = skill_similarities[['code', 'title', 'counts', 'prevalence', 'score', 'stdev']]
+
+        return skill_similarities
+
+    def clean_up_df(self, df):
+        """ Clean up the dataframe for presentation """
+        df.prevalence = df.prevalence.round(3)
+        df.similarity = df.similarity.round(3)
+        df.reset_index(drop=True, inplace=True)
+        return df
+
+    def get_most_prevalent_gaps(self, skills_gaps, top_x=10, percentile=False):
+        """ Select only the most prevalent skills """
+        if percentile:
+            df = skills_gaps[skills_gaps.prevalence > np.percentile(skills_gaps.prevalence, top_x)]
+            df = df.sort_values('score', ascending=False)
+            return df
+        else:
+            return skills_gaps.sort_values('prevalence', ascending=False).head(top_x).sort_values('score', ascending=False)
+
+    def most_prevalent_cluster_skills(self, prevalent_clusters, top_n=3):
+        """ For each cluster, find top_n most prevalent skills and add to the dataframe """
+        x = []
+        for j, row in prevalent_clusters.iterrows():
+            dff = self.skills_gaps[self.skills_gaps[self.level]==row.code]
+            dff = dff.sort_values('prevalence', ascending=False).iloc[0:top_n]
+            xx = []
+            # Add matching scores
+            for jj, rrow in dff.iterrows():
+                xx.append(f'{rrow.preferred_label} ({np.round(rrow.score,2)})')
+            x.append(', '.join(xx))
+
+        prevalent_clusters_ = prevalent_clusters.copy()
+        prevalent_clusters_['skills'] = x
+        return prevalent_clusters_
