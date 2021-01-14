@@ -16,6 +16,8 @@ class Paths:
         self.notebook_dir = f'{self.codebase_dir}notebooks/'
         self.crosswalk_dir = f'{project_path}/supplementary_online_data/ONET_ESCO_crosswalk/'
         self.figure_dir = f'{self.codebase_dir}/reports/figures/'
+        self.models_dir = f'{self.codebase_dir}/models/'
+        self.config_dir = f'{self.codebase_dir}/configs/'
 
         self.dict_of_all_paths = {
             'project_dir': self.project_dir,
@@ -23,7 +25,9 @@ class Paths:
             'data_dir': self.data_dir,
             'notebook_dir': self.notebook_dir,
             'crosswalk_dir': self.crosswalk_dir,
-            'figure_dir': self.figure_dir
+            'figure_dir': self.figure_dir,
+            'models': self.models_dir,
+            'configs': self.config_dir,
         }
 
     def list_all(self):

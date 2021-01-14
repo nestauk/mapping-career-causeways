@@ -1,0 +1,13 @@
+features:
+  mean_skill_similarity_90pc: 0.9329574011820602
+  mean_skill_similarity_10pc: 0.6162310113442704
+  mean_skill_similarity_mean: 0.7781288456565473
+
+train:
+  C: 179.96633766661847
+  epsilon: 0.39650574084698464
+  gamma: 0.39650574084698464
+  kernel: 'rbf'
+
+predict:
+  min_feasibility: 2.5
