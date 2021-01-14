@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.colors as colors
 import matplotlib.pyplot as plt
+import seaborn as sns
 import  mapping_career_causeways
 
 useful_paths = mapping_career_causeways.Paths()
@@ -40,3 +41,58 @@ def fix_heatmaps(ax):
     b += 0.5 # Add 0.5 to the bottom
     t -= 0.5 # Subtract 0.5 from the top
     ax.set_ylim(b, t)
+
+def plot_heatmap(mat, x_labels, y_labels=None, cmap=None,
+                 figsize=(10,10), fix_heatmap=False, limits = (None, None),
+                 annot=True, shorten_xlabel=True,
+                 new_order=None,
+                 include_rows=None, include_cols=None):
+
+    f, ax = plt.subplots(figsize=figsize)
+
+    if y_labels is None:
+        y_labels = x_labels
+
+    # Re-order columns
+    if type(new_order) != type(None):
+        mat = mat[new_order,:]
+        mat = mat[:, new_order]
+        x_labels = np.array(x_labels)[new_order]
+        y_labels = np.array(y_labels)[new_order]
+
+        map_old_to_new_order = dict(zip(new_order, range(len(new_order))))
+        if type(include_rows) != type(None):
+            include_rows = [map_old_to_new_order[x] for x in include_rows]
+        if type(include_cols) != type(None):
+            include_cols = [map_old_to_new_order[x] for x in include_cols]
+
+    # Select a subsection of the matrix
+    if type(include_rows) != type(None):
+        mat = mat[include_rows,:]
+        y_labels = y_labels[include_rows]
+    if type(include_cols) != type(None):
+        mat = mat[:, include_cols]
+        x_labels = x_labels[include_cols]
+
+    if type(cmap) == type(None):
+        cmap = sns.diverging_palette(220, 10, as_cmap=True)
+
+    ax = sns.heatmap(
+        mat,
+        annot=annot,
+        cmap=cmap,
+        vmin = limits[0],
+        vmax = limits[1],
+        cbar_kws={"shrink": 0.5},
+        center=0, square=True, linewidths=.1)
+
+    if fix_heatmap:
+        fix_heatmaps(ax)
+
+    if shorten_xlabel == True:
+        x_labels = [x.split(' ')[0]+'..' for x in x_labels]
+    plt.yticks(ticks=np.array(list(range(len(y_labels))))+0.5, labels=y_labels, rotation=0)
+    plt.xticks(ticks=np.array(list(range(len(x_labels))))+0.5, labels=x_labels, rotation=90)
+    # ax.tick_params(axis='both', which='major', labelsize=9)
+
+    return ax
