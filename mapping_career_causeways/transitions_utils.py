@@ -451,7 +451,6 @@ def show_skills_overlap(
     matching_method='one_to_one',
     verbose=True,
     rounding=True):
-
     """
     NLP-adjusted overlap of skill sets between occupations job_i and job_j
     """
@@ -530,6 +529,7 @@ def show_skills_overlap(
 
     return df
 
+
 class CompareFeatures():
     """
     Class to inspect feature vector differences between occupations
@@ -592,7 +592,6 @@ class CompareFeatures():
         df['deltas_abs'] = np.abs(delta_vector)
         return df.sort_values('deltas_abs', ascending=False)
 
-# REFACTORING IN PROGRESS
 class SkillsGaps():
     """
     Class for characterising prevalent skills gaps for a collection of transitions
@@ -823,3 +822,260 @@ class SkillsGaps():
         prevalent_clusters_ = prevalent_clusters.copy()
         prevalent_clusters_['skills'] = x
         return prevalent_clusters_
+
+##### REFACTORING IN PROGRESS #####
+# from ast import literal_eval
+# 
+# class Upskilling():
+#     """
+#     Tests upskilling by adding new ESCO skills to occupations' skillsets and
+#     re-evaluating viable transitions
+#     """
+#
+#     def __init__(self,
+#                  origin_ids,
+#                  list_of_new_skills,
+#                  list_of_destination_ids,
+#                  debug=True):
+#         """
+#         Parameters
+#         ----------
+#         origin_ids (list of int):
+#             Occupations for which we are checking the upskilling
+#         list_of_new_skills (list of int):
+#             # Originally the same skills for all origin_ids
+#             # Then improve to accomodate combinations of skills (i.e. elements can be either int or another list of int
+#         list_of_destination_ids (list of int):
+#             # Possible cases:
+#                 same destinations for all origin_ids (if one list > create a list of duplicate lists)
+#                 different destinations for each origin_ids (if a list of lists)
+#         """
+#
+#         self.origin_ids = origin_ids
+#         self.list_of_destination_ids = list_of_destination_ids
+#         self.new_skills = new_skills
+#         self.debug = debug
+#
+#     def reevaluate_transitions(self):
+#         """
+#         Recalculates the new combined similarity measure between occcupations
+#         specified by origin_ids and destination_ids after adding the skills specified
+#         in list_of_new_skills
+#         """
+#         pass
+#
+#     def recalculate_skills_similarities(self, skills_match = 'optional'):
+#         """
+#         Recalculates essential or optional skills similarity
+#
+#         Parameters
+#         ----------
+#
+#         skills_match (string):
+#             Either 'essential' or 'optional'
+#         """
+# #
+# # save_name, folder_save,
+# #                       check_ids,
+# #                       check_destination_lists,
+# #                       check_core_skills,
+# #                       node_to_items,
+# #                       debug,
+# #                       W_base,
+# #                       dump,
+# #                       embeddings,
+# #                       skills, occupations, node_to_essential_items
+# #                      ):
+#
+#         # Skills lists for the origin occupation
+#         if skills_match = 'essential':
+#             node_to_items = data.node_to_essential_items
+#         elif skills_match = 'optional':
+#             node_to_items = data.node_to_all_items
+#
+#         # Dictionary for the results
+#         new_similarities_All_jobs = {}
+#
+#         t = time()
+#         # For each origin job
+#         for i, job_i in enumerate(self.origin_ids):
+#             # Log the origin occupation that is being checked
+#             if self.debug print(f'Checking: {job_i}, {occupations.loc[job_i].preferred_label}')
+#             # List of destinations for job_i
+#             destinations_to_check = self.list_of_destination_ids[i]
+#             # List of skills of the origin occupation
+#             origin_skillset = node_to_items.loc[[job_i]].items_list.values[0]
+#
+#             # List of lists holding the recalculated similarities for each tested skill
+#             new_similarities_All_skills = []
+#
+#             # FOR EACH SKILL OF INTEREST
+#             for c, new_skill_id in enumerate(self.new_skills):
+#                 if self.debug: print(f'-skill {new_skill_id}, "{skills.loc[new_skill_id].preferred_label}": ')
+#
+#                 """ CONTINUE FROM HERE """
+#
+#                 # List holding all new similarities
+#                 new_similarities = []
+#
+#                 # CHECK IF THE SKILL IS ALREADY IN THE SKILLSET
+#                 if new_skill_id in origin_skillset:
+#                     new_similarities_All_skills.append(new_similarities)
+#                     if self.debug: print('--skip! (skill already in the skillset)')
+#                 else:
+#                     # Add the extra skill to job_i skillset
+#                     job_i_df = node_to_items.loc[[job_i]].copy()
+#                     list_of_skills = sorted([new_skill_id] + origin_skillset)
+#                     job_i_df.items_list = str(list_of_skills)
+#                     job_i_df.items_list = job_i_df.items_list.apply(lambda x: literal_eval(x))
+#
+#                     # FOR EACH DESTINATION JOB OF INTEREST
+#                     for j, job_j in enumerate(destinations_to_check):
+#
+#                         # Check for empty array at the destination (can happen for essential skills)
+#                         if len(node_to_essential_items.loc[[job_j]].items_list.values[0]) != 0:
+#
+#                             # Create the input dataframe in the required format
+#                             node_to_items_ = pd.concat([job_i_df,
+#                                                         node_to_essential_items.loc[[job_j]]])
+#
+#                             # Compare jobs
+#                             df, score = compare_nodes_utils.two_node_comparison(
+#                                 node_to_items_, job_i, job_j,
+#                                 skills[['id','preferred_label']],
+#                                 embeddings,
+#                                 metric='cosine',
+#                                 matching_method='one_to_one',
+#                                 symmetric=False)
+#
+#                             new_similarities.append((job_i, job_j, score))
+#
+#                         else:
+#                             # if an empty destination skill set, save null
+#                             new_similarities.append((job_i, job_j, np.nan))
+#
+#                         if debug: print(f'--{job_j}, {occupations.loc[job_j].preferred_label}; gain: {score-W_base[job_i,job_j]:.3f}')
+#
+#                 new_similarities_All_skills.append(new_similarities)
+#
+#             new_similarities_All_jobs[job_i] = new_similarities_All_skills
+#             if dump: pickle.dump(new_similarities_All_skills, open(f'{folder_save + save_name}_originID_{job_i}.pickle', 'wb'))
+#
+#         t_elapsed = time()-t
+#         print(f'Total time elapsed: {t_elapsed: .2f} seconds')
+#         pickle.dump(new_similarities_All_jobs, open(folder_save + save_name + '.pickle', 'wb'))
+#         print(f"Final outputs saved at {folder_save + save_name + '.pickle'}")
+#
+#         return new_similarities_All_jobs
+#
+#     def recalculate_work_activity_similarity(self):
+#         """
+#         Recalculates similarity between work activity vectors
+#         """
+#         pass
+#
+#     def analyse_skills_effectiveness(self):
+#         """
+#         Summarise the effectiveness of the tested skills across the specified transitions
+#         (by default, characterise across all transitions)
+#         """
+#         pass
+#
+#     def dump_results(self):
+#         """
+#         Dumps the results for later reuse
+#         """
+#
+#     def load_results(self):
+#         """
+#         Loads pre-computed results
+#         """
+#
+#     ########## TO BE DELETED ##########
+#     def check_similarites(save_name, folder_save,
+#                           check_ids,
+#                           check_destination_lists,
+#                           check_core_skills,
+#                           node_to_items,
+#                           debug,
+#                           W_base,
+#                           dump,
+#                           embeddings,
+#                           skills, occupations, node_to_essential_items
+#                          ):
+#
+#         t = time()
+        # # Dictionary for the results
+        # new_similarities_All_jobs = {}
+        #
+        # # FOR EACH ORIGIN JOB
+        # for i, job_i in enumerate(check_ids):
+        #
+        #     destinations_to_check = check_destination_lists[i]
+        #
+        #     origin_skillset = node_to_items.loc[[job_i]].items_list.values[0]
+        #
+        #     # List of lists holding all new similarities for each tested skill
+        #     new_similarities_All_skills = []
+        #
+        #     print(f'Checking: {job_i}, {occupations.loc[job_i].preferred_label}')
+        #
+        #     # FOR EACH SKILL OF INTEREST
+        #     for c, new_skill_id in enumerate(check_core_skills):
+        #
+        #         if debug: print(f'-skill {new_skill_id}, "{skills.loc[new_skill_id].preferred_label}": ')
+        #
+        #         # List holding all new similarities
+        #         new_similarities = []
+        #
+        #         # CHECK IF THE SKILL IS ALREADY IN THE SKILLSET
+        #         if new_skill_id in origin_skillset:
+        #             new_similarities_All_skills.append(new_similarities)
+        #
+        #             if debug: print('--skip! (skill already in the skillset)')
+        #         else:
+        #
+        #             # Add the extra skill to job_i skillset
+        #             job_i_df = node_to_items.loc[[job_i]].copy()
+        #             list_of_skills = sorted([new_skill_id] + origin_skillset)
+        #             job_i_df.items_list = str(list_of_skills)
+        #             job_i_df.items_list = job_i_df.items_list.apply(lambda x: literal_eval(x))
+        #
+        #             # FOR EACH DESTINATION JOB OF INTEREST
+        #             for j, job_j in enumerate(destinations_to_check):
+        #
+        #                 # Check for empty array at the destination (can happen for essential skills)
+        #                 if len(node_to_essential_items.loc[[job_j]].items_list.values[0]) != 0:
+        #
+        #                     # Create the input dataframe in the required format
+        #                     node_to_items_ = pd.concat([job_i_df,
+        #                                                 node_to_essential_items.loc[[job_j]]])
+        #
+        #                     # Compare jobs
+        #                     df, score = compare_nodes_utils.two_node_comparison(
+        #                         node_to_items_, job_i, job_j,
+        #                         skills[['id','preferred_label']],
+        #                         embeddings,
+        #                         metric='cosine',
+        #                         matching_method='one_to_one',
+        #                         symmetric=False)
+        #
+        #                     new_similarities.append((job_i, job_j, score))
+        #
+        #                 else:
+        #                     # if an empty destination skill set, save null
+        #                     new_similarities.append((job_i, job_j, np.nan))
+        #
+        #                 if debug: print(f'--{job_j}, {occupations.loc[job_j].preferred_label}; gain: {score-W_base[job_i,job_j]:.3f}')
+        #
+        #         new_similarities_All_skills.append(new_similarities)
+        #
+        #     new_similarities_All_jobs[job_i] = new_similarities_All_skills
+        #     if dump: pickle.dump(new_similarities_All_skills, open(f'{folder_save + save_name}_originID_{job_i}.pickle', 'wb'))
+        #
+        # t_elapsed = time()-t
+        # print(f'Total time elapsed: {t_elapsed: .2f} seconds')
+        # pickle.dump(new_similarities_All_jobs, open(folder_save + save_name + '.pickle', 'wb'))
+        # print(f"Final outputs saved at {folder_save + save_name + '.pickle'}")
+        #
+        # return new_similarities_All_jobs
