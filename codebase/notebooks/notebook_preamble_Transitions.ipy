@@ -19,6 +19,8 @@ import plotly.express as px
 plt.rcParams['svg.fonttype'] = 'none'
 plt.rcParams['font.family'] = 'Arial'
 
+sns.set_context('notebook')
+
 ## Import local packages
 import mapping_career_causeways
 import mapping_career_causeways.compare_nodes_utils as compare_nodes_utils

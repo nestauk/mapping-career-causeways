@@ -15,7 +15,7 @@ class Paths:
         self.data_dir = f'{self.codebase_dir}data/'
         self.notebook_dir = f'{self.codebase_dir}notebooks/'
         self.crosswalk_dir = f'{project_path}/supplementary_online_data/ONET_ESCO_crosswalk/'
-        self.figure_dir = f'{self.codebase_dir}/reports/figures/'
+        self.figure_dir = f'{self.codebase_dir}reports/figures/'
 
         self.dict_of_all_paths = {
             'project_dir': self.project_dir,
