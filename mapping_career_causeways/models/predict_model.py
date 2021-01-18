@@ -10,25 +10,28 @@ from pathlib import Path
 import mapping_career_causeways
 import mapping_career_causeways.transitions_utils as trans_utils
 
-
 useful_paths = mapping_career_causeways.Paths()
 
 occupation_embeddings = np.load(os.path.join(
-    useful_paths.data_dir, 
+    useful_paths.data_dir,
     'interim/embeddings/embeddings_occupation_description_SBERT_bert-base-nli-mean-tokens.npy')
     )
 
 with open(os.path.join(useful_paths.config_dir, 'model_config.yaml'), 'rt') as f:
     config = yaml.safe_load(f.read())
 
+min_feasibility = config['predict']['min_feasibility']
+
+# Crowd feasibility ratings data
+crowd_feasibility_ratings = pd.read_csv(f'{useful_paths.data_dir}processed/validation/crowd_feasibility_ratings_mean.csv')
 
 def aggregate_mean_crowd_feasibility(data):
     """aggregate_crowd_ratings
     Aggregate crowd feasibility ratings to get the mean rating
     for each transition.
-    
+
     Args:
-    
+
     Returns:
     """
     data = (data
@@ -44,11 +47,11 @@ def aggregate_mean_crowd_feasibility(data):
 def create_transition_features(origin_ids, destination_ids):
     """create_transition_features
     Obtain model features from the transitions data.
-    
+
     Args:
-    
+
     Returns:
-    
+
     """
     transition_pairs = zip(origin_ids, destination_ids)
     transitions_df = trans_utils.get_transition_data(transition_pairs)
@@ -60,11 +63,11 @@ def create_transition_features(origin_ids, destination_ids):
 
 def create_skill_similarity_features(origin_ids, destination_ids):
     """create_similarity_distribution_features
-    
+
     Args:
-    
+
     Returns:
-    
+
     """
     skill_stats = []
     for o, d in zip(origin_ids, destination_ids):
@@ -80,54 +83,54 @@ def create_skill_similarity_features(origin_ids, destination_ids):
                 'skill_similarity_10pc': np.percentile(sims, 10),
                 'skill_similarity_90pc': np.percentile(sims, 90),
                 'skill_similarity_mean': sims.mean(),
-            }) 
+            })
         except:
             stats.update({
                 'skill_similarity_10pc': config['features']['mean_skill_similarity_90pc'],
                 'skill_similarity_90pc': config['features']['mean_skill_similarity_10pc'],
                 'skill_similarity_mean': config['features']['mean_skill_similarity_mean'],
             })
-            
+
         skill_stats.append(stats)
-        
+
     skill_stats = pd.DataFrame.from_records(skill_stats)
     for col in ['skill_similarity_10pc', 'skill_similarity_90pc', 'skill_similarity_mean']:
         skill_stats[col] = skill_stats[col].fillna(skill_stats[col].mean())
-    
+
     skill_stats = skill_stats.set_index(['origin_id', 'destination_id'])
     return skill_stats
 
-        
+
 def create_job_similarity_feature(origin_ids, destination_ids):
     """create_job_similarity_feature
-    
+
     Args:
-    
+
     Returns:
-    
+
     """
-    
+
     description_sims = []
     for o, d in zip(origin_ids, destination_ids):
         v_o = occupation_embeddings[o]
         v_d = occupation_embeddings[d]
         description_sims.append(cosine(v_o, v_d))
-        
-    sims = pd.DataFrame({'origin_id': origin_ids, 
+
+    sims = pd.DataFrame({'origin_id': origin_ids,
                          'destination_id': destination_ids,
                          'description_similarity': description_sims,
                         })
     sims = sims.set_index(['origin_id', 'destination_id'])
     return sims
 
-        
+
 def create_features(origin_ids, destination_ids):
     features = [
         create_transition_features(origin_ids, destination_ids),
         create_skill_similarity_features(origin_ids, destination_ids),
         create_job_similarity_feature(origin_ids, destination_ids)
     ]
-    
+
     feature_df = pd.concat(features, axis=1)
 
     feature_order = [
@@ -135,22 +138,22 @@ def create_features(origin_ids, destination_ids):
 	'description_similarity',
 	'W_skills',
 	'skill_similarity_mean',
-	'skill_similarity_10pc', 
+	'skill_similarity_10pc',
 	'skill_similarity_90pc']
     return feature_df[feature_order]
 
-    
+
 def predict(origin_ids, destination_ids):
     """predict
-    
+
     Args:
-    
+
     Returns:
     """
     model = joblib.load(os.path.join(useful_paths.models_dir, 'feasibility_model.pkl'))
-    
+
     features = create_features(origin_ids, destination_ids)
-    
+
     ratings = model.predict(features)
     min_feasibility = config['predict']['min_feasibility']
     is_feasible = ratings >= min_feasibility
@@ -163,3 +166,16 @@ def predict(origin_ids, destination_ids):
         })
 
     return pred_df
+
+def add_feasibility_predictions(trans_df, add_crowd_data=False):
+    """ trans_df should be an output from trans_utils.get_transitions() or get_transition_data() """
+    # Add the feasibility ratings from crowd
+    if add_crowd_data:
+        trans_df = trans_df.merge(crowd_feasibility_ratings[['origin_id', 'destination_id', 'feasibility']],
+                                on=['origin_id', 'destination_id'], how='left')
+        trans_df['is_feasible'] = trans_df['feasibility'].copy()
+        trans_df.loc[(trans_df.is_feasible.isnull()==False), 'is_feasible'] = trans_df.loc[(trans_df.is_feasible.isnull()==False), 'feasibility'] >= min_feasibility
+    # Add predicted feasibility ratings
+    predicted_feasibility = predict(trans_df.origin_id.to_list(), trans_df.destination_id.to_list())
+    trans_df = trans_df.merge(predicted_feasibility, on=['origin_id', 'destination_id'], how='left')
+    return trans_df

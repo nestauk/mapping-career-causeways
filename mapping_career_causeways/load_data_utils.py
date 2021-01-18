@@ -111,6 +111,15 @@ class Data:
             df_new = df_new.drop('id', axis=1)
         return df_new
 
+    def add_field_to_skill(self, df, skill_id_col='id',  field_name=None, new_prefix=None):
+        """ Merges field 'field_name' from data.skills to the dataframe 'df', and optionally adds a prefix """
+        df_new = df.copy().merge(self.skills[['id', field_name]], left_on=skill_id_col, right_on='id', how='left')
+        if new_prefix is not None:
+            df_new = df_new.rename(columns = {field_name: new_prefix + '_' + field_name})
+        if skill_id_col != 'id':
+            df_new = df_new.drop('id', axis=1)
+        return df_new    
+
     ### Occupations and skills
     @property
     def occupations(self):

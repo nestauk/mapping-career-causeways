@@ -13,6 +13,9 @@ codebase/data/*.zip
 
 mcc_file_inventory.xlsx
 
+**/*.png
+**/*.svg
+
 .DS_Store
 ~$*.xls*
 ~$*.xlsx*

@@ -6,6 +6,27 @@ import  mapping_career_causeways
 
 useful_paths = mapping_career_causeways.Paths()
 
+# Colors for visualisations
+colour_pal = ['#e6194b', '#3cb44b', '#4363d8', '#f58231',
+             '#911eb4', '#46f0f0', '#f032e6', '#bcf60c', '#fabebe',
+             '#008080', '#e6beff', '#9a6324', '#800000', '#808000','#ffe119',
+             '#aaffc3', '#000000', '#ffd8b1', '#808000', '#000075', '#DCDCDC']
+
+colour_map = {
+    'Low risk': np.array([52, 146, 235, 255])/255, # blue
+    'Other': np.array([191, 191, 191, 255])/255, # gray
+    'High risk': np.array([222, 51, 9, 255])/255, # red
+}
+
+def set_font_sizes(SMALL_SIZE = 13, MEDIUM_SIZE=14):
+    # Set up font sizes for plots
+    plt.rc('font', size=SMALL_SIZE, family='Arial')
+    plt.rc('axes', titlesize=MEDIUM_SIZE)
+    plt.rc('axes', labelsize=MEDIUM_SIZE)
+    plt.rc('xtick', labelsize=SMALL_SIZE)
+    plt.rc('ytick', labelsize=SMALL_SIZE)
+set_font_sizes()
+
 class MidpointNormalize(colors.Normalize):
     """
     Normalise the colorbar so that diverging bars work there way either side from a prescribed midpoint value)
@@ -41,6 +62,11 @@ def fix_heatmaps(ax):
     b += 0.5 # Add 0.5 to the bottom
     t -= 0.5 # Subtract 0.5 from the top
     ax.set_ylim(b, t)
+
+def remove_right_axis(ax):
+    for x in ['right', 'top']:
+        right_side = ax.spines[x]
+        right_side.set_visible(False)
 
 def plot_heatmap(mat, x_labels, y_labels=None, cmap=None,
                  figsize=(10,10), fix_heatmap=False, limits = (None, None),

@@ -610,7 +610,7 @@ class CompareSectors():
 
     def __init__(self, node_to_items, embeddings, combos,
                  metric='cosine', weighting_params=[-43.5, 50],
-                 symmetric=True, save_name='comparison'):
+                 symmetric=True, save_name='comparison', verbose=True):
         """
         Parameters
         ----------
@@ -647,6 +647,7 @@ class CompareSectors():
         self.prep_list = []
         self.results_list = []
         self._D = None
+        self.verbose = verbose
 
     def compare(self):
         """
@@ -687,7 +688,7 @@ class CompareSectors():
         # For each provided combination of sectors
         for i, combo in enumerate(self.combos):
             t = time.time()
-            print(combo)
+            self.verbose: print(combo)
             # Prepare inputs for the comparison analysis
             prep = PrepInputs(self.node_to_items, self.emb, list(combo), metric=self.metric)
             # Do the comparison of parent nodes
@@ -707,7 +708,7 @@ class CompareSectors():
                 self.results_list.append(res)
             else:
                 pickle.dump(res, open(self.fname(combo, self.save_name), 'wb'))
-            print(f"{time.time()-t:.2f}")
+            if self.verbose: print(f"{time.time()-t:.2f}")
 
             # Explicitly clean memory
             del prep, comp
