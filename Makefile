@@ -15,11 +15,11 @@ PROFILE = default
 sync_data_to_s3:
 ifeq (default,$(PROFILE))
 	aws s3 sync codebase/data/raw s3://$(BUCKET)/data/raw
-	aws s3 sync codebase/data/interim s3://$(BUCKET)/data/interim --exclude "top_occupations_100_core_skills.pickle"
+	aws s3 sync codebase/data/interim s3://$(BUCKET)/data/interim --exclude "*/top_occupations_100_core_skills.pickle"
 	aws s3 sync codebase/data/processed s3://$(BUCKET)/data/processed
 else
 	aws s3 sync codebase/data/raw s3://$(BUCKET)/data/raw --profile $(PROFILE)
-	aws s3 sync codebase/data/interim s3://$(BUCKET)/data/interim --profile $(PROFILE) --exclude "top_occupations_100_core_skills.pickle"
+	aws s3 sync codebase/data/interim s3://$(BUCKET)/data/interim --profile $(PROFILE) --exclude "*/top_occupations_100_core_skills.pickle"
 	aws s3 sync codebase/data/processed s3://$(BUCKET)/data/processed --profile $(PROFILE)
 endif
 
@@ -27,11 +27,11 @@ endif
 sync_data_from_s3:
 ifeq (default,$(PROFILE))
 	aws s3 sync s3://$(BUCKET)/data/raw codebase/data/raw
-	aws s3 sync s3://$(BUCKET)/data/interim codebase/data/interim --exclude "top_occupations_100_core_skills.pickle"
+	aws s3 sync s3://$(BUCKET)/data/interim codebase/data/interim --exclude "*/top_occupations_100_core_skills.pickle"
 	aws s3 sync s3://$(BUCKET)/data/processed codebase/data/processed
 else
 	aws s3 sync s3://$(BUCKET)/data/raw codebase/data/raw --profile $(PROFILE)
-	aws s3 sync s3://$(BUCKET)/data/interim codebase/data/interim --profile $(PROFILE) --exclude "top_occupations_100_core_skills.pickle"
+	aws s3 sync s3://$(BUCKET)/data/interim codebase/data/interim --profile $(PROFILE) --exclude "*/top_occupations_100_core_skills.pickle"
 	aws s3 sync s3://$(BUCKET)/data/processed codebase/data/processed --profile $(PROFILE)
 endif
 
