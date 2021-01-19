@@ -2,14 +2,13 @@
 
 Here, we build richer occupational profiles by linking ESCO occupations to data such as estimates of annual earnings, capacity to work remotely etc. The output tables of these notebooks are stored in `codebase/data/processed/linked_data` folder.
 
-When performing your own analyses, the occupational profiles with the linked data can be easily accessed via the `mapping_career_causeways.load_data_utils` module, by calling the table `Data().occ` (see the [tutorial notebook]([https://github.com/nestauk/mapping_career_causeways/blob/main/codebase/notebooks/Tutorial_01_transitions.ipynb]) for examples).
+When performing your own analyses, the occupational profiles with the linked data can be easily accessed via the `load_data_utils` module, by calling the table `Data().occ` (see the [tutorial notebook]([https://github.com/nestauk/mapping_career_causeways/blob/main/codebase/notebooks/Tutorial_02_exploring_data.ipynb]) for examples).
 
 For more background on the different data sources and how we used them, see pp. 18-20 and pp. 28-34 of the project [research report](https://www.nesta.org.uk/report/mapping-career-causeways-supporting-workers-risk/).
 
-
 ## Education and experience requirements
 **`Link_occupations_to_Job_Zones.ipynb`**  
-Links ESCO occupations to O\*NET's [Job Zones](https://www.onetonline.org/help/online/zones) and the variables that underpin the Job Zone estimates: education, related work experience, and on-the-job training. 
+Links ESCO occupations to O\*NET's [Job Zones](https://www.onetonline.org/help/online/zones) and the variables that underpin the Job Zone estimates: education, related work experience, and on-the-job training.
 
 ## Annual earnings and paid hours
 **`Link_UK_SOC_to_ISCO.ipynb`**  

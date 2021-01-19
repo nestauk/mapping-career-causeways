@@ -80,7 +80,7 @@ The repository has the following main directories:
   │   └── reports               <- Reports, briefs and figures associated with the project
   └── supplementary_online_data
       ├── ONET_ESCO_crosswalk   <- Crosswalk between O*NET and ESCO occupations
-      ├── transitions           <- Curated transitions data between ESCO occupations
+      ├── transitions           <- Curated data on transitions between ESCO occupations
       ...         
 ```
 
@@ -98,3 +98,6 @@ If you would like to contribute to this framework (e.g. by working on of the fea
 To refer to the work, please cite the Mapping Career Causeways report:
 
 *Kanders K., Djumalieva, J., Sleeman, C. and Orlik, J. (2020). Mapping Career Causeways: Supporting workers at risk. London: Nesta*
+
+To specifically cite this github repository, you can use the following digital object identifier (DOI), which
+is linked to [this Zenodo repository](#).
