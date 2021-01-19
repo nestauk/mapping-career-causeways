@@ -29,9 +29,9 @@ Data on at-risk workers in the UK, Italy and France.
 
 ### Codebase and full job transitions data
 
-`STATUS: Not yet released; to be published in early 2021`
+`STATUS:  Published on January 20th, 2020`
 
-Project codebase will be published here in early 2021, together with a complete list of the recommended career transitions for all considered ESCO occupations. This will allow anyone to generate transition recommendations, replicate the results and build upon the project outputs.
+- [**Project codebase together with a complete list of the recommended career transitions for all considered ESCO occupations. This open-source code will allow anyone to generate transition recommendations, replicate the results and build upon the project outputs.
 
 In the meantime, we will be conducting research to further validate the recommendations from the career transitions algorithm.
 
@@ -60,8 +60,41 @@ $ conda activate mapping_career_causeways
 $ pip install -e .
 ```
 
-## Feedback
+## Directory structure
 
-Anyone is welcome to use and build upon the published data and code. If you would like to leave feedback, you can either create a new github issue (for raising technical questions) or [write to us](mailto:open.jobs@nesta.org.uk) for more general enquiries. To refer to this work, please cite the Mapping Career Causeways report:
+The repository has the following main directories:
+
+```
+  ├── mapping_career_causeways  <- Packaged code (various modules and utilities)
+  ├── codebase                  <- Analysis code (notebooks) and data
+  │   ├── data
+  │   │   ├── raw               <- The original, immutable data
+  │   │   ├── interim           <- Intermediate output data that has been transformed
+  │   │   ├── processed         <- Final, processed data sets for analysis
+  │   │   │   ├── linked_data   <- Various labour market data linked to ESCO occupations
+  │   │   │   ├── sim_matrices  <- Various similarity matrices between all ESCO occupations,
+  │   │   │   │                    for analysing career transition viability
+  │   │   │   ├── validation    <- Crowdsourced transition feasibility data
+  │   │   │   ...    
+  │   ├── notebooks             <- Data analysis and generation of career transition recommendations
+  │   └── reports               <- Reports, briefs and figures associated with the project
+  └── supplementary_online_data
+      ├── ONET_ESCO_crosswalk   <- Crosswalk between O*NET and ESCO occupations
+      ├── transitions           <- Curated transitions data between ESCO occupations
+      ...         
+```
+
+## Feedback & contributions
+
+Anyone is welcome to use and build upon the published data and code. As more people try out the career transitions algorithm, we expect to uncover peculiarities and areas for improvement - if you would like to leave feedback or report a bug, please create a new github issue. For more general enquiries, [write to us](mailto:open.jobs@nesta.org.uk).
+
+If you would like to contribute to this framework (e.g. by working on of the features listed above) you can collaborate by using pull requests:
+1. Create your new branch from dev
+2. Open a new issue and describe the feature that you will contribute
+3. Add your feature
+4. Issue a pull request
+
+## Citing
+To refer to the work, please cite the Mapping Career Causeways report:
 
 *Kanders K., Djumalieva, J., Sleeman, C. and Orlik, J. (2020). Mapping Career Causeways: Supporting workers at risk. London: Nesta*

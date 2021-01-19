@@ -36,9 +36,10 @@ class Paths:
         for p in list(self.dict_of_all_paths.keys()):
             print(p)
 
+
 class Viz:
     """
-    Colour palletes
+    Colour palletes [DEPRECATED]
     """
 
     def __init__(self):

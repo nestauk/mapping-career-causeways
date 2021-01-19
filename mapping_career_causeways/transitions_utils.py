@@ -57,6 +57,25 @@ def occupations_to_check(id_to_check):
         id_to_check = data.occ.id.to_list()
     return id_to_check
 
+def find_most_similar(
+    occ = None,
+    similarity_measure='combined',
+    n=15,
+    destination_ids='report',
+    transpose=False):
+    """
+    Helper function for finding the most similar occupations to occupation defined
+    by occ;
+    """
+    occ_id = data.occ_title_to_id(occ)
+    destination_ids = occupations_to_check(destination_ids)
+    sim_matrix = sim.select_similarity_matrix(similarity_measure)
+    if transpose:
+        sim_matrix = sim_matrix.T
+    df = find_closest(occ_id, sim_matrix, data.occ[['id', 'preferred_label']])
+    df = df[df.id.isin(destination_ids)].iloc[0:n]
+    return df
+
 def get_transitions(
     origin_ids = None,
     MIN_VIABLE = MIN_VIABLE_DEF,
@@ -64,7 +83,7 @@ def get_transitions(
     MAX_JOB_ZONE_DIF = MAX_JOB_ZONE_DIF_DEF,
     MIN_EARNINGS_RATIO = MIN_EARNINGS_RATIO_DEF,
     destination_ids = None,
-    verbose=False):
+    verbose=False, less_information=False):
 
     """
     Function to find viable, desirable and safe transitions according to the specified filters;
@@ -118,7 +137,21 @@ def get_transitions(
     trans_df = pd.DataFrame(data=columns)
     # Add filtering variables
     trans_df = transition_data_filtering(trans_df, MIN_VIABLE, HIGHLY_VIABLE)
-    return trans_df.reset_index(drop=True)
+
+    if less_information:
+        return trans_df[[
+            'origin_id',
+            'origin_label',
+            'destination_id',
+            'destination_label',
+            'similarity',
+            'is_viable',
+            'is_desirable',
+            'is_safe_desirable',
+            'is_strictly_safe_desirable'
+        ]].reset_index(drop=True)
+    else:
+        return trans_df.reset_index(drop=True)
 
 def initialise_transition_table_columns():
     columns = {
@@ -469,7 +502,7 @@ def show_skills_overlap(
 
     if verbose:
         print('--------')
-        print(f'{N_matched}/{len(data.node_to_essential_items.loc[[job_j]].items_list.values[0])} destination skills matched')
+        #print(f'{N_matched}/{len(data.node_to_essential_items.loc[[job_j]].items_list.values[0])} destination skills matched')
         print(f'NLP-adjusted overlap = {w:.2f} (total combined similarity: {sim.W_combined[job_i, job_j]:.2f})')
 
     return df
@@ -524,19 +557,19 @@ class CompareFeatures():
             self.vectors = self.work_context_vectors
             self.features = self.work_context_features
 
-    def get_feature_deltas(self, job_i, job_j, esco_level=2):
+    def get_feature_differences(self, origin_id, destination_id, esco_level=2):
         """ Useful for checking what are the biggest differences between the two occupations """
         self.select_esco_level(esco_level)
         # Calculate vector deltas and add category labels
-        delta_vector = self.vectors[job_j] - self.vectors[job_i]
+        delta_vector = self.vectors[destination_id] - self.vectors[origin_id]
         df = self.features.copy()
-        df['job_i'] = self.vectors[job_i]
-        df['job_j'] = self.vectors[job_j]
-        df['deltas'] = delta_vector
-        df['deltas_abs'] = np.abs(delta_vector)
-        return df.sort_values('deltas_abs', ascending=False)
+        df['origin'] = self.vectors[origin_id]
+        df['destination'] = self.vectors[destination_id]
+        df['dif'] = delta_vector
+        df['dif_abs'] = np.abs(delta_vector)
+        return df.sort_values('dif_abs', ascending=False)
 
-    def most_impactful_features(self, job_i, job_j, esco_level=2):
+    def most_impactful_features(self, origin_id, destination_id, esco_level=2):
         """
         Useful for checking what makes both occupations similar; calculates 'impact'
         which relates to how much an element contributes to similarity
@@ -547,8 +580,8 @@ class CompareFeatures():
             ESCO hierarchy level (normally use level 2); if esco_level is None, uses work context vectors
         """
         self.select_esco_level(esco_level)
-        original_destination_vector = self.vectors[job_j,:]
-        origin_vector = normalize(self.vectors[job_i,:].reshape(1,-1))
+        original_destination_vector = self.vectors[destination_id,:]
+        origin_vector = normalize(self.vectors[origin_id,:].reshape(1,-1))
         original_sim = cosine(normalize(original_destination_vector.reshape(1,-1)), origin_vector)
         impacts = []
         for j in range(len(original_destination_vector)):
@@ -621,7 +654,7 @@ class SkillsGaps():
             # Exclude unmatched destination skill rows
             origin_skills = df[df.origin_skill_id.apply(lambda x: type(x)!=str)]
 
-            # Extract the oriign skill IDs, matching scores and similarity values
+            # Extract the origin skill IDs, matching scores and similarity values
             self.origin_skills_id_ALL.append(origin_skills.origin_skill_id.to_list())
             self.origin_skills_id_score_ALL.append(origin_skills.score.to_list())
             self.origin_skills_id_sim_ALL.append(origin_skills.similarity.to_list())
@@ -670,6 +703,9 @@ class SkillsGaps():
         return self.get_most_prevalent_gaps(self.skills_gaps, top_x=top_x, percentile=percentile)
 
     def prevalent_cluster_gaps(self, level='level_3', top_x=10, percentile=False):
+
+        if level in [1,2,3]:
+            level = 'level_' + str(level)
 
         self.cluster_gaps = self.get_cluster_gaps(level)
         prevalent_clusters = self.get_most_prevalent_gaps(self.cluster_gaps, top_x=top_x, percentile=percentile)
@@ -1098,20 +1134,21 @@ class Upskilling():
             # Combine both origin and destination lists of skills
             node_to_items = pd.concat([perturbed_origin_node_to_items, destination_node_to_items]).reset_index(drop=True)
 
-            # Perform the comparison!
-            Comp = compare_nodes_utils.CompareSectors(
-                node_to_items,
-                embeddings,
-                combos=[('origin','destination')],
-                metric='cosine',
-                symmetric=False,
-                verbose=False)
-            t = time()
-            if self.verbose: print('Running comparisons...', end=' ')
-            Comp.run_comparisons(dump=False)
-            Comp.collect_comparisons()
-            t_elapsed = time()-t
-            if self.verbose: print(f'Done in {t_elapsed:.0f} seconds!')
+            with np.errstate(divide='ignore'): # suppress the warning, due to the one occupation without essential skills
+                # Perform the comparison!
+                Comp = compare_nodes_utils.CompareSectors(
+                    node_to_items,
+                    embeddings,
+                    combos=[('origin','destination')],
+                    metric='cosine',
+                    symmetric=False,
+                    verbose=False)
+                t = time()
+                if self.verbose: print('Running comparisons...', end=' ')
+                Comp.run_comparisons(dump=False)
+                Comp.collect_comparisons()
+                t_elapsed = time()-t
+                if self.verbose: print(f'Done in {t_elapsed:.0f} seconds!')
 
             # Processing the outputs (select only the relevant edges, starting from origin occupations)
             W = Comp.D
@@ -1247,50 +1284,3 @@ def normalise_rows(A):
     for j in range(len(A)):
         A[j,:] = A[j,:] / np.sum(A[j,:])
     return A
-
-
-def assess_transition_options(
-    filter_matrices_path=f'{useful_paths.data_dir}interim/transitions/filter_matrices_Report_occupations.pickle',
-    filter_crowd_feasibility=False):
-    """ Update for more flexibility """
-
-    # Import or create a set of filtering matrices
-    export_path = filter_matrices_path
-    if os.path.exists(export_path):
-        filter_matrices = pickle.load(open(export_path,'rb'))
-        print(f'Imported filtering matrices from {export_path}')
-    else:
-        # May take about 30 mins
-        filter_matrices = create_filtering_matrices(
-            origin_ids='report',
-            destination_ids= 'report',
-            export_path = export_path)
-    
-    # Desirable transitions
-    n_desirable = np.sum(filter_matrices['F_desirable'], axis=1)
-    # Highly viable, desirable transitions
-    n_desirable_and_highly_viable = np.sum(
-        (filter_matrices['F_desirable'] & filter_matrices['F_highly_viable']), axis=1)
-    # Safe and desirable transitions
-    n_safe_desirable = np.sum(filter_matrices['F_safe_desirable'], axis=1)
-    # Highly viable, safe and desirable transitions
-    n_safe_desirable_and_highly_viable = np.sum(
-        (filter_matrices['F_safe_desirable'] & filter_matrices['F_highly_viable']), axis=1)
-    # Strictly safer and desirable transitions
-    n_safe_desirable_strict = np.sum(filter_matrices['F_strictly_safe_desirable'], axis=1)
-    # Highly viable, strictly safe
-    n_safe_desirable_strict_and_highly_viable = np.sum(
-        (filter_matrices['F_strictly_safe_desirable'] & filter_matrices['F_highly_viable']), axis=1)
-
-    occ_transitions = data.occ_report[['id', 'concept_uri', 'preferred_label', 'isco_level_4', 'risk_category']].copy()
-    occ_transitions['n_desirable'] = n_desirable
-    occ_transitions['n_desirable_and_highly_viable'] = n_desirable_and_highly_viable
-    occ_transitions['n_safe_desirable'] = n_safe_desirable
-    occ_transitions['n_safe_desirable_and_highly_viable'] = n_safe_desirable_and_highly_viable
-    occ_transitions['n_safe_desirable_strict'] = n_safe_desirable_strict
-    occ_transitions['n_safe_desirable_strict_and_highly_viable'] = n_safe_desirable_strict_and_highly_viable
-
-    # Rename the risk categories, as used in the report
-    occ_transitions.loc[occ_transitions.risk_category.isin(['Low risk', 'Other']), 'risk_category'] = 'Lower risk'
-
-    return occ_transitions

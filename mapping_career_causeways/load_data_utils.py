@@ -49,6 +49,8 @@ class Data:
         self._occ_clusters = None
         self._clusters_level_1 = None
         self._clusters_level_2 = None
+        self._skills_based_sectors = None
+        self._sub_sectors = None
 
         # Master tables
         self.default_master_table = f'{self.dir}ESCO_occupation_profiles.csv'
@@ -102,6 +104,16 @@ class Data:
         else:
             return occ_title
 
+    def skill_title_to_id(self, skill_title):
+        """
+        Finds skill's ID based on a string input;
+        This could be later enhanced by allowing imprecise inputs
+        """
+        if type(skill_title) == str:
+            return self.skills[self.skills.preferred_label==skill_title].iloc[0].id
+        else:
+            return skill_title
+
     def add_field_to_occupation(self, df, occupation_id_col='id',  field_name=None, new_prefix=None):
         """ Merges field 'field_name' from data.occ to the dataframe 'df', and optionally adds a prefix """
         df_new = df.copy().merge(self.occ[['id', field_name]], left_on=occupation_id_col, right_on='id', how='left')
@@ -118,7 +130,7 @@ class Data:
             df_new = df_new.rename(columns = {field_name: new_prefix + '_' + field_name})
         if skill_id_col != 'id':
             df_new = df_new.drop('id', axis=1)
-        return df_new    
+        return df_new
 
     ### Occupations and skills
     @property
@@ -261,17 +273,33 @@ class Data:
 
     @property
     def clusters_level_1(self):
-        """ ... """
+        """ Skills-based sectors, characterised by integer labels, automatic keywords and manual labels """
         if self._clusters_level_1 is None:
             self._clusters_level_1 = self.read_csv(self.dir + 'clusters/ESCO_occupation_clusters_v1_1_LEVEL1.csv')
         return self._clusters_level_1
 
     @property
     def clusters_level_2(self):
-        """ ... """
+        """ Skills-based sub-sectors, characterised by integer labels, automatic keywords and manual labels """
         if self._clusters_level_2 is None:
             self._clusters_level_2 = self.read_csv(self.dir + 'clusters/ESCO_occupation_clusters_v1_1_LEVEL2.csv')
         return self._clusters_level_2
+
+    @property
+    def skills_based_sectors(self):
+        """ Same information as in clusters_level_1 in a more polished form """
+        if self._skills_based_sectors is None:
+            self._skills_based_sectors = self.occ_clusters.drop_duplicates(['level_1']).sort_values('level_1')[[
+                'skills_based_sector_code', 'skills_based_sector','level_1']].reset_index(drop=True)
+        return self._skills_based_sectors
+
+    @property
+    def sub_sectors(self):
+        """ Same information as in clusters_level_2 in a more polished form """
+        if self._sub_sectors is None:
+            self._sub_sectors = self.occ_clusters.drop_duplicates(['level_1', 'level_2']).sort_values(['level_1', 'level_2'])[[
+                'sub_sector_code', 'sub_sector', 'skills_based_sector_code', 'skills_based_sector', 'level_1', 'level_2']].reset_index(drop=True)
+        return self._sub_sectors
 
     ### Master tables containing full occupational profiles ###
 
@@ -347,11 +375,26 @@ class Similarities:
         self._W_activities = None
         self._W_work_context = None
 
-    def select_subset(self, W, subset_ids):
+    def select_similarity_matrix(self, similarity_measure='combined'):
+        if similarity_measure == 'combined':
+            return self.W_combined
+        elif similarity_measure == 'essential_skills':
+            return self.W_essential
+        elif similarity_measure == 'optional_skills':
+            return self.W_all_to_essential
+        elif similarity_measure == 'work_activities':
+            return self.W_activities
+        elif similarity_measure == 'work_context':
+            return self.W_work_context
+
+    @staticmethod
+    def select_subset(W, subset_ids):
         """
         Select a subset of the full similarity matrix
         """
-        pass
+        W_subset = W[subset_ids, :].copy()
+        W_subset = W_subset[:, subset_ids]
+        return W_subset
 
     @property
     def W_combined(self):
