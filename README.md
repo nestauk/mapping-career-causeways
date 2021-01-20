@@ -125,4 +125,10 @@ To refer to the work on automation risk, career transitions algorithm or the cro
 
 *Kanders K., Djumalieva, J., Sleeman, C. and Orlik, J. (2020). Mapping Career Causeways: Supporting workers at risk. London: Nesta*
 
-To specifically refer to this repository or the crowdsourced feasibility data, you can use the digital object identifier (DOI) of the linked  [Zenodo repository](#).
+To specifically cite the repository, or the crowdsourced feasibility data, please use the repo's digital object identifier (DOI) that is linked to [Zenodo](https://zenodo.org/badge/latestdoi/307661339):
+
+*Karlis Kanders, & George Richardson. (2021, January 20). nestauk/mapping-career-causeways: v2.0.0 (January 2021) (Version v2.0.0). Zenodo. http://doi.org/10.5281/zenodo.4451887*
+
+[![DOI](https://zenodo.org/badge/307661339.svg)](https://zenodo.org/badge/latestdoi/307661339)
+
+
