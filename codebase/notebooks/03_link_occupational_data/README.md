@@ -2,7 +2,7 @@
 
 Here, we build richer occupational profiles by linking ESCO occupations to data such as estimates of annual earnings, capacity to work remotely etc. The output tables of these notebooks are stored in `codebase/data/processed/linked_data` folder.
 
-When performing your own analyses, the occupational profiles with the linked data can be easily accessed via the `load_data_utils` module, by calling the table `Data().occ` (see the [tutorial notebook]([https://github.com/nestauk/mapping_career_causeways/blob/main/codebase/notebooks/Tutorial_02_exploring_data.ipynb]) for examples).
+When performing your own analyses, the occupational profiles with the linked data can be easily accessed via the `load_data_utils` module, by calling the table `Data().occ` (see the [tutorial notebook]([https://github.com/nestauk/mapping_career_causeways/tree/main/codebase/notebooks/Tutorial_02_exploring_data.ipynb]) for examples).
 
 For more background on the different data sources and how we used them, see pp. 18-20 and pp. 28-34 of the project [research report](https://www.nesta.org.uk/report/mapping-career-causeways-supporting-workers-risk/).
 

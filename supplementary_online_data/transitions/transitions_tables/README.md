@@ -1,0 +1,48 @@
+# Curated set of transitions
+
+**`mcc_transitions_table_Validated.csv`**
+
+A set of transitions recommended by our career transitions algorithm and validated using the crowdsourced feasibility ratings.
+
+All transitions in this table are *viable*, meaning that they are above the minimal combined similarity threshold (`similarity` > 0.3) and they have a compatible level of education and experience as measured by the job zone variable (`job_zone` difference is no larger than 1). They are also *desirable* in that they have `annual_earnings` of at least 75% of the origin destination's level, and *safe* because the destination occupations `risk_category` is not 'High risk' (see the [research report](https://media.nesta.org.uk/documents/Mapping_Career_Causeways_01_G2XA7Sl.pdf) for more discussion on these filtering parameters).
+
+Moreover, these transitions have also been judged as feasible, either by the participants in our [crowdsourcing study](https://github.com/nestauk/mapping-career-causeways/tree/main/codebase/reports/crowd_feasibility_ratings/) (`is_feasible` = True), or by the predictive model that we built for estimating the public perception ratings for transitions not covered by the crowdsourcing study (`is_feasible_predicted` = True).
+
+
+| Column name                | Description                                                                                                                                                                    | Type  |
+|:----------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------|
+| origin_id                  | Unique integer identifier of the origin ESCO occupation; used only internally, within the scope of this project                                                                | int   |
+| origin_label               | Preferred label of the origin occupation                                                                                                                                      | str   |
+| destination_id             | Unique integer identifier of the destination ESCO occupation; used only internally, within the scope of this project                                                           | int   |
+| destination_label          | Preferred label of the destination occupation                                                                                                                                 | str   |
+| similarity                 | Combined similarity measure                                                                                                                                                    | float |
+| sim_category               | 'highly_viable' if similarity is greater than 0.4, else 'min_viable' (in other examples, it might also be 'not_viable' if similarity is below the minimal viability threshold). | str   |
+| feasibility                | Crowdsourced feasibility rating for this transition (if exists; otherwise NaN)                                                                                                 | float |
+| is_feasible                | True if `feasibility` >= 2.5                                                                                                                                                      | bool  |
+| feasibility_predicted      | Crowd feasibility rating predicted using a regression  model                                                                                                              | float |
+| is_feasible_predicted      | True if `feasibility_predicted` >= 2.5                                                                                                                                            | bool  |
+| W_skills                   | Mean of `W_essential_skills` and `W_optional_skills`                                                                                                                               | float |
+| W_work                     | Mean of `W_activities` and `W_work_context`                                                                                                                                        | float |
+| W_essential_skills         | NLP-adjusted overlap of essential skills                                                                                                                                       | float |
+| W_optional_skills          | NLP-adjusted overlap of all skills in origin occupation and essential skills of the destination occupation                                                                     | float |
+| W_activities               | Similarity of work activities between the occupations                                                                                                                          | float |
+| W_work_context             | Similarity of work context features between the occupations                                                                                                                    | float |
+| job_zone_dif               | Difference between destination and origin occupations' job zones                                                                                                               | int   |
+| earnings_ratio             | The ratio of annual earnings between the destination and origin occupations                                                                                                           | float |
+| risk_dif                   | Origin occupation overall automation risk minus destination occupation risk                                                                                                    | float |
+| prop_dif                   | Destination prevalence (proportion) of bottleneck tasks minus origin prevalence of bottleneck tasks                                                                                         | float |
+| origin_risk_category       | Automation risk category of the origin occupation                                                                                                                              | str   |
+| destination_risk_category  | Automation risk category of the destination occupation                                                                                                                         | str   |
+| is_jobzone_ok              | True if `job_zone_dif` is  ±1                                                                                                                                        | bool  |
+| is_earnings_ok             | True if the destination occupation has annual earnings at least 75% of the value of the origin occupation                                                                      | bool  |
+| is_not_high_risk           | True if destination occupation is not categorised as at 'High risk' of automation                                                                                              | bool  |
+| is_safer                   | True if the destination occupation has a lower overall risk of automation and higher prevalence of bottleneck tasks                                                            | bool  |
+| is_strictly_safe           | True if `is_safer` and `is_not_high_risk` both True                                                                                                                                | bool  |
+| is_viable                  | True if `is_jobzone_ok` is True and `similarity` is greater than the viability threshold (0.3)                                                                                     | bool  |
+| is_desirable               | True if `is_viable` and `is_earnings_ok` are both True                                                                                                                             | bool  |
+| is_safe_desirable          | True if `is_desirable` and `is_not_high_risk` are both True                                                                                                                        | bool  |
+| is_strictly_safe_desirable | True if `is_desirable` and `is_strictly_safe` are both True                                                                                                                        | bool  |
+
+Note that the feasibility rating predicted by the model `is_feasible_predicted` might disagree with the real rating `is_feasible` from the crowdsourcing study. Therefore, we use both and assume that the crowdsourced feasibility, if exists, overrules the predicted one.
+
+More generally (not in this table), the predicted crowd feasibility ratings in `is_feasible_predicted` might disagree with the algorithm predictions about viability or desirability. In many cases, the feasibility appears somewhat more conservative than the algorithm recommendations. Therefore, when generating recommendations using the `transition_utils.py` module, you might wish to use the feasibility ratings carefully not to exclude some perhaps more broader or adventurous recommendations. An option for broadening the career options would be to inspect both feasibility and viability side by side, or to slightly relax the threshold for feasible transitions.

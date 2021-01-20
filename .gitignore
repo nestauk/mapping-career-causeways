@@ -1,16 +1,23 @@
+# Don't upload intermediate output data
 supplementary_online_data/ONET_ESCO_crosswalk/outputs/
 supplementary-online_data/ONET_ESCO_crosswalk/outputs/
 Supplementary_online_data/ONET_ESCO_crosswalk/outputs/
 Supplementary-online_data/ONET_ESCO_crosswalk/outputs/
 
+# Don't include large data files (get from S3 instead)
 codebase/data/raw/
 codebase/data/external/
 codebase/data/interim/
 codebase/data/processed/
 codebase/data/temp_files/
 codebase/data/restricted/
+
+# Don't upload data archives
 codebase/data/*.zip
 
+# Don't upload figures
+codebase/reports/crowd_feasibility_ratings/figures/*
+codebase/reports/figures/*
 *.png
 *.svg
 **/*.png

@@ -84,7 +84,7 @@ The tasks have been mapped via our [crosswalk](https://github.com/nestauk/mappin
 |onet_task | Title of the O\*NET task. |
 |weight| Relative importance weight of the task in the particular occupation. These have been inferred from the O\*NET database, and normalised such that all weights for each occupation sum up to 1. |
 | mean_task_SML | Task-level suitability for machine learning (SML) that is calculated by averaging the ratings of columns `q1`-`q14`, `qD` and `q19`-`q23`.|
-|weighted_task_SML | `mean_task_SML` multiplied by the importance weight `weight`. The occupation-level overall automation risk is obtained by summing these scores up across all occupation's tasks | 
+|weighted_task_SML | `mean_task_SML` multiplied by the importance weight `weight`. The occupation-level overall automation risk is obtained by summing these scores up across all occupation's tasks |
 |has_bottlenecks | True if task is a bottleneck task (task is defined to be a bottleneck if at least one of the `q{x}` columns has a score less than or equal to 2). |
 |onet_occupation | Title of the O\*NET occupation corresponding to the ESCO occupation. |
 |onet_code | Corresponding O\*NET code, inferred by using our [crosswalk](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/ONET_ESCO_crosswalk/).  |

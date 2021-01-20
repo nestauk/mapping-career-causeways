@@ -5,7 +5,7 @@ Created in September 2020
 
 @author: karliskanders
 
-Helper functions to generate transition recommendations
+Functions and classes for generating and analysing career transition recommendations
 """
 
 import pandas as pd
@@ -48,7 +48,15 @@ MAX_JOB_ZONE_DIF_DEF = def_transition_params['MAX_JOB_ZONE_DIF']
 MIN_EARNINGS_RATIO_DEF = def_transition_params['MIN_EARNINGS_RATIO']
 
 def occupations_to_check(id_to_check):
-    """ Helper function for selecting list of occupations for checking"""
+    """
+    Helper function for selecting a list of occupations
+
+    Parameters
+    ----------
+    id_to_check (list of int, or str or None):
+        List of integers corresponding to occupation IDs, or a string for a shorthand
+        reference to a predefined set of occupations.
+    """
     if (type(id_to_check)==type(None)) or (id_to_check=='report'):
         id_to_check = data.report_occ_ids
     elif id_to_check == 'top':
@@ -64,8 +72,30 @@ def find_most_similar(
     destination_ids='report',
     transpose=False):
     """
-    Helper function for finding the most similar occupations to occupation defined
-    by occ;
+    Helper function for finding the most similar occupations that a worker in
+    the specified occupation could transition to.
+
+    Parameters
+    ----------
+    occ (int or str):
+        Either the occupation ID (int) or preferred label (str)
+    similarity_measure (str):
+        One of the following: 'combined', 'essential_skills', 'optional_skills',
+        'work_activities', 'work_context'
+    n (int):
+        Number of the top-most similar occupations to return
+    destination_ids (list of int, or str):
+        List of admissible destination occupations, specified by a list occupation IDs or
+        a string for a shorthand reference to a predefined set of occupations
+    transpose (boolean):
+        If True, it will transpose the similarity matrix and the results will
+        show the most similar occupations that could transition into the specified occupation
+        (NB: The skills and combined similarity matrices are asymmetric)
+
+    Returns
+    -------
+    df (pandas.DataFrame):
+        A dataframe with the following fields: 'id', 'preferred_label' and 'similarity'
     """
     occ_id = data.occ_title_to_id(occ)
     destination_ids = occupations_to_check(destination_ids)
@@ -105,6 +135,14 @@ def get_transitions(
     destination_ids (list of int):
         List of permissible destination occupation IDs. If None, we check only
         the occupations subset analysed in the report
+
+
+    Returns
+    -------
+    trans_df (pandas.DataFrame):
+        A pandas dataframe with transitions and various descriptors and indicators.
+        See https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/transitions/transitions_tables/
+        for descriptions for each of the columns.
     """
 
     columns = initialise_transition_table_columns()
@@ -185,10 +223,10 @@ def transition_data_processing(
     MAX_JOB_ZONE_DIF = MAX_JOB_ZONE_DIF_DEF,
     MIN_EARNINGS_RATIO = MIN_EARNINGS_RATIO_DEF):
     """
-    FILTERS:
-    - For viability, obtain: job_zone
-    - For desirability, obtain: annual_earnings
-    - For safety, obtain: risk, prevalence & risk_category
+    Used by get_transitions() and get_transition_data();
+    Adds various descriptors for the transitions from j_id (int)
+    to a set of viable_ids (list of int) that will be further used
+    to filter viable, desirable and safe transitions.
     """
     N = len(viable_ids)
 
@@ -247,7 +285,10 @@ def transition_data_processing(
     return columns
 
 def transition_data_filtering(trans_df, MIN_VIABLE, HIGHLY_VIABLE):
-    """ Adds filtering variables """
+    """
+    Adds filtering variables to the transitions dataframe trans_df (pandas.DataFrame)
+    to indicate transitions that are viable, desirable and safe.
+    """
     trans_df['sim_category'] = ''
     trans_df.loc[trans_df.similarity <= HIGHLY_VIABLE, 'sim_category'] = 'min_viable'
     trans_df.loc[trans_df.similarity > HIGHLY_VIABLE, 'sim_category'] = 'highly_viable'
@@ -266,8 +307,22 @@ def get_transition_data(
     MIN_EARNINGS_RATIO = MIN_EARNINGS_RATIO_DEF,
     verbose=False):
     """
-    Adds transition data for each transition pair; final output table follows the same
+    Compiles transition data for each transition pair; final output table follows the same
     format as the output of get_transitions()
+
+    Parameters
+    ----------
+    transition_pairs (list of tuples):
+        Pairs of transitions for which to generate a table with various descriptors
+        and viability, desirability and safety indicators.
+    ...
+
+    Returns
+    -------
+    trans_df (pandas.DataFrame):
+        A pandas dataframe with transitions and various descriptors and indicators.
+        See https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/transitions/transitions_tables/
+        for descriptions for each of the columns.
     """
     columns = initialise_transition_table_columns()
 
@@ -290,6 +345,7 @@ def get_transition_data(
     if verbose: print(f'Done!\nThis took {(time()-t_now):.2f} seconds.')
     trans_df = pd.DataFrame(data=columns)
     trans_df = transition_data_filtering(trans_df, MIN_VIABLE, HIGHLY_VIABLE)
+
     return trans_df.reset_index(drop=True)
 
 def create_filtering_matrices(
@@ -305,7 +361,7 @@ def create_filtering_matrices(
     Creates boolean matrices for tagging transitions as 'safe', 'desirable', 'viable'
     'highly viable' and combinations of these.
 
-    These boolean matrices are then used for analysing the number of different
+    These boolean matrices are later used for analysing the number of different
     types of transitions for each occupation.
 
     Parameters
@@ -516,7 +572,6 @@ class CompareFeatures():
     def __init__(self, data_folder=useful_paths.data_dir):
 
         ### Import work context vectors ###
-
         self.work_context_vectors = np.load(data_folder + 'interim/work_context_features/ESCO_work_context_vectors.npy')
         self.work_context_features = pd.read_csv(data_folder + 'processed/work_context_vector_features.csv')
         self.work_context_features['category'] = self.work_context_features.element_id.apply(lambda x: int(x[4]))
@@ -529,7 +584,6 @@ class CompareFeatures():
         self.work_context_features['category'] = self.work_context_features['category'].apply(lambda x: categorise(x))
 
         ### Import ESCO skills category vectors ###
-
         self.esco_vectors_1 = np.load(data_folder + 'interim/work_activity_features/esco_hierarchy_vectors_level_1.npy')
         self.esco_features_1 = pickle.load(open(data_folder + 'interim/work_activity_features/esco_hierarchy_codes_level_1.pickle', 'rb'))
         self.esco_features_1 = data.concepts[data.concepts.code.isin(self.esco_features_1)][['code','title']].sort_values('code').copy()
@@ -543,7 +597,7 @@ class CompareFeatures():
         self.esco_features_3 = data.concepts[data.concepts.code.isin(self.esco_features_3)][['code','title']].sort_values('code').copy()
 
     def select_esco_level(self, level=2):
-        # Select the level of ESCO hierarchy
+        """ Selects the level of ESCO hierarchy; if level=None, uses work context features instead """
         if level==1:
             self.vectors = self.esco_vectors_1
             self.features = self.esco_features_1
@@ -558,7 +612,18 @@ class CompareFeatures():
             self.features = self.work_context_features
 
     def get_feature_differences(self, origin_id, destination_id, esco_level=2):
-        """ Useful for checking what are the biggest differences between the two occupations """
+        """
+        Useful for checking what are the biggest differences between the two occupations
+
+        Parameters
+        ----------
+        origin_id (int):
+            Origin occupation's integer ID
+        destination_id (int):
+            Destination occupation's integer ID
+        esco_level (int or boolean):
+            ESCO hierarchy level (normally use level 2); if esco_level is None, uses work context vectors
+        """
         self.select_esco_level(esco_level)
         # Calculate vector deltas and add category labels
         delta_vector = self.vectors[destination_id] - self.vectors[origin_id]
@@ -576,6 +641,10 @@ class CompareFeatures():
 
         Parameters
         ----------
+        origin_id (int):
+            Origin occupation's integer ID
+        destination_id (int):
+            Destination occupation's integer ID
         esco_level (int or boolean):
             ESCO hierarchy level (normally use level 2); if esco_level is None, uses work context vectors
         """
@@ -620,7 +689,8 @@ class SkillsGaps():
 
     def get_skills_scores(self, verbose=True):
         """
-        Compare skillsets and get matching scores for each comparison
+        Compare skillsets using NLP-adjusted overlap across all transitions
+        in self.trans_to_analyse, and save the matching scores for each skill from each comparison
         """
 
         ## List of lists (a list for each transition)
@@ -668,9 +738,12 @@ class SkillsGaps():
         Parameters:
         ----------
         transition_indices (list of int)
-            Transitions that we wish to analyse, specified by the row indices of 'trans_to_analyse'
+            Transitions that we wish to analyse (will correspond to the row indices of 'trans_to_analyse')
         skills_type (str):
-            Sets up which skills type are we checking ('destination' vs 'origin')
+            Sets up which skills are we checking ('destination' vs 'origin'; normally use 'destination')
+        skills_items (str):
+            Optionally can specify whether to only analyse gaps for specific ESCO skills pillar categories:
+            skills ('S'), knowledge ('K') or attitudes ('A')
         """
 
         # Store the analysis parameters
@@ -697,13 +770,34 @@ class SkillsGaps():
 
     def prevalent_skills_gaps(self, top_x=10, percentile=False):
         """
-        Show most prevalent skills gaps
+        Show the most prevalent skills gaps
+
+        top_x (int):
+            Determines if the analysis outputs the top-most top_x prevalent skills
+            (if percentile is False) or the top percentile of most prevalent skills
+            (if percentile is True). Normally, use top_x=90 or 95 if percentile=True
+        percentile (boolean):
+            Determines how top_x is interpreted
         """
         # Return the top most prevalent skills
         return self.get_most_prevalent_gaps(self.skills_gaps, top_x=top_x, percentile=percentile)
 
     def prevalent_cluster_gaps(self, level='level_3', top_x=10, percentile=False):
+        """
+        Show the most prevalent skills gaps, aggregated at the level of ESCO skills categories
 
+        Parameters
+        ----------
+        level (str or int):
+            Determines which level (1, 2 or 3) of ESCO skills hierarchy we are using to
+            aggregate the skills gaps
+        top_x (int):
+            Determines if the function outputs the top-most top_x prevalent skills
+            (if percentile is False) or the top percentile of most prevalent skills
+            (if percentile is True). Normally, use top_x=90 or 95 if percentile=True
+        percentile (boolean):
+            Determines how top_x is interpreted
+        """
         if level in [1,2,3]:
             level = 'level_' + str(level)
 
@@ -847,8 +941,9 @@ class Upskilling():
         ----------
         origin_ids (list of int, or str):
             Origin occupation integer identifiers
-        new_skillsets (list of int):
-            List of the new skills (or combinations of skills) to be tested
+        new_skillsets (list of int, or a list of lists):
+            List of the new skills IDs (or combinations of skills) to be tested;
+            can feature mixed single skills and combinations e.g. [1, [1000, 23], 3]
         destination_ids (list of int, or str):
             Destination occupation integer identifiers
         """

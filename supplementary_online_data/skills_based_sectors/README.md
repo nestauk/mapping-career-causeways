@@ -1,6 +1,6 @@
 # Skills-based sectors
 
-To find and analyse groups of related occupations that share similar job requirements and work characteristics, we used our occupation similarity measures and a graph-based clustering approach. The resulting grouping of occupations organises the 2942 ESCO occupations at two hierarchical levels - that we call skills-based sectors and sub-sectors - with 14 groups at the first level and 54 groups at the second level.
+To find and analyse groups of related occupations that share similar job requirements and work characteristics, we used our occupation similarity measures and a graph-based clustering approach. The resulting grouping of occupations organises the 2942 ESCO occupations at two hierarchical levels - that we call skills-based sectors and sub-sectors - with 14 groups at the first level and 54 groups at the second level (you can replicate this analysis using the notebooks `Clustering_{..}` in `../../codebase/notebooks/05_transition_analyses/`).
 
 ## ESCO occupation membership to skills-based sectors
 

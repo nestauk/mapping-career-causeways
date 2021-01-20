@@ -6,7 +6,7 @@ import  mapping_career_causeways
 
 useful_paths = mapping_career_causeways.Paths()
 
-# Colors for visualisations
+# Colours for visualisations
 colour_pal = ['#e6194b', '#3cb44b', '#4363d8', '#f58231',
              '#911eb4', '#46f0f0', '#f032e6', '#bcf60c', '#fabebe',
              '#008080', '#e6beff', '#9a6324', '#800000', '#808000','#ffe119',
@@ -19,7 +19,7 @@ colour_map = {
 }
 
 def set_font_sizes(SMALL_SIZE = 13, MEDIUM_SIZE=14):
-    # Set up font sizes for plots
+    """ Sets up font sizes for plots """
     plt.rc('font', size=SMALL_SIZE, family='Arial')
     plt.rc('axes', titlesize=MEDIUM_SIZE)
     plt.rc('axes', labelsize=MEDIUM_SIZE)
@@ -31,7 +31,7 @@ class MidpointNormalize(colors.Normalize):
     """
     Normalise the colorbar so that diverging bars work there way either side from a prescribed midpoint value)
     e.g. im=ax1.imshow(array, norm=MidpointNormalize(midpoint=0.,vmin=-100, vmax=100))
-    Reference:
+    Reference: http://chris35wills.github.io/matplotlib_diverging_colorbar/
     """
 
     def __init__(self, vmin=None, vmax=None, midpoint=None, clip=False):
@@ -45,6 +45,7 @@ class MidpointNormalize(colors.Normalize):
         return np.ma.masked_array(np.interp(value, x, y), np.isnan(value))
 
 def export_figure(figure_name, figure_folder = useful_paths.figure_dir, png=True, svg=True):
+    """ Utility function for easy exports of figures """
 
     export_params = {'dpi': 200, 'bbox_inches': 'tight', 'transparent': True}
 
@@ -56,7 +57,7 @@ def export_figure(figure_name, figure_folder = useful_paths.figure_dir, png=True
 def fix_heatmaps(ax):
     """
     Fix for mpl bug that cuts off top/bottom of seaborn viz
-    Reference:
+    Reference: https://stackoverflow.com/questions/56942670/matplotlib-seaborn-first-and-last-row-cut-in-half-of-heatmap-plot
     """
     b, t = ax.get_ylim()
     b += 0.5 # Add 0.5 to the bottom
@@ -73,6 +74,11 @@ def plot_heatmap(mat, x_labels, y_labels=None, cmap=None,
                  annot=True, shorten_xlabel=True,
                  new_order=None,
                  include_rows=None, include_cols=None):
+
+    """
+    Utility function for easy plotting of heatmaps and, if necessary,
+    reordering of rows and columns (used for displaying transition matrices between sectors)
+    """
 
     f, ax = plt.subplots(figsize=figsize)
 

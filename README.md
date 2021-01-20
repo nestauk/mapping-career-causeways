@@ -12,15 +12,13 @@ In this repository, you will find the research outputs of the report [Mapping Ca
 
 ## Contents
 
-### Codebase and career transitions data
+### Codebase and job transitions data
 
 `Published on January 20th, 2020`
 
-Open-source code allowing anyone to generate career transition recommendations and build upon the project outputs:
-
-- [**Project codebase**](#): Python code for generating and analysing transitions, and replicating results from the report
-- [**Crowdsourced transition feasibility ratings**](#): Results from our study on validating transitions
-- [**Curated job transitions**](#): A set of transitions recommended by our algorithm and validated using the crowdsourced feasibility ratings
+- [**Project codebase**](https://github.com/nestauk/mapping-career-causeways/tree/main/codebase/): Python code for generating career transition recommendations and replicating analyses from the report
+- [**Crowdsourced transition feasibility ratings**](https://github.com/nestauk/mapping-career-causeways/tree/main/codebase/reports/crowd_feasibility_ratings/): Results from our study to validate the transition recommendations
+- [**Curated job transitions**](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/transitions/transitions_tables/): A set of transitions recommended by our algorithm and validated using the crowdsourced feasibility ratings
 
 ### Supplementary online data of the project report
 
@@ -39,7 +37,7 @@ Data on at-risk workers in the UK, Italy and France.
 
 ## Installation
 
-It is possible to browse and download the [supplementary online data](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data) without installing anything on your local machine. However, if you'd like to run any of the analysis code, you should follow the steps below.
+It is possible to browse and download the [supplementary online data](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data) without installing anything on your local machine. If you'd like to run any of the analysis code, you should follow the steps below.
 
 ### Clone and set up the repo
 
@@ -84,29 +82,32 @@ $ python download_data.py
 The repository has the following main directories:
 
 ```
-  ├── mapping_career_causeways  <- Packaged code (various modules and utilities)
-  ├── codebase                  <- Analysis codebase (notebooks) and data
+  ├── mapping_career_causeways   <- Packaged code (various modules and utilities)
+  ├── codebase                   <- Analysis codebase (notebooks) and data
   │   ├── data
-  │   │   ├── raw               <- The original, immutable data
-  │   │   ├── interim           <- Intermediate output data that has been transformed
-  │   │   ├── processed         <- Final, processed data sets for analysis
-  │   │   │   ├── linked_data   <- Various labour market data linked to ESCO occupations
-  │   │   │   ├── sim_matrices  <- Various similarity matrices between all ESCO occupations,
-  │   │   │   │                    for analysing career transition viability
-  │   │   │   ├── validation    <- Crowdsourced transition feasibility ratings data
+  │   │   ├── raw                <- The original, immutable data
+  │   │   ├── interim            <- Intermediate output data that has been transformed
+  │   │   ├── processed          <- Final, processed data sets for analysis
+  │   │   │   ├── linked_data    <- Various labour market data linked to ESCO occupations
+  │   │   │   ├── sim_matrices   <- Various similarity matrices between all ESCO occupations,
+  │   │   │   │                     for analysing career transition viability
+  │   │   │   ├── validation     <- Crowdsourced transition feasibility data
   │   │   │   ...    
-  │   ├── notebooks             <- Data analysis and generation of career transition recommendations
-  │   └── reports               <- Reports, briefs and figures associated with the project
-  └── supplementary_online_data <- Data supporting the results of the project report
-      ├── ONET_ESCO_crosswalk   <- Crosswalk between O*NET and ESCO occupations     
-      ...         
+  │   ├── notebooks              <- Data analysis and generation of career transition recommendations
+  │   └── reports                <- Reports, briefs and figures associated with the project
+  └── supplementary_online_data  
+      ├── ONET_ESCO_crosswalk    <- Crosswalk between O*NET and ESCO occupations     
+      ├── automation_risk        <- Automation risk estimates for ESCO occupations
+      ├── transitions            <- Results on career transitions
+      │   └── transitions_tables <- Curated set of transitions recommended by our algorithm and
+      ...                           validated using the crowdsourced feasibility ratings                                    
 ```
 
 <a name="feedback"></a>
 ## Feedback & contributions
 
 ### Get in touch!
-If you find this work interesting and useful, we would be very grateful if you fill out [this short survey](#) to tell us about yourself and your interests. As a bonus, we will keep you up to date with future project updates as we undertake further research on validating the career transition recommendations, and release practical user guides for employers, policy makers and employment services.
+If you find this work interesting and useful, we would be very grateful if you [fill out this short survey](https://docs.google.com/forms/d/1IepcbAmIKAS2fDaDO4NfcI7uqNRkof02s52VmEYrZCY/edit?ts=6005b209&gxids=7628) to tell us about yourself and your interest in this project. As a bonus, we will keep you up to date with future project updates as we undertake further research on validating the career transition recommendations, and release practical user guides for employers, policy makers and employment services.
 
 Anyone is welcome to use and build upon the published data and code. As more people try out the career transitions algorithm, we expect to uncover peculiarities and areas for improvement - if you would like to leave a technical comment or report a bug, please create a new github issue. For more general enquiries, [write to us](mailto:open.jobs@nesta.org.uk).
 
@@ -122,5 +123,4 @@ To refer to the work on automation risk, career transitions algorithm or the cro
 
 *Kanders K., Djumalieva, J., Sleeman, C. and Orlik, J. (2020). Mapping Career Causeways: Supporting workers at risk. London: Nesta*
 
-To specifically refer to this repository or the crowdsourced feasibility data, you can use the following digital object identifier (DOI), which
-relates to a linked [Zenodo repository](#).
+To specifically refer to this repository or the crowdsourced feasibility data, you can use the digital object identifier (DOI) of the linked  [Zenodo repository](#).

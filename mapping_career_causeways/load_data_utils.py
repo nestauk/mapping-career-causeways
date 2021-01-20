@@ -60,10 +60,6 @@ class Data:
         self._occ_report = None
         self._report_occ_ids = None
 
-        # TO DELETE:
-        # self.occ_n_transitions = pd.read_csv(outputs_folder + 'occupations_number_of_transitions.csv')
-        # self.skills_clust = pd.read_csv(data_folder + 'processed/clusters/ESCO_skills_clusters/skills_coreness_measure.csv')
-
     ### Helper functions
     def read_csv(self, path):
         """ Read in csv files """
@@ -347,12 +343,14 @@ class Data:
 
     @property
     def top_occ_ids(self):
+        """ Integer identifiers of the approx. 1700 top ESCO occupations """
         if self._top_occ_ids is None:
             self._top_occ_ids = self.occ_top.id.to_list()
         return self._top_occ_ids
 
     @property
     def report_occ_ids(self):
+        """ Integer identifiers of the 1627 occupations analysed in the report """
         if self._report_occ_ids is None:
             self._report_occ_ids = self.occ_report.id.to_list()
         return self._report_occ_ids

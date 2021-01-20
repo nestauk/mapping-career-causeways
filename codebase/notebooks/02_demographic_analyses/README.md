@@ -1,4 +1,4 @@
 # Analysis of EU LFS data
 
-We have excluded the EU Labor Force Survey (LFS) microdata that underpins the report's
-findings from this repository, as it is sensitive data.
+**`Demographic_analysis.ipynb`**  
+This notebook features the analysis of the EU LFS microdata. While we have included it in the repository for the sake of completeness, we are not able to share the sensitive input microdata, and hence as such it will not be possible to independently replicate these particular results.

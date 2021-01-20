@@ -8,10 +8,10 @@ For more background on the methodology, see pages 85-93 of the project [research
 Use NLP-adjusted overlap to make flexible comparisons of ESCO occupations' skills sets and arrive at the first two occupation similarity measures based on essential skills and optional skills.
 
 **`Compare_occupations_by_ESCO_work_activities.ipynb`**  
-Compare ESCO occupations based on their alignment of typical work activities. Here, we're using the recently released official ESCO skills hierarchy whose categories are related to the intermediate work activities of O*NET.
+Compare ESCO occupations based on their alignment of typical work activities. Here, we're using the recently released official ESCO skills hierarchy whose categories are related to the intermediate work activities of O\*NET.
 
 **`Compare_occupations_by_ONET_Work_context.ipynb`**  
-Compare ESCO occupations based on their interpersonal, physical, and structural work aspects - these aspects are inferred from the O*NET work context features that are linked to ESCO occupations via our crosswalk.
+Compare ESCO occupations based on their interpersonal, physical, and structural work aspects - these aspects are inferred from the O\*NET work context features that are linked to ESCO occupations via our crosswalk.
 
 **`Combine_similarity_measures.ipynb`**  
 Combine the four similarity measures, and inspect the properties of the combined similarity measure.

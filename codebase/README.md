@@ -4,32 +4,41 @@
 
 ## Welcome to the codebase!
 
-The code in this repository will allow you to replicate the results of our [research report](https://www.nesta.org.uk/report/mapping-career-causeways-supporting-workers-risk/), generate career transition recommendations, and build upon the project outputs.
+Mapping Career Causeways takes data from [ESCO](https://ec.europa.eu/esco), [O\*NET](onetonline.org) and academic research to create a career transition recommendation algorithm. Given a worker's current occupation, the algorithm evaluates the fit to other ESCO occupations, in terms of skills requirements, typical work activities, and the interpersonal, physical and structural work context, to recommend *viable* transitions. Subsequently, the algorithm can also account for the expected earnings of the potential destination occupations to suggest *desirable* transitions, and their risk of automation to suggest transitions to *safer* employment.
+
+We have also carried out a [crowdsourcing study](https://github.com/nestauk/mapping-career-causeways/tree/main/codebase/reports/crowd_feasibility_ratings/) to better understand public perceptions of transition feasibility. This data can be used to further refine the algorithm's recommendations.
+
+The code in this repository will allow you to replicate the results of our [research report](https://www.nesta.org.uk/report/mapping-career-causeways-supporting-workers-risk/), generate your own career transition recommendations, and build upon the project outputs.
 
 ## Getting started
 
-If you only wish to generate job transition recommendations and inspect skills gaps, you can use the interactive [Google Colab notebook](#). For that, you don't have to install or download anything - simply follow the steps in the notebook.
+After following the [installation instructions](https://github.com/nestauk/mapping-career-causeways/#installation), you can begin with the [tutorial notebooks](https://github.com/nestauk/mapping-career-causeways/tree/main/codebase/notebooks/). `Tutorial_01_transitions.ipynb` demonstrates how to use the codebase to generate career transition recommendations for any ESCO occupation, inspect the differences and similarities between occupations, analyse skills gaps and simulate upskilling. Moreover, it also demonstrates how to incorporate insights from the [crowdsourcing study on transition feasibility](https://github.com/nestauk/mapping-career-causeways/tree/main/codebase/reports/crowd_feasibility_ratings/) into the recommendations.
 
-If you wish to run the analysis on your local machine or build upon the codebase, make sure you have followed the [installation instructions](https://github.com/nestauk/mapping-career-causeways/#installation). Then, you'll have to download the input data necessary to run the analysis and inspect the career transitions from our Amazon S3. This can be easily done by running the following commands in the terminal:
+The second tutorial `Tutorial_02_exploring_data.ipynb` gives a brief tour on accessing and exploring the different occupational and skills data.
 
-```
-$ cd data
-$ python download_data.py
-```
+For a high-level overview of the methodology, you can also check this [webinar](https://www.youtube.com/watch?v=TrwEhOGxkjU), presented as part of the [ESCoE Covid-19 Economic Measurement series](https://www.escoe.ac.uk/events/mapping-career-causeways-for-workers-displaced-by-automation-and-covid-19/).
 
-This will set up all required input files into the `data/raw`, `data/interim` and `data/processed` folders. See the readme files in these folders to find more information about specific data.
-
-Note that the code and data for generating the crosswalk between the O*NET and ESCO occupations has been factored out in the Supplementary online data section of the repository.
-
-In addition, the `mapping_career_causeways` folder contains additional custom packages and utilities that were developed by us for performing NLP-adjusted overlap, consensus clustering and other functions.
+<!-- If you only wish to generate job transition recommendations and inspect skills gaps, you can use the interactive [Google Colab notebook](#). For that, you don't have to install or download anything - simply follow the steps in the notebook. -->
 
 ## Using the codebase
 
 ### Replicating results
-Data analyses underpinning the project [report](https://www.nesta.org.uk/report/mapping-career-causeways-supporting-workers-risk/) are presently available as a set of Jupyter notebooks in the `notebooks/` folder. These are organised into several sections pertaining to different parts of the project. The notebooks clearly explain each step of the analysis, and produce output files that are stored in the `data/` and used in further downstream analyses.
+Data analyses underpinning the project [report](https://www.nesta.org.uk/report/mapping-career-causeways-supporting-workers-risk/) are available as a set of Jupyter notebooks in the [notebooks](https://github.com/nestauk/mapping-career-causeways/tree/main/codebase/notebooks) folder. These are organised into several sections pertaining to different parts of the project. The notebooks clearly explain the analysis steps, and produce output files that are stored in `data/interim` and `data/processed` and used in further downstream analyses.
 
 ### Exploring transition recommendations
-We have created a validated set of job transitions by taking into account people's perceptions of their feasibility. More information about the validation study can be found [in the technical appendix](#), and the set of validated transitions is available [here](#).
+We have generated a validated set of safe and desirable transition recommendations that also takes into account people's perceptions of their feasibility. More information about the validation can be found [in the technical appendix](https://github.com/nestauk/mapping-career-causeways/tree/main/codebase/reports/crowd_feasibility_ratings/). The set of validated transitions that are also perceived as feasible can be found [here](), and the data can be explored via [this tutorial](https://github.com/nestauk/mapping-career-causeways/tree/main/codebase/notebooks/Tutorial_02_exploring_data.ipynb).
 
 ### Generating career transitions
-For generating your own career transition recommendations, inspecting skills gaps, and identifying transferable skills - subject to your own transition viability and desirability parameters - you can use the [tutorial notebook](#), as well as the collection of utility functions defined in `../mapping_career_causeways/transitions_utils.py`.
+For generating your own career transition recommendations, inspecting skills gaps, and identifying transferable skills - subject to your own transition viability, desirability and feasibility parameters - you can use the functions and classes defined in the module `../mapping_career_causeways/transitions_utils.py` (see [this tutorial](https://github.com/nestauk/mapping-career-causeways/tree/main/codebase/notebooks/Tutorial_01_transitions.ipynb) for examples).
+
+For a quick start, try the example below, that will output transitions for the shop assistant that were examined in [this data visualisation](https://data-viz.nesta.org.uk/career-causeways/index.html):
+```python
+import mapping_career_causeways.transitions_utils as trans_utils
+transitions = trans_utils.get_transitions(origin_ids=[139])
+transitions[transitions.is_viable]
+```
+
+## Modules
+Besides the module `transitions_utils` for generating and analysing career transitions, the folder [mapping_career_causeways](https://github.com/nestauk/mapping-career-causeways/tree/main/mapping-career-causeways) hosts other custom packages and utilities that were developed by us for performing various functions, such as calculating the NLP-adjusted overlap (`compare_nodes_utils.py`) and performing consensus clustering (`cluster_utils.py`).
+
+Note that the code and data for generating the crosswalk between the O*NET and ESCO occupations has been factored out in the [Supplementary online data section](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data/ONET_ESCO_crosswalk) of the repository.
