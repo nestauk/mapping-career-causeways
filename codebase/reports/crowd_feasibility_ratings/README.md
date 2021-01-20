@@ -6,7 +6,7 @@ This part of the project work is being led by George Richardson, with additional
 
 ## Technical appendix
 
-[The technical appendix](https://github.com/nestauk/mapping-career-causeways/tree/main/codebase/reports/crowd_feasibility_ratings/Mapping_Career_Causeways_Crowdsourcing_study.pdf) describes the study design and the initial results. We tested about 10,000 transitions in terms of whether an imagined worker in the origin occupation could reasonably make the transition to the suggested destination, based on a “common sense” judgement by members from the public. We then used these results to create a predictive model for generating crowd feasibility ratings for transitions between any two ESCO occupations.
+[The technical appendix](https://github.com/nestauk/mapping-career-causeways/blob/main/codebase/reports/crowd_feasibility_ratings/Mapping_Career_Causeways_Crowdsourcing_feasibility_ratings.pdf) describes the study design and the initial results. We tested about 10,000 transitions in terms of whether an imagined worker in the origin occupation could reasonably make the transition to the suggested destination, based on a “common sense” judgement by members from the public. We then used these results to create a predictive model for generating crowd feasibility ratings for transitions between any two ESCO occupations.
 
 ## Dataset
 
