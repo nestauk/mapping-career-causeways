@@ -10,6 +10,8 @@ We have also carried out a [crowdsourcing study](https://github.com/nestauk/mapp
 
 The code in this repository will allow you to replicate the results of our [research report](https://www.nesta.org.uk/report/mapping-career-causeways-supporting-workers-risk/), generate your own career transition recommendations, and build upon the project outputs.
 
+*We would be grateful if anyone who downloads or uses our resources would complete this [2 minute survey](https://docs.google.com/forms/d/1IepcbAmIKAS2fDaDO4NfcI7uqNRkof02s52VmEYrZCY/edit?ts=6005b209&gxids=7628). Thank you!*
+
 ## Getting started
 
 After following the [installation instructions](https://github.com/nestauk/mapping-career-causeways/#installation), you can begin with the [tutorial notebooks](https://github.com/nestauk/mapping-career-causeways/tree/main/codebase/notebooks/). `Tutorial_01_transitions.ipynb` demonstrates how to use the codebase to generate career transition recommendations for any ESCO occupation, inspect the differences and similarities between occupations, analyse skills gaps and simulate upskilling. Moreover, it also demonstrates how to incorporate insights from the [crowdsourcing study on transition feasibility](https://github.com/nestauk/mapping-career-causeways/tree/main/codebase/reports/crowd_feasibility_ratings/) into the recommendations.

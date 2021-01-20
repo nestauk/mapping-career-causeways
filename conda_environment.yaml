@@ -34,7 +34,7 @@ dependencies:
     - grip
     #
     - tqdm
-    - pyyaml
+    # - pyyaml
     - tables
     - black
     - blackcellmagic

@@ -10,11 +10,13 @@ In this repository, you will find the research outputs of the report [Mapping Ca
 
 *The project is part of Nesta's [Open Jobs](https://www.nesta.org.uk/project/open-jobs/) programme, and supported by the J.P.Morgan as part of the [New Skills At Work initiative](https://www.jpmorganchase.com/impact/our-approach/jobs-and-skills).*
 
+*We would be grateful if anyone who downloads or uses our resources would complete this [2 minute survey](https://docs.google.com/forms/d/1IepcbAmIKAS2fDaDO4NfcI7uqNRkof02s52VmEYrZCY/edit?ts=6005b209&gxids=7628). Thank you!*
+
 ## Contents
 
 ### Codebase and job transitions data
 
-`Published on January 20th, 2020`
+`Published on January 20th, 2021`
 
 - [**Project codebase**](https://github.com/nestauk/mapping-career-causeways/tree/main/codebase/): Python code for generating career transition recommendations and replicating analyses from the report
 - [**Crowdsourced transition feasibility ratings**](https://github.com/nestauk/mapping-career-causeways/tree/main/codebase/reports/crowd_feasibility_ratings/): Results from our study to validate the transition recommendations
