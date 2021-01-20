@@ -11,4 +11,4 @@ Here you will find Jupyter notebooks with the analyses that underpin the Mapping
 - **06_visualisation**: Code of creating a 2-D 'map' of occupations and visualising similarity matrices
 - **07_validation**: Analysis of the crowdsourcing study data
 
-In addition, we also provide a 'tutorial' notebook for exploring career transition recommendations for any occupation *[to be added]*.
+To get started, see the two tutorial notebooks in this folder.
