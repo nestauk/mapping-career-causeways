@@ -10,8 +10,8 @@ This part of the project work is being led by George Richardson, with additional
 
 ## Dataset
 
-The crowdsourced dataset of the transition feasibility ratings can be found in `data/processed/validation/crowd_feasibility_ratings.csv` or downloaded separately from [S3](https://ojd-mapping-career-causeways.s3.eu-west-2.amazonaws.com/data/processed/validation/crowd_feasibility_ratings.csv) (see the technical appendix for a schema).
+The crowdsourced dataset of the transition feasibility ratings can be found, as part of the data download from S3, in `data/processed/validation/crowd_feasibility_ratings.csv` (see the technical appendix for a schema). Alternatively, you can also access it directly from [S3](https://ojd-mapping-career-causeways.s3.eu-west-2.amazonaws.com/data/processed/validation/crowd_feasibility_ratings.csv).
 
 ## Analysis code
 
-The [notebooks for analysing the crowdsourcing results](https://github.com/nestauk/mapping-career-causeways/tree/main/codebase/notebooks/07_validation/) are located in `notebooks/07_validation/`. See also [this tutorial](https://github.com/nestauk/mapping-career-causeways/tree/main/codebase/notebooks/Tutorial_01_transitions.ipynb) for how to generate a feasibility prediction for any transition.
+The [notebooks for analysing the crowdsourcing results](https://github.com/nestauk/mapping-career-causeways/tree/main/codebase/notebooks/07_validation/) are located in `notebooks/07_validation/`. See also [this tutorial](https://github.com/nestauk/mapping-career-causeways/tree/main/codebase/notebooks/Tutorial_01_transitions.ipynb) which touches upon how to generate a feasibility prediction for any transition.
