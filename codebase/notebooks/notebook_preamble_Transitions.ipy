@@ -1,0 +1,44 @@
+#!/bin/ipython
+# Note: ipy file suffix neccessary for running with %run magic
+
+#### Basic preamble ####
+
+# Import basic dependencies
+import numpy as np
+import scipy as sp
+import pandas as pd
+import pickle
+from time import time
+from tqdm.notebook import tqdm
+
+# Dependencies for plotting graphs
+import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.express as px
+
+plt.rcParams['svg.fonttype'] = 'none'
+plt.rcParams['font.family'] = 'Arial'
+
+sns.set_context('notebook')
+
+## Import local packages
+import mapping_career_causeways
+import mapping_career_causeways.compare_nodes_utils as compare_nodes_utils
+find_closest = compare_nodes_utils.find_closest
+import mapping_career_causeways.load_data_utils as load_data
+
+## Paths
+useful_paths = mapping_career_causeways.Paths()
+data_folder = useful_paths.data_dir
+
+#### Additional dependencies for transitions ####
+
+# Transition utilities
+import mapping_career_causeways.transitions_utils as trans_utils
+
+# Skills description embeddings
+embeddings = np.load(data_folder + 'interim/embeddings/embeddings_skills_description_SBERT.npy')
+
+data = load_data.Data()
+sim = load_data.Similarities()
+comp = trans_utils.CompareFeatures()
