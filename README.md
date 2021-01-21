@@ -114,7 +114,7 @@ If you find this work interesting and useful, we would be very grateful if you [
 Anyone is welcome to use and build upon the published data and code. As more people try out the career transitions algorithm, we expect to uncover peculiarities and areas for improvement - if you would like to leave a technical comment or report a bug, please create a new github issue. For more general enquiries, [write to us](mailto:open.jobs@nesta.org.uk).
 
 ### Contribute
-If you would like to contribute to this framework (e.g. by working on of the features listed above) you can collaborate by using pull requests:
+If you would like to contribute to this framework, you can collaborate by using pull requests:
 1. Create your new branch from dev
 2. Open a new issue and describe the feature that you will contribute
 3. Add your feature
