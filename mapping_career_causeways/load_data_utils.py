@@ -400,7 +400,7 @@ class Similarities:
         Combined occupation similarities
         """
         if self._W_combined is None:
-            self._W_combined = np.load(self.dir + 'sim_matrices/occupationSimilarity_Combined.npy')
+            self._W_combined = np.load(self.dir + 'sim_matrices/OccupationSimilarity_Combined.npy')
         return self._W_combined
 
     @property

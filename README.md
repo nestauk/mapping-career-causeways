@@ -2,7 +2,7 @@
 
 ***Public repository for hosting the research outputs of the [Mapping Career Causeways](https://www.nesta.org.uk/project/mapping-career-causeways/) project.***
 
-## Welcome!
+## Welcome! 
 
 Nesta is mapping viable pathways to fulfilling new occupations for people whose jobs are likely to change or be lost as a result of automation. We are calling these ‘career causeways’.
 
@@ -130,5 +130,3 @@ To specifically cite the repository, or the crowdsourced feasibility data, pleas
 *Karlis Kanders, & George Richardson. (2021, January 20). nestauk/mapping-career-causeways: v2.0.0 (January 2021) (Version v2.0.0). Zenodo. http://doi.org/10.5281/zenodo.4451887*
 
 [![DOI](https://zenodo.org/badge/307661339.svg)](https://zenodo.org/badge/latestdoi/307661339)
-
-
