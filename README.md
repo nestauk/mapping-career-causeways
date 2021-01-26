@@ -39,7 +39,7 @@ Data on at-risk workers in the UK, Italy and France.
 
 ## Installation
 
-It is possible to browse and download the [supplementary online data](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data) without installing anything on your local machine. If you'd like to run any of the analysis code, you should follow the steps below.
+It is possible to browse and download the [supplementary online data](https://github.com/nestauk/mapping-career-causeways/tree/main/supplementary_online_data), or try out [cloud-based tutorials](https://github.com/nestauk/mapping-career-causeways/tree/main/codebase#tutorials-on-google-colab) for exploring career transition recommendations, without installing anything on your local machine. If you'd like to run any of the analysis code on your local machine, please follow the steps below.
 
 ### Clone and set up the repo
 
@@ -130,5 +130,3 @@ To specifically cite the repository, or the crowdsourced feasibility data, pleas
 *Karlis Kanders, & George Richardson. (2021, January 20). nestauk/mapping-career-causeways: v2.0.0 (January 2021) (Version v2.0.0). Zenodo. http://doi.org/10.5281/zenodo.4451887*
 
 [![DOI](https://zenodo.org/badge/307661339.svg)](https://zenodo.org/badge/latestdoi/307661339)
-
-
