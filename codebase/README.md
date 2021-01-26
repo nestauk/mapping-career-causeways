@@ -20,7 +20,11 @@ The second tutorial `Tutorial_02_exploring_data.ipynb` gives a brief tour on acc
 
 For a high-level overview of the methodology, you can also check this [webinar](https://www.youtube.com/watch?v=TrwEhOGxkjU), presented as part of the [ESCoE Covid-19 Economic Measurement series](https://www.escoe.ac.uk/events/mapping-career-causeways-for-workers-displaced-by-automation-and-covid-19/).
 
-<!-- If you only wish to generate job transition recommendations and inspect skills gaps, you can use the interactive [Google Colab notebook](#). For that, you don't have to install or download anything - simply follow the steps in the notebook. -->
+### Tutorials on Google Colab
+
+To quickly try out the transition recommendation algorithm, you can also use the cloud-based Google Colab versions of the two tutorials mentioned above. This doesn't require you to download or install anything on your local machine:
+- [Tutorial #1](https://colab.research.google.com/drive/1odo3NAHQdYEKHGQmrsQ_7kCK0TAzqgg-?usp=sharing): Introduction on generating and analysing transition recommendations
+- [Tutorial #2](https://colab.research.google.com/drive/16p86KOUfiAaPUOYjNxb2pAHSgPAHAtLI?usp=sharing): Exploring the underlying occupation and skills data.
 
 ## Using the codebase
 
@@ -33,7 +37,7 @@ We have generated a validated set of safe and desirable transition recommendatio
 ### Generating career transitions
 For generating your own career transition recommendations, inspecting skills gaps, and identifying transferable skills - subject to your own transition viability, desirability and feasibility parameters - you can use the functions and classes defined in the module `../mapping_career_causeways/transitions_utils.py` (see [this tutorial](https://github.com/nestauk/mapping-career-causeways/tree/main/codebase/notebooks/Tutorial_01_transitions.ipynb) for examples).
 
-For a quick start, try the example below, that will output transitions for the shop assistant that were examined in [this data visualisation](https://data-viz.nesta.org.uk/career-causeways/index.html):
+For a quick start, try the code below; this will output transitions for the shop assistant, which were examined in [this data visualisation](https://data-viz.nesta.org.uk/career-causeways/index.html):
 ```python
 import mapping_career_causeways.transitions_utils as trans_utils
 transitions = trans_utils.get_transitions(origin_ids=[139])
