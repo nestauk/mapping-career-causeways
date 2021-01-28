@@ -15,7 +15,7 @@ $ python download_data.py lite
 """
 
 # Choose which archive to download
-if (len(sys.argv) > 1) & (sys.argv[1]=='lite'):
+if (len(sys.argv) > 1) and (sys.argv[1]=='lite'):
     # Lite archive, only with required inputs for generating and analysing transitions
     archive_file = 'data_lite.zip'
     file_size_mb = 300
