@@ -1,8 +1,6 @@
 # Curated set of transitions
 
-**`mcc_transitions_table_Validated.csv`**
-
-A set of transitions recommended by our career transitions algorithm and validated using the crowdsourced feasibility ratings.
+In the CSV file [mcc_transitions_table_Validated.csv](https://github.com/nestauk/mapping-career-causeways/raw/main/supplementary_online_data/transitions/transitions_tables/mcc_transitions_table_Validated.csv) please find a set of transitions recommended by our career transitions algorithm and validated using the crowdsourced feasibility ratings.
 
 All transitions in this table are *viable*, meaning that they are above the minimal combined similarity threshold (`similarity` > 0.3) and they have a compatible level of education and experience as measured by the job zone variable (`job_zone` difference is no larger than 1). They are also *desirable* in that they have `annual_earnings` of at least 75% of the origin destination's level, and *safe* because the destination occupations `risk_category` is not 'High risk' (see the [research report](https://media.nesta.org.uk/documents/Mapping_Career_Causeways_01_G2XA7Sl.pdf) for more discussion on these filtering parameters).
 
