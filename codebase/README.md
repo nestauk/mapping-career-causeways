@@ -22,9 +22,10 @@ For a high-level overview of the methodology, you can also check this [webinar](
 
 ### Tutorials on Google Colab
 
-To quickly try out the transition recommendation algorithm, you can also use the cloud-based Google Colab versions of the two tutorials mentioned above. This doesn't require you to download or install anything on your local machine:
+To quickly try out the transition recommendation algorithm, you can also use the cloud-based Google Colab tutorials. These don't require you to download or install anything on your local machine:
 - [Tutorial #1](https://colab.research.google.com/drive/1odo3NAHQdYEKHGQmrsQ_7kCK0TAzqgg-?usp=sharing): Introduction on generating and analysing transition recommendations
 - [Tutorial #2](https://colab.research.google.com/drive/16p86KOUfiAaPUOYjNxb2pAHSgPAHAtLI?usp=sharing): Exploring the underlying occupation and skills data.
+- [Tutorial #3](https://colab.research.google.com/drive/1VctohO6z9sigwXAd8HtNcGiLeyISxe99?usp=sharing): Exploring prevalent skills gaps for cross-sectoral transitions
 
 ## Using the codebase
 
